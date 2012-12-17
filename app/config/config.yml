@@ -1,0 +1,20 @@
+# database configuration
+database:
+    user:		root
+    password:	root
+    host:		localhost
+    dbname:		unknow
+    engine:		mysql
+
+# template engine (php, twig, smarty)
+template:		php
+
+# language (tool development)
+language:		fr
+
+# routing language (yml, php)
+routing:
+    type:		yml
+
+# environnement (dev | prod)
+environnement:	dev
