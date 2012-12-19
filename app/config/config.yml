@@ -1,3 +1,6 @@
+started:
+    value:		false
+
 # database configuration
 database:
     user:		root
