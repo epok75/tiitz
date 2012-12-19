@@ -9,7 +9,10 @@
    * @license http://www.opensource.org/licenses/mit-license.php MIT License
    * @package Spyc
    */
+<<<<<<< HEAD
 
+=======
+>>>>>>> config.yml
 if (!function_exists('spyc_load')) {
   /**
    * Parses YAML to array.
