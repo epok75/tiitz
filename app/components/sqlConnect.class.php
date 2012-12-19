@@ -76,3 +76,17 @@ class mysqlConnect
 
 }
 
+//exemple utilisation
+
+/*require_once('sqlConnect.class.php');
+
+$mysqlConnect = mysqlConnect::getInstance('localhost','root','root','tiitzbdd');
+
+$test = $mysqlConnect::getPDO();
+
+$request = $test->prepare('SELECT * FROM test');
+$request->execute();
+
+$result = $request->fetchAll();
+
+var_dump($result);*/
