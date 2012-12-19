@@ -25,12 +25,12 @@
 						<input type="text" name="user" id="user" />
 						<label for="pwd">Mot de Passe : </label>
 						<input type="password" name="pwd" id="pwd" />
-						<label for="adress">Adresse : </label>
+						<label for="adress">Hôte : </label>
 						<input type="text" name="adress" id="adress" />
 						<label for="name">Nom : </label>
 						<input type="text" name="name" id="name" />
 			</div>
-			<div class="notif"><?php if (isset($_GET["err"]) && $_GET["err"] == "conn") echo "Problème de connexion à la BDD"; else if (isset($_GET["err"]) && $_GET["err"] == "name") echo "La BDD choisie n'existe pas !"; ?></div>
+			<div class="notif"><?php if (isset($_GET["err"]) && $_GET["err"] == "conn") echo "Problème de connexion à la BDD"; else if (isset($_GET["err"]) && $_GET["err"] == "name") echo "La BDD choisie n'existe pas !"; else if (isset($_GET["err"]) && $_GET["err"] == "bundle") echo "Erreur lors de la création du bundle"; ?></div>
 			<div class="formPart">
 				<h4>Moteur de templates</h4>
 					<label for="tpl">Choix : </label>
@@ -41,7 +41,7 @@
 					</select>
 			</div>
 			<div class="formPart">
-				<h4>Langage du fichier de config</h4>
+				<h4>Langage de Routing</h4>
 					<label for="routesLang">Langage : </label>
 						<select id="routesLang" name="routesLang">
 							<option>YAML</option>

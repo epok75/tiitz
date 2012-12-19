@@ -23,6 +23,7 @@ if (isset($_POST["firstConfig"]))
 			$fm->set_currentItem("../../../src");
 			$fm->bundleGenerator($_POST["bundle"]);
 		}
-		echo "Préparation du projet en cours ...<br />";	//Génération des fichiers
-		echo "Installation terminée !";
+		else
+			die(header("Location:../gui.php?err=bundle"));
+		header("Location:../../../src/".$_POST["bundle"]."/index.php");
 	}

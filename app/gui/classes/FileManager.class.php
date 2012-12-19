@@ -358,13 +358,18 @@ class FileManager
 	{
 		$previousItem = $this->get_currentItem();
 		if ($this->xmkdir($_POST["bundle"]) === FALSE)
-			die ($this->get_lastError());
+			return ($this->get_lastError());
 		$this->set_currentItem("../../../src/".$name);
 		foreach ($folders = array("Controllers", "Entities", "Views", "Config") as $value)
 		{
 			$this->xmkdir($value);
 		}
+		$this->set_currentItem("../../../src/".$name);
+		$this->xtouch("index.php");
+		$this->set_currentItem("../../../src/".$name."/index.php");
+		$this->replace_fileContent("<h1>Hello TiiTz</h1><h2>L'installation est terminée</h2><p>Vous pouvez commencer à utiliser TiiTz pour votre projet.<br /></p>");
 		$this->set_currentItem($previousItem);
+		return true;
 	}
 	
 	public function empty_dir($empty = FALSE)
@@ -407,14 +412,14 @@ class FileManager
 
 	public function xtouch ($name)
 	{
-		if (file_exists($name) || is_dir($name))
+		if (file_exists($this->currentPath . "/" . $name) || is_dir($this->currentPath . "/" . $name))
 		{
 			$this->error = "Le fichier existe d&eacute;j&agrave;";
 			return FALSE;
 		}
 		else
 		{
-			$return = touch($name);
+			$return = touch($this->currentPath . "/" . $name);
 			if ($return == false)
 			{
 				$this->error = "Erreur lors de la cr&eacute;ation du fichier";
