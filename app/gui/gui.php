@@ -35,17 +35,17 @@
 				<h4>Moteur de templates</h4>
 					<label for="tpl">Choix : </label>
 					<select id="tpl" name="tpl">
-						<option>Twig</option>
-						<option>Smarty</option>
-						<option>Aucun</option>
+						<option value="twig">Twig</option>
+						<option value="smarty">Smarty</option>
+						<option value="php">Aucun</option>
 					</select>
 			</div>
 			<div class="formPart">
 				<h4>Langage de Routing</h4>
 					<label for="routesLang">Langage : </label>
 						<select id="routesLang" name="routesLang">
-							<option>YAML</option>
-							<option>PHP</option>
+							<option value="yml">YAML</option>
+							<option value="php">PHP</option>
 						</select>
 			</div>
 			<div class="formPart">
