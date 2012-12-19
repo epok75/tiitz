@@ -28,7 +28,10 @@ class Route {
 	}
 
 	public static function getRoute () {
-		$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
+		if(!$_SERVER['PATH_INFO'])
+			$urlParams = array('/');
+		else
+			$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);

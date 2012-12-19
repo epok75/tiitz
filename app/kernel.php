@@ -11,12 +11,14 @@ foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
 
-if (!empty($conf["project"]) && $conf["project"] === "true")
+if (!empty($conf["project"]) && $conf["project"] === true)
 {
 	if (!empty($conf["template"]))
 		$tz_render = Render::getInstance($conf["template"]);
 	else
 		$tz_render = Render::getInstance("");
+
+	var_dump(Route::getRoute());
 }
 else
 	require_once(ROOT.'/app/gui/gui.php');

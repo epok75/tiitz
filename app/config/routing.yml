@@ -2,6 +2,10 @@ blog_pute:
     pattern:   /blog/pute
     defaults:  { _controller: AcmeBlogBundle:Blog:show }
 
+blog_pute:
+    pattern:   /
+    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+
 blog_show:
     pattern:   /blog/{slug}
     defaults:  { _controller: AcmeBlogBundle:Blog:show }
