@@ -338,7 +338,7 @@ class FileManager
 	{
 		if (file_exists($this->currentPath."/".$name."/") || is_dir($this->currentPath."/".$name."/"))
 		{
-			$this->error = "Le dossier existe d&eacute;j&agrave; dans ce r&eacute;pertoir.";
+			$this->error = "Le dossier existe d&eacute;j&agrave; dans ce r&eacute;pertoire.";
 			return FALSE;
 		}
 		else
@@ -352,6 +352,19 @@ class FileManager
 			else
 				return ($return);
 		}
+	}
+	
+	public function bundleGenerator ($name)
+	{
+		$previousItem = $this->get_currentItem();
+		if ($this->xmkdir($_POST["bundle"]) === FALSE)
+			die ($this->get_lastError());
+		$this->set_currentItem("../../../src/".$name);
+		foreach ($folders = array("Controllers", "Entities", "Views", "Config") as $value)
+		{
+			$this->xmkdir($value);
+		}
+		$this->set_currentItem($previousItem);
 	}
 	
 	public function empty_dir($empty = FALSE)

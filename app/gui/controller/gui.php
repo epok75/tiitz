@@ -2,12 +2,10 @@
 
 require_once("../classes/FileManager.class.php");
 
-$fm = new FileManager("../../");
-$fm->set_currentItem("../../config/config.yml");
-echo "test";
-
 if (isset($_POST["firstConfig"]))
 	{
+		$fm = new FileManager("../../");
+		$fm->set_currentItem("../../config/config.yml");
 		if ((isset($_POST["user"]) && !empty($_POST["user"])) && (isset($_POST["pwd"])) && (isset($_POST["name"])  && !empty($_POST["name"])) && (isset($_POST["adress"]) && !empty($_POST["adress"])))
 		{
 			$link = mysqli_connect($_POST["adress"], $_POST["user"], $_POST["pwd"]) or die(header("Location:../gui.php?err=conn"));
@@ -21,7 +19,10 @@ if (isset($_POST["firstConfig"]))
 		if (isset($_POST["tpl"]) && ($_POST["tpl"] == "Twig" || $_POST["tpl"] == "Smarty" || $_POST["tpl"] == "Aucun" ))
 			$fm->add_fileContent("\n# Moteur de Templates:\n    TplEngine:\t\t".$_POST["tpl"]);
 		if (isset($_POST["bundle"]) && !empty($_POST["bundle"]))
-			echo "nom du premier bundle : ".$_POST["bundle"]."<br />";
-		echo "génération des fichiers en cours ...";	//Génération des fichiers
+		{
+			$fm->set_currentItem("../../../src");
+			$fm->bundleGenerator($_POST["bundle"]);
+		}
+		echo "Préparation du projet en cours ...<br />";	//Génération des fichiers
 		echo "Installation terminée !";
 	}
