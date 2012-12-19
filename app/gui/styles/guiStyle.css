@@ -17,6 +17,12 @@ body
 	width:300px;
 	margin:0 auto;
 }
+.notif
+{
+	color:red;
+	font:1.5em;
+	text-align:center;
+}
 .formEnd
 {
 	clear:both;

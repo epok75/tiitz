@@ -30,6 +30,7 @@
 						<label for="name">Nom : </label>
 						<input type="text" name="name" id="name" />
 			</div>
+			<div class="notif"><?php if (isset($_GET["err"]) && $_GET["err"] == "conn") echo "Problème de connexion à la BDD"; else if (isset($_GET["err"]) && $_GET["err"] == "name") echo "La BDD choisie n'existe pas !"; ?></div>
 			<div class="formPart">
 				<h4>Moteur de templates</h4>
 					<label for="tpl">Choix : </label>
