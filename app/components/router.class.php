@@ -1,8 +1,5 @@
 <?php
 
-// require_once(ROOT.'/path/to/Spyc.php');
-//require_once('Spyc.php');
-
 class Route {
 
 	private static $arrayRoute;
@@ -32,7 +29,7 @@ class Route {
 
 	public static function getRoute () {
 		$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
-		$yaml = Spyc::YAMLLoad('routing.yml');
+		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);
 		if($selectedRoute){
@@ -56,9 +53,3 @@ class Route {
 //$routeArray = route::getRoute();
 
 //var_dump($routeArray);
-
-
-
-
-
-
