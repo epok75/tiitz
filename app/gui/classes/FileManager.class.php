@@ -359,7 +359,7 @@ class FileManager
 		$previousItem = $this->get_currentItem();
 		if ($this->xmkdir($_POST["bundle"]) === FALSE)
 			die ($this->get_lastError());
-		$this->set_currentItem("../../../src/".$name);
+		$this->set_currentItem(ROOT."src/".$name);
 		foreach ($folders = array("Controllers", "Entities", "Views", "Config") as $value)
 		{
 			$this->xmkdir($value);
