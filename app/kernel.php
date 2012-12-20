@@ -1,5 +1,6 @@
 <?php
 define("ROOT", realpath(__DIR__."/../")); // base of the web site
+define("GUI", realpath(__DIR__."/gui/")); // base of the GUI
 
 // Include YAML parsing tool
 require_once(ROOT.'/app/components/spyc/Spyc.php');
@@ -19,6 +20,6 @@ if (!empty($conf["project"]) && $conf["project"] === true)
 		$tz_render = Render::getInstance("");
 }
 else
-	require_once ROOT."/app/gui/index.php";
+	require_once GUI."\\index.php";
 
 //var_dump($conf)
