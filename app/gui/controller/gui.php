@@ -19,12 +19,12 @@ if (isset($_POST["firstConfig"]))
 			$fm->add_fileContent("\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql\n");
 		}
 		$fm->add_fileContent("\n\n# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingprojet:    false");
-		if (isset($_POST["bundle"]) && !empty($_POST["bundle"]))
+		/*if (isset($_POST["bundle"]) && !empty($_POST["bundle"]))
 		{
 			$fm->set_currentItem(ROOT."src");
 			$fm->bundleGenerator($_POST["bundle"]);
 		}
 		else
-			die(header("Location:../index.php?err=bundle"));
+			die(header("Location:../index.php?err=bundle"));*/
 		header("Location:".ROOT."/src/".$_POST["bundle"]."/index.php");
 	}

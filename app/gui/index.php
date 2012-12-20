@@ -48,11 +48,11 @@
 							<option value="php">PHP</option>
 						</select>
 			</div>
-			<div class="formPart">
+			<!--<div class="formPart">
 				<h4>Nom du premier bundle</h4>
 					<label for="bundle">Nom du bundle : </label>
 					<input type="text" id="bundle" name="bundle"/>
-			</div>
+			</div>-->
 			<div class="formPart">
 				<input type="submit" value="Terminer" name="firstConfig" class="btn btn-large btn-primary" />
 			</div>
