@@ -1,3 +1,11 @@
 configInstall:
     pattern:    configTiitz/install
     defaults:   {_controller: gui:gui:show}
+
+configError1:
+    pattern:    configTiitz/install/err/{name}
+    defaults:   {_controller: gui:gui:show}
+    
+configError2:
+    pattern:    configTiitz/install/err/{conn}
+    defaults:   {_controller: gui:gui:show}
