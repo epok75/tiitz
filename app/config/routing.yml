@@ -1,11 +1,19 @@
-blog_pute:
-    pattern:   /blog/pute
-    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+config:
+	pattern:   /configTiitz
+	ressource: /src/gui/routing/routing.yml
 
-blog_pute:
-    pattern:   /
-    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+site:
+	pattern:   /
+	ressource: /app/siteBundle/config/routing.yml
 
-blog_show:
-    pattern:   /blog/{slug}
-    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+#blog_beng:
+#    pattern:   blog/beng
+#    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+
+#blog_default:
+#    pattern:   
+#    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+
+#blog_show:
+#    pattern:   blog/{slug}
+#    defaults:  { _controller: AcmeBlogBundle:Blog:show }

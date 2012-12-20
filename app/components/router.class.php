@@ -4,8 +4,10 @@ class Route {
 
 	private static $arrayRoute;
 
-	private static function deleteEmptyValues (array $array) {
+	private static function deleteEmptyValues(array $array) {
 		$arrayReturn = array();
+		if(count($array) == 2 && ($array[0] == '' && $array[1] == ''))
+			$arrayReturn[] = '/';
 		foreach ($array as $key => $value) {
 			if($value !== '')
 				$arrayReturn[] = $value;
@@ -13,7 +15,14 @@ class Route {
 		return $arrayReturn;
 	}
 
-	private static function parseRoutes(array $arrayRoutes, array $actualRoute) {
+	private static function parseRoutes(array $arrayRoutes, array $actualRoute) { // Fonction comparant les routes
+		if($actualRoute[0] == 'configTiitz')
+			$type='config';
+		else
+			$type = 'site';
+
+		$yaml = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
+		var_dump($yaml);die;
 		foreach ($arrayRoutes as $key => $params) {
 			$arrayRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arrayRoutes[$key]['pattern']));
 			foreach ($arrayRoutes[$key]['pattern'] as $_key => $value) {
@@ -27,12 +36,17 @@ class Route {
 		return false;
 	}
 
-	public static function getRoute () {
-		if(!$_SERVER['PATH_INFO'])
-			$urlParams = array('/');
+	public static function getRoute() { // Fonction retournant la route correspondant a PATH_INFO
+		if(empty($_SERVER['PATH_INFO']) || $_SERVER['PATH_INFO'] == '/')
+			$urlParams = array();
 		else
 			$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
+
+		echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
+
+		echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);
 		if($selectedRoute){
@@ -53,6 +67,8 @@ class Route {
 	}
 }
 
-//$routeArray = route::getRoute();
+//$array1 = array('er', 'eree');
+//$array2 = array('awdawd', 'awd');
+//var_dump(array_merge($array1, $array2));
 
 //var_dump($routeArray);
