@@ -12,12 +12,16 @@ foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
 
-if (!empty($conf["project"]) && $conf["project"] === true)
+// 
+if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 {
 	if (!empty($conf["template"]))
 		$tz_render = Render::getInstance($conf["template"]);
 	else
 		$tz_render = Render::getInstance("");
+
+	$routeArray = route::getRoute();
+	var_dump($routeArray);
 }
 else
 	require_once GUI."\\index.php";
