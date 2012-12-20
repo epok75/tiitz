@@ -5,3 +5,7 @@ blog_pute:
 blog_show:
     pattern:   /blog/{slug}
     defaults:  { _controller: AcmeBlogBundle:Blog:show }
+
+test_show:
+    pattern:	/test/show
+    defaults:	{ _controller: test:test:show}
