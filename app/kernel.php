@@ -19,6 +19,6 @@ if (!empty($conf["project"]) && $conf["project"] === true)
 		$tz_render = Render::getInstance("");
 }
 else
-	require_once ROOT."/app/gui/gui.php";
+	require_once ROOT."/app/gui/index.php";
 
 //var_dump($conf)
