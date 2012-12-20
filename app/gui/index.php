@@ -14,13 +14,13 @@
 </head>					 
 <body>
 	<header>
-		Configuration
+		Configuration initiale
 	</header>
 	<div>
 		<div class="content">
 			<div class="formPart">
 				<h4>Base de données</h4>
-				<form method="post" action="controller/gui.php">
+				<form method="post" action="configTiitz/install">
 						<label for="user">Utilisateur : </label>
 						<input type="text" name="user" id="user" />
 						<label for="pwd">Mot de Passe : </label>
