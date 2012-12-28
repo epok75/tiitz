@@ -22,7 +22,6 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	var_dump($route);
 	if (is_file(ROOT.$route["path"])) {
 		require_once ROOT.$route["path"];
 		$controller = new $route["className"];
@@ -33,13 +32,6 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 }
 else
 	require_once GUI."/index.php";
-
-
-/*$routeArray = route::getRoute();
-
-var_dump($routeArray);*/
-
-//var_dump($conf);
 
 require_once("../app/components/views.class.php");
 require_once("../app/components/validator.class.php");
