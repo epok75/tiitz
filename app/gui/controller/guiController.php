@@ -26,5 +26,5 @@ if (isset($_POST["firstConfig"]))
 		}
 		else
 			die(header("Location:../index.php?err=bundle"));*/
-		header("Location:".ROOT."/src/".$_POST["bundle"]."/index.php");
+		header("Location:".ROOT."/src/index.php");
 	}
