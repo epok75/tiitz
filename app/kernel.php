@@ -1,8 +1,20 @@
 <?php
 define("ROOT", realpath(__DIR__."/../")); // base of the web site
-
 define("SRC", realpath(ROOT."/src"));
 define("GUI", realpath(ROOT."/app/gui/")); // base of the GUI
+
+// Test error
+require_once(ROOT.'/app/components/error/ErrorCore.class.php');
+require_once(ROOT.'/app/components/error/ErrorExtend.class.php');
+$error = new ErrorExtend(3);
+
+print '<pre>';
+//var_dump($error -> exportArray());
+//var_dump($error -> exportJson());
+print '</pre>';
+//include ('test.php');
+
+
 
 // Include YAML parsing tool
 require_once(ROOT.'/app/components/spyc/Spyc.php');

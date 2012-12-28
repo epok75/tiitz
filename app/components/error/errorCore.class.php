@@ -2,31 +2,57 @@
 // Core Manager error
 abstract class ErrorCore {
 	
-	// Array of error
-	protected static $errorShutdown 	= array();
-	protected $lenghtArray 				= 5;
-	// true : Display error / false : no display
-	protected $displayError 			= true;
-	// Array of all the error in the log file
-	protected $storeError				= array();
-	// where the file is
 	private static $file 				= "error.txt";
 	private static $path 				= "/app/log/";
-
+	// true : Display error / false : no display
+	protected static $displayError 			= true;
+	// Array of error
+	protected static $currentError	 	= array();
+	// Lenght of $currentError array : useful to add \n 
+	// at the end of a line when we write the error in the log file
+	protected static $lenghtArray 		= 5;
+	// Array of all the error in the log file
+	protected $allErrorFromLog			= array();
+	
+	
 	private function __construct () {
 		
 	}
 
-	protected function errorTpl(array $error) {
+	/**
+	 * the flow when an error is received : display and save
+	 * @return void 
+	 */
+	protected static function displaySaveError() {
+		// length of $currentError
+		self::$lenghtArray = count(self::$currentError);
+		// Display current error
+		if (self::$displayError === true) {
+			self::errorTpl(self::$currentError);
+		}	
+		// save in log file
+	    self::saveInfile();
+	}
+
+	/**
+	 * Template that is going to be displayed  in the screen
+	 * @param  array  $error  Store type, line, message, date, trace, code
+	 * @return [type]        [description]
+	 */
+	protected static function errorTpl(array $error) {
 
 		$store = '<div style="color: #B94A48;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding:0px;">
 					<ul style="list-style-type:none;margin: 0px;padding:5px;">
 					<h4 style="margin:5px 0px;border-bottom:1px solid #B94A48">';
-		(isset($error['type']) && $error['type'] == 1) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
+		(isset($error['type']) && ($error['type'] == 1 || $error['type'] == 64)) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
 		$store .= '</h4>';
 		// loop through error array
 		foreach ($error as $key => $value) {
-			$store .= '<li><strong>["'.$key.'"]</strong> : '.$value.'</li>';
+			if(is_array($value)) {
+				self::errorTpl($value);
+			} else {
+				$store .= '<li><strong>["'.$key.'"]</strong> : '.$value.'</li>';
+			}
 		}
 		
 		$store .= '</ul></div>';
@@ -34,12 +60,16 @@ abstract class ErrorCore {
 		print_r($store);
 	}
 
-	protected function saveInfile(){
+	/**
+	 * Save the error in the log file
+	 * @return void
+	 */
+	protected static function saveInfile(){
 		
 		$line = '';
 		$i = 1;
-		foreach (self::$errorShutdown as $key => $value) {
-			if ($i < $this -> lenghtArray) {
+		foreach (self::$currentError as $key => $value) {
+			if ($i < self::$lenghtArray) {
 				$line .= $key .'=>'.$value."\t";
 			} else {
 				$line .= $key .'=>'.$value;
@@ -47,14 +77,10 @@ abstract class ErrorCore {
 			$i++;	
 		}
 		$line .= "\n";
-
+		// write error in the log file
 		file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND | LOCK_EX);
 	}
-
-	protected function saveInDb(array $database) {
-
-	}
-
+	
 	private function arrayFormatError() {
 		$currentError = array();
 		$handle = @fopen(ROOT.self::$path.self::$file, "rb");
@@ -67,7 +93,7 @@ abstract class ErrorCore {
 				$i = 1;
 				foreach ($newEntry as $key => $value) {
 					$current = explode('=>', $value);
-					if($i < $this -> lenghtArray) {
+					if($i < self::$lenghtArray) {
 						$currentError[$current[0]] = $current[1];						
 					} else {
 						$currentError[$current[0]] = substr($current[1],0,-1);
@@ -75,7 +101,7 @@ abstract class ErrorCore {
 					$i++;
 				}
 				$i = 1;
-				array_push($this -> storeError, $currentError);				
+				array_push($this -> allErrorFromLog, $currentError);				
 				unset($currentError);
 	      	}
     	}
@@ -86,19 +112,19 @@ abstract class ErrorCore {
 		if(file_exists(ROOT.self::$path.self::$file)){
 			$this -> arrayFormatError();
 		}
-		return $this -> storeError;				
+		return $this -> allErrorFromLog;				
 	}
 
 	public function exportJson() {
 		if(file_exists(ROOT.self::$path.self::$file)){
 			$this -> arrayFormatError();
 		}	
-		return json_encode($this->storeError);
+		return json_encode($this->allErrorFromLog);	
 	}
 
 	// getter
-	private static function getErrorShutdown() {
-		return self::$errorShutdown;
+	private static function getCurrentError	() {
+		return self::$currentError;
 	}
 
 	public static function getPath() {
@@ -110,12 +136,12 @@ abstract class ErrorCore {
 	}
 
 	public function getDisplayError() {
-		return $this -> displayError;
+		return self::$displayError;
 	}
 	
 	// setter
 	public function setDisplayError($isDisplay) {
-		$this -> displayError = $isDisplay;
+		self::$displayError = $isDisplay;
 	}
 	
 }
