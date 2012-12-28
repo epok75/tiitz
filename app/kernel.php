@@ -23,8 +23,9 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	if (is_file(SRC.$route["path"])) {
-		require_once SRC.$route["path"];
+	var_dump($route);
+	if (is_file(ROOT.$route["path"])) {
+		require_once ROOT.$route["path"];
 	}
 	else
 		echo "Page 404";
