@@ -250,27 +250,78 @@ class mysqlConnect
 		}
     }
 
+     public function read($table, $columns, $where){
+
+    	$query = "SELECT ";
+
+    	if(is_array($columns)){
+
+    		$count = '';
+    		$columsleght = count($columns);
+
+    		foreach ($columns as $value) {
+    			if($count < ($columsleght -1)){
+    				$query .= '`'.$value."`, ";
+    			}
+    			else{
+    				$query .= '`'.$value.'`';
+    			}
+    			$count++;
+    		}
+    	}
+    	else{
+    		$query .= $columns;
+    	}
+
+    	$query .= " FROM {$table} ";
+
+		if(is_array($where)){
+
+			$query .= " WHERE ";
+
+			foreach ($where as $key => $value) {
+				if(!is_int($key))
+					$query .= "`".$key."` = '".$value."'";
+				else
+					$query .= " ".$value." ";
+			}
+		}
+		else
+			throw new Exception( 'Error: where must be an array' );
+
+		try{
+			$request = self::$pdo->prepare($query);
+			$request->execute();
+			$results = $request->fetchAll();
+
+			return $results;
+		}
+		catch(PDOException $e){
+			exit($e->getMessage());
+		}
+    }
+
 }
 
 
 //exemple utilisation
 
 /*
+require_once('sql.class.php');
+
 $mysqlConnect = mysqlConnect::getInstance('localhost','root','root','tiitzbdd');
 
 $test = $mysqlConnect::getPDO();
 
-$where = 
-		array('test' => 'tg');
+$where = array('test' => 'test');
 
-$insert = 
-		array(
-			array('test'=> 'tg', 'test2' => 'plop')
-		);
+$insert = array('test2' => 'plopance');
+
+$columns = array("test","test2");
 
 
 //$mysqlConnect->insert('test', $insert); 			//insert(nom de table, array(array('colonne'=>'valeur')),array('colonne'=>'valeur'))
 //$mysqlConnect->delete('test', $where);  			//insert(nom de table, array('colonne'=>'valeur'))
 //$mysqlConnect->update('test', $insert, $where);   //insert(nom de table, array('colonne'=>'valeur'), array('colonne'=>'valeur'))
-
+//var_dump($mysqlConnect->read('test', $columns, $where));
 */
