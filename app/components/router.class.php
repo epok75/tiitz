@@ -5,9 +5,10 @@ class Route {
 	private static $arrayRoute;
 
 	private static function deleteEmptyValues(array $array) {
+		#var_dump($array);
 		$arrayReturn = array();
 		if(count($array) == 2 && ($array[0] == '' && $array[1] == ''))
-			$arrayReturn[] = '/';
+			$arrayReturn = array();
 		foreach ($array as $key => $value) {
 			if($value !== '')
 				$arrayReturn[] = $value;
@@ -16,22 +17,31 @@ class Route {
 	}
 
 	private static function parseRoutes(array $arrayRoutes, array $actualRoute) { // Fonction comparant les routes
-		if($actualRoute[0] == 'configTiitz')
+		if(isset($actualRoute[0]) && $actualRoute[0] == 'configTiitz')
 			$type='config';
 		else
 			$type = 'site';
+		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
+			die('Routing file missing');
+		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
 
-		$yaml = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
-		var_dump($yaml);die;
-		foreach ($arrayRoutes as $key => $params) {
-			$arrayRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arrayRoutes[$key]['pattern']));
-			foreach ($arrayRoutes[$key]['pattern'] as $_key => $value) {
-				if(strpos($value, '{') === 0 && strpos($value , '}') === strlen($value) -1 )
-					$arrayRoutes[$key]['params'] = array('name' => $value, 'requirements' => '');
+		foreach ($arraySubRoutes as $key => $params) {
+			$arraySubRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arraySubRoutes[$key]['pattern']));
+			#var_dump($arraySubRoutes[$key]['pattern']);
+			$arraySubRoutes[$key]['type'] = $type;
+			$arraySubRoutes[$key]['params'] = array();
+			foreach ($arraySubRoutes[$key]['pattern'] as $_key => $value) {
+				if(strpos($value, '{') === 0 && strpos($value , '}') === strlen($value) -1 ) {
+					$value = str_replace('{', '', $value);
+					$value = str_replace('}', '', $value);
+					$arraySubRoutes[$key]['params'][] = array('name' => $value, 'position' => $_key , 'value' => $actualRoute[$_key]);
+					$arraySubRoutes[$key]['pattern'][$_key] = $actualRoute[$_key];
+				}
 
 			}
-			if($arrayRoutes[$key]['pattern'] == $actualRoute)
-				return $arrayRoutes[$key];
+			#var_dump($arraySubRoutes[$key]);
+			if($arraySubRoutes[$key]['pattern'] == $actualRoute)
+				return $arraySubRoutes[$key];
 		}
 		return false;
 	}
@@ -42,20 +52,24 @@ class Route {
 		else
 			$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
 
-		echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
 
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
 
-		echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
+		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);
 		if($selectedRoute){
 			$arrayController = explode(':', $selectedRoute['defaults']['_controller']);
-			if(count($arrayController) !== 3){
+			if(count($arrayController) !== 2){
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
-				self::$arrayRoute['path'] = '/'.$arrayController[0].'/'.$arrayController[1].'Controller.php';
-				self::$arrayRoute['action'] = $arrayController[2];
+				if($selectedRoute['type'] == 'config')
+					self::$arrayRoute['path'] = '/app/gui/controller/'.$arrayController[0].'Controller.php';
+				else
+					self::$arrayRoute['path'] = 'controller/'.$arrayController[0].'Controller.php';
+				self::$arrayRoute['action'] = $arrayController[1].'Action';
+				self::$arrayRoute['params'] = $selectedRoute['params'];
 
 			}
 			
@@ -67,8 +81,4 @@ class Route {
 	}
 }
 
-//$array1 = array('er', 'eree');
-//$array2 = array('awdawd', 'awd');
-//var_dump(array_merge($array1, $array2));
 
-//var_dump($routeArray);

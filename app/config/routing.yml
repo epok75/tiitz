@@ -1,19 +1,7 @@
 config:
 	pattern:   /configTiitz
-	ressource: /src/gui/routing/routing.yml
+	ressource: /app/gui/routing.yml
 
 site:
 	pattern:   /
-	ressource: /app/siteBundle/config/routing.yml
-
-#blog_beng:
-#    pattern:   blog/beng
-#    defaults:  { _controller: AcmeBlogBundle:Blog:show }
-
-#blog_default:
-#    pattern:   
-#    defaults:  { _controller: AcmeBlogBundle:Blog:show }
-
-#blog_show:
-#    pattern:   blog/{slug}
-#    defaults:  { _controller: AcmeBlogBundle:Blog:show }
+	ressource: /src/config/routing.yml

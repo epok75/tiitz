@@ -1,0 +1,11 @@
+blog_beng:
+    pattern:   /blog/beng
+    defaults:  { _controller: Blog:beng }
+
+blog_default:
+    pattern:   /
+    defaults:  { _controller: Blog:home }
+
+blog_show:
+    pattern:   /blog/article/{slug}/comment/{lol}
+    defaults:  { _controller: Blog:show }
