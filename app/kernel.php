@@ -23,7 +23,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	var_dump($route);
+	//var_dump($route);
 	if (is_file(ROOT.$route["path"])) {
 		require_once ROOT.$route["path"];
 	}
@@ -36,7 +36,7 @@ else
 
 /*$routeArray = route::getRoute();
 
-var_dump($routeArray);*/
+//var_dump($routeArray);*/
 
 //var_dump($conf);
 

@@ -313,9 +313,11 @@ $mysqlConnect = mysqlConnect::getInstance('localhost','root','root','tiitzbdd');
 
 $test = $mysqlConnect::getPDO();
 
-$where = array('test' => 'test');
+$where = array('test' => 'test', 'and' , 'test2' => 'plopance');
 
-$insert = array('test2' => 'plopance');
+$insert =array( array('test2' => 'plopance', 'test'=> 'test'),
+                array('test2' => 'plopance', 'test'=> 'test')          
+              );
 
 $columns = array("test","test2");
 
