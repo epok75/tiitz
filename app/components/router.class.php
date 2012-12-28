@@ -27,7 +27,7 @@ class Route {
 
 		foreach ($arraySubRoutes as $key => $params) {
 			$arraySubRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arraySubRoutes[$key]['pattern']));
-			#var_dump($arraySubRoutes[$key]['pattern']);
+			//var_dump($arraySubRoutes[$key]['pattern']);
 			$arraySubRoutes[$key]['type'] = $type;
 			$arraySubRoutes[$key]['params'] = array();
 			foreach ($arraySubRoutes[$key]['pattern'] as $_key => $value) {
@@ -59,6 +59,7 @@ class Route {
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);
+                var_dump($selectedRoute);
 		if($selectedRoute){
 			$arrayController = explode(':', $selectedRoute['defaults']['_controller']);
 			if(count($arrayController) !== 2){
@@ -69,8 +70,8 @@ class Route {
 				else
 					self::$arrayRoute['path'] = '/src/controller/'.$arrayController[0].'Controller.php';
 				self::$arrayRoute['action'] = $arrayController[1].'Action';
+                                self::$arrayRoute['className'] = $arrayController[0].'Controller';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
-
 			}
 			
 		}

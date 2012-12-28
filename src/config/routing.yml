@@ -1,6 +1,7 @@
 blog_beng:
     pattern:   /blog/beng
     defaults:  { _controller: Blog:beng }
+    requirement: { method: NORMAL  }
 
 blog_default:
     pattern:   /
