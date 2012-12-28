@@ -2,8 +2,12 @@
 
 
 //extends TiiTzController
-class Controller { 
+class BlogController { 
 	public function showAction() {
 		echo 'ta soeur';
+	}
+
+	public function homeAction() {
+		echo 'ta mere pute';
 	}
 } 
