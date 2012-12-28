@@ -215,40 +215,31 @@ class mysqlConnect
     	$count = '';
 		$arrlength  = count($arr);
 
-		if (array_filter( $arr, 'is_array' )){
-			// If multidimentional then recurse
-			foreach ( $arr as $row ) {
-				$results[] = $this->update($table, $row, $where);
-			}
-			return $results;
-		}
-		else{
-			$query = "UPDATE `".$table."` SET ";
-			foreach ($arr as $key => $val) 
-			{
-				if($count < ($arrlength -1))
-					$query .= "`".$key."` = '".$val."',";
-				else
-					$query .= "`".$key."` = '".$val."'";
-
-				$count++;
-
-			}
-			
-			if(is_array($where)){
-
-					$query .= " WHERE ";
-
-					foreach ($where as $key => $value) {
-						if(!is_int($key))
-							$query .= "`".$key."` = '".$value."'";
-						else
-							$query .= " ".$value." ";
-					}
-				}
+		$query = "UPDATE `".$table."` SET ";
+		foreach ($arr as $key => $val) 
+		{
+			if($count < ($arrlength -1))
+				$query .= "`".$key."` = '".$val."',";
 			else
-				throw new Exception( 'Error: where must be an array' );
+				$query .= "`".$key."` = '".$val."'";
+
+			$count++;
+
 		}
+		
+		if(is_array($where)){
+
+				$query .= " WHERE ";
+
+				foreach ($where as $key => $value) {
+					if(!is_int($key))
+						$query .= "`".$key."` = '".$value."'";
+					else
+						$query .= " ".$value." ";
+				}
+			}
+		else
+			throw new Exception( 'Error: where must be an array' );
 
 		try{
 			$request = self::$pdo->prepare($query);
