@@ -8,7 +8,7 @@ require_once(ROOT.'/app/components/spyc/Spyc.php');
 $comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 $conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
 
-// Include the compnents contains in components.yml
+// Include the components contains in components.yml
 foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
@@ -21,8 +21,9 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	if (is_file(SRC.$route["path"]))
+	if (is_file(SRC.$route["path"])) {
 		require_once SRC.$route["path"];
+	}
 	else
 		echo "Page 404";
 }
