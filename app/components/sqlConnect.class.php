@@ -10,10 +10,10 @@ class mysqlConnect
 	private static $instance;
 
 	private function __construct($host, $user, $password, $db){
-		self::setHost($host);
-		self::setUser($user);
-		self::setPassword($password);
-		self::setDb($db);
+            self::setHost($host);
+            self::setUser($user);
+            self::setPassword($password);
+            self::setDb($db);
 	}
 
 	//get an instance of PDO
