@@ -32,8 +32,3 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 }
 else
 	require_once GUI."/index.php";
-
-require_once("../app/components/views.class.php");
-require_once("../app/components/validator.class.php");
-require_once(ROOT.'/app/components/spyc/Spyc.php'); // YAML parser
-$conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml'); // Configuration 
