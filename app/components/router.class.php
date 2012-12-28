@@ -67,7 +67,7 @@ class Route {
 				if($selectedRoute['type'] == 'config')
 					self::$arrayRoute['path'] = '/app/gui/controller/'.$arrayController[0].'Controller.php';
 				else
-					self::$arrayRoute['path'] = 'controller/'.$arrayController[0].'Controller.php';
+					self::$arrayRoute['path'] = '/src/controller/'.$arrayController[0].'Controller.php';
 				self::$arrayRoute['action'] = $arrayController[1].'Action';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
 
