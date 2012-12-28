@@ -16,6 +16,7 @@ foreach ($comp as $k => $v) {
 
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 {
+	echo "lol";
 	if (!empty($conf["template"]))
 		$tz_render = Render::getInstance($conf["template"]);
 	else
@@ -32,12 +33,10 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 }
 else
 {
-	$route = route::getRoute();
-	var_dump($route);
-	if (is_file(ROOT.$route["path"])) {
-		require_once ROOT.$route["path"];
-		$controller = new $route["className"];
-		$controller->$route["action"]();
+	if (is_file(ROOT."\\app\\gui\\controller\\guiController.php")) {
+		require_once ROOT."\\app\\gui\\controller\\guiController.php";
+		$controller = new guiController;
+		$controller->checkAction();
 	}
 	else
 		echo "Page 404";
