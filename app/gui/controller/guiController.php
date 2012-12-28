@@ -1,8 +1,8 @@
 <?php
-
-class guiController extends FileManager
+require_once(ROOT."/app/gui/classes/FileManager.class.php");
+class guiController
 {
-	public function check()
+	public function checkAction()
 	{
 		if (isset($_POST["firstConfig"]))
 		{

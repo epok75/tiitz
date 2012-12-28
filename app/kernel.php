@@ -44,5 +44,4 @@ var_dump($routeArray);*/
 require_once("../app/components/views.class.php");
 require_once("../app/components/validator.class.php");
 require_once(ROOT.'/app/components/spyc/Spyc.php'); // YAML parser
->>>>>>> origin/kernel
 $conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml'); // Configuration 
