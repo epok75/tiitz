@@ -31,4 +31,14 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		echo "Page 404";
 }
 else
-	require_once GUI."/index.php";
+{
+	$route = route::getRoute();
+	var_dump($route);
+	if (is_file(ROOT.$route["path"])) {
+		require_once ROOT.$route["path"];
+		$controller = new $route["className"];
+		$controller->$route["action"]();
+	}
+	else
+		echo "Page 404";
+}
