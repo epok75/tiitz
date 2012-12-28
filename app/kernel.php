@@ -31,7 +31,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		echo "Page 404";
 }
 else
-	require_once GUI."\\index.php";
+	require_once GUI."\index.php";
 
 
 /*$routeArray = route::getRoute();
