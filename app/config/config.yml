@@ -1,5 +1,5 @@
-# 
-project:		false
+# permit to check if a project is already start or not
+existingproject:		true
 
 # database configuration
 database:

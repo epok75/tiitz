@@ -1,5 +1,3 @@
 views:		/app/components/views.class.php
-
 router:		/app/components/router.class.php
-
 sqlConnect:		/app/components/sqlConnect.class.php
