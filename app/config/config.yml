@@ -13,4 +13,4 @@
     environnement:    dev
 
 # Permit to check if a project is already started
-    existingprojet:    true
+    existingproject:    false

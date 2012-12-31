@@ -22,7 +22,7 @@ class guiController
 				mysqli_close ($link);
 				$fm->add_fileContent("\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql\n");
 			}
-			$fm->add_fileContent("\n\n# language (tool development)\n    language:    fr\n\n# environnement (dev | prod)\n    environnement:    dev\n\n# Permit to check if a project is already started\n    existingprojet:    true");
+			$fm->add_fileContent("\n\n# language (tool development)\n    language:    fr\n\n# environnement (dev | prod)\n    environnement:    dev\n\n# Permit to check if a project is already started\n    existingproject:    true");
 			/*if (isset($_POST["bundle"]) && !empty($_POST["bundle"]))
 			{
 				$fm->set_currentItem(ROOT."src");

@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<title>TiiTz Framework</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href="<?php echo ROOT ?>/app/gui/styles/bootstrap.css" rel="stylesheet" />
-    <link href="<?php echo ROOT ?>/app/gui/styles/bootstrap-responsive.css" rel="stylesheet">
-    <link href="<?php echo ROOT ?>/app/gui/styles/docs.css" rel="stylesheet">
-    <link href="<?php echo ROOT ?>/app/gui/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo ROOT ?>/app/gui/styles/guiStyle.css">
+	<link href="../gui/styles/bootstrap.css" rel="stylesheet" />
+    <link href="../gui/styles/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../gui/styles/docs.css" rel="stylesheet">
+    <link href="../gui/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../gui/styles/guiStyle.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>					 
