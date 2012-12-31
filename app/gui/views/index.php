@@ -22,13 +22,13 @@
 				<h4>Base de données</h4>
 				<form method="post" action="<?php $_SERVER["SCRIPT_NAME"] ?>">
 						<label for="user">Utilisateur : </label>
-						<input type="text" name="user" id="user" />
+						<input type="text" name="user" onblur="checkBDD()" id="user" placeholder="root" />
 						<label for="pwd">Mot de Passe : </label>
-						<input type="password" name="pwd" id="pwd" />
+						<input type="password" onblur="checkBDD()" name="pwd" id="pwd" />
 						<label for="adress">Hôte : </label>
-						<input type="text" name="adress" id="adress" />
+						<input type="text" name="adress" id="adress" onblur="checkBDD()" placeholder="127.0.0.1"/>
 						<label for="name">Nom : </label>
-						<input type="text" name="name" id="name" />
+						<input type="text" name="name" id="name" onblur="checkBDD()" placeholder="tiitzBDD" />
 			</div>
 			<div class="notif"><?php if (isset($_GET["err"]) && $_GET["err"] == "conn") echo "Problème de connexion à la BDD"; else if (isset($_GET["err"]) && $_GET["err"] == "name") echo "La BDD choisie n'existe pas !"; else if (isset($_GET["err"]) && $_GET["err"] == "bundle") echo "Erreur lors de la création du bundle"; ?></div>
 			<div class="formPart">
@@ -60,6 +60,6 @@
 			</form>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/guiJS.js"></script>
+	<script type="text/javascript" src="../gui/js/guiJS.js"></script>
 </body>
 </html>
