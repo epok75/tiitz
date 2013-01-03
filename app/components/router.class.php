@@ -78,7 +78,7 @@ class Route {
 			
 		}
 		else
-			ErrorExtend::catchError('');
+			ErrorExtend::catchError('No Route Found');
 
 		return self::$arrayRoute;
 	}
