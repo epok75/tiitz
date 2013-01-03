@@ -34,8 +34,10 @@ class Route {
 				if(strpos($value, '{') === 0 && strpos($value , '}') === strlen($value) -1 ) {
 					$value = str_replace('{', '', $value);
 					$value = str_replace('}', '', $value);
-					$arraySubRoutes[$key]['params'][] = array('name' => $value, 'position' => $_key , 'value' => $actualRoute[$_key]);
-					$arraySubRoutes[$key]['pattern'][$_key] = $actualRoute[$_key];
+					if(!empty($actualRoute[$_key])) {
+						$arraySubRoutes[$key]['params'][] = array('name' => $value, 'position' => $_key , 'value' => $actualRoute[$_key]);
+						$arraySubRoutes[$key]['pattern'][$_key] = $actualRoute[$_key];
+					}
 				}
 
 			}
@@ -76,7 +78,7 @@ class Route {
 			
 		}
 		else
-			self::$arrayRoute = 'Error no route found';
+			ErrorExtend::catchError('');
 
 		return self::$arrayRoute;
 	}

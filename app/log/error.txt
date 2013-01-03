@@ -469,3 +469,64 @@ type=>1049	message=>SQLSTATE[42000] [1049] Unknown database 'tiitzbdd'	file=>/Ap
 type=>1049	message=>SQLSTATE[42000] [1049] Unknown database 'tiitzbdd'	file=>/Applications/MAMP/htdocs/tiitz/app/components/sqlConnect.class.php	line=>52	date=>2012-12-28 23:52:29
 type=>1049	message=>SQLSTATE[42000] [1049] Unknown database 'tiitzbdd'	file=>/Applications/MAMP/htdocs/tiitz/app/components/sqlConnect.class.php	line=>52	date=>2012-12-29 00:14:20
 type=>1049	message=>SQLSTATE[42000] [1049] Unknown database 'tiitzbdd'	file=>/Applications/MAMP/htdocs/tiitz/app/components/sqlConnect.class.php	line=>52	date=>2012-12-29 00:15:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:30:48
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:30:48
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:30:48
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:30:48
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:30:48
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:31:26
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:31:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:31:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:31:26
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:31:26
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:10
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:10
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:10
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:10
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:33:10
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:33:15
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:33:15
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:34:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:34:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:34:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:34:43
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:34:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:36:43
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:36:43
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:38:21
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:38:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:38:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:38:21
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:38:21
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:38:31
+type=>8	message=>Undefined offset: 2	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:38:31
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>37	date=>2013-01-03 13:38:31
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/tiitz/app/components/router.class.php	line=>38	date=>2013-01-03 13:38:31
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:38:31
+type=>1	message=>Call to a member function getCode() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/error/ErrorExtend.class.php	line=>46	date=>2013-01-03 13:39:54
