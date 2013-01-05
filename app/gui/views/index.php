@@ -41,12 +41,14 @@
 						</select>
 				</div>
 				<div class="formPart">
-					<h4>Langage de Routing</h4>
+					<h4>Routing</h4>
 						<label for="routesLang">Langage : </label>
 							<select id="routesLang" name="routesLang">
 								<option value="yml">YAML</option>
 								<option value="php">PHP</option>
 							</select>
+							<label for="pages">Pages à créer : </label>
+							<textarea name="pages" id="pages" rows="7" placeholder="inscription			connexion			accueil				contact"></textarea>
 				</div>
 				<!--<div class="formPart">
 					<h4>Nom du premier bundle</h4>

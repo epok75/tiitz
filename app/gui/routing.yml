@@ -1,11 +1,3 @@
 configInstall:
     pattern:    configTiitz/install
     defaults:   {_controller: gui:check}
-
-configError1:
-    pattern:    configTiitz/install/err/{name}
-    defaults:   {_controller: gui:check}
-    
-configError2:
-    pattern:    configTiitz/install/err/{conn}
-    defaults:   {_controller: gui:check}

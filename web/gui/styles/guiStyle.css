@@ -12,15 +12,16 @@ body
 }
 .formPart
 {
-	padding:15px;
-	width:40%;
-	margin-left:3%;
-	margin-right:3%;
+	padding:10px;
+	width:245px;
 	float:left;
+}
+textarea {
+  resize: none;
 }
 #notif
 {
-	width:800px;
+	width:810px;
 	font:1.5em;
 	margin-left:auto;
 	margin-right:auto;
