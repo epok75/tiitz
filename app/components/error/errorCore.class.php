@@ -5,7 +5,7 @@ abstract class ErrorCore {
 	private static $file 				= "error.txt";
 	private static $path 				= "/app/log/";
 	// true : Display error / false : no display
-	protected static $displayError 			= true;
+	protected static $displayError 		= true;
 	// Array of error
 	protected static $currentError	 	= array();
 	// Lenght of $currentError array : useful to add \n 
@@ -37,7 +37,7 @@ abstract class ErrorCore {
 	/**
 	 * Template that is going to be displayed  in the screen
 	 * @param  array  $error  Store type, line, message, date, trace, code
-	 * @return [type]        [description]
+	 * @return void
 	 */
 	protected static function errorTpl(array $error) {
 
@@ -81,6 +81,10 @@ abstract class ErrorCore {
 		file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND | LOCK_EX);
 	}
 	
+	/**
+	 * format all error from the log file in a array
+	 * @return void
+	 */
 	private function arrayFormatError() {
 		$currentError = array();
 		$handle = @fopen(ROOT.self::$path.self::$file, "rb");
@@ -107,7 +111,10 @@ abstract class ErrorCore {
     	}
 	}
 
-	// export data in differents formats
+	/**
+	 * getter
+	 * @return [array] retrieve an array of log error
+	 */
 	public function exportArray() {
 		if(file_exists(ROOT.self::$path.self::$file)){
 			$this -> arrayFormatError();
@@ -115,6 +122,10 @@ abstract class ErrorCore {
 		return $this -> allErrorFromLog;				
 	}
 
+	/**
+	 * getter
+	 * @return [array] retrieve all log erreo in Json format
+	 */
 	public function exportJson() {
 		if(file_exists(ROOT.self::$path.self::$file)){
 			$this -> arrayFormatError();

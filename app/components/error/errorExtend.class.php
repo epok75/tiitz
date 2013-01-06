@@ -3,6 +3,10 @@ class ErrorExtend  extends ErrorCore {
 
 	private $errorReport = 0;
 
+	/**
+	 * launch php function for managing error
+	 * @param integer $errorReport manage visibility of php error
+	 */
 	public function __construct($errorReport = 0) {
 		// error_repport : default to none
 		$this -> errorReport = $errorReport;
@@ -13,6 +17,10 @@ class ErrorExtend  extends ErrorCore {
 		set_error_handler(array($this, 'exception_handler'));
 	}
 
+	/**
+	 * manage fatal error
+	 * @return void
+	 */
 	public function callRegisteredShutdown() {
 		// get last error
 		$error = error_get_last();
@@ -27,6 +35,14 @@ class ErrorExtend  extends ErrorCore {
 		}
 	}
 
+	/**
+	 * manage warning error
+	 * @param  [type] $errno   error number
+	 * @param  [type] $errstr  error message
+	 * @param  [type] $errfile error file
+	 * @param  [type] $errline error line
+	 * @return void
+	 */
 	public function exception_handler($errno, $errstr, $errfile, $errline) {
 		// construct an array of error
 		$error = array(	'type' 		=> $errno, 
@@ -40,18 +56,27 @@ class ErrorExtend  extends ErrorCore {
 		self::displaySaveError();
 	}
 	
+	/**
+	 * method static use to catch error thanks to try catch
+	 * @param  Object $e   [description]
+	 * @param  boolean $die [description]
+	 * @return void
+	 */
 	public static function catchError($e, $die = false) {
-		// construct an array of error
-		$error = array(
-				'type' 		=> $e->getCode(), 
-				'message' 	=> $e->getMessage(), 
-				'file' 		=> $e->getFile(), 
-				'line' 		=> $e->getLine(),
-				//'trace'		=> $e->getTraceAsString(),
-				'date' 		=> date("Y-m-d H:i:s")
-		);
-		// store it in an array to be reusable
-		self::$currentError = $error;
+		if (is_object($e)) {
+			// construct an array of error
+			$error = array(
+					'type' 		=> $e->getCode(), 
+					'message' 	=> $e->getMessage(), 
+					'file' 		=> $e->getFile(), 
+					'line' 		=> $e->getLine(),
+					//'trace'		=> $e->getTraceAsString(),
+					'date' 		=> date("Y-m-d H:i:s")
+			);
+			// store it in an array to be reusable
+			self::$currentError = $error;
+		} 		
+		
 		// load the workflow method
 		self::displaySaveError();
 		if ($die === true) {
@@ -59,6 +84,10 @@ class ErrorExtend  extends ErrorCore {
 		}
 	}
 
+	/**
+	 * php function error_report()
+	 * @return [type] [description]
+	 */
 	private function errorReporting() {
 		switch ($this -> errorReport) {
 			case 0 :
@@ -89,10 +118,9 @@ class ErrorExtend  extends ErrorCore {
 		return $this->errorReport;
 	}
 
+	// setter
 	public function setErrorRepport($errorRepport) {
 		$this -> errorRepport = $errorRepport;
 	}
-
-	// setter 
 	
 }
