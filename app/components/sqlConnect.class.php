@@ -288,14 +288,14 @@ class mysqlConnect
 
 //exemple utilisation
 
-
+/*
 require_once('sqlConnect.class.php');
 
 $mysqlConnect = mysqlConnect::getInstance('localhost','root','root','test');
 
 $test = $mysqlConnect::getPDO();
 var_dump($test);
-
+*/
 /*
 $where = array('test' => 'test');
 
