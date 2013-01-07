@@ -1,9 +1,9 @@
 
 # Routing
-    routing:
-    type:		yml
+routingType: yml
 
 # Template Engine
+template:    twig
 
 # database configuration
 database:
@@ -14,10 +14,10 @@ database:
     engine:		mysql
 
 # language (tool development)
-    language:    fr
+language:    fr
 
 # environnement (dev | prod)
-    environnement:    dev
+environnement:    dev
 
 # Permit to check if a project is already started
-    existingproject:    true
+existingproject:    true
