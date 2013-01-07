@@ -16,6 +16,7 @@ foreach ($comp as $k => $v) {
 
 // Manage Error
 $error = new ErrorExtend(3);
+
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 {
 	if (!empty($conf["template"]))
@@ -41,4 +42,9 @@ else
 	}
 	else
 		echo "Page 404";
+}
+
+// toolbar for development environment
+if($conf['environnement'] == 'dev') {
+	devToolbar::toolbar($conf['environnement'], $route);
 }

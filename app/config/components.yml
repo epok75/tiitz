@@ -3,3 +3,4 @@ router:		/app/components/router.class.php
 sqlConnect:		/app/components/sqlConnect.class.php
 errorCore:		/app/components/error/ErrorCore.class.php
 errorExtend:	/app/components/error/ErrorExtend.class.php
+devToobar: 		/app/components/devToolbar/devToolbar.class.php
