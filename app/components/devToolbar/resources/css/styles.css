@@ -1,0 +1,29 @@
+/**
+ * logo
+ */
+.brand > img {
+	width: 100%;
+	height: 30px;
+}
+.brand {
+	padding : 5px 10px 5px !important;
+}
+.complete {
+	color : red;
+}
+.incomplete {
+	color : yellow;
+}
+.show-grid {
+	min-height: 150px;
+	background-color: #eee;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.page {
+	margin: auto;
+}
+.adjustMargin {
+	margin: 10px;
+}
