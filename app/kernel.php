@@ -16,10 +16,8 @@ foreach ($comp as $k => $v) {
 
 // Manage Error
 $error = new ErrorExtend(3);
-
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 {
-	echo "lol";
 	if (!empty($conf["template"]))
 		$tz_render = Render::getInstance($conf["template"]);
 	else

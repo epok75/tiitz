@@ -4,7 +4,6 @@
     type:		yml
 
 # Template Engine
-    template:    twig
 
 # database configuration
 database:
