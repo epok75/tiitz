@@ -1,23 +1,24 @@
-# permit to check if a project is already start or not
-existingproject:		true
+
+# Routing
+    routing:
+    type:		yml
+
+# Template Engine
+    template:    twig
 
 # database configuration
 database:
     user:		root
-    password:	root
-    host:		localhost
-    dbname:		unknow
+    password:		
+    dbname:		filer
+    host:		127.0.0.1
     engine:		mysql
 
-# template engine (php, twig, smarty)
-template:		php
-
 # language (tool development)
-language:		fr
-
-# routing language (yml, php)
-routing:
-    type:		yml
+    language:    fr
 
 # environnement (dev | prod)
-environnement:	dev
+    environnement:    dev
+
+# Permit to check if a project is already started
+    existingproject:    true
