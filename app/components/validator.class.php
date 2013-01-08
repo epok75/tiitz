@@ -12,26 +12,91 @@ class validator {
     const BAD_INT = "le nombre n'est pas valide";
     const BAD_FLOAT = "le chiffre flottant n'est pas valide";
     const BAD_STRING = "le texte n'est pas valide";
-    const BAD_LENGTH = "votre texte ne contient pas la longueur indiqu&eacute;e";
+    const BAD_LENGTH = "le texte ne contient pas la longueur indiquee";
+    const BAD_LENGTH_PATTERN = "la comparaison de taille est mal saisie";
     const BAD_URL = "l'url saisie n'est pas valide";
-    const BAD_PATTERN = "le pattern saisi ne correspond pas au pattern demand&eacute;";
+    const BAD_PATTERN = "le pattern saisi ne correspond pas au pattern demande";
+    const BAD_TYPE_PATTERN = "ce type n'existe pas ou ne peut pas être verifie";
     
     const BAD_FLAG = "";
     private static $errors = array();
     
     private static function addError($elem, $err)
     {
-        array_push(self::$errors, "element : ".$err);
+        array_push(self::$errors, $elem.": ".$err);
     }
     
+    public static  function getErrors()
+    {
+        return(self::$errors);
+    }
+    
+    public static function checkType($elem, $type)
+    {
+        if($type == "EMAIL")
+        {
+            if(self::checkMail($elem) != "")
+                self::addError($elem, self::BAD_EMAIL);
+            return(self::checkMail($elem));
+        }
+        if($type == "IP")
+        {
+            if(self::checkIp($elem) != "")
+                self::addError($elem, self::BAD_IP);
+            return(self::checkIP($elem));
+        }
+        if($type == "STRING")
+        {
+            if(self::checkString($elem) != "")
+                self::addError($elem, self::BAD_STRING);
+            return(self::checkString($elem));
+        }
+        if($type == "URL")
+        {
+            if(self::checkUrl($elem) != "")
+                self::addError($elem, self::BAD_URL);
+            return(self::checkUrl($elem));
+        }
+        if($type == "INT")
+        {
+            if(self::checkInt($elem) != "")
+                self::addError($elem, self::BAD_INT);
+            return(self::checkInt($elem));
+        }
+        if($type == "FLOAT")
+        {
+            if(self::checkFloat($elem) != "")
+                self::addError($elem, self::BAD_FLOAT);
+            return(self::checkFloat($elem));
+        }
+        self::addError($elem, self::BAD_TYPE_PATTERN);
+        return(self::BAD_TYPE_PATTERN);
+    }
+    
+    
+    /* Check the length of a string for the checkMulti function*/
     public static function checkLength($elem, $constraint)
     {
-        $toCompare = str_split(str_replace(" ", $constraint));
-        if(count($toCompare) == 3)
+        $nbChar = "";
+        $toCompare = str_split(str_replace(" ", "",$constraint));
+        if(($toCompare[0] == "<" && $toCompare[1] == "=") || ($toCompare[0] == ">" && $toCompare[1] == "=") || ($toCompare[0] == "=" && $toCompare[1] == "=") || ($toCompare[0] == "!" && $toCompare[1] == "="))
         {
-            if($toCompare[0] == "<" && $toCompare[1] == "=" && ctype_digit($toCompare[2]))
+            foreach($toCompare as $k=>$v)
             {
-                if(strlen($elem) <= $toCompare[2])
+                if($k != 0 && $k != 1)
+                {
+                    if(ctype_digit($v))
+                        $nbChar .= $v;
+                    else
+                    {
+                        self::addError($elem, self::BAD_LENGTH_PATTERN);
+                        return(self::BAD_LENGTH_PATTERN);
+                    }
+                }
+            }
+            if($toCompare[0] == "<" && $toCompare[1] == "=")
+            {
+                if(strlen($elem) <= $nbChar)
                     return("");
                 else
                 {
@@ -39,9 +104,9 @@ class validator {
                     return(self::BAD_LENGTH);
                 }
             }
-            if($toCompare[0] == ">" && $toCompare[1] == "=" && ctype_digit($toCompare[2]))
+            if($toCompare[0] == ">" && $toCompare[1] == "=")
             {
-                if(strlen($elem) >= $toCompare[2])
+                if(strlen($elem) >= $nbChar)
                     return("");
                 else
                 {
@@ -49,9 +114,9 @@ class validator {
                     return(self::BAD_LENGTH);
                 }
             }
-            if($toCompare[0] == "=" && $toCompare[1] == "=" && ctype_digit($toCompare[2]))
+            if($toCompare[0] == "!" && $toCompare[1] == "=")
             {
-                if(strlen($elem) == $toCompare[2])
+                if(strlen($elem) != $nbChar)
                     return("");
                 else
                 {
@@ -59,12 +124,37 @@ class validator {
                     return(self::BAD_LENGTH);
                 }
             }
+            if($toCompare[0] == "=" && $toCompare[1] == "=")
+            {
+                if(strlen($elem) == $nbChar)
+                    return("");
+                else
+                {
+                    self::addError($elem, self::BAD_LENGTH);
+                    return(self::BAD_LENGTH);
+                }   
+            }
+            self::addError($elem, self::BAD_LENGTH_PATTERN);
+            return(self::BAD_LENGTH_PATTERN);
         }
-        if(count($toCompare) == 2)
+        if($toCompare[0] == "<" || $toCompare[0] == ">")
         {
-            if($toCompare[0] == "<" && ctype_digit($toCompare[1]))
+            foreach($toCompare as $k=>$v)
             {
-                if(strlen($elem) < $toCompare[1])
+                if($k != 0)
+                {
+                    if(ctype_digit($v))
+                        $nbChar .= $v;
+                    else
+                    {
+                        self::addError($elem, self::BAD_LENGTH_PATTERN);
+                        return(self::BAD_LENGTH_PATTERN);
+                    }
+                }
+            }
+            if($toCompare[0] == "<")
+            {
+                if(strlen($elem) < $nbChar)
                     return("");
                 else
                 {
@@ -72,7 +162,7 @@ class validator {
                     return(self::BAD_LENGTH);
                 }
             }
-            if($toCompare[0] == ">" && ctype_digit($toCompare[1]))
+            if($toCompare[0] == ">" && $nbChar)
             {
                 if(strlen($elem) > $toCompare[1])
                     return("");
@@ -83,10 +173,13 @@ class validator {
                 }
             }
         }
-        var_dump($toCompare);
+        self::addError($elem, self::BAD_LENGTH_PATTERN);
+        return(self::BAD_LENGTH_PATTERN);
     }
     
-    /*  VALIDATION METHODS  */
+    /*  
+     *  VALIDATION METHODS  
+     */
     
     /*VALIDATES VALUE AS EMAIL ADDRESS: returns the message linked to the BAD_EMAIL CONST if email is not valid, else returns an empty string*/
     public static function checkMail($mail){
@@ -110,19 +203,10 @@ class validator {
     }
     
     /*VALIDATES VALUE AS STRING: returns the message linked to the BAD_STRING CONST if str is not valid, else returns an empty string*/
-    public static function checkString($str, $req){
-        
+    public static function checkString($str){
         if(!is_string($str))
-            self::addError($str, self::BAD_STRING);
-        if($req != null)
-        {
-            if(array_key_exists("LENGTH", $req))
-            {
-                self::checkLength($str, $req["LENGTH"]);
-                self::addError($str, self::BAD_LENGTH);
-            }
-        }
-        var_dump(self::$errors);
+            return(self::BAD_STRING);
+        return("");
     }
     
     /*VALIDATES VALUE AS INTEGER: returns the message linked to the BAD_INT CONST if number is not an integer, else returns an empty string*/
@@ -146,7 +230,9 @@ class validator {
         return("");
     }
     
-    /* CLEANING METHODS */
+    /* 
+     * CLEANING METHODS 
+     */
     
     /*CLEANS AN EMAIL: Remove all characters except letters, digits and !#$%&'*+-/=?^_`{|}~@.[]*/
     public static function cleanMail($mail){
@@ -166,5 +252,19 @@ class validator {
     /*CLEANS A FLOAT NUMBER : Remove all characters except digits, +- and optionally .,eE*/
     public static function cleanFloat($numberFloat){
         return(filter_var($numberFloat, FILTER_SANITIZE_NUMBER_FLOAT));
+    }
+    
+    /* 
+     * PARSER FOR MULTI CONSTRAINTS CHECK 
+     */
+    
+    public static function checkMulti($str, $req = null){
+        if($req != null)
+        {
+            if(array_key_exists("LENGTH", $req))
+                self::checkLength($str, $req["LENGTH"]);
+            if(array_key_exists("TYPE", $req))
+                self::checkType($str, $req["TYPE"]);
+        }
     }
 }

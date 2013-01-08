@@ -18,12 +18,11 @@ foreach ($comp as $k => $v) {
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 {
 	if (!empty($conf["template"]))
-		$tz_render = Render::getInstance($conf["template"]);
+            $tz_render = Render::getInstance($conf["template"]);
 	else
-		$tz_render = Render::getInstance("");
+            $tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	//var_dump($route);
 	if (is_file(ROOT.$route["path"])) {
 		require_once ROOT.$route["path"];
 	}
@@ -31,7 +30,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		echo "Page 404";
 }
 else
-	require_once GUI."\\index.php";
+    require_once GUI."\\index.php";
 
 
 /*$routeArray = route::getRoute();
