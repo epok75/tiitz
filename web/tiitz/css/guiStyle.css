@@ -12,20 +12,37 @@ body
 }
 .formPart
 {
+	padding:10px;
+	width:245px;
 	float:left;
-	padding:15px;
-	width:300px;
-	margin:0 auto;
 }
-.notif
+textarea {
+  resize: none;
+}
+#notif
+{
+	width:810px;
+	font:1.5em;
+	margin-left:auto;
+	margin-right:auto;
+	height:10px;
+}
+.error
 {
 	color:red;
-	font:1.5em;
-	text-align:center;
+}
+.success
+{
+	color:green;
 }
 .formEnd
 {
 	clear:both;
+	width:100%;
+	margin-bottom:10px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 }
 header
 {
@@ -40,4 +57,13 @@ header
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+fieldset
+{
+	width:800px;
+	border:solid 1px #CCC;
+	background: #FFF;
+	margin-top:80px;
+	margin-left:auto;
+	margin-right:auto;
 }

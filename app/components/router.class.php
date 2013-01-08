@@ -61,7 +61,7 @@ class Route {
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams);
-                var_dump($selectedRoute);
+        //var_dump($selectedRoute);
 		if($selectedRoute){
 			$arrayController = explode(':', $selectedRoute['defaults']['_controller']);
 			if(count($arrayController) !== 2){

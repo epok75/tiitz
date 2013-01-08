@@ -1,9 +1,11 @@
 <?php
-
-
 //extends TiiTzController
-class Controller { 
+class BlogController { 
 	public function showAction() {
-		echo 'ta soeur';
+		echo 'Hello world action';
+	}
+
+	public function homeAction() {
+		echo 'Hello World Home';
 	}
 } 

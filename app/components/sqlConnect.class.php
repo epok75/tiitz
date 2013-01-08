@@ -20,42 +20,25 @@ class mysqlConnect
 	
 
 	private function __construct($host, $user, $password, $db){
+		self::setHost($host);
+		self::setUser($user);
+		self::setPassword($password);
+		self::setDb($db);
 
-		if ( !empty( $host ) ) {
-			self::setHost($host);
-		} elseif ( empty( $this->host ) ) {
-			throw new Exception( '<strong>Error:</strong> No host defined for SQL connection' );
-		}
-
-		if ( !empty( $user ) ) {
-			self::setUser($user);
-		} elseif ( empty( $this->user ) ) {
-			throw new Exception( '<strong>Error:</strong> No user defined for SQL connection' );
-		}
-
-		if ( !empty( $password ) ) {
-			self::setPassword($password);
-		} elseif ( empty( $this->password ) ) {
-			throw new Exception( '<strong>Error:</strong> No password defined for SQL connection' );
-		}
-
-		if ( !empty( $db ) ) {
-			self::setDb($db);
-		} elseif ( empty( $this->db ) ) {
-			throw new Exception( '<strong>Error:</strong> No database defined for SQL connection' );
-		}
-	}
-
-	//get PDO
-	public static function getPDO() {
-		try{
+		try {
 		    $pdo = new PDO('mysql:host='.self::getHost().';dbname='.self::getDb(), self::getUser(), self::getPassword());
 		    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 		    self::$pdo = $pdo;
 		}
 		catch(PDOException $e){
-		    exit($e->getMessage());
+			self::$instance == null;
+			ErrorExtend::catchError($e);
 		}
+	}
+
+	//get PDO
+	public static function getPDO() {
+		return self::$pdo;
 	}
 
 
@@ -170,7 +153,7 @@ class mysqlConnect
 			$request->execute();
 		}
 		catch(PDOException $e){
-			exit($e->getMessage());
+			ErrorExtend::catchError($e, false);
 		}
 	}
 
@@ -205,7 +188,7 @@ class mysqlConnect
 				$request->execute();
 			}
 			catch(PDOException $e){
-				exit($e->getMessage());
+				ErrorExtend::catchError($e, false);
 			}
 		}
     }
@@ -246,7 +229,7 @@ class mysqlConnect
 			$request->execute();
 		}
 		catch(PDOException $e){
-			exit($e->getMessage());
+			ErrorExtend::catchError($e, false);
 		}
     }
 
@@ -297,22 +280,23 @@ class mysqlConnect
 			return $results;
 		}
 		catch(PDOException $e){
-			exit($e->getMessage());
+			ErrorExtend::catchError($e, false);
 		}
     }
-
 }
 
 
 //exemple utilisation
 
 /*
-require_once('sql.class.php');
+require_once('sqlConnect.class.php');
 
-$mysqlConnect = mysqlConnect::getInstance('localhost','root','root','tiitzbdd');
+$mysqlConnect = mysqlConnect::getInstance('localhost','root','root','test');
 
 $test = $mysqlConnect::getPDO();
-
+var_dump($test);
+*/
+/*
 $where = array('test' => 'test');
 
 $insert = array('test2' => 'plopance');
