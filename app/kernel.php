@@ -8,14 +8,6 @@ require_once(ROOT.'/app/components/error/ErrorCore.class.php');
 require_once(ROOT.'/app/components/error/ErrorExtend.class.php');
 $error = new ErrorExtend(3);
 
-print '<pre>';
-//var_dump($error -> exportArray());
-//var_dump($error -> exportJson());
-print '</pre>';
-//include ('test.php');
-
-
-
 // Include YAML parsing tool
 require_once(ROOT.'/app/components/spyc/Spyc.php');
 $comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
@@ -35,7 +27,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
-	var_dump($route);
+	//var_dump($route);
 	if (is_file(ROOT.$route["path"])) {
 		require_once ROOT.$route["path"];
 	}
@@ -45,14 +37,3 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 else
 	require_once GUI."\\index.php";
 
-
-/*$routeArray = route::getRoute();
-
-var_dump($routeArray);*/
-
-//var_dump($conf);
-
-require_once("../app/components/views.class.php");
-require_once("../app/components/validator.class.php");
-require_once(ROOT.'/app/components/spyc/Spyc.php'); // YAML parser
-$conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml'); // Configuration 
