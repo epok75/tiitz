@@ -18,7 +18,7 @@ class guiController
 			$fm->set_currentItem(ROOT."/app/config/config.yml");
 			
 			if (isset($_POST["routesLang"]) && ($_POST["routesLang"] == "yml" || $_POST["routesLang"] == "php" ))
-				$fm->replace_fileContent("\n# Routing\n    routing:\n    type:\t\t".$_POST["routesLang"]);
+				$fm->replace_fileContent("\n# Routing\n routingType:\n\t".$_POST["routesLang"]);
 			if (isset($_POST["tpl"]) && ($_POST["tpl"] == "twig" || $_POST["tpl"] == "smarty" || $_POST["tpl"] == "php" ))
 			{
 				if ($_POST["tpl"] == "twig")
@@ -36,7 +36,7 @@ class guiController
 				mysqli_close ($link);
 				$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
 			}
-			$fm->add_fileContent("\n\n# language (tool development)\n    language:    fr\n\n# environnement (dev | prod)\n    environnement:    dev\n\n# Permit to check if a project is already started\n    existingproject:    true");
+			$fm->add_fileContent("\n\n# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
 			if (isset($_POST["pages"]) && !empty($_POST["pages"]))
 			{
 				$pages = explode("\n", $_POST["pages"]);
