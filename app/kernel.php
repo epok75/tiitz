@@ -14,6 +14,13 @@ foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
 
+var_dump($_SERVER);
+echo $_SERVER['SERVER_NAME'];echo '<br />';
+echo $_SERVER['SCRIPT_NAME'];echo '<br />';
+echo stripos($_SERVER['SCRIPT_NAME'], 'index.php');echo '<br>';
+echo substr($_SERVER['SCRIPT_NAME'], 0,stripos($_SERVER['SCRIPT_NAME'], 'index.php'));echo '<br>';
+$fullStr = 'http://'.$_SERVER['SERVER_NAME'].'/'.substr($_SERVER['SCRIPT_NAME'], 0,stripos($_SERVER['SCRIPT_NAME'],'index.php'));
+echo $fullStr;echo '<br />';
 // Manage Error
 $error = new ErrorExtend(3);
 

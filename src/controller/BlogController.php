@@ -1,13 +1,11 @@
 <?php
-
-
 //extends TiiTzController
 class BlogController { 
 	public function showAction() {
-		echo 'ta soeur';
+		echo 'Hello world action';
 	}
 
 	public function homeAction() {
-		echo 'ta mere pute';
+		echo 'Hello World Home';
 	}
 } 

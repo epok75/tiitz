@@ -1,0 +1,462 @@
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:13:01
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:15:29
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:18:12
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:18:12
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:21:56
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:21:56
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:06
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:22:16
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:22:16
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:16
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:22:49
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:22:49
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:49
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>28	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:22:49
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>29	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>29	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>29	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>29	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:00
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:25:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:38
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:38
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:38
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:25:38
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:39
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:40
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>30	date=>2013-01-07 20:25:41
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:41
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:25:41
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>31	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>31	date=>2013-01-07 20:26:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>31	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>31	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:00
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:26:00
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:25
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:26:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>32	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:26:26
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:27:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>33	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>33	date=>2013-01-07 20:27:25
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>33	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>33	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:27:25
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:27:25
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:28:37
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:28:37
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:28:37
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:28:37
+type=>2	message=>stripos() expects at least 2 parameters, 1 given	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-07 20:28:37
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:29:08
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:29:08
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:08
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:08
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:09
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:09
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:09
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-07 20:29:09
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:29:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>37	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>8	message=>Undefined offset: 4	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/router.class.php	line=>38	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'path'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>35	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'className'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21
+type=>2	message=>Illegal string offset 'action'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>21	date=>2013-01-07 20:29:21

@@ -1,7 +1,6 @@
 <?php
 /**
  * Allow compatibility between differents template engines : one methode for all
- * This is time for more pleasure and more boobs! :-)
  */
 
 class Render {
