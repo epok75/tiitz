@@ -155,10 +155,18 @@ footer#tiitz-toolbar div#toolbar-tiitz-version {
 	bottom: 42px;
 	width: 250px;
 	height: 100px;
-	background-color: red;
 }
+/* tiitz info controller/action */
 footer#tiitz-toolbar ul#toolbar-file-controller div {
 	background-color: green;
+}
+/* design block */
+footer#tiitz-toolbar .tiitz-toolbar-info {
+	background-color: #ffffff;
+	border : 1px solid #000;
+}
+footer#tiitz-toolbar .tiitz-toolbar-info ul li {
+	list-style-type: none;
 }
 </style>
 	<div class="navbar">
@@ -169,12 +177,20 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info" style="display : none;">
 			   	<ul>
 			   		<li>
-			   			<a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a>
+			   			<div class="toolbar-header">
+			   				<img src="./tiitz/img/toolbar-google-community.png" alt="google+" style="width: 200px; height: 200px;" />
+			   				<a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a>
+			   			</div>
 			   		</li>
 			   		<li>
-			   			<a href="">Support Technique</a>
+			   			<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">Support Technique</a>
 			   		</li>
-			   		<li></li>
+			   		<li>
+			   			<a href="https://github.com/epok75/tiitz">Source / Support</a>
+			   		</li>
+			   		<li>
+			   			<a href="https://www.facebook.com/groups/200728960064145/">Facebook</a>
+			   		</li>
 			   	</ul>
 			</div>
 			<ul class="nav">

@@ -2,3 +2,9 @@ type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Pro
 type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 17:30:22
 type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-09 17:35:08
 type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 17:35:29
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:12:06
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:19:11
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:25:38
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:35:53
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:36:39
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>47	date=>2013-01-09 18:38:06
