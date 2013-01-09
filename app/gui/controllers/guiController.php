@@ -4,12 +4,11 @@ class guiController
 {
 	public function checkAction()
 	{
-		$fm = new FileManager(ROOT);
-		$fm->set_currentItem(ROOT."/app/config/config.yml");
-		$fm->replace_fileContent("# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
+		
+		
 		if (isset($_POST["firstConfig"]))
 		{
-		
+			$fm = new FileManager(ROOT);
 			$fm->set_currentItem(ROOT."/src/");
 			$fm->xmkdir("views");
 			$fm->xmkdir("controllers");
@@ -37,6 +36,7 @@ class guiController
 				mysqli_close ($link);
 				$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
 			}
+			$fm->replace_fileContent("# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
 			if (isset($_POST["pages"]) && !empty($_POST["pages"]))
 			{
 				$pages = explode("\n", $_POST["pages"]);

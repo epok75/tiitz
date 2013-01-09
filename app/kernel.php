@@ -17,37 +17,28 @@ foreach ($comp as $k => $v) {
 // Manage Error
 $error = new ErrorExtend(3);
 
+if (!empty($conf["template"]))
+	$tz_render = Render::getInstance($conf["template"]);
+else
+	$tz_render = Render::getInstance("");
+
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
-{
-	if (!empty($conf["template"]))
-		$tz_render = Render::getInstance($conf["template"]);
-	else
-		$tz_render = Render::getInstance("");
-
 	$route = route::getRoute();
+else
+	$route = route::getRoute("gui");
 
-	if (is_file(ROOT.$route["path"])) {
-		require_once ROOT.$route["path"];
-		$controller = new $route["className"];
-		$controller->$route["action"]();
-	}
-	else
-		echo "Page 404";
+
+if (is_file(ROOT.$route["path"])) {
+	require_once ROOT.$route["path"];
+	$controller = new $route["className"];
+	$controller->$route["action"]();
 }
 else
-{
-	if (is_file(ROOT."/app/gui/controllers/guiController.php")) {
-		require_once ROOT."/app/gui/controllers/guiController.php";
-		$controller = new guiController;
-		$controller->checkAction();
-	}
-	else
-		echo "Page 404";
-}
-var_dump($route);
+	echo "Page 404";
+
+
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
 	// error en dev
 	devToolbar::toolbar($conf['environnement'], $route = null);
 }
-

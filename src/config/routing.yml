@@ -1,0 +1,5 @@
+blog_lol:
+    pattern:	/blog/beng/{test}
+    defaults:	{ _controller: blog:show }
+    requirements:
+        test:	\d+
