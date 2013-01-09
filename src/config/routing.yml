@@ -1,7 +1,32 @@
 blog_beng:
     pattern:   /blog/beng
     defaults:  { _controller: Blog:beng }
-    requirement: { method: NORMAL  }
+
+blog_beng_test:
+    pattern:   /blog/beng
+    defaults:  { _controller: Blog:test }
+
+
+blog_beng_blob:
+    pattern:   /blog/beng/{pages}/{lol}
+    defaults:  { _controller: Blog:show }
+    requirements:	
+        _method:    post
+        pages:      \d+
+
+blog_beng_show:
+    pattern:   /blog/beng/{pages}/{lol}
+    defaults:  { _controller: Blog:boo }
+    requirements:   
+        pages:      \d+
+        lol:        poo
+
+blog_beng_loulou:
+    pattern:   /blog/beng/{pages}
+    defaults:  { _controller: Blog:loulou }
+    requirements:
+        _method:    post
+        pages:	    \d+
 
 blog_default:
     pattern:   /
