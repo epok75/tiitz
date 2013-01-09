@@ -73,10 +73,20 @@ class ErrorExtend  extends ErrorCore {
 					//'trace'		=> $e->getTraceAsString(),
 					'date' 		=> date("Y-m-d H:i:s")
 			);
-			// store it in an array to be reusable
-			self::$currentError = $error;
-		} 		
-		
+		} elseif (is_array($e)){
+			$error = array (
+				'message'	=> $e[0],
+				'date' 		=> date("Y-m-d H:i:s")
+			); 
+		} else {
+			// bad format
+			$error = array (
+				'message'	=> 'Le format des paramètres de la méthode static catchError n\'est pas correct (Array,Bool)',
+				'date' 		=> date("Y-m-d H:i:s")
+			);
+		}		
+		// store it in an array to be reusable
+		self::$currentError = $error;
 		// load the workflow method
 		self::displaySaveError();
 		if ($die === true) {
