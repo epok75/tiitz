@@ -48,7 +48,7 @@
 								<option value="php">PHP</option>
 							</select>
 							<label for="pages">Pages à créer : </label>
-							<textarea name="pages" id="pages" rows="7" placeholder="inscription			connexion			accueil				contact"></textarea>
+							<textarea name="pages" id="pages" rows="7" placeholder="inscription			connexion				accueil				contact"></textarea>
 				</div>
 				<!--<div class="formPart">
 					<h4>Nom du premier bundle</h4>
