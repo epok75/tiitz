@@ -8,7 +8,7 @@
     <link href="tiitz/styles/bootstrap-responsive.css" rel="stylesheet">
     <link href="tiitz/styles/docs.css" rel="stylesheet">
     <link href="tiitz/js/google-code-prettify/prettify.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="tiitz/styles/guiStyle.css">
+    <link rel="stylesheet" type="text/css" href="tiitz/styles/style-gui.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>					 
@@ -61,6 +61,6 @@
 				</form>
 		</div>
 		</fieldset>
-	<script type="text/javascript" src="../tiitz/js/guiJS.js"></script>
+	<script type="text/javascript" src="tiitz/js/gui.js"></script>
 </body>
 </html>
