@@ -1,7 +1,15 @@
 configInstall:
-    pattern:    configTiitz/install
+    pattern:    /configTiitz/install
     defaults:   {_controller: gui:check}
     
+configInstall:
+    pattern:    /configTiitz/
+    defaults:   {_controller: gui:check}
+
+configInstall:
+    pattern:    /
+    defaults:   {_controller: gui:check}
+
 checkBDD:
-    pattern:    configTiitz/checkBDD
+    pattern:    /configTiitz/checkBDD
     defaults:   {_controller: checkBDD:checkBDD}

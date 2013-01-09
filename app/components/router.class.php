@@ -61,14 +61,15 @@ class Route {
 	}
 
 	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode) { // Fonction comparant les routes
-		if(isset($actualRoute[0]) && $actualRoute[0] == 'configTiitz')
+		#var_dump($arrayRoutes);
+		if($mode == "gui")
 			$type='config';
 		else
 			$type = 'site';
 
-		var_dump(ROOT.$arrayRoutes[$type]['ressource']);
-		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))			
-			die('Routing file missing'); 
+		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
+		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
+			die('Routing file missing');
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
 
 		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
@@ -90,7 +91,7 @@ class Route {
 				}
 
 			}
-			#echo "CHOSEN ROUTE : ";var_dump($arraySubRoutes[$key]);echo "--------------<br />";
+			#echo "ROUTE : ";var_dump($arraySubRoutes[$key]);echo "--------------<br />";
 
 			$r = true;
 			if (!empty($arraySubRoutes[$key]['requirements']))
@@ -125,9 +126,9 @@ class Route {
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
 				if($selectedRoute['type'] == 'config')
-					self::$arrayRoute['path'] = '/app/gui/controller/'.$arrayController[0].'Controller.php';
+					self::$arrayRoute['path'] = '/app/gui/controllers/'.$arrayController[0].'Controller.php';
 				else
-					self::$arrayRoute['path'] = '/src/controller/'.$arrayController[0].'Controller.php';
+					self::$arrayRoute['path'] = '/src/controllers/'.$arrayController[0].'Controller.php';
 				self::$arrayRoute['action'] = $arrayController[1].'Action';
                                 self::$arrayRoute['className'] = $arrayController[0].'Controller';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
