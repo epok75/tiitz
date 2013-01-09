@@ -4,13 +4,13 @@ class Route {
 
 	private static $arrayRoute;
 
-	private static function checkRequirement($req, $params) {
+	private static function checkRequirement(array $req, array $params) {
 
 		$valid = array();
 		$match = array();
 		foreach ($params as $k => $v) {
 
-			if (array_key_exists($params[$k]["name"], $req))
+			if (array_key_exists($params[$k]["name"], $req)) 
 			{
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
@@ -60,7 +60,7 @@ class Route {
 		return $arrayReturn;
 	}
 
-	private static function parseRoutes(array $arrayRoutes, array $actualRoute) { // Fonction comparant les routes
+	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode) { // Fonction comparant les routes
 		if(isset($actualRoute[0]) && $actualRoute[0] == 'configTiitz')
 			$type='config';
 		else
@@ -90,9 +90,6 @@ class Route {
 			}
 			#echo "CHOSEN ROUTE : ";var_dump($arraySubRoutes[$key]);echo "--------------<br />";
 
-			/*********************
-				Code Requirements
-			*********************/
 			$r = true;
 			if (!empty($arraySubRoutes[$key]['requirements']))
 				$r = self::checkRequirement($arraySubRoutes[$key]['requirements'], $arraySubRoutes[$key]['params']);
@@ -103,7 +100,7 @@ class Route {
 		return false;
 	}
 
-	public static function getRoute() { // Fonction retournant la route correspondant a PATH_INFO
+	public static function getRoute($mode = "defaults") { // Fonction retournant la route correspondant a PATH_INFO
 		if(empty($_SERVER['PATH_INFO']) || $_SERVER['PATH_INFO'] == '/')
 			$urlParams = array();
 		else
@@ -115,7 +112,7 @@ class Route {
 
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
 
-		$selectedRoute = self::parseRoutes($yaml, $urlParams);
+		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
 
 
         #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";

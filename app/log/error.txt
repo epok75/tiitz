@@ -7,3 +7,36 @@ type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAM
 type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-09 16:38:17
 type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-09 16:38:46
 type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-09 16:45:37
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type=>4	message=>syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE)	file=>C:\wamp\www\tiitz\src\controller\blogController.php	line=>9	date=>2013-01-09 16:25:04
+type=>4	message=>syntax error, unexpected 'showAction' (T_STRING), expecting variable (T_VARIABLE)	file=>C:\wamp\www\tiitz\src\controller\blogController.php	line=>14	date=>2013-01-09 16:25:13
+type=>4	message=>syntax error, unexpected 'showAction' (T_STRING), expecting variable (T_VARIABLE)	file=>C:\wamp\www\tiitz\src\controller\blogController.php	line=>14	date=>2013-01-09 16:25:54
+
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:37
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:38
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:38
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:38
+type=>4096	message=>Argument 3 passed to Route::parseRoutes() must be an instance of string, string given, called in C:\wamp\www\tiitz\app\components\router.class.php on line 115 and defined	file=>C:\wamp\www\tiitz\app\components\router.class.php	line=>63	date=>2013-01-09 16:40:38
+

@@ -17,33 +17,25 @@ foreach ($comp as $k => $v) {
 // Manage Error
 $error = new ErrorExtend(3);
 
+if (!empty($conf["template"]))
+	$tz_render = Render::getInstance($conf["template"]);
+else
+	$tz_render = Render::getInstance("");
+
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
-{
-	if (!empty($conf["template"]))
-		$tz_render = Render::getInstance($conf["template"]);
-	else
-		$tz_render = Render::getInstance("");
+	$route = route::getRoute("gui");
+else
+	$route = route::getRoute();	
 
-	$route = route::getRoute();
-
-	if (is_file(ROOT.$route["path"])) {
-		require_once ROOT.$route["path"];
-		$controller = new $route["className"];
-		$controller->$route["action"]();
-	}
-	else
-		echo "Page 404";
+var_dump($route);
+if (is_file(ROOT.$route["path"])) {
+	require_once ROOT.$route["path"];
+	$controller = new $route["className"];
+	$controller->$route["action"]();
 }
 else
-{
-	if (is_file(ROOT."/app/gui/controllers/guiController.php")) {
-		require_once ROOT."/app/gui/controllers/guiController.php";
-		$controller = new guiController;
-		$controller->checkAction();
-	}
-	else
-		echo "Page 404";
-}
+	echo "Page 404";
+
 
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
