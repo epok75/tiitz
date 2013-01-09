@@ -21,8 +21,10 @@ class Route {
 			$type='config';
 		else
 			$type = 'site';
-		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
-			die('Routing file missing');
+
+		var_dump(ROOT.$arrayRoutes[$type]['ressource']);
+		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))			
+			die('Routing file missing'); 
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
 
 		foreach ($arraySubRoutes as $key => $params) {

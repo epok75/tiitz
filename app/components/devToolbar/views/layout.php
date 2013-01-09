@@ -163,11 +163,19 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 </style>
 	<div class="navbar">
 	  	<div class="navbar-inner">
-			<a class="brand" href="#">
+			<a class="brand" href="#" id="toolbar-tiitz-info-open">
 				<img src="./tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
 			</a>
-			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info">
-			   	
+			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info" style="display : none;">
+			   	<ul>
+			   		<li>
+			   			<a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a>
+			   		</li>
+			   		<li>
+			   			<a href="">Support Technique</a>
+			   		</li>
+			   		<li></li>
+			   	</ul>
 			</div>
 			<ul class="nav">
 				<li class="divider-vertical"></li>
@@ -193,11 +201,17 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 </footer>
 <script type="text/javascript">
 	window.onload = function () {
-		var el = document.getElementById("toolbar-tiitz-version");
-		console.log(el);
+		var el = document.getElementById("toolbar-tiitz-info-open");
+
+		//console.log(el.tagName);
 		el.onclick = function() {
-			alert('ok');
-			console.log('hello world!');
+			var div = document.getElementById("toolbar-tiitz-version");
+
+			if(div.style.display == 'none') {
+				div.style.display = 'block';
+			} else {
+				div.style.display = 'none';
+			}
 		}
 	}
 	

@@ -43,7 +43,7 @@ else
 	else
 		echo "Page 404";
 }
-
+var_dump($route);
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
 	devToolbar::toolbar($conf['environnement'], $route);
