@@ -36,8 +36,8 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 }
 else
 {
-	if (is_file(ROOT."/app/gui/controller/guiController.php")) {
-		require_once ROOT."/app/gui/controller/guiController.php";
+	if (is_file(ROOT."/app/gui/controllers/guiController.php")) {
+		require_once ROOT."/app/gui/controllers/guiController.php";
 		$controller = new guiController;
 		$controller->checkAction();
 	}

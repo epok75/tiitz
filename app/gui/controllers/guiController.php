@@ -4,11 +4,12 @@ class guiController
 {
 	public function checkAction()
 	{
-		
+		$fm = new FileManager(ROOT);
+		$fm->set_currentItem(ROOT."/app/config/config.yml");
+		$fm->replace_fileContent("# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
 		if (isset($_POST["firstConfig"]))
 		{
 		
-			$fm = new FileManager(ROOT);
 			$fm->set_currentItem(ROOT."/src/");
 			$fm->xmkdir("views");
 			$fm->xmkdir("controllers");
@@ -18,7 +19,7 @@ class guiController
 			$fm->set_currentItem(ROOT."/app/config/config.yml");
 			
 			if (isset($_POST["routesLang"]) && ($_POST["routesLang"] == "yml" || $_POST["routesLang"] == "php" ))
-				$fm->replace_fileContent("\n# Routing\n    routing:\n    type:\t\t".$_POST["routesLang"]);
+				$fm->add_fileContent("\n\n# Routing\n routingType:\n\t".$_POST["routesLang"]);
 			if (isset($_POST["tpl"]) && ($_POST["tpl"] == "twig" || $_POST["tpl"] == "smarty" || $_POST["tpl"] == "php" ))
 			{
 				if ($_POST["tpl"] == "twig")
@@ -36,7 +37,6 @@ class guiController
 				mysqli_close ($link);
 				$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
 			}
-			$fm->add_fileContent("\n\n# language (tool development)\n    language:    fr\n\n# environnement (dev | prod)\n    environnement:    dev\n\n# Permit to check if a project is already started\n    existingproject:    true");
 			if (isset($_POST["pages"]) && !empty($_POST["pages"]))
 			{
 				$pages = explode("\n", $_POST["pages"]);
@@ -44,7 +44,7 @@ class guiController
 				{
 					$page = str_replace( "\r", "", $page);
 					$fm->set_currentItem(ROOT."/src/config/routing.yml");
-					$fm->add_fileContent("route en yameule");
+					$fm->add_fileContent("\n\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
 					$fm->set_currentItem(ROOT."/src/views/templates");
 					$fm->xtouch($page.$extention);
 					$fm->set_currentItem(ROOT."/src/controllers");
