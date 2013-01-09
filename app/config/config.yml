@@ -6,6 +6,14 @@
 # Template Engine
     template:    twig
 
+# database configuration
+database:
+    user:		root
+    password:		
+    dbname:		filer
+    host:		127.0.0.1
+    engine:		mysql
+
 # language (tool development)
 language:    fr
 

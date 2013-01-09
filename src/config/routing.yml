@@ -10,3 +10,13 @@ blog_default:
 blog_show:
     pattern:   /blog/article/{slug}/comment/{lol}
     defaults:  { _controller: Blog:show }
+
+
+inscription_show:
+	pattern:	/inscription	defaults:	{ _controller: inscription:show }
+
+connexion_show:
+	pattern:	/connexion	defaults:	{ _controller: connexion:show }
+
+accueil_show:
+	pattern:	/accueil	defaults:	{ _controller: accueil:show }

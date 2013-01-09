@@ -44,7 +44,7 @@ class guiController
 				{
 					$page = str_replace( "\r", "", $page);
 					$fm->set_currentItem(ROOT."/src/config/routing.yml");
-					$fm->add_fileContent("route en yameule");
+					$fm->add_fileContent("\n\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
 					$fm->set_currentItem(ROOT."/src/views/templates");
 					$fm->xtouch($page.$extention);
 					$fm->set_currentItem(ROOT."/src/controllers");
