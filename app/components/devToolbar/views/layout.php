@@ -47,19 +47,25 @@ footer#tiitz-toolbar .navbar-inner::after {
 footer#tiitz-toolbar .navbar .brand {
 	display: block;
 	float: left;
-	padding: 10px 20px 10px;
+	min-width: 100px;
 	margin-left: -20px;
 	font-size: 20px;
 	font-weight: 200;
 	color: #777;
 	text-shadow: 0 1px 0 white;
 }
-footer#tiitz-toolbar .brand > img {
-	width: 100%;
+footer#tiitz-toolbar .brand > img#tiitz-logo {
+	width: 60px;
 	height: 30px;
+	margin-right: 10px;
+}
+footer#tiitz-toolbar .brand > #tiitz-version {
+	font-size: 16px;
+	position: relative;
+	bottom: 10px;
 }
 footer#tiitz-toolbar .brand {
-	padding : 5px 10px 5px !important;
+	padding : 5px 5px 5px 10px !important;
 }
 footer#tiitz-toolbar a {
 	color: #08C;
@@ -142,7 +148,8 @@ footer#tiitz-toolbar ul#toolbar-php-version div, footer#tiitz-toolbar ul#toolbar
 	background-color: yellow;
 }
 /* tiitz version */
-footer#tiitz-toolbar ul#toolbar-tiitz-version div {
+footer#tiitz-toolbar div#toolbar-tiitz-version {
+	display: none;
 	position: absolute;
 	left: 0px;
 	bottom: 42px;
@@ -156,12 +163,12 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 </style>
 	<div class="navbar">
 	  	<div class="navbar-inner">
-			<a class="brand" href="#"><img src="./tiitz/img/logo-tiitz-mini.png" /></a>
-			<ul id="toolbar-tiitz-version" class="tiitz-toolbar-info">
-			   	<li>
-			   		<div></div>
-			   	</li>
-			</ul>
+			<a class="brand" href="#">
+				<img src="./tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
+			</a>
+			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info">
+			   	
+			</div>
 			<ul class="nav">
 				<li class="divider-vertical"></li>
 			   	<li><a href="#"><strong>PHP : </strong><?php echo phpversion(); ?></a>
@@ -184,3 +191,14 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 		</div>
 	</div>
 </footer>
+<script type="text/javascript">
+	window.onload = function () {
+		var el = document.getElementById("toolbar-tiitz-version");
+		console.log(el);
+		el.onclick = function() {
+			alert('ok');
+			console.log('hello world!');
+		}
+	}
+	
+</script>
