@@ -9,7 +9,7 @@ class DevToolbar {
 
 	}
 
-	public static function toolbar ($environnement, $route) {
+	public static function toolbar ($environnement, $route = null) {
 		self::$environnement = $environnement;
 		self::$route = $route;
 		if(self::$environnement === 'dev') {
