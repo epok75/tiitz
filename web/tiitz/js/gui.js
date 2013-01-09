@@ -10,7 +10,7 @@ function checkBDD ()
 			$.ajax
 			({
    				type: "POST",
-   				url: "../gui/js/checkBDD.php",
+   				url: "http://localhost/tiitz/web/index.php/configTiitz/checkBDD",
    				data: "name="+name+"&user="+user+"&pwd="+pwd+"&adress="+adress,
    				success: function(msg){
    					if (msg != "")

@@ -25,7 +25,8 @@ textarea {
 	font:1.5em;
 	margin-left:auto;
 	margin-right:auto;
-	height:10px;
+	height:25px;
+	overflow:hidden;
 }
 .error
 {

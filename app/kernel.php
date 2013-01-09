@@ -25,6 +25,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 		$tz_render = Render::getInstance("");
 
 	$route = route::getRoute();
+
 	if (is_file(ROOT.$route["path"])) {
 		require_once ROOT.$route["path"];
 		$controller = new $route["className"];
@@ -35,8 +36,8 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 }
 else
 {
-	if (is_file(ROOT."\\app\\gui\\controller\\guiController.php")) {
-		require_once ROOT."\\app\\gui\\controller\\guiController.php";
+	if (is_file(ROOT."/app/gui/controllers/guiController.php")) {
+		require_once ROOT."/app/gui/controllers/guiController.php";
 		$controller = new guiController;
 		$controller->checkAction();
 	}
@@ -46,6 +47,7 @@ else
 var_dump($route);
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
-	devToolbar::toolbar($conf['environnement'], $route);
+	// error en dev
+	devToolbar::toolbar($conf['environnement'], $route = null);
 }
 
