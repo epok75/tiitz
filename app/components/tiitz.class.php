@@ -28,7 +28,7 @@ class TiiTz {
         $this->tzView = $tzView;
         $this->tzPlugin;
         $this->tzValidator;
-        $this->tzSQL
+        $this->tzSQL;
         
         
     }
