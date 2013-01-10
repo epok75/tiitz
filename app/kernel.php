@@ -42,3 +42,4 @@ if($conf['environnement'] == 'dev') {
 	// error en dev
 	devToolbar::toolbar($conf['environnement'], $route = null);
 }
+

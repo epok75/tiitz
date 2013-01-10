@@ -117,7 +117,6 @@ class Route {
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
 
-
         #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
 
 		if($selectedRoute){

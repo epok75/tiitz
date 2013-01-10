@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 
 class mysqlConnect
@@ -285,27 +286,3 @@ class mysqlConnect
     }
 }
 
-
-//exemple utilisation
-
-/*
-require_once('sqlConnect.class.php');
-
-$mysqlConnect = mysqlConnect::getInstance('localhost','root','root','test');
-
-$test = $mysqlConnect::getPDO();
-var_dump($test);
-*/
-/*
-$where = array('test' => 'test');
-
-$insert = array('test2' => 'plopance');
-
-$columns = array("test","test2");
-
-
-//$mysqlConnect->insert('test', $insert); 			//insert(nom de table, array(array('colonne'=>'valeur')),array('colonne'=>'valeur'))
-//$mysqlConnect->delete('test', $where);  			//insert(nom de table, array('colonne'=>'valeur'))
-//$mysqlConnect->update('test', $insert, $where);   //insert(nom de table, array('colonne'=>'valeur'), array('colonne'=>'valeur'))
-//var_dump($mysqlConnect->read('test', $columns, $where));
-*/
