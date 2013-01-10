@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 views:			/app/components/tzViews.class.php
 router:			/app/components/tzRouter.class.php
 sqlConnect:		/app/components/tzSQLConnect.class.php
@@ -7,3 +8,4 @@ devToobar: 		/app/components/devToolbar/tzToolbar.class.php
 TiiTz: 			/app/components/tiitz.class.php
 tzController: 	/app/components/tzController.class.php
 validator:		/app/components/tzValidator.class.php
+
