@@ -7,16 +7,16 @@
  */
 class validator {
     
-    const BAD_EMAIL = "l'adresse email n'est pas valide";
-    const BAD_IP = "l'adresse ip n'est pas valide";
-    const BAD_INT = "le nombre n'est pas valide";
-    const BAD_FLOAT = "le chiffre flottant n'est pas valide";
-    const BAD_STRING = "le texte n'est pas valide";
-    const BAD_LENGTH = "le texte ne contient pas la longueur indiquee";
+    const BAD_EMAIL         = "l'adresse email n'est pas valide";
+    const BAD_IP            = "l'adresse ip n'est pas valide";
+    const BAD_INT           = "le nombre n'est pas valide";
+    const BAD_FLOAT         = "le chiffre flottant n'est pas valide";
+    const BAD_STRING        = "le texte n'est pas valide";
+    const BAD_LENGTH        = "le texte ne contient pas la longueur indiquee";
     const BAD_LENGTH_PATTERN = "la comparaison de taille est mal saisie";
-    const BAD_URL = "l'url saisie n'est pas valide";
-    const BAD_PATTERN = "le pattern saisi ne correspond pas au pattern demande";
-    const BAD_TYPE_PATTERN = "ce type n'existe pas ou ne peut pas être verifie";
+    const BAD_URL           = "l'url saisie n'est pas valide";
+    const BAD_PATTERN       = "le pattern saisi ne correspond pas au pattern demande";
+    const BAD_TYPE_PATTERN  = "ce type n'existe pas ou ne peut pas être verifie";
     
     const BAD_FLAG = "";
     private static $errors = array();
