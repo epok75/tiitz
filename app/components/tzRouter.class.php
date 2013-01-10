@@ -125,7 +125,7 @@ class Route {
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
 				if($selectedRoute['type'] == 'config')
-					self::$arrayRoute['path'] = '/app/gui/controllers/'.$arrayController[0].'Controller.php';
+					self::$arrayRoute['path'] = '/app/components/gui/controllers/'.$arrayController[0].'Controller.php';
 				else
 					self::$arrayRoute['path'] = '/src/controllers/'.$arrayController[0].'Controller.php';
 				self::$arrayRoute['action'] = $arrayController[1].'Action';

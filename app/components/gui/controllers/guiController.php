@@ -1,5 +1,4 @@
 <?php
-require_once(ROOT."/app/components/fileManager.class.php");
 class guiController
 {
 	public function checkAction()
@@ -12,7 +11,7 @@ class guiController
 			exit;
 			//header("Location:".ROOT."/web/index.php");
 		}
-		require_once("../app/gui/views/index.php");
+		require_once("../app/components/gui/views/index.php");
 	}
 
 	private function pagesGenerator()

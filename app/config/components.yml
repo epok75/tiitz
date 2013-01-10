@@ -7,4 +7,4 @@ devToobar: 		/app/components/devToolbar/tzToolbar.class.php
 TiiTz: 			/app/components/tiitz.class.php
 tzController: 	/app/components/tzController.class.php
 validator:		/app/components/tzValidator.class.php
-
+fileManager:	/app/components/tzFileManager.class.php
