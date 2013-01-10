@@ -30,12 +30,14 @@ class guiController
 					$extention = ".php";
 				$fm->add_fileContent("\n\n# Template Engine\n    template:    ".$_POST["tpl"]);
 			}
-			if ((isset($_POST["user"]) && !empty($_POST["user"])) && (isset($_POST["pwd"])) && (isset($_POST["name"])  && !empty($_POST["name"])) && (isset($_POST["adress"]) && !empty($_POST["adress"])))
-			{
+			if ((isset($_POST["user"]) && !empty($_POST["user"])) && (isset($_POST["pwd"])) && (isset($_POST["name"])  && !empty($_POST["name"])) && (isset($_POST["adress"]) && !empty($_POST["adress"]))) {
 				$link = mysqli_connect($_POST["adress"], $_POST["user"], $_POST["pwd"]) or die(header("Location:../views/index.php?err=conn"));
 				$hl	= mysqli_select_db($link, $_POST["name"]) or die(header("Location:../views/index.php?err=name"));
 				mysqli_close ($link);
 				$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
+			}
+			else {
+				$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\n    password:\n    dbname:\n    host:\n    engine:\t\tmysql");
 			}
 			if (isset($_POST["pages"]) && !empty($_POST["pages"]))
 			{
