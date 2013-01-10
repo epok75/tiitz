@@ -43,7 +43,7 @@ class tzRoute {
 		}
 		foreach ($valid as $value) {
 			if ($value === false)
-				return false;ˇ
+				return false;
 		}
 		return true;
 	}
