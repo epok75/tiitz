@@ -18,14 +18,14 @@ foreach ($comp as $k => $v) {
 $error = new ErrorExtend(3);
 
 if (!empty($conf["template"]))
-	$tz_render = Render::getInstance($conf["template"]);
+	$tzRender = tzRender::getInstance($conf["template"]);
 else
-	$tz_render = Render::getInstance("");
+	$tzRender = tzRender::getInstance("");
 
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
-	$route = route::getRoute();
+	$route = tzRoute::getRoute();
 else
-	$route = route::getRoute("gui");
+	$route = tzRoute::getRoute("gui");
 
 
 if (is_file(ROOT.$route["path"])) {

@@ -5,7 +5,7 @@
  *
  * @author Hodor
  */
-class validator {
+class tzValidator {
     
     const BAD_EMAIL         = "l'adresse email n'est pas valide";
     const BAD_IP            = "l'adresse ip n'est pas valide";

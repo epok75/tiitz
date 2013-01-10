@@ -1,6 +1,6 @@
 <?php
 
-class FileManager
+class tzFileManager
 {
 	private $currentPath;
 	private $root;

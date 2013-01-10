@@ -1,6 +1,6 @@
 <?php 
 
-class mysqlConnect
+class tzPDO
 {
 	/** 
 	 * @param string $host     Host of a database
@@ -52,7 +52,7 @@ class mysqlConnect
 		} 
 		else {
 			// set the path for the view
-			self::$instance = new mysqlConnect($host, $user, $password, $db);
+			self::$instance = new tzPDO($host, $user, $password, $db);
 			return self::$instance;
 		}
 	}

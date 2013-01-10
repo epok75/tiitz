@@ -1,6 +1,6 @@
 <?php
 // Core Manager error
-abstract class ErrorCore {
+abstract class tzErrorCore {
 	
 	private static $file 				= "error.txt";
 	private static $path 				= "/app/log/";

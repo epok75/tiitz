@@ -1,5 +1,5 @@
 <?php
-class ErrorExtend  extends ErrorCore {
+class tzErrorExtend  extends tzErrorCore {
 
 	private $errorReport = 0;
 

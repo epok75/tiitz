@@ -11,9 +11,9 @@ class TiiTz {
     public $tzValidator;
     
     
-    public function __construct($tzView, $tzPlugin, $tzValidator, $tzError, $tzSQL = null) {
+    public function __construct($tzView, $tzPlugin, $tzValidator, $tzSQL = null) {
         if(!($tzView instanceof TzView)) {
-            
+            tzErrorExtend::newError();
         }
         elseif(!($tzPlugin instanceof TzPlugin)) {
             
@@ -21,12 +21,14 @@ class TiiTz {
         elseif(!($tzValidator instanceof TzValidator)) {
             
         }
-        elseif(!($tzError instanceof TzError)) {
-            
-        }
         elseif(!is_null($tzSQL) && !($tzSQL instanceof TzPDO)){
             
         }
+
+        $this->tzView = $tzView;
+        $this->tzPlugin;
+        $this->tzValidator;
+        $this->tzSQL
         
         
     }

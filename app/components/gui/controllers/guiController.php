@@ -16,7 +16,7 @@ class guiController
 
 	private function pagesGenerator()
 	{
-		$fm = new FileManager(ROOT);
+		$fm = new tzFileManager(ROOT);
 		$fm->set_currentItem(ROOT."/src/");
 		$fm->xmkdir("views");
 		$fm->xmkdir("controllers");
@@ -39,7 +39,7 @@ class guiController
 	
 	private function configGenerator()
 	{
-		$fm = new FileManager(ROOT);
+		$fm = new tzFileManager(ROOT);
 		$fm->set_currentItem(ROOT."/app/config/config.yml");
 		if (isset($_POST["routesLang"]) && ($_POST["routesLang"] == "yml" || $_POST["routesLang"] == "php" )) {
 				$fm->replace_fileContent("# Routing\n routingType:\t\t".$_POST["routesLang"]);

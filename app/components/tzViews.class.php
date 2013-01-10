@@ -3,7 +3,7 @@
  * Allow compatibility between differents template engines : one methode for all
  */
 
-class Render {
+class tzRender {
 	
 	private static $instance;
 	// default path for the views in smarty and twig
@@ -57,7 +57,7 @@ class Render {
 		} else {
 			// set the path for the view
 			self::$path = ROOT.'/src/';
-			self::$instance = new Render($tpl);
+			self::$instance = new tzRender($tpl);
 			return self::$instance;
 		}
 	}
