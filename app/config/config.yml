@@ -1,3 +1,17 @@
+# Routing
+ routingType:		yml
+
+# Template Engine
+    template:    twig
+
+# database configuration
+database:
+    user:
+    password:
+    dbname:
+    host:
+    engine:		mysql
+
 # language (tool development)
 language:    fr
 

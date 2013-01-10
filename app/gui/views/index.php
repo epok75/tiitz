@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>TiiTz Framework</title>
+	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
 	<link href="tiitz/css/bootstrap.css" rel="stylesheet" type='text/css'/>
     <link href="tiitz/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
