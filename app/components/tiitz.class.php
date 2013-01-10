@@ -12,19 +12,19 @@ class TiiTz {
     
     
     public function __construct($tzView, $tzPlugin, $tzValidator, $tzError, $tzSQL = null) {
-        if($tzView !instanceof TzView) {
+        if(!($tzView instanceof TzView)) {
             
         }
-        elseif($tzPlugin !instanceof TzPlugin) {
+        elseif(!($tzPlugin instanceof TzPlugin)) {
             
         }
-        elseif($tzValidator !instanceof TzValidator) {
+        elseif(!($tzValidator instanceof TzValidator)) {
             
         }
-        elseif($tzError !instanceof TzError) {
+        elseif(!($tzError instanceof TzError)) {
             
         }
-        elseif(!is_null($tzSQL) && $tzSQL !instanceof TzPDO){
+        elseif(!is_null($tzSQL) && !($tzSQL instanceof TzPDO)){
             
         }
         
