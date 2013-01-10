@@ -15,7 +15,7 @@ class tzRoute {
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
 				}
-				else if ($req[$params[$k]["name"]] == "string") {
+				elseif ($req[$params[$k]["name"]] == "string") {
 					$valid['string'] = (is_string($params[$k]["value"])) ? true : false;
 				}
 				else
@@ -43,7 +43,7 @@ class tzRoute {
 		}
 		foreach ($valid as $value) {
 			if ($value === false)
-				return false;
+				return false;ˇ
 		}
 		return true;
 	}
