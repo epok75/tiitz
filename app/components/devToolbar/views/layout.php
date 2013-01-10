@@ -2,7 +2,7 @@
 <style scoped>
 
 footer#tiitz-toolbar {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -55,14 +55,13 @@ footer#tiitz-toolbar .navbar .brand {
 	text-shadow: 0 1px 0 white;
 }
 footer#tiitz-toolbar .brand > img#tiitz-logo {
-	width: 60px;
+	width: 50px;
 	height: 30px;
 	margin-right: 10px;
 }
 footer#tiitz-toolbar .brand > #tiitz-version {
 	font-size: 16px;
 	position: relative;
-	bottom: 10px;
 }
 footer#tiitz-toolbar .brand {
 	padding : 5px 5px 5px 10px !important;
@@ -70,6 +69,9 @@ footer#tiitz-toolbar .brand {
 footer#tiitz-toolbar a {
 	color: #08C;
 	text-decoration: none;
+}
+footer#tiitz-toolbar .navbar{
+	margin-bottom: 0px;
 }
 footer#tiitz-toolbar .navbar .nav {
 	position: relative;
@@ -130,6 +132,7 @@ footer#tiitz-toolbar ul.tiitz-toolbar-info {
 }
 footer#tiitz-toolbar ul.nav > li:hover ul.tiitz-toolbar-info {
 	display: block;
+	border : 0px solid #000;
 }
 footer#tiitz-toolbar ul.nav > li:hover > a {
 	color: #555;
@@ -151,10 +154,22 @@ footer#tiitz-toolbar ul#toolbar-php-version div, footer#tiitz-toolbar ul#toolbar
 footer#tiitz-toolbar div#toolbar-tiitz-version {
 	display: none;
 	position: absolute;
-	left: 0px;
+	left: 2px;
 	bottom: 42px;
+	width: 648px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo {
+	float: left; 
+	width : 70px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 5px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-content {
+	float: left;
 	width: 250px;
-	height: 100px;
 }
 /* tiitz info controller/action */
 footer#tiitz-toolbar ul#toolbar-file-controller div {
@@ -164,9 +179,46 @@ footer#tiitz-toolbar ul#toolbar-file-controller div {
 footer#tiitz-toolbar .tiitz-toolbar-info {
 	background-color: #ffffff;
 	border : 1px solid #000;
+	padding: 5px;
+}
+footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-toolbar-info ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
 }
 footer#tiitz-toolbar .tiitz-toolbar-info ul li {
-	list-style-type: none;
+	float: left;	
+	display: inline;
+	width: 320px;
+	border-bottom: 1px solid #4C4C4C;
+	padding: 5px 0px;
+	background-color: #ffffff;
+	margin-right: 4px;
+}
+footer#tiitz-toolbar .tiitz-toolbar-info ul li:last-child {
+	border-bottom: transparent;
+}
+footer#tiitz-toolbar div#toolbar-header h2 {
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 13px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+}
+footer#tiitz-toolbar div#toolbar-header h2 a {
+	color: #000;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar div#toolbar-header h2 a:hover {
+	color: #B80300;
+}
+footer#tiitz-toolbar div#toolbar-text p {
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}	
+.toolbar-clear {
+	clear: both;
 }
 </style>
 	<div class="navbar">
@@ -177,19 +229,95 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li {
 			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info" style="display : none;">
 			   	<ul>
 			   		<li>
-			   			<div class="toolbar-header">
-			   				<img src="./tiitz/img/toolbar-google-community.png" alt="google+" style="width: 200px; height: 200px;" />
-			   				<a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a>
+			   			<div id="toolbar-photo">
+			   				<a href="https://plus.google.com/communities/102794938632806435828">
+			   					<img src="./tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
+			   				</a>	
 			   			</div>
+			   			<div id="toolbar-content">
+			   				<div id="toolbar-header">
+			   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Site Officiel</a></h2>
+			   				</div>
+			   				<div id="toolbar-text">
+			   					<p>
+			   						Documentation, Actualités, Get Started, Tutoriaux, Pluggins, Interviews etc.
+			   					</p>
+			   				</div>
+			   			</div>
+			   			<br class="toolbar-clear" />
 			   		</li>
 			   		<li>
-			   			<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">Support Technique</a>
+			   			<div id="toolbar-photo">
+			   				<a href="https://plus.google.com/communities/102794938632806435828">
+			   					<img src="./tiitz/img/toolbar-google-community.png" alt="google+" />
+			   				</a>
+			   			</div>
+			   			<div id="toolbar-content">
+			   				<div id="toolbar-header">
+			   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a></h2>
+			   				</div>
+			   				<div id="toolbar-text">
+			   					<p>
+			   						Toutes l'actualités de la communauté de Tiitz (News, Bugs, Tutoriaux etc.)
+			   					</p>
+			   				</div>
+			   			</div>
+			   			<br class="toolbar-clear" />
 			   		</li>
 			   		<li>
-			   			<a href="https://github.com/epok75/tiitz">Source / Support</a>
+			   			<div id="toolbar-photo">
+			   				<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">
+			   					<img src="./tiitz/img/toolbar-google-groups.jpeg" alt="google groups" />
+			   				</a>
+			   			</div>
+			   			<div id="toolbar-content">
+			   				<div id="toolbar-header">
+			   					<h2><a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">Support Technique</a></h2>
+			   				</div>
+			   				<div id="toolbar-text">
+			   					<p>
+			   						Google Groupe. Vous avez une interrogation? un problème ? Venez nous en parler.
+			   					</p>
+			   				</div>
+			   			</div>
+			   			<br class="toolbar-clear" />
+			   			
 			   		</li>
 			   		<li>
-			   			<a href="https://www.facebook.com/groups/200728960064145/">Facebook</a>
+			   			<div id="toolbar-photo">
+			   				<a href="https://github.com/epok75/tiitz">
+			   					<img src="./tiitz/img/toolbar-github.jpeg" alt="Github" />
+			   				</a>
+			   			</div>
+			   			<div id="toolbar-content">
+			   				<div id="toolbar-header">
+			   					<h2><a href="https://github.com/epok75/tiitz">Source / Report</a></h2>
+			   				</div>
+			   				<div id="toolbar-text">
+			   					<p>
+			   						Consultez, téléchargez les sources officielles du framework Tiitz.
+			   					</p>
+			   				</div>
+			   			</div>
+			   			<br class="toolbar-clear" />
+			   		</li>
+			   		<li>
+			   			<div id="toolbar-photo">
+			   				<a href="https://www.facebook.com/groups/200728960064145/">
+			   					<img src="./tiitz/img/toolbar-facebook.jpeg" alt="Facebook" />
+			   				</a>
+			   			</div>
+			   			<div id="toolbar-content">
+			   				<div id="toolbar-header">
+			   					<h2><a href="https://www.facebook.com/groups/200728960064145/">Facebook</a></h2>
+			   				</div>
+			   				<div id="toolbar-text">
+			   					<p>
+			   						La page Facebook officielle où vous pourrez retrouver toutes les dernières annonces concernant Tiitz.
+			   					</p>
+			   				</div>
+			   			</div>
+			   			<br class="toolbar-clear" />
 			   		</li>
 			   	</ul>
 			</div>

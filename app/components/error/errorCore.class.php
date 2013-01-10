@@ -78,7 +78,7 @@ abstract class ErrorCore {
 		}
 		$line .= "\n";
 		// write error in the log file
-		file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND | LOCK_EX);
+		@file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND | LOCK_EX);
 	}
 	
 	/**
