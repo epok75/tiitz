@@ -2,14 +2,16 @@
 class DevToolbar {
 
 	private static $environnement;
-	private static $route = array();
+	private static $route 	= array();
+	private static $ini 	= array();
 	private $phpVersion;
 
 	private function __construct(){
 
 	}
 
-	public static function toolbar ($environnement, $route = null) {
+	public static function toolbar ($environnement, $ini, $route = null) {
+		self::$ini = $ini;
 		self::$environnement = $environnement;
 		self::$route = $route;
 		if(self::$environnement === 'dev') {

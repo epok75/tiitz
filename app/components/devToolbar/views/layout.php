@@ -143,12 +143,43 @@ footer#tiitz-toolbar ul.nav > li:hover > a {
 	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 /* php version */
-footer#tiitz-toolbar ul#toolbar-php-version div, footer#tiitz-toolbar ul#toolbar-file-controller div {
+footer#tiitz-toolbar ul#toolbar-php-version > li > div, footer#tiitz-toolbar ul#toolbar-file-controller > li > div {
 	position: absolute;
 	bottom: 40px;
-	width: 250px;
-	height: 100px;
-	background-color: yellow;
+	width: 600px;
+	height: 250px;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #000;
+}
+footer#tiitz-toolbar ul#toolbar-php-version h2 {
+	background-color: #000;
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	color: #f1f1f1;
+	padding: 10px 5px;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail > li {
+	float: left;
+	display: inline;
+	width: 194px;
+	margin: 0px 3px;
+}
+ul#toolbar-php-version-detail ul {
+	border-right: 1px solid #4C4C4C;
+}
+
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail h3 {
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 15px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	margin: 10px 0px;
 }
 /* tiitz version */
 footer#tiitz-toolbar div#toolbar-tiitz-version {
@@ -157,6 +188,18 @@ footer#tiitz-toolbar div#toolbar-tiitz-version {
 	left: 2px;
 	bottom: 42px;
 	width: 648px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version ul li {
+	float: left;	
+	display: inline;
+	width: 320px;
+	border-bottom: 1px solid #4C4C4C;
+	padding: 5px 0px;
+	background-color: #ffffff;
+	margin-right: 4px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version ul li:last-child {
+	border-bottom: transparent;
 }
 footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo {
 	float: left; 
@@ -186,24 +229,14 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 	padding: 0px;
 	margin: 0px;
 }
-footer#tiitz-toolbar .tiitz-toolbar-info ul li {
-	float: left;	
-	display: inline;
-	width: 320px;
-	border-bottom: 1px solid #4C4C4C;
-	padding: 5px 0px;
-	background-color: #ffffff;
-	margin-right: 4px;
-}
-footer#tiitz-toolbar .tiitz-toolbar-info ul li:last-child {
-	border-bottom: transparent;
-}
-footer#tiitz-toolbar div#toolbar-header h2 {
+
+footer#tiitz-toolbar div#toolbar-header h2  {
 	font-family: "MillerDisplay",Georgia,serif;
 	font-size: 13px;
 	padding: 0px;
 	margin: 0px;
 	line-height: 1;
+	text-transform: uppercase;
 }
 footer#tiitz-toolbar div#toolbar-header h2 a {
 	color: #000;
@@ -326,7 +359,62 @@ footer#tiitz-toolbar div#toolbar-text p {
 			   	<li><a href="#"><strong>PHP : </strong><?php echo phpversion(); ?></a>
 			   		<ul id="toolbar-php-version" class="tiitz-toolbar-info">
 			   			<li>
-			   				<div></div>
+			   				<div>
+			   					<h2>Configuration php.ini</h2>
+			   					<ul id="toolbar-php-version-detail">
+			   						<li>
+			   							<div>
+			   								<h3>Sécurités</h3>
+			   								<ul>
+			   									<li><strong>allow_url_fopen : </strong> <?php $ini['allow_url_fopen'] == 1 ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
+			   									<li>
+			   										<strong>register_globals : </strong>
+			   										<?php  ini_get('register_globals') ? print ini_get('register_globals') : print 'Supprimé<sup>*</sup>'; ?>
+			   									</li>
+			   									<li>
+			   										<strong>magic_quotes_gpc : </strong>
+			   										<?php ini_get('magic_quotes_gpc') ? print ini_get('magic_quotes_gpc') : print 'Supprimé<sup>*</sup>';  ?>
+			   									</li>
+			   									<li>
+			   										<strong>open_basedir : </strong>
+			   										<?php echo ini_get('open_basedir'); ?></li>
+			   									<li>
+			   										<strong>safe_mode : </strong>
+			   										<?php ini_get('safe_mode') ? print ini_get('safe_mode') : print 'Supprimé<sup>*</sup>'; ?>
+			   									</li>
+			   									<li></li>
+			   									<li></li>
+			   									 
+			   								</ul>
+			   							</div>
+			   						</li>
+			   						<li>
+			   							<div>
+			   								<h3>Upload</h3>
+			   								<ul>
+			   									<li><strong>file_uploads : </strong><?php echo $ini['file_uploads']; ?></li>
+			   									<li><strong>max_file_uploads : </strong><?php echo $ini['max_file_uploads']; ?></li>
+			   									<li><strong>upload_max_filesize : </strong><?php echo $ini['upload_max_filesize']; ?></li>
+			   									<li><strong>upload_tmp_dir : </strong><?php echo $ini['upload_tmp_dir']; ?></li>
+			   									<li><strong>post_max_size : </strong><?php echo $ini['post_max_size']; ?></li>
+			   								</ul>
+			   							</div>
+			   						</li>
+			   						<li>
+			   							<div>
+			   								<h3>Performances / Divers</h3>
+			   								<ul>
+			   									<li><strong>memory_limit : </strong><?php echo $ini['memory_limit']; ?></li>
+			   									<li><strong>max_execution_time : </strong><?php echo $ini['max_execution_time']; ?></li>
+			   									<li><strong>session.gc_maxlifetime : </strong>  <?php echo $ini['session.gc_maxlifetime']; ?></li>
+			   									<li><strong>short_open_tag : </strong><?php $ini['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False';; ?></li>
+			   								</ul>
+			   							</div>
+			   						</li>			   						
+			   					</ul>
+			   					<br class="clear" />
+			   					<i>* Supprimer depuis la version 5.4 de php</i>
+			   				</div>
 			   			</li>
 			   		</ul>
 			   	</li>

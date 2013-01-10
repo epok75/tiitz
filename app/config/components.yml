@@ -1,4 +1,4 @@
-views:		/app/components/views.class.php
+views:		/app/components/tzViews.class.php
 router:		/app/components/router.class.php
 sqlConnect:		/app/components/sqlConnect.class.php
 errorCore:		/app/components/error/ErrorCore.class.php
