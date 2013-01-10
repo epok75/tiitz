@@ -39,6 +39,13 @@ else
 
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
+	// Config php.ini
+	$ini = ini_get_all(null, false);
 	// error en dev
-	devToolbar::toolbar($conf['environnement'], $route = null);
+	devToolbar::toolbar($conf['environnement'], $ini, $route = null);
 }
+print '<pre>';
+//print_r(ini_get_all(null, false));
+//phpinfo();
+print '</pre>';
+// max_execution_time max_file_uploads memory_limit post_max_size upload_max_filesize upload_tmp_dir 
