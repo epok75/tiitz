@@ -2,3 +2,11 @@ type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.ph
 type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-09 17:07:45
 type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-09 17:10:22
 type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-09 17:10:57
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:19:17
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:19:41
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:21:44
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:21:47
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:23:26
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:24:06
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:25:12
+type=>8	message=>Undefined variable: route	file=>C:\wamp\www\tiitz\app\kernel.php	line=>47	date=>2013-01-10 14:41:13
