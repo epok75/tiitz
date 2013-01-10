@@ -15,7 +15,7 @@ foreach ($comp as $k => $v) {
 //$fullStr = 'http://'.$_SERVER['SERVER_NAME'].'/'.substr($_SERVER['SCRIPT_NAME'], 0,stripos($_SERVER['SCRIPT_NAME'],'index.php'));
 
 // Manage Error
-$error = new ErrorExtend(3);
+$error = new tzErrorExtend(3);
 
 if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
