@@ -26,7 +26,8 @@ class guiController
 		$fm->xmkdir("templates");
 		$fm->xmkdir("structures");
 		if (isset($_POST["pages"]) && !empty($_POST["pages"])) {
-			$pages = explode("\n", $_POST["pages"]);
+			//$pages = explode("\n", $_POST["pages"]);
+			$pages = $_POST['pages'];
 			foreach ($pages as $page) {
 				$page = str_replace( "\r", "", $page);
 				$fm->set_currentItem(ROOT."/src/config/routing.yml");
