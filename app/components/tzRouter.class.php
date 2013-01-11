@@ -135,7 +135,7 @@ class tzRoute {
 			
 		}
 		else
-			ErrorExtend::catchError('No Route Found');
+			tzErrorExtend::catchError('No Route Found');
 
 		return self::$arrayRoute;
 	}

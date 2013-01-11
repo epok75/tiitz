@@ -1,6 +1,8 @@
 <?php
 class guiController
 {
+	private $extention;
+
 	public function checkAction()
 	{
 		if (isset($_POST["firstConfig"]))
@@ -30,7 +32,7 @@ class guiController
 				$fm->set_currentItem(ROOT."/src/config/routing.yml");
 				$fm->add_fileContent("\n\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
 				$fm->set_currentItem(ROOT."/src/views/templates");
-				$fm->xtouch($page.$extention);
+				$fm->xtouch($page.$this->extention);
 				$fm->set_currentItem(ROOT."/src/controllers");
 				$fm->xtouch($page."Controller.php");
 			}
@@ -47,11 +49,11 @@ class guiController
 		if (isset($_POST["tpl"]) && ($_POST["tpl"] == "twig" || $_POST["tpl"] == "smarty" || $_POST["tpl"] == "php" ))
 		{
 			if ($_POST["tpl"] == "twig")
-				$extention = ".twig";
+				$this->extention = ".twig";
 			else if ($_POST["tpl"] == "smarty")
-				$extention = ".tpl";
+				$this->extention = ".tpl";
 			else
-				$extention = ".php";
+				$this->extention = ".php";
 			$fm->add_fileContent("\n\n# Template Engine\n    template:    ".$_POST["tpl"]);
 		}
 		if ((isset($_POST["user"]) && !empty($_POST["user"])) && (isset($_POST["pwd"])) && (isset($_POST["name"])  && !empty($_POST["name"])) && (isset($_POST["adress"]) && !empty($_POST["adress"]))) {
