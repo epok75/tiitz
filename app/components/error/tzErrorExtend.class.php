@@ -49,7 +49,8 @@ class tzErrorExtend  extends tzErrorCore {
 						'message' 	=> $errstr, 
 						'file' 		=> $errfile, 
 						'line' 		=> $errline,
-						'date' 		=> date("Y-m-d H:i:s"));
+						'date' 		=> date("Y-m-d H:i:s")
+						);
 		// store it in an array to be reusable
 		self::$currentError = $error;
 		// load the workflow method
@@ -57,7 +58,7 @@ class tzErrorExtend  extends tzErrorCore {
 	}
 	
 	/**
-	 * method static use to catch error thanks to try catch
+	 * method static use to catch error inside your code
 	 * @param  Object $e   [description]
 	 * @param  boolean $die [description]
 	 * @return void
@@ -76,12 +77,16 @@ class tzErrorExtend  extends tzErrorCore {
 		} elseif (is_array($e)){
 			$error = array (
 				'message'	=> $e[0],
+				'file'		=> $e[1],
+				'line'		=> $e[2],
 				'date' 		=> date("Y-m-d H:i:s")
 			); 
 		} else {
 			// bad format
 			$error = array (
 				'message'	=> 'Le format des paramètres de la méthode static catchError n\'est pas correct (Array,Bool)',
+				'file'		=> $e[1],
+				'line'		=> $e[2],
 				'date' 		=> date("Y-m-d H:i:s")
 			);
 		}		

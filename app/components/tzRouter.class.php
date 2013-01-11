@@ -134,9 +134,10 @@ class tzRoute {
 			}
 			
 		}
-		else
-			ErrorExtend::catchError('No Route Found');
-
+		else {
+			tzErrorExtend::catchError(array('No Route Found', __FILE__,__LINE__, true));
+		}
+			
 		return self::$arrayRoute;
 	}
 }
