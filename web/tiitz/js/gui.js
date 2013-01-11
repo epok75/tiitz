@@ -27,3 +27,11 @@ function checkBDD ()
  			});
  		}
 }
+
+function addField()
+{
+   	var obj = $('#firstField').clone();
+   	obj.removeAttr('id');
+  	obj.removeAttr('value');
+  	$('#REPERE').before(obj);
+}

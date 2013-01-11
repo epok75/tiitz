@@ -66,13 +66,5 @@
 		</form>
 		</fieldset>
 	<script type="text/javascript" src="tiitz/js/gui.js"></script>
-	<script type="text/javascript">
-    	function addField() {
-    		var obj = $('#firstField').clone();
-    		obj.removeAttr('id');
-    		obj.removeAttr('value');
-    		$('#REPERE').before(obj);
-    	}
-    </script>
 </body>
 </html>

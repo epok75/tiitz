@@ -45,7 +45,7 @@ class guiController
 		$fm = new tzFileManager(ROOT);
 		$fm->set_currentItem(ROOT."/app/config/config.yml");
 		if (isset($_POST["routesLang"]) && ($_POST["routesLang"] == "yml" || $_POST["routesLang"] == "php" )) {
-				$fm->replace_fileContent("# Routing\n routingType:\t\t".$_POST["routesLang"]);
+				$fm->replace_fileContent("# Routing\nroutingType:\t\t".$_POST["routesLang"]);
 		}
 		if (isset($_POST["tpl"]) && ($_POST["tpl"] == "twig" || $_POST["tpl"] == "smarty" || $_POST["tpl"] == "php" ))
 		{
@@ -55,7 +55,7 @@ class guiController
 				$this->extention = ".tpl";
 			else
 				$this->extention = ".php";
-			$fm->add_fileContent("\n\n# Template Engine\n    template:    ".$_POST["tpl"]);
+			$fm->add_fileContent("\n\n# Template Engine\ntemplate:    ".$_POST["tpl"]);
 		}
 		if ((isset($_POST["user"]) && !empty($_POST["user"])) && (isset($_POST["pwd"])) && (isset($_POST["name"])  && !empty($_POST["name"])) && (isset($_POST["adress"]) && !empty($_POST["adress"]))) {
 			$link = mysqli_connect($_POST["adress"], $_POST["user"], $_POST["pwd"]) or die(header("Location:../views/index.php?err=conn"));
