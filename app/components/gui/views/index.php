@@ -8,7 +8,7 @@
 	<link href="tiitz/css/bootstrap.css" rel="stylesheet" type='text/css'/>
     <link href="tiitz/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
     <link rel="stylesheet" type="text/css" href="tiitz/css/style-gui.css" type='text/css' />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>					 
 <body>
@@ -16,11 +16,12 @@
 			<header>
 				Configuration initiale
 			</header>
+			<form method="post" action="<?php $_SERVER["SCRIPT_NAME"] ?>">
 			<div class="content">
 				<div id="notif" class="error">&nbsp;</div>
 				<div class="formPart">
 					<h4>Base de données</h4>
-					<form method="post" action="<?php $_SERVER["SCRIPT_NAME"] ?>">
+					
 							<label for="user">Utilisateur : </label>
 							<input type="text" name="user" onblur="checkBDD()" id="user" placeholder="root" />
 							<label for="pwd">Mot de Passe : </label>
@@ -46,8 +47,11 @@
 								<option value="yml">YAML</option>
 								<option value="php">PHP</option>
 							</select>
-							<label for="pages">Pages à créer : </label>
-							<textarea name="pages" id="pages" rows="7" placeholder="inscription			connexion				accueil				contact"></textarea>
+							<label for="">Pages à créer : </label>
+							<input class='field' id='firstField' type='text' name='pages[]' /><br id='REPERE' />
+							<a class='btn btn-success' href='javascript:void(0)' onclick='addField()'><i class='icon-plus icon-white'></i></a>
+							<!--<textarea name="pages" id="pages" rows="7" placeholder="inscription			connexion				accueil				contact"></textarea>
+						-->
 				</div>
 				<!--<div class="formPart">
 					<h4>Nom du premier bundle</h4>
@@ -57,9 +61,18 @@
 				<div class="formEnd">
 					<input type="submit" value="Terminer" name="firstConfig" class="btn btn-large btn-primary" />
 				</div>
-				</form>
+				
 		</div>
+		</form>
 		</fieldset>
 	<script type="text/javascript" src="tiitz/js/gui.js"></script>
+	<script type="text/javascript">
+    	function addField() {
+    		var obj = $('#firstField').clone();
+    		obj.removeAttr('id');
+    		obj.removeAttr('value');
+    		$('#REPERE').before(obj);
+    	}
+    </script>
 </body>
 </html>

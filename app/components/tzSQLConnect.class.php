@@ -32,7 +32,7 @@ class tzPDO
 		}
 		catch(PDOException $e){
 			self::$instance == null;
-			ErrorExtend::catchError($e);
+			tzErrorExtend::catchError($e);
 		}
 	}
 
@@ -153,7 +153,7 @@ class tzPDO
 			$request->execute();
 		}
 		catch(PDOException $e){
-			ErrorExtend::catchError($e, false);
+			tzErrorExtend::catchError($e, false);
 		}
 	}
 
@@ -188,7 +188,7 @@ class tzPDO
 				$request->execute();
 			}
 			catch(PDOException $e){
-				ErrorExtend::catchError($e, false);
+				tzErrorExtend::catchError($e, false);
 			}
 		}
     }
@@ -229,7 +229,7 @@ class tzPDO
 			$request->execute();
 		}
 		catch(PDOException $e){
-			ErrorExtend::catchError($e, false);
+			tzErrorExtend::catchError($e, false);
 		}
     }
 
@@ -280,7 +280,7 @@ class tzPDO
 			return $results;
 		}
 		catch(PDOException $e){
-			ErrorExtend::catchError($e, false);
+			tzErrorExtend::catchError($e, false);
 		}
     }
 }

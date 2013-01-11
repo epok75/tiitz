@@ -15,7 +15,7 @@ class tzRoute {
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
 				}
-				else if ($req[$params[$k]["name"]] == "string") {
+				elseif ($req[$params[$k]["name"]] == "string") {
 					$valid['string'] = (is_string($params[$k]["value"])) ? true : false;
 				}
 				else
@@ -137,7 +137,7 @@ class tzRoute {
 		else {
 			tzErrorExtend::catchError(array('No Route Found', __FILE__,__LINE__, true));
 		}
-			
+
 		return self::$arrayRoute;
 	}
 }

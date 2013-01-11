@@ -18,6 +18,7 @@ class TiiTz {
         $this->tzPlugin;
         $this->tzValidator;
         $this->tzSQL;
+
     }
    
 }  
