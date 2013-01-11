@@ -1,6 +1,6 @@
 config:
 	pattern:   /configTiitz
-	ressource: /app/components/gui/routing.yml
+	ressource: /app/components/gui/config/routing.yml
 
 site:
 	pattern:   /
