@@ -4,31 +4,30 @@ class tzRoute {
 
 	private static $arrayRoute;
 
-	private static function checkRequirement(array $req, array $params) {
+	private static function checkRequirement(array $req, array $params) { // Check if requirements of the route are OK
 
 		$valid = array();
 		$match = array();
 		foreach ($params as $k => $v) {
 
-			if (array_key_exists($params[$k]["name"], $req)) 
-			{
+			if (array_key_exists($params[$k]["name"], $req)) {
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
 				}
 				elseif ($req[$params[$k]["name"]] == "string") {
 					$valid['string'] = (is_string($params[$k]["value"])) ? true : false;
 				}
-				else
-				{
-					if (preg_match("/".$req[$params[$k]["name"]]."/", $params[$k]["value"]))
+				else {
+					if (preg_match("/".$req[$params[$k]["name"]]."/", $params[$k]["value"])) {
 						$match[$params[$k]["name"]] = true;
-					else
+					}
+					else {
 						$match[$params[$k]["name"]] = false;
+					}
 				}
 			}
 
-			if (array_key_exists("_method", $req))
-			{
+			if (array_key_exists("_method", $req)) {
 				if ($req["_method"] == "post" || $req["_method"] == "POST")
 					$valid['post'] = (!empty($_POST)) ? true : false;
 
@@ -49,7 +48,6 @@ class tzRoute {
 	}
 
 	private static function deleteEmptyValues(array $array) {
-		#var_dump($array);
 		$arrayReturn = array();
 		if(count($array) == 2 && ($array[0] == '' && $array[1] == ''))
 			$arrayReturn = array();
@@ -61,7 +59,6 @@ class tzRoute {
 	}
 
 	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode) { // Fonction comparant les routes
-		#var_dump($arrayRoutes);
 		if($mode == "gui")
 			$type='config';
 		else
