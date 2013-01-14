@@ -1,6 +1,6 @@
 config:
     pattern:    /
-    defaults:   {_controller: gui:check}
+    defaults:   {_controller: main:check}
 
 configInstall:
     pattern:    /configTiitz/install

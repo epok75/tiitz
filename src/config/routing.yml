@@ -7,3 +7,11 @@ blog_lol:
 _show:
 	pattern:	/
 	defaults:	{ _controller: :show }
+
+_show:
+	pattern:	/
+	defaults:	{ _controller: :show }
+
+_show:
+	pattern:	/
+	defaults:	{ _controller: :show }

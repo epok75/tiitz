@@ -1,5 +1,22 @@
 # Routing
- routingType:		yml
+routingType:	yml
 
 # Template Engine
-    template:    twig
+template:    twig
+
+# database configuration
+database:
+    user:		root
+    password:		root
+    dbname:		test
+    host:		localhost
+    engine:		mysql
+
+# language (tool development)
+language:    fr
+
+# environnement (dev | prod)
+environnement:    dev
+
+# Permit to check if a project is already started
+existingproject:    false

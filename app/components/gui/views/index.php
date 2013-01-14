@@ -16,7 +16,7 @@
 			<header>
 				Configuration initiale
 			</header>
-			<form method="post" action="<?php $_SERVER["SCRIPT_NAME"] ?>">
+			<form method="post" action="<?php print $_SERVER["SCRIPT_NAME"] ?>">
 			<div class="content">
 				<div id="notif" class="error">&nbsp;</div>
 				<div class="formPart">
