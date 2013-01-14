@@ -1,6 +1,10 @@
 <footer id="tiitz-toolbar">
 <style scoped>
-
+p {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.2;
+}
 footer#tiitz-toolbar {
 	position: fixed;
 	bottom: 0;
@@ -103,7 +107,9 @@ footer#tiitz-toolbar li {
 footer#tiitz-toolbar .nav {
 	list-style: none;
 }
-footer#tiitz-toolbar .navbar .nav > .active > a, footer#tiitz-toolbar .navbar .nav > .active > a:hover,footer#tiitz-toolbar .navbar .nav > .active > a:focus {
+footer#tiitz-toolbar .navbar .nav > .active > a, 
+footer#tiitz-toolbar .navbar .nav > .active > a:hover, 
+footer#tiitz-toolbar .navbar .nav > .active > a:focus {
 	color: #555;
 	text-decoration: none;
 	background-color: #E5E5E5;
@@ -142,57 +148,25 @@ footer#tiitz-toolbar ul.nav > li:hover > a {
 	-moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
 	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
-/* php version */
-footer#tiitz-toolbar ul#toolbar-php-version > li > div, footer#tiitz-toolbar ul#toolbar-file-controller > li > div {
+ul#toolbar-php-version > li > div, 
+ul#toolbar-file-controller > li > div,
+ul#toolbar-tiitz-info > li > div {
 	position: absolute;
 	bottom: 40px;
-	width: 600px;
-	height: 250px;
+	min-width: 300px;
+	min-height: 200px;
 	background-color: #fff;
 	padding: 5px;
 	border: 1px solid #000;
 }
-footer#tiitz-toolbar ul#toolbar-php-version h2 {
-	background-color: #000;
-	font-family: "MillerDisplay",Georgia,serif;
-	font-size: 16px;
-	padding: 0px;
-	margin: 0px;
-	line-height: 1;
-	color: #f1f1f1;
-	padding: 10px 5px;
-	text-transform: uppercase;
-}
-footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail > li {
-	float: left;
-	display: inline;
-	width: 194px;
-	margin: 0px 3px;
-}
-ul#toolbar-php-version-detail ul {
-	border-right: 1px solid #4C4C4C;
-}
 
-footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail h3 {
-	font-family: "MillerDisplay",Georgia,serif;
-	font-size: 15px;
-	padding: 0px;
-	margin: 0px;
-	line-height: 1;
-	margin: 10px 0px;
-}
-/* tiitz version */
+/* tiitz Site Aide */
 footer#tiitz-toolbar div#toolbar-tiitz-version {
-	display: none;
-	position: absolute;
-	left: 2px;
-	bottom: 42px;
-	width: 648px;
+	width: 310px;
+	left: -20px;
 }
 footer#tiitz-toolbar div#toolbar-tiitz-version ul li {
-	float: left;	
-	display: inline;
-	width: 320px;
+	width: 100%;
 	border-bottom: 1px solid #4C4C4C;
 	padding: 5px 0px;
 	background-color: #ffffff;
@@ -201,39 +175,11 @@ footer#tiitz-toolbar div#toolbar-tiitz-version ul li {
 footer#tiitz-toolbar div#toolbar-tiitz-version ul li:last-child {
 	border-bottom: transparent;
 }
-footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo {
-	float: left; 
-	width : 70px;
-}
-footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo img {
-	width: 60px;
-	height: 60px;
-	margin-bottom: 5px;
-}
-footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-content {
-	float: left;
-	width: 250px;
-}
-/* tiitz info controller/action */
-footer#tiitz-toolbar ul#toolbar-file-controller div {
-	background-color: green;
-}
-/* design block */
-footer#tiitz-toolbar .tiitz-toolbar-info {
-	background-color: #ffffff;
-	border : 1px solid #000;
-	padding: 5px;
-}
-footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-toolbar-info ul {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-}
-
 footer#tiitz-toolbar div#toolbar-header h2  {
 	font-family: "MillerDisplay",Georgia,serif;
 	font-size: 13px;
 	padding: 0px;
+	padding-bottom: 5px;
 	margin: 0px;
 	line-height: 1;
 	text-transform: uppercase;
@@ -250,111 +196,166 @@ footer#tiitz-toolbar div#toolbar-text p {
 	margin: 0px;
 	padding: 0px;
 }	
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo {
+	float: left; 
+	width : 50px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-content {
+	float: left;
+	width: 250px;
+}
+/* tiitz info systeme performance */
+footer#tiitz-toolbar ul#toolbar-php-version h2 {
+	background-color: #000;
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	color: #f1f1f1;
+	padding: 10px 5px;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail > li {
+	width: 100%;
+}
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail h3 {
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 15px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	margin: 10px 0px;
+}
+/* tiitz info controller/action */
+footer#tiitz-toolbar ul#toolbar-file-controller > li > div  {
+	min-width: 200px;
+	min-height: 70px;
+}
+/* tiitz info configuration */
+footer#tiitz-toolbar ul#toolbar-config > li > div, footer#tiitz-toolbar ul#toolbar-log-error {
+	position: absolute;
+	min-width: 200px;
+	min-height: 70px;
+	bottom: 40px;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #000;
+}
+/* tiitz error log */
+footer#tiitz-toolbar ul#toolbar-log-error {
+	width: 700px;
+}
+/* design block */
+footer#tiitz-toolbar .tiitz-toolbar-info {
+	background-color: #ffffff;
+	border : 1px solid #000;
+	padding: 5px;
+}
+footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-toolbar-info ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
 .toolbar-clear {
 	clear: both;
 }
 </style>
+
 	<div class="navbar">
 	  	<div class="navbar-inner">
-			<a class="brand" href="#" id="toolbar-tiitz-info-open">
-				<img src="./tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
-			</a>
-			<div id="toolbar-tiitz-version" class="tiitz-toolbar-info" style="display : none;">
-			   	<ul>
-			   		<li>
-			   			<div id="toolbar-photo">
-			   				<a href="https://plus.google.com/communities/102794938632806435828">
-			   					<img src="./tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
-			   				</a>	
-			   			</div>
-			   			<div id="toolbar-content">
-			   				<div id="toolbar-header">
-			   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Site Officiel</a></h2>
-			   				</div>
-			   				<div id="toolbar-text">
-			   					<p>
-			   						Documentation, Actualités, Get Started, Tutoriaux, Pluggins, Interviews etc.
-			   					</p>
-			   				</div>
-			   			</div>
-			   			<br class="toolbar-clear" />
-			   		</li>
-			   		<li>
-			   			<div id="toolbar-photo">
-			   				<a href="https://plus.google.com/communities/102794938632806435828">
-			   					<img src="./tiitz/img/toolbar-google-community.png" alt="google+" />
-			   				</a>
-			   			</div>
-			   			<div id="toolbar-content">
-			   				<div id="toolbar-header">
-			   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a></h2>
-			   				</div>
-			   				<div id="toolbar-text">
-			   					<p>
-			   						Toutes l'actualités de la communauté de Tiitz (News, Bugs, Tutoriaux etc.)
-			   					</p>
-			   				</div>
-			   			</div>
-			   			<br class="toolbar-clear" />
-			   		</li>
-			   		<li>
-			   			<div id="toolbar-photo">
-			   				<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">
-			   					<img src="./tiitz/img/toolbar-google-groups.jpeg" alt="google groups" />
-			   				</a>
-			   			</div>
-			   			<div id="toolbar-content">
-			   				<div id="toolbar-header">
-			   					<h2><a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">Support Technique</a></h2>
-			   				</div>
-			   				<div id="toolbar-text">
-			   					<p>
-			   						Google Groupe. Vous avez une interrogation? un problème ? Venez nous en parler.
-			   					</p>
-			   				</div>
-			   			</div>
-			   			<br class="toolbar-clear" />
-			   			
-			   		</li>
-			   		<li>
-			   			<div id="toolbar-photo">
-			   				<a href="https://github.com/epok75/tiitz">
-			   					<img src="./tiitz/img/toolbar-github.jpeg" alt="Github" />
-			   				</a>
-			   			</div>
-			   			<div id="toolbar-content">
-			   				<div id="toolbar-header">
-			   					<h2><a href="https://github.com/epok75/tiitz">Source / Report</a></h2>
-			   				</div>
-			   				<div id="toolbar-text">
-			   					<p>
-			   						Consultez, téléchargez les sources officielles du framework Tiitz.
-			   					</p>
-			   				</div>
-			   			</div>
-			   			<br class="toolbar-clear" />
-			   		</li>
-			   		<li>
-			   			<div id="toolbar-photo">
-			   				<a href="https://www.facebook.com/groups/200728960064145/">
-			   					<img src="./tiitz/img/toolbar-facebook.jpeg" alt="Facebook" />
-			   				</a>
-			   			</div>
-			   			<div id="toolbar-content">
-			   				<div id="toolbar-header">
-			   					<h2><a href="https://www.facebook.com/groups/200728960064145/">Facebook</a></h2>
-			   				</div>
-			   				<div id="toolbar-text">
-			   					<p>
-			   						La page Facebook officielle où vous pourrez retrouver toutes les dernières annonces concernant Tiitz.
-			   					</p>
-			   				</div>
-			   			</div>
-			   			<br class="toolbar-clear" />
-			   		</li>
-			   	</ul>
-			</div>
-			<ul class="nav">
+	  		<ul class="nav">
+				<li>	
+					<a class="brand" href="#">
+						<img src="./tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print Tiitz::getTiitzVersion(); ?></span>
+					</a>
+					<ul id="toolbar-tiitz-info" class="tiitz-toolbar-info">
+						<li>
+							<div id="toolbar-tiitz-version" class="tiitz-toolbar-info">
+							   	<ul>
+							   		<li>
+							   			<div id="toolbar-photo">
+							   				<a href="https://plus.google.com/communities/102794938632806435828">
+							   					<img src="./tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
+							   				</a>	
+							   			</div>
+							   			<div id="toolbar-content">
+							   				<div id="toolbar-header">
+							   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Site Officiel</a></h2>
+							   				</div>
+							   				<div id="toolbar-text">
+							   					<p>
+							   						Documentation, Actualités, Get Started, Tutoriaux, Pluggins, Interviews etc.
+							   					</p>
+							   				</div>
+							   			</div>
+							   			<br class="toolbar-clear" />
+							   		</li>
+							   		<li>
+							   			<div id="toolbar-photo">
+							   				<a href="https://plus.google.com/communities/102794938632806435828">
+							   					<img src="./tiitz/img/toolbar-google-community.png" alt="google+" />
+							   				</a>
+							   			</div>
+							   			<div id="toolbar-content">
+							   				<div id="toolbar-header">
+							   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a></h2>
+							   				</div>
+							   				<div id="toolbar-text">
+							   					<p>
+							   						Toutes l'actualités de la communauté de Tiitz (News, Bugs, Tutoriaux etc.)
+							   					</p>
+							   				</div>
+							   			</div>
+							   			<br class="toolbar-clear" />
+							   		</li>
+							   		<li>
+							   			<div id="toolbar-photo">
+							   				<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">
+							   					<img src="./tiitz/img/toolbar-google-groups.jpeg" alt="google groups" />
+							   				</a>
+							   			</div>
+							   			<div id="toolbar-content">
+							   				<div id="toolbar-header">
+							   					<h2><a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">Support Technique</a></h2>
+							   				</div>
+							   				<div id="toolbar-text">
+							   					<p>
+							   						Google Groupe. Vous avez une interrogation? un problème ? Venez nous en parler.
+							   					</p>
+							   				</div>
+							   			</div>
+							   			<br class="toolbar-clear" />
+							   			
+							   		</li>
+							   		<li>
+							   			<div id="toolbar-photo">
+							   				<a href="https://github.com/epok75/tiitz">
+							   					<img src="./tiitz/img/toolbar-github.jpeg" alt="Github" />
+							   				</a>
+							   			</div>
+							   			<div id="toolbar-content">
+							   				<div id="toolbar-header">
+							   					<h2><a href="https://github.com/epok75/tiitz">Source / Report</a></h2>
+							   				</div>
+							   				<div id="toolbar-text">
+							   					<p>
+							   						Consultez, téléchargez les sources officielles du framework Tiitz.
+							   					</p>
+							   				</div>
+							   			</div>
+							   			<br class="toolbar-clear" />
+							   		</li>
+							   	</ul>
+							</div>
+						</li>	
+					</ul>	
+				</li>
 				<li class="divider-vertical"></li>
 			   	<li><a href="#"><strong>PHP : </strong><?php echo phpversion(); ?></a>
 			   		<ul id="toolbar-php-version" class="tiitz-toolbar-info">
@@ -382,9 +383,6 @@ footer#tiitz-toolbar div#toolbar-text p {
 			   										<strong>safe_mode : </strong>
 			   										<?php ini_get('safe_mode') ? print ini_get('safe_mode') : print 'Supprimé<sup>*</sup>'; ?>
 			   									</li>
-			   									<li></li>
-			   									<li></li>
-			   									 
 			   								</ul>
 			   							</div>
 			   						</li>
@@ -410,41 +408,60 @@ footer#tiitz-toolbar div#toolbar-text p {
 			   									<li><strong>short_open_tag : </strong><?php $ini['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False';; ?></li>
 			   								</ul>
 			   							</div>
-			   						</li>			   						
+			   						</li>	
+			   						<br class="clear" />		   						
 			   					</ul>
-			   					<br class="clear" />
 			   					<i>* Supprimer depuis la version 5.4 de php</i>
 			   				</div>
 			   			</li>
 			   		</ul>
 			   	</li>
 			   	<li class="divider-vertical"></li>
-			   	<li><a href="#"><?php echo $route['className']; ?> : <?php echo $route['action']; ?></a>
-					<ul id="toolbar-file-controller" class="tiitz-toolbar-info">
+			   	<li><a href="#">Configuration</a>
+					<ul id="toolbar-config" class="tiitz-toolbar-info">
 			   			<li>
-			   				<div></div>
+			   				<div>
+			   					<ul>
+			   						<li>Base de données : <?php isset($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
+			   						<li>Moteur de template : <?php isset($conf['routingType']['template']) ? print $conf['routingType']['template'] : print 'php'; ?></li>
+			   						<li>Environnement : <?php isset($conf['environnement']) ? print $conf['environnement']: print ''; ?></li>
+			   						<li>Langue : <?php isset($conf['language']) ? print $conf['language'] : print ''; ?></li>
+			   						<li>Route : </li>
+			   					</ul>
+			   				</div>
 			   			</li>
 			   		</ul>
 			   	</li>
 			   	<li class="divider-vertical"></li>
+			   	<li><a href="#"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
+					<ul id="toolbar-file-controller" class="tiitz-toolbar-info">
+			   			<li>
+			   				<div>
+			   					<ul>
+			   						<li>Controller : <?php isset($route['className']) ? print $route['className']:''; ?></li>
+			   						<li>Method : <?php isset($route['action']) ? print $route['action']:''; ?></li>
+			   						<li>Path : <?php isset($route['path']) ? print $route['path']:''; ?></li>
+			   					</ul>
+			   				</div>
+			   			</li>
+			   		</ul>
+			   	</li>
+			   	<li class="divider-vertical"></li>
+			   	<li><a href="#">Logs Erreurs</a>
+					<ul id="toolbar-log-error" class="tiitz-toolbar-info">
+			   			<li>
+			   					<?php for ($i=0; $i < count($errorArray); $i++) : ?> 
+			   						<div <?php ($i%2 == 0) ? print "class='odd'" : print "class='even'" ?>>
+			   							<p>Date : <?php print $errorArray[$i]['date']; ?> | Numéro erreur : <?php print $errorArray[$i]['type']; ?></p>
+			   							<p>Message : <?php print $errorArray[$i]['message']; ?></p>
+			   							<p>File : <?php print $errorArray[$i]['file']; ?> | Ligne : <?php print $errorArray[$i]['line']; ?></p>
+			   						</div>		
+			   					<?php endfor ?>
+			   				</div>
+			   			</li>
+			   		</ul>
+			   	</li>
 			</ul>
 		</div>
 	</div>
 </footer>
-<script type="text/javascript">
-	window.onload = function () {
-		var el = document.getElementById("toolbar-tiitz-info-open");
-
-		//console.log(el.tagName);
-		el.onclick = function() {
-			var div = document.getElementById("toolbar-tiitz-version");
-
-			if(div.style.display == 'none') {
-				div.style.display = 'block';
-			} else {
-				div.style.display = 'none';
-			}
-		}
-	}
-	
-</script>

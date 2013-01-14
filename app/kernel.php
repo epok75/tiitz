@@ -41,6 +41,9 @@ else
 if($conf['environnement'] == 'dev') {
 	// Config php.ini
 	$ini = ini_get_all(null, false);
-	// error en dev
-	devToolbar::toolbar($conf['environnement'], $ini, $route = null);
+	$errorArray = $error->exportArray();
+	
+	$toolbar = new DevToolbar($ini, $errorArray, $route);
+	$toolbarAdress = $toolbar ->toolbar();
+	require_once $toolbarAdress;
 }

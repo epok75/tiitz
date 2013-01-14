@@ -10,6 +10,7 @@ class TiiTz {
     
     public $tzValidator;
     
+    private static $tiitzVersion = '0.1';
     
     public function __construct(tzView $tzView, tzPlugin $tzPlugin, tzValidator $tzValidator, tzSQL $tzSQL = null) {
        
@@ -19,6 +20,10 @@ class TiiTz {
         $this->tzValidator;
         $this->tzSQL;
 
+    }
+
+    public static function getTiitzVersion() {
+        return self::$tiitzVersion;
     }
    
 }  

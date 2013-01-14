@@ -121,10 +121,17 @@ abstract class tzErrorCore {
 		}
 		return $this -> allErrorFromLog;				
 	}
-
+	/**
+	 * export last errors from log file
+	 * @param  int $nb number of errors exported
+	 * @return array     errors
+	 */
+	public function exportLastErrors($nb) {
+		return null;
+	}
 	/**
 	 * getter
-	 * @return [array] retrieve all log erreo in Json format
+	 * @return [array] retrieve all log errer in Json format
 	 */
 	public function exportJson() {
 		if(file_exists(ROOT.self::$path.self::$file)){

@@ -28,7 +28,7 @@ class tzRender {
 					$this->tpl = 'twig';
 					$this->ext = 'html.twig';
 				} else {
-					die('Failed loaded Twig');
+					tzErrorExtend::catchError(array('Failed loaded Twig', __FILE__,__LINE__, true));
 				}
 				break;
 
@@ -40,7 +40,7 @@ class tzRender {
 					$this->tpl = 'smarty';
 					$this->ext = 'tpl';
 				} else {
-					die('Failed loaded smarty');
+					tzErrorExtend::catchError(array('Failed loaded smarty', __FILE__,__LINE__, true));
 				}
 				break;				
 		
@@ -88,7 +88,7 @@ class tzRender {
 		if (file_exists(self::$path.$file.'.'.$this->ext)) {
 			return true;
 		} else {
-			die('failed to load the file, check the path');
+			tzErrorExtend::catchError(array('failed to load the file, check the path', __FILE__,__LINE__, true));
 		}
 	}
 

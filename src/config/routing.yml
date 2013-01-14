@@ -3,3 +3,7 @@ blog_lol:
     defaults:	{ _controller: blog:show }
     requirements:
         test:	\d+
+
+_show:
+	pattern:	/
+	defaults:	{ _controller: :show }

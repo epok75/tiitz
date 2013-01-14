@@ -69,7 +69,7 @@ class tzRoute {
 
 		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
 		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
-			die('Routing file missing');
+			tzErrorExtend::catchError(array('Routing file missing', __FILE__,__LINE__, true));
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
 
 		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
