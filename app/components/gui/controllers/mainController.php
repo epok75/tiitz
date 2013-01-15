@@ -94,7 +94,7 @@ class MainController
 				$fm->set_currentItem(ROOT."/src/controllers");
 				$fm->xtouch($page."Controller.php");
 				$fm->set_currentItem(ROOT."/src/controllers/".$page."Controller.php");
-				$fm->add_fileContent("<?php \n\n class ".$page."Controller {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page.";\n\t}\n}\n ?>");
+				$fm->add_fileContent("<?php \n\n class ".$page."Controller {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
 
 			}
 		} else {
