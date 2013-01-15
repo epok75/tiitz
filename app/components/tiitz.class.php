@@ -14,7 +14,7 @@ class TiiTz {
     
     public function __construct(tzRender $tzRender, $tzPDO = null) {
 
-        $this->tzSQL = $tzPDO;
+        $this->tzSQL    = $tzPDO;
         $this->tzRender = $tzRender;
         $this->tzPlugin = new tzPlugin;
         //$this->tzValidator = new tzValidator;

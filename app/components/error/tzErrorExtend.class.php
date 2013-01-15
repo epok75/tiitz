@@ -71,11 +71,11 @@ class tzErrorExtend  extends tzErrorCore {
 					'message' 	=> $e->getMessage(), 
 					'file' 		=> $e->getFile(), 
 					'line' 		=> $e->getLine(),
-					//'trace'		=> $e->getTraceAsString(),
 					'date' 		=> date("Y-m-d H:i:s")
 			);
 		} elseif (is_array($e)){
 			$error = array (
+				'type'		=> ' ',
 				'message'	=> $e[0],
 				'file'		=> $e[1],
 				'line'		=> $e[2],
@@ -84,6 +84,7 @@ class tzErrorExtend  extends tzErrorCore {
 		} else {
 			// bad format
 			$error = array (
+				'type'		=> ' ',
 				'message'	=> 'Le format des paramètres de la méthode static catchError n\'est pas correct (Array,Bool)',
 				'file'		=> $e[1],
 				'line'		=> $e[2],

@@ -57,18 +57,12 @@ class MainController extends TzController {
 	{
 		// File manager class
 		$fm = new tzFileManager(ROOT);
-		// create dir
-		$fm->set_currentItem(ROOT."/src/");
-		$fm->xmkdir("views");
-		$fm->xmkdir("controllers");
-		$fm->xmkdir("config");
 		// create files
 		$fm->set_currentItem(ROOT."/src/controllers");
 		$fm->xtouch("mainController.php");
 		$fm->set_currentItem(ROOT."/src/config/");
 		$fm->xtouch("routing.yml");
 		$fm->set_currentItem(ROOT."/src/views");
-		$fm->xmkdir("templates");
 		
 		// layout template
 		if ($_POST["tpl"] == 'twig') {
