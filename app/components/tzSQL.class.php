@@ -1,6 +1,6 @@
 <?php 
 
-class tzPDO
+class tzSQL
 {
 	/** 
 	 * @param string $host     Host of a database
