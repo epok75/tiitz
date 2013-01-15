@@ -69,6 +69,11 @@ class Validator
 		}
 	}
 
+	public static function CleanPage($pages) {
+		$arrayFiler = array_filter($pages);
+		return $arrayFiler;
+	}
+
 	public static function getError(){
 		return self::$error;
 	}

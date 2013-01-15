@@ -21,9 +21,10 @@ class MainController
 			Validator::checkTpl($_POST['tpl']);
 			Validator::checkRoute($_POST['routesLang']);
 			Validator::checkDb(array('user' => $_POST['user'], 'pwd' => $_POST['pwd'],'adress' => $_POST['adress'], 'name' => $_POST['name']));
-			
+			$_POST["pages"] = Validator::CleanPage($_POST["pages"]);
 			// check if there error array is empty or no	
 			$error = Validator::getError();
+			
 			if(empty($error)) {
 
 				$this -> configGenerator();
@@ -32,7 +33,7 @@ class MainController
 			} 
 		}
 
-		var_dump($error);
+		
 		require_once("../app/components/gui/views/_index.php");
 			
 	}
@@ -51,7 +52,7 @@ class MainController
 		// write db parameters
 		$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
 		// add others parameters
-		$fm->add_fileContent("\n\n# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    false");
+		$fm->add_fileContent("\n\n# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
 	
 	}	
 
@@ -59,27 +60,46 @@ class MainController
 	{
 		// File manager class
 		$fm = new tzFileManager(ROOT);
-		// Set the base dir
-		$fm->set_currentItem(ROOT."/src/");
 		// create dir
+		$fm->set_currentItem(ROOT."/src/");
 		$fm->xmkdir("views");
 		$fm->xmkdir("controllers");
+		$fm->xmkdir("config");
+		// create files
+		$fm->set_currentItem(ROOT."/src/controllers");
+		$fm->xtouch("mainController.php");
+		$fm->set_currentItem(ROOT."/src/config/");
+		$fm->xtouch("routing.yml");
 		$fm->set_currentItem(ROOT."/src/views");
 		$fm->xmkdir("templates");
 		$fm->xmkdir("structures");
+		
+		// create default controller and landing page
+		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
+		$fm->add_fileContent("<?php \n\n class mainController {\n\t public function showAction () {\n\t\t echo 'Hello World';\n\t}\n}\n ?>");
+		$fm->set_currentItem(ROOT."/src/config/routing.yml");
+		$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tdefaults:\t{ _controller: main:show }"); 
+		
 		// add pages if user has tried to create one or more
 		if (isset($_POST["pages"]) && !empty($_POST["pages"])) {
 			
 			$pages = $_POST['pages'];
 			foreach ($pages as $page) {
 				$page = str_replace( "\r", "", $page);
+				$page = strtolower($page);
 				$fm->set_currentItem(ROOT."/src/config/routing.yml");
-				$fm->add_fileContent("\n\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
+				$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
 				$fm->set_currentItem(ROOT."/src/views/templates");
-				$fm->xtouch($page.$this->extention);
+				$fm->xtouch($page.'.'.$_POST['tpl']);
 				$fm->set_currentItem(ROOT."/src/controllers");
 				$fm->xtouch($page."Controller.php");
+				$fm->set_currentItem(ROOT."/src/controllers/".$page."Controller.php");
+				$fm->add_fileContent("<?php \n\n class ".$page."Controller {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page.";\n\t}\n}\n ?>");
+
 			}
+		} else {
+			
+
 		}
 	}	
 
