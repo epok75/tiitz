@@ -32,7 +32,7 @@ class tzPDO
 		}
 		catch(PDOException $e){
 			self::$instance == null;
-			tzErrorExtend::catchError($e);
+			tzErrorExtend::catchError($e,true);
 		}
 	}
 

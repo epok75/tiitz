@@ -4,8 +4,7 @@
 */
 require_once 'validatorController.class.php';
 
-class MainController 
-{
+class MainController extends TzController {
 	private $extention;
 
 	public function checkAction() {

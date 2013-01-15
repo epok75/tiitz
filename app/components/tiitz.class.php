@@ -2,7 +2,7 @@
 
 class TiiTz {
     
-    public $tzView;
+    public $tzRender;
     
     public $tzSQL;
     
@@ -12,12 +12,12 @@ class TiiTz {
     
     private static $tiitzVersion = '0.1';
     
-    public function __construct(tzView $tzView, tzPlugin $tzPlugin, tzValidator $tzValidator, tzSQL $tzSQL = null) {
-       
+    public function __construct(tzRender $tzRender, $tzPDO = null) {
 
-        $this->tzView = $tzView;
-        $this->tzPlugin;
-        $this->tzValidator;
+        $this->tzSQL = $tzPDO;
+        $this->tzRender = $tzRender;
+        $this->tzPlugin = new tzPlugin;
+        //$this->tzValidator = new tzValidator;
         $this->tzSQL;
 
     }
