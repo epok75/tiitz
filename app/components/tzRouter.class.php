@@ -117,7 +117,7 @@ class tzRoute {
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
 
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
-		if($urlParams['0'] === 'configTiitz') {
+		if(!empty($urlParams[0]) && $urlParams['0'] === 'configTiitz') {
 			$mode = 'gui';
 		}
 		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);

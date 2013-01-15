@@ -75,3 +75,14 @@ type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_C
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
+type=>8	message=>Undefined offset: 0	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>120	date=>2013-01-15 21:49:59
+type=>8	message=>Undefined offset: 0	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>120	date=>2013-01-15 21:50:28
