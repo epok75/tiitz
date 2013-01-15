@@ -68,10 +68,13 @@ class tzRoute {
 			$type = 'site';
 
 		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
-		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
+		
+		#echo ROOT.$arrayRoutes[$type]['ressource'];
+		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource'])) {
 			tzErrorExtend::catchError(array('Routing file missing', __FILE__,__LINE__, true));
+		}
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
-
+		
 		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
 
 		foreach ($arraySubRoutes as $key => $params) {
@@ -114,7 +117,9 @@ class tzRoute {
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
 
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
-
+		if($urlParams['0'] === 'configTiitz') {
+			$mode = 'gui';
+		}
 		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
 
         #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";

@@ -2,3 +2,6 @@ config:
     pattern:    /
     defaults:   {_controller: main:check}
 
+install:
+    pattern:    /configTiitz/install
+    defaults:   {_controller: main:check}

@@ -56,8 +56,9 @@ abstract class tzErrorCore {
 		}
 		
 		$store .= '</ul></div>';
-
+		echo '<pre>';
 		print_r($store);
+		echo '</pre>';
 	}
 
 	/**
@@ -70,7 +71,12 @@ abstract class tzErrorCore {
 		$i = 1;
 		foreach (self::$currentError as $key => $value) {
 			if ($i < self::$lenghtArray) {
-				$line .= $key .'=>'.$value."\t";
+				if (self::$currentError['message']) {
+					$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
+				} else {
+					$line .= $key .'=>'.$value."\t";
+				}
+				
 			} else {
 				$line .= $key .'=>'.$value;
 			}
@@ -92,6 +98,7 @@ abstract class tzErrorCore {
 		if ($handle) {
 			while (false !== ($line = fgets($handle))) {
 				// We need to remove \m from the array
+				
 				$line 		= str_replace("\n","|",$line);
 				
 				$newEntry 	= explode("\t", $line);
@@ -101,7 +108,8 @@ abstract class tzErrorCore {
 				foreach ($newEntry as $key => $value) {
 					$current = explode('=>', $value);
 					if($i < self::$lenghtArray) {
-						$currentError[$current[0]] = $current[1];						
+						$currentError[$current[0]] = $current[1];
+
 					} else {
 						$currentError[$current[0]] = substr($current[1],0,-1);
 					}

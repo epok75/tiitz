@@ -14,7 +14,10 @@ foreach ($comp as $k => $v) {
 
 $pageURL = 'http';
 
-if ( isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+if ( isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on"){
+	$pageURL .= "s";
+}
+
 $pageURL .= "://";
 
 if ($_SERVER["SERVER_PORT"] != "80") {
@@ -35,6 +38,8 @@ if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
 else
 	$tzRender = tzRender::getInstance("");
+
+
 
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true) 
 	$route = tzRoute::getRoute();
@@ -57,13 +62,15 @@ if (is_file(ROOT.$route["path"])) {
 else
 	echo "Page 404";
 
+
+
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
 	// Config php.ini
 	$ini = ini_get_all(null, false);
 	$errorArray = $error->exportArray();
 	
-	/*$toolbar = new DevToolbar($ini, $errorArray, $route);
+	$toolbar = new DevToolbar($ini, $errorArray, $route);
 	$toolbarAdress = $toolbar ->toolbar();
-	require_once $toolbarAdress; */
+	require_once $toolbarAdress; 
 }

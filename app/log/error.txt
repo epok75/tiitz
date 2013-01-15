@@ -1,0 +1,77 @@
+type=>none	message=>failed to load the file, check the path	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRender.class.php	line=>96	date=>2013-01-15 17:50:58
+type=>1	message=>Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "/templats/main.html.twig" (looked into: /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/src/views).' in /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Loader/Filesystem.php:198 Stack trace: #0 /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Loader/Filesystem.php(134): Twig_Loader_Filesystem->findTemplate('/templats/main....') #1 /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Environment.php(272): Twig_Loader_Filesystem->getCacheKey('/templats/main....') #2 /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Environment.php(319): Twig_Environment->getTemplateClass('/templats/main....', NULL) #3 /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Environment.php(295): Twig_Environment->loadTemplate('/templats/main....') #4 /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/vendors/Twig-1.11.1/lib/Twig/Loader/Filesystem.php	line=>198	date=>2013-01-15 17:50:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:02:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:03:20
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-15 18:03:20
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>8	message=>Undefined variable: route	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>42	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:04:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:05:50
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>138	date=>2013-01-15 18:06:49
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-15 18:06:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:38
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:39
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:39
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:39
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:44
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>140	date=>2013-01-15 18:12:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:14:59
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-15 18:14:59
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>144	date=>2013-01-15 18:16:13
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>144	date=>2013-01-15 18:16:41
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>145	date=>2013-01-15 18:18:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>32	message=>PHP Startup: Unable to load dynamic library '/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so' - dlopen(/Applications/MAMP/bin/php/php5.4.4/lib/php/extensions/no-debug-non-zts-20100525/twig.so, 9): image not found	file=>Unknown	line=>0	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 18:19:14

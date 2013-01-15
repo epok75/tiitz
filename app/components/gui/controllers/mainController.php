@@ -84,7 +84,7 @@ class MainController extends TzController {
 		
 		// create default controller and landing page
 		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
-		$fm->add_fileContent("<?php \n\n class mainController {\n\t public function showAction () {\n\t\t echo 'Hello World';\n\t}\n}\n ?>");
+		$fm->add_fileContent("<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t echo 'Hello World';\n\t}\n}\n ?>");
 		$fm->set_currentItem(ROOT."/src/config/routing.yml");
 		$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tdefaults:\t{ _controller: main:show }"); 
 		
@@ -95,14 +95,16 @@ class MainController extends TzController {
 			foreach ($pages as $page) {
 				$page = str_replace( "\r", "", $page);
 				$page = strtolower($page);
+				// create touting.yml
 				$fm->set_currentItem(ROOT."/src/config/routing.yml");
 				$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
 				$fm->set_currentItem(ROOT."/src/views/templates");
 				$fm->xtouch($page.'.'.$_POST['tpl']);
 				$fm->set_currentItem(ROOT."/src/controllers");
+				// create additional controllers
 				$fm->xtouch($page."Controller.php");
 				$fm->set_currentItem(ROOT."/src/controllers/".$page."Controller.php");
-				$fm->add_fileContent("<?php \n\n class ".$page."Controller {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
+				$fm->add_fileContent("<?php \n\nclass ".$page."Controller extends TzController {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
 
 			}
 		} 
