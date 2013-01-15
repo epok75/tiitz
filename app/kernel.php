@@ -29,7 +29,7 @@ define('WEB_PATH', $pageURL);
 
 
 // Manage Error
-$error = new tzErrorExtend(3);
+$error = new tzErrorExtend(0);
 
 if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
@@ -56,7 +56,7 @@ if($conf['environnement'] == 'dev') {
 	$ini = ini_get_all(null, false);
 	$errorArray = $error->exportArray();
 	
-	$toolbar = new DevToolbar($ini, $errorArray, $route);
+	/*$toolbar = new DevToolbar($ini, $errorArray, $route);
 	$toolbarAdress = $toolbar ->toolbar();
-	require_once $toolbarAdress;
+	require_once $toolbarAdress; */
 }

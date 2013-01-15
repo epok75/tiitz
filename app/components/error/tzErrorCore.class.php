@@ -95,6 +95,7 @@ abstract class tzErrorCore {
 				$line 		= str_replace("\n","|",$line);
 				$newEntry 	= explode("\t", $line);
 				$i = 1;
+				var_dump($newEntry);
 				foreach ($newEntry as $key => $value) {
 					$current = explode('=>', $value);
 					if($i < self::$lenghtArray) {

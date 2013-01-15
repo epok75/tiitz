@@ -56,7 +56,7 @@ class tzRender {
 			return self::$instance;
 		} else {
 			// set the path for the view
-			self::$path = ROOT.'/src/';
+			self::$path = ROOT.'/src/views/';
 			self::$instance = new tzRender($tpl);
 			return self::$instance;
 		}
@@ -69,7 +69,12 @@ class tzRender {
 		//return the template depending of the engine chosen by the user
 		if($this->tpl === 'twig') {
 			// display twig template
-			print $this->renderedPage->render($file.'.html.twig', $prop);
+			if (is_null($prop)) {
+				print $this->renderedPage->render($file.'.html.twig');
+			} else {
+				print $this->renderedPage->render($file.'.html.twig', $prop);
+			}
+			
 		} elseif ($this->tpl === 'smarty') {
 			// check if there are arguments pass to the method to avoid bug
 			if ($prop !== null) {

@@ -24,7 +24,7 @@ class MainController
 
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
-
+				// redirect /web/index.php which will redirect to /src/config/routing.yml
 				header('location:'.WEB_PATH.'index.php');
 			} else {
 				require_once("../app/components/gui/views/_index.php");
@@ -70,12 +70,18 @@ class MainController
 		$fm->xtouch("routing.yml");
 		$fm->set_currentItem(ROOT."/src/views");
 		$fm->xmkdir("templates");
+		
 		// layout template
 		if ($_POST["tpl"] == 'twig') {
 			$fm->moveDir(ROOT."/app/components/template/views/layout.html.twig", ROOT."/src/views/layout.html.twig");
 			$fm->moveDir(ROOT."/app/components/template/views/templates/main.html.twig", ROOT."/src/views/templates/main.html.twig");
 			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.html.twig");
 			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.html.twig");
+		} elseif ($_POST["tpl"] == 'smarty') {
+			$fm->moveDir(ROOT."/app/components/template/views/templates/main.php", ROOT."/src/views/templates/main.tpl");
+			$fm->moveDir(ROOT."/app/components/template/views/layout.php", ROOT."/src/views/layout.tpl");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.tpl");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.tpl");
 		} else {
 			$fm->moveDir(ROOT."/app/components/template/views/templates/main.php", ROOT."/src/views/templates/main.php");
 			$fm->moveDir(ROOT."/app/components/template/views/layout.php", ROOT."/src/views/layout.php");
