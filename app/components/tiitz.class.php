@@ -12,9 +12,9 @@ class TiiTz {
     
     private static $tiitzVersion = '0.1';
     
-    public function __construct(tzRender $tzRender, $tzPDO = null) {
+    public function __construct(tzRender $tzRender, $tzSQL = null) {
 
-        $this->tzSQL = $tzPDO;
+        $this->tzSQL = $tzSQL;
         $this->tzRender = $tzRender;
         $this->tzPlugin = new tzPlugin;
         //$this->tzValidator = new tzValidator;
