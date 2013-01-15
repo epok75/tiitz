@@ -354,23 +354,7 @@ class tzFileManager
 		}
 	}
 	
-	public function bundleGenerator ($name)
-	{
-		$previousItem = $this->get_currentItem();
-		if ($this->xmkdir($_POST["bundle"]) === FALSE)
-			die ($this->get_lastError());
-		$this->set_currentItem(ROOT."src/".$name);
-		foreach ($folders = array("Controllers", "Entities", "Views", "Config") as $value)
-		{
-			$this->xmkdir($value);
-		}
-		$this->set_currentItem("../../../src/".$name);
-		$this->xtouch("index.php");
-		$this->set_currentItem("../../../src/".$name."/index.php");
-		$this->replace_fileContent("<h1>Hello TiiTz</h1><h2>L'installation est terminée</h2><p>Vous pouvez commencer à utiliser TiiTz pour votre projet.<br /></p>");
-		$this->set_currentItem($previousItem);
-		return true;
-	}
+	
 	
 	public function empty_dir($empty = FALSE)
 	{

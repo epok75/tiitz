@@ -24,6 +24,7 @@ class MainController
 
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
+
 				header('location:'.WEB_PATH.'index.php');
 			} else {
 				require_once("../app/components/gui/views/_index.php");
