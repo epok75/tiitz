@@ -36,15 +36,22 @@ if (!empty($conf["template"]))
 else
 	$tzRender = tzRender::getInstance("");
 
-if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
+if (!empty($conf["existingproject"]) && $conf["existingproject"] === true) 
 	$route = tzRoute::getRoute();
 else
 	$route = tzRoute::getRoute("gui");
 
+	
 
 if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
-	$controller = new $route["className"];
+	if(!empty($conf['database']['user']) && !empty($conf["existingproject"]) && $conf["existingproject"] === true) {
+		$tzPDO = tzPDO::getInstance($conf['database']['host'],$conf['database']['user'],$conf['database']['password'],$conf['database']['dbname']);
+		$controller = new $route["className"]($tzRender,$tzPDO);
+	}
+	else {
+		$controller = new $route["className"]($tzRender);
+	}
 	$controller->$route["action"]();
 }
 else
