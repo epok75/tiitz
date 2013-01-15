@@ -176,7 +176,6 @@ footer#tiitz-toolbar div#toolbar-tiitz-version ul li:last-child {
 	border-bottom: transparent;
 }
 footer#tiitz-toolbar div#toolbar-header h2  {
-	font-family: "MillerDisplay",Georgia,serif;
 	font-size: 13px;
 	padding: 0px;
 	padding-bottom: 5px;
