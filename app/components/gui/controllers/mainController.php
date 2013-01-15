@@ -8,11 +8,6 @@ class MainController
 {
 	private $extention;
 
-	function __construct()
-	{
-		# code...
-	}
-
 	public function checkAction() {
 		
 		if (isset($_POST["firstConfig"]))
@@ -29,7 +24,7 @@ class MainController
 
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
-				header('location:'.ROOT.' /web/index.php');
+				header('location:'.WEB_PATH.'index.php');
 			} else {
 				require_once("../app/components/gui/views/_index.php");
 			}

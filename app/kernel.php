@@ -12,7 +12,21 @@ foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
 
-//$fullStr = 'http://'.$_SERVER['SERVER_NAME'].'/'.substr($_SERVER['SCRIPT_NAME'], 0,stripos($_SERVER['SCRIPT_NAME'],'index.php'));
+$pageURL = 'http';
+
+if ( isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+$pageURL .= "://";
+
+if ($_SERVER["SERVER_PORT"] != "80") {
+	$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["SCRIPT_NAME"];
+} else {
+	$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["SCRIPT_NAME"];
+}
+
+$pageURL = str_replace('index.php', '', $pageURL);
+
+define('WEB_PATH', $pageURL);
+
 
 // Manage Error
 $error = new tzErrorExtend(3);
