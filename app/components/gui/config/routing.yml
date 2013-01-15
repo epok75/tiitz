@@ -5,3 +5,8 @@ config:
 install:
     pattern:    /configTiitz/install
     defaults:   {_controller: main:check}
+
+
+entityGenerator:
+    pattern:    /configTiitz/generator
+    defaults:   {_controller: generator:generateEntity}

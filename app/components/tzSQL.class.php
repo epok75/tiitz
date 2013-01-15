@@ -15,7 +15,7 @@ class tzSQL
 	private static $host;
 	private static $instance;
 
-	private static $pdo;
+	public static $tzPDO;
 
 	
 
@@ -26,9 +26,9 @@ class tzSQL
 		self::setDb($db);
 
 		try {
-		    $pdo = new PDO('mysql:host='.self::getHost().';dbname='.self::getDb(), self::getUser(), self::getPassword());
-		    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-		    self::$pdo = $pdo;
+		    $tzPDO = new PDO('mysql:host='.self::getHost().';dbname='.self::getDb(), self::getUser(), self::getPassword());
+		    $tzPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+		    self::$tzPDO = $tzPDO;
 		}
 		catch(PDOException $e){
 			self::$instance == null;
@@ -38,7 +38,7 @@ class tzSQL
 
 	//get PDO
 	public static function getPDO() {
-		return self::$pdo;
+		return self::$tzPDO;
 	}
 
 
@@ -52,7 +52,7 @@ class tzSQL
 		} 
 		else {
 			// set the path for the view
-			self::$instance = new tzPDO($host, $user, $password, $db);
+			self::$instance = new tzSQL($host, $user, $password, $db);
 			return self::$instance;
 		}
 	}
@@ -149,7 +149,7 @@ class tzSQL
 		}
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 		}
 		catch(PDOException $e){
@@ -184,7 +184,7 @@ class tzSQL
 				throw new Exception( 'Error: $where must be an array' );
 
 			try{
-				$request = self::$pdo->prepare($query);
+				$request = self::$tzPDO->prepare($query);
 				$request->execute();
 			}
 			catch(PDOException $e){
@@ -225,7 +225,7 @@ class tzSQL
 			throw new Exception( 'Error: where must be an array' );
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 		}
 		catch(PDOException $e){
@@ -273,7 +273,7 @@ class tzSQL
 			throw new Exception( 'Error: where must be an array' );
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 			$results = $request->fetchAll();
 

@@ -45,8 +45,8 @@ class Validator
 			if(!empty($post['user']) && !empty($post['pwd']) && !empty($post['adress']) && !empty($post['name']))
 			{
 				// check database connection
-				tzPDO::getInstance($post['adress'],$post['user'], $post['pwd'], $post['name']);
-				$pdo = tzPDO::getPDO();
+				tzSQL::getInstance($post['adress'],$post['user'], $post['pwd'], $post['name']);
+				$pdo = tzSQL::getPDO();
 
 				if(is_null($pdo)) {
 					self::$error['connectDb'] = 'La connexion a échoué, vérifier vos identifiant';

@@ -52,7 +52,7 @@ if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
 	if(!empty($conf['database']['user']) && !empty($conf["existingproject"]) && $conf["existingproject"] === true) {
 		$tzSQL = tzSQL::getInstance($conf['database']['host'],$conf['database']['user'],$conf['database']['password'],$conf['database']['dbname']);
-		$controller = new $route["className"]($tzRender,$tzPDO);
+		$controller = new $route["className"]($tzRender,$tzSQL);
 	}
 	else {
 		$controller = new $route["className"]($tzRender);
