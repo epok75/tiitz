@@ -5,7 +5,3 @@ config:
 configInstall:
     pattern:    /configTiitz/install
     defaults:   {_controller: gui:check}
-
-checkBDD:
-    pattern:    /configTiitz/checkBDD
-    defaults:   {_controller: checkBDD:checkBDD}

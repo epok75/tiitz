@@ -28,20 +28,22 @@ class MainController
 			if(empty($error)) {
 
 				$this -> configGenerator();
-				$this -> pagesGenerator();
-				die("pas d'erreur");
-			} 
+				$this -> pagesGenerator(); 
+				header('location:'.ROOT.' /web/index.php');
+			} else {
+				require_once("../app/components/gui/views/_index.php");
+			}
+		} else {
+			require_once("../app/components/gui/views/_index.php");
 		}
 
-		
-		require_once("../app/components/gui/views/_index.php");
-			
 	}
 
 	private function configGenerator()
 	{
 		// File manager class
 		$fm = new tzFileManager(ROOT);
+
 		// location of the file config.yml
 		$fm->set_currentItem(ROOT."/app/config/config.yml");
 
@@ -72,7 +74,18 @@ class MainController
 		$fm->xtouch("routing.yml");
 		$fm->set_currentItem(ROOT."/src/views");
 		$fm->xmkdir("templates");
-		$fm->xmkdir("structures");
+		// layout template
+		if ($_POST["tpl"] == 'twig') {
+			$fm->moveDir(ROOT."/app/components/template/views/layout.html.twig", ROOT."/src/views/layout.html.twig");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/main.html.twig", ROOT."/src/views/templates/main.html.twig");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.html.twig");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.html.twig");
+		} else {
+			$fm->moveDir(ROOT."/app/components/template/views/templates/main.php", ROOT."/src/views/templates/main.php");
+			$fm->moveDir(ROOT."/app/components/template/views/layout.php", ROOT."/src/views/layout.php");
+			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.".$_POST["tpl"]);
+			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.".$_POST["tpl"]);
+		}
 		
 		// create default controller and landing page
 		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
@@ -97,11 +110,7 @@ class MainController
 				$fm->add_fileContent("<?php \n\n class ".$page."Controller {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
 
 			}
-		} else {
-			
-
-		}
+		} 
 	}	
 
 }
-?>

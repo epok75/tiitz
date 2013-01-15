@@ -501,6 +501,14 @@ class tzFileManager
 			default : $this->error = 'L\'upload a rencontré une erreur inconnue !!!';return FALSE;
 		}
 	}
+
+	public function moveDir($origin, $destinataire) {
+			if (!copy($origin, $destinataire)) {
+    			echo "La copie  du fichier a échoué...\n";
+			}
+
+		
+	}
 }
 
 

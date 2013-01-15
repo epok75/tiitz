@@ -38,7 +38,7 @@ class Validator
 	}
 
 	public static function checkDb (array $post) {
-		var_dump($post);
+		
 		// check if a least one input isn't empty
 		if(!empty($post['user']) || !empty($post['pwd']) || !empty($post['adress']) || !empty($post['name'])) {
 			// check that all input are fill up

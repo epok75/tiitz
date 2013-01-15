@@ -36,7 +36,6 @@ if (is_file(ROOT.$route["path"])) {
 else
 	echo "Page 404";
 
-var_dump($route);
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
 	// Config php.ini
