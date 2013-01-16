@@ -1,5 +1,6 @@
 /nbproject/private/
 /nbproject/*
 /.settings
-/app/log/error.txt
-/app/log/*
+app/.DS_Store
+
+app/.DS_Store

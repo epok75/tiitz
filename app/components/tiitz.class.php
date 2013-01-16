@@ -2,35 +2,22 @@
 
 class TiiTz {
     
-    public $tzView;
-    
-    public $tzSQL;
-    
+    public $tzRender;
+        
     public $tzPlugin;
     
     public $tzValidator;
     
+    private static $tiitzVersion = '0.1';
     
-    public function __construct($tzView, $tzPlugin, $tzValidator, $tzSQL = null) {
-        if(!($tzView instanceof TzView)) {
-            tzErrorExtend::newError();
-        }
-        elseif(!($tzPlugin instanceof TzPlugin)) {
-            
-        }
-        elseif(!($tzValidator instanceof TzValidator)) {
-            
-        }
-        elseif(!is_null($tzSQL) && !($tzSQL instanceof TzPDO)){
-            
-        }
-
-        $this->tzView = $tzView;
-        $this->tzPlugin;
-        $this->tzValidator;
-        $this->tzSQL;
-        
-        
+    public function __construct(tzRender $tzRender) {
+        $this->tzRender = $tzRender;
+        $this->tzPlugin = new tzPlugin;
+        //$this->tzValidator = new tzValidator;
     }
-    
-}
+
+    public static function getTiitzVersion() {
+        return self::$tiitzVersion;
+    }
+   
+}  

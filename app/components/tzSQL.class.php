@@ -1,6 +1,6 @@
 <?php 
 
-class tzPDO
+class tzSQL
 {
 	/** 
 	 * @param string $host     Host of a database
@@ -15,7 +15,7 @@ class tzPDO
 	private static $host;
 	private static $instance;
 
-	private static $pdo;
+	private static $tzPDO;
 
 	
 
@@ -26,19 +26,19 @@ class tzPDO
 		self::setDb($db);
 
 		try {
-		    $pdo = new PDO('mysql:host='.self::getHost().';dbname='.self::getDb(), self::getUser(), self::getPassword());
-		    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-		    self::$pdo = $pdo;
+		    $tzPDO = new PDO('mysql:host='.self::getHost().';dbname='.self::getDb(), self::getUser(), self::getPassword());
+		    $tzPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+		    self::$tzPDO = $tzPDO;
 		}
 		catch(PDOException $e){
 			self::$instance == null;
-			tzErrorExtend::catchError($e);
+			tzErrorExtend::catchError($e,true);
 		}
 	}
 
 	//get PDO
 	public static function getPDO() {
-		return self::$pdo;
+		return self::$tzPDO;
 	}
 
 
@@ -52,7 +52,7 @@ class tzPDO
 		} 
 		else {
 			// set the path for the view
-			self::$instance = new tzPDO($host, $user, $password, $db);
+			self::$instance = new tzSQL($host, $user, $password, $db);
 			return self::$instance;
 		}
 	}
@@ -108,7 +108,7 @@ class tzPDO
 	*
 	* Where test/test2 are culumns and coucou/PLOP are values
 	*
-	*/
+	
 	public function insert($table, $arr) {
 		$count = '';
 		$arrlength  = count($arr);
@@ -149,7 +149,7 @@ class tzPDO
 		}
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 		}
 		catch(PDOException $e){
@@ -184,7 +184,7 @@ class tzPDO
 				throw new Exception( 'Error: $where must be an array' );
 
 			try{
-				$request = self::$pdo->prepare($query);
+				$request = self::$tzPDO->prepare($query);
 				$request->execute();
 			}
 			catch(PDOException $e){
@@ -225,7 +225,7 @@ class tzPDO
 			throw new Exception( 'Error: where must be an array' );
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 		}
 		catch(PDOException $e){
@@ -273,7 +273,7 @@ class tzPDO
 			throw new Exception( 'Error: where must be an array' );
 
 		try{
-			$request = self::$pdo->prepare($query);
+			$request = self::$tzPDO->prepare($query);
 			$request->execute();
 			$results = $request->fetchAll();
 
@@ -283,5 +283,6 @@ class tzPDO
 			tzErrorExtend::catchError($e, false);
 		}
     }
+    */
 }
 

@@ -28,7 +28,7 @@ class tzRender {
 					$this->tpl = 'twig';
 					$this->ext = 'html.twig';
 				} else {
-					die('Failed loaded Twig');
+					tzErrorExtend::catchError(array('Failed loaded Twig', __FILE__,__LINE__, true));
 				}
 				break;
 
@@ -40,7 +40,7 @@ class tzRender {
 					$this->tpl = 'smarty';
 					$this->ext = 'tpl';
 				} else {
-					die('Failed loaded smarty');
+					tzErrorExtend::catchError(array('Failed loaded smarty', __FILE__,__LINE__, true));
 				}
 				break;				
 		
@@ -56,7 +56,7 @@ class tzRender {
 			return self::$instance;
 		} else {
 			// set the path for the view
-			self::$path = ROOT.'/src/';
+			self::$path = ROOT.'/src/views/';
 			self::$instance = new tzRender($tpl);
 			return self::$instance;
 		}
@@ -69,7 +69,12 @@ class tzRender {
 		//return the template depending of the engine chosen by the user
 		if($this->tpl === 'twig') {
 			// display twig template
-			print $this->renderedPage->render($file.'.html.twig', $prop);
+			if (is_null($prop)) {
+				print $this->renderedPage->render($file.'.html.twig');
+			} else {
+				print $this->renderedPage->render($file.'.html.twig', $prop);
+			}
+			
 		} elseif ($this->tpl === 'smarty') {
 			// check if there are arguments pass to the method to avoid bug
 			if ($prop !== null) {
@@ -88,7 +93,7 @@ class tzRender {
 		if (file_exists(self::$path.$file.'.'.$this->ext)) {
 			return true;
 		} else {
-			die('failed to load the file, check the path');
+			tzErrorExtend::catchError(array('failed to load the file, check the path', __FILE__,__LINE__, true));
 		}
 	}
 

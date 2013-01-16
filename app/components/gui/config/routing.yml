@@ -1,11 +1,12 @@
 config:
     pattern:    /
-    defaults:   {_controller: gui:check}
+    defaults:   {_controller: main:check}
 
-configInstall:
+install:
     pattern:    /configTiitz/install
-    defaults:   {_controller: gui:check}
+    defaults:   {_controller: main:check}
 
-checkBDD:
-    pattern:    /configTiitz/checkBDD
-    defaults:   {_controller: checkBDD:checkBDD}
+
+entityGenerator:
+    pattern:    /configTiitz/entityGenerator
+    defaults:   {_controller: generator:generateEntity}

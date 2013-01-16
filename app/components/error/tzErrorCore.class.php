@@ -56,8 +56,9 @@ abstract class tzErrorCore {
 		}
 		
 		$store .= '</ul></div>';
-
+		echo '<pre>';
 		print_r($store);
+		echo '</pre>';
 	}
 
 	/**
@@ -70,7 +71,12 @@ abstract class tzErrorCore {
 		$i = 1;
 		foreach (self::$currentError as $key => $value) {
 			if ($i < self::$lenghtArray) {
-				$line .= $key .'=>'.$value."\t";
+				if (self::$currentError['message']) {
+					$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
+				} else {
+					$line .= $key .'=>'.$value."\t";
+				}
+				
 			} else {
 				$line .= $key .'=>'.$value;
 			}
@@ -78,7 +84,7 @@ abstract class tzErrorCore {
 		}
 		$line .= "\n";
 		// write error in the log file
-		@file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND | LOCK_EX);
+		@file_put_contents(ROOT.self::$path.self::$file, $line, FILE_APPEND);
 	}
 	
 	/**
@@ -92,13 +98,18 @@ abstract class tzErrorCore {
 		if ($handle) {
 			while (false !== ($line = fgets($handle))) {
 				// We need to remove \m from the array
+				
 				$line 		= str_replace("\n","|",$line);
+				
 				$newEntry 	= explode("\t", $line);
+				
 				$i = 1;
+				
 				foreach ($newEntry as $key => $value) {
 					$current = explode('=>', $value);
 					if($i < self::$lenghtArray) {
-						$currentError[$current[0]] = $current[1];						
+						$currentError[$current[0]] = $current[1];
+
 					} else {
 						$currentError[$current[0]] = substr($current[1],0,-1);
 					}
@@ -121,10 +132,17 @@ abstract class tzErrorCore {
 		}
 		return $this -> allErrorFromLog;				
 	}
-
+	/**
+	 * export last errors from log file
+	 * @param  int $nb number of errors exported
+	 * @return array     errors
+	 */
+	public function exportLastErrors($nb) {
+		return null;
+	}
 	/**
 	 * getter
-	 * @return [array] retrieve all log erreo in Json format
+	 * @return [array] retrieve all log errer in Json format
 	 */
 	public function exportJson() {
 		if(file_exists(ROOT.self::$path.self::$file)){

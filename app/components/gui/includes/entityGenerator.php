@@ -1,0 +1,265 @@
+<?php
+
+foreach ($_POST['tablename'] as $tablename) {
+
+	// fill parameters from form
+	$table = $tablename;
+	$class = $tablename."Entity";
+
+	$key = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
+
+	$sql = "SHOW COLUMNS FROM ".$table;
+	$colums = tzSQL::getPDO()->prepare( $sql );
+	$colums->execute();
+	$columsResult = $colums->fetchAll();
+
+	$filename = ROOT . "/src/entities/" . $class . ".class.php";
+
+
+	// open file in insert mode
+	$file = fopen( $filename, "w+" );
+	$filedate = date( "d.m.Y" );
+
+
+	$c = "
+<?php
+
+			
+
+	class $class {
+				";
+
+
+	foreach ( $columsResult as $key => $value ) {
+		$col=$value[0];
+
+		$c.= "
+		private $$col;
+		";
+	}
+
+
+	$c.="
+
+
+		/********************** GETTER ***********************/
+		";
+
+	foreach ( $columsResult as $key => $value ) {
+		$col=$value[0];
+
+		$mname = "get" . ucfirst( $col ) . "()";
+		$mthis = "$" . "this->" . $col;
+		$c.="
+
+		public function $mname{
+			return $mthis;
+		}
+
+		";
+	}
+
+	$c.= "
+		/********************** SETTER ***********************/";
+
+	foreach ( $columsResult as $key => $value ) {
+		$col=$value[0];
+
+		$c.=
+			"
+
+		public function set" . ucfirst( $col ) . "($" . "val){
+			$" . "this->" . $col . " =  $" . "val;
+			}
+
+				";
+	}
+
+	$c.="
+
+		/********************** Delete ***********************/
+
+		public function Delete(){
+
+			if(!empty($" . "this->id)){
+				$" . "id = $" . "this->id;
+
+				$" . "sql" . " = \"DELETE FROM $table WHERE id = \".intval($" . "id).\";\";
+
+				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result->execute();
+
+				return $". "result;
+			}
+			else{
+				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll AVANT
+				//Ex: $" . "test = $" . "xxx->getEntity('user')->findOneBy('id','1')->delete();
+			}
+		}
+				";
+
+	$count = 0;
+
+	$sql = "UPDATE `".$table."` SET ";
+	foreach ( $columsResult as $key => $value ) {
+		$col = $value[0];
+
+		if ( $count < ( count( $columsResult ) -1 ) )
+			$sql .= "`".$col."` = \"'.$" . "this->$col.'\", ";
+		else
+			$sql .= "`".$col."` = \"'.$" . "this->$col.'\" ";
+
+		$count++;
+	}
+
+	$sql .= "WHERE id = '.intval($" . "this->id)";
+
+	$c.="
+
+		/********************** Update ***********************/
+
+		public function Update(){
+
+			$" . "sql = '".$sql.";
+
+			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "result->execute();
+
+			return $". "result;
+		}";
+
+	$count = 0;
+
+	$sql = "INSERT INTO ".$table." (";
+
+	foreach ( $columsResult as $key => $value ) {
+		$col=$value[0];
+
+		if ( $count < ( count( $columsResult ) - 1 ) )
+			$sql .= "`".$col."`,";
+		else
+			$sql .= "`".$col."`)";
+
+		$count++;
+	}
+
+	//remise du compteur a 0
+	$count = 0;
+
+	$sql .= " VALUES (";
+
+	foreach ( $columsResult as $key => $value ) {
+		$col=$value[0];
+
+		if ( $count < ( count( $columsResult ) - 1 ) )
+			$sql .= "\"'.$" . "this->$col.'\",";
+		else
+			$sql .= "\"'.$" . "this->$col.'\")";
+
+		$count++;
+	}
+
+	$c.="
+
+		/********************** Insert ***********************/
+
+		public function Insert(){
+
+			$" . "this->id = '';
+
+			$" . "sql = '".$sql."';
+
+			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "result->execute();
+
+			return $". "result;
+		}
+				";
+
+
+	$c.="
+
+		/********************** FindAll ***********************/
+		public function findAll(){
+
+			$" . "sql = 'SELECT * FROM ".$table."';
+			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "result->execute();
+			$" . "formatResult = $" . "result->fetchAll(PDO::FETCH_ASSOC);
+			$" . "entitiesArray = array();
+
+			foreach ($" . "formatResult as $" . "key => $" . "data) {
+
+				$" . "tmpInstance = new ".$class."($" . "this->tzSQL);
+
+				foreach ($" . "data as $" . "k => $" . "value) {
+
+					$" . "method = 'set'.ucfirst($" . "k);
+					$" . "tmpInstance->$" . "method($" . "value);
+				}
+				array_push($" . "entitiesArray, $" . "tmpInstance);
+			}
+
+			return $" . "entitiesArray;
+
+		}
+
+		/************* FindOneBy(column, value) ***************/
+		public function findOneBy($" . "param,$" . "value){
+
+
+			switch ($" . "param){
+				";
+
+
+	foreach ( $columsResult as $key => $value ) {
+
+		$col = $value[0];
+
+		$c.= "
+				case $" . "param == '".$col."':
+					$"."param = '".$col."';
+					break;
+					";
+	}
+
+
+	$c.="
+				default:
+					die('colonne introuvable');
+					//a changer par le systeme de gestion d'erreur
+			}
+
+			$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
+			$". "result = $" . "this->tzSQL->tzExecute($" . "sql, 'obj');
+
+			if(!empty($" . "result)){
+					";
+
+	foreach ( $columsResult as $key => $value ) {
+
+		$col = $value[0];
+
+		$c.="	$" . "this->" . $col . " = $" . "result->" . $col.";
+					";
+	}
+
+	$c.="
+				return $". "result;
+
+			}
+		}
+
+				";
+
+	$c.="
+
+	}
+
+?>
+				";
+
+	fwrite( $file, $c );
+
+	echo "La classe \"$class\" a bien ete generee<br>";
+}

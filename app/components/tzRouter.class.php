@@ -4,43 +4,57 @@ class tzRoute {
 
 	private static $arrayRoute;
 
-	private static function checkRequirement(array $req, array $params) {
+	private static function checkRequirement(array $req, array $params) { // Check if requirements of the route are OK
 
-		$valid = array();
-		$match = array();
+		$valid = array();	// Array use to test if all requirements return true
+		$match = array();	// Array use to test if all regexp return true
+
+		// if a requirement have the name of a URL-variable, we check if the requirement is valid
 		foreach ($params as $k => $v) {
-
-			if (array_key_exists($params[$k]["name"], $req)) 
-			{
+			if (array_key_exists($params[$k]["name"], $req)) {
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
 				}
 				elseif ($req[$params[$k]["name"]] == "string") {
 					$valid['string'] = (is_string($params[$k]["value"])) ? true : false;
 				}
-				else
-				{
-					if (preg_match("/".$req[$params[$k]["name"]]."/", $params[$k]["value"]))
+				else {
+					if (preg_match("/".$req[$params[$k]["name"]]."/", $params[$k]["value"])) {
 						$match[$params[$k]["name"]] = true;
-					else
+					}
+					else {
 						$match[$params[$k]["name"]] = false;
+					}
 				}
 			}
 
-			if (array_key_exists("_method", $req))
-			{
+			// Test if data were send by post or get method
+			if (array_key_exists("_method", $req)) {
 				if ($req["_method"] == "post" || $req["_method"] == "POST")
 					$valid['post'] = (!empty($_POST)) ? true : false;
 
 				if ($req["_method"] == "get" || $req["_method"] == "GET")
 					$valid['get'] = (!empty($_GET)) ? true : false;
 			}
+
+			// Test if the page was called by Ajax request
+			if (array_key_exists("ajax", $req)) {
+				if ($req["ajax"] == true) {
+					if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
+						$valid['ajax'] = true;
+					else
+						false;
+				}
+			}
 		}
 
+		// Checking if regexp matchs
 		foreach ($match as $value) {
 			if ($value === false)
 				$valid["regexp"] = false;
 		}
+
+		// Check if requirements are valid
 		foreach ($valid as $value) {
 			if ($value === false)
 				return false;
@@ -49,7 +63,6 @@ class tzRoute {
 	}
 
 	private static function deleteEmptyValues(array $array) {
-		#var_dump($array);
 		$arrayReturn = array();
 		if(count($array) == 2 && ($array[0] == '' && $array[1] == ''))
 			$arrayReturn = array();
@@ -61,22 +74,23 @@ class tzRoute {
 	}
 
 	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode) { // Fonction comparant les routes
-		#var_dump($arrayRoutes);
 		if($mode == "gui")
 			$type='config';
 		else
 			$type = 'site';
 
 		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
-		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
-			die('Routing file missing');
+		
+		#echo ROOT.$arrayRoutes[$type]['ressource'];
+		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource'])) {
+			tzErrorExtend::catchError(array('Routing file missing', __FILE__,__LINE__, true));
+		}
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
-
+		
 		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
 
 		foreach ($arraySubRoutes as $key => $params) {
 			$arraySubRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arraySubRoutes[$key]['pattern']));
-			//var_dump($arraySubRoutes[$key]['pattern']);
 			$arraySubRoutes[$key]['type'] = $type;
 			$arraySubRoutes[$key]['params'] = array();
 
@@ -91,7 +105,6 @@ class tzRoute {
 				}
 
 			}
-			#echo "ROUTE : ";var_dump($arraySubRoutes[$key]);echo "--------------<br />";
 
 			$r = true;
 			if (!empty($arraySubRoutes[$key]['requirements']))
@@ -109,14 +122,17 @@ class tzRoute {
 		else
 			$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
 
-		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
-
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
-
-		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
+		
+		if(!empty($urlParams[0]) && $urlParams['0'] === 'configTiitz') {
+			$mode = 'gui';
+		}
 
 		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
 
+		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
         #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
 
 		if($selectedRoute){
@@ -134,8 +150,9 @@ class tzRoute {
 			}
 			
 		}
-		else
-			tzErrorExtend::catchError('No Route Found');
+		else {
+			tzErrorExtend::catchError(array('No Route Found', __FILE__,__LINE__, true));
+		}
 
 		return self::$arrayRoute;
 	}

@@ -1,38 +1,38 @@
 <?php
 class DevToolbar {
 
-	private static $environnement;
 	private static $route 	= array();
 	private static $ini 	= array();
-	private $phpVersion;
+	private static $error	= array();
+	private static $phpVersion;
 
-	private function __construct(){
-
+	public function __construct(array $ini, array $error, $route = null){
+		self::$ini 		= $ini;
+		self::$route 	= $route;
+		self::$error 	= $error;
 	}
 
-	public static function toolbar ($environnement, $ini, $route = null) {
-		self::$ini = $ini;
-		self::$environnement = $environnement;
-		self::$route = $route;
-		if(self::$environnement === 'dev') {
-			return require_once ROOT.'/app/components/devToolbar/controllers/mainController.php';
-		} else {
-			return false;
-		}
-	}
-	public static function getToolbar() {
-		
+	public function toolbar () {
+		return  ROOT.'/app/components/devToolbar/controllers/mainController.php';
 	}
 
-	public static function setPhpVersion() {
-		$this -> phpVersion = phpversion();
+	public function setPhpVersion() {
+		self::$phpVersion = phpversion();
 	}
 
 	public static function getPhpVersion () {
-		return $this -> phpVersion;
+		return self::$phpVersion;
 	}
 
 	public static function getRoute () {
 		return self::$route;
+	}
+
+	public static function getIni () {
+		return self::$ini;
+	}
+
+	public  static function getError () {
+		return self::$error;
 	}
 }
