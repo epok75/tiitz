@@ -421,11 +421,11 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			<li>
 			   				<div>
 			   					<ul>
-			   						<li>Base de données : <?php isset($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
-			   						<li>Moteur de template : <?php isset($conf['routingType']['template']) ? print $conf['routingType']['template'] : print 'php'; ?></li>
+			   						<li>Base de données : <?php isset($conf['database']['dbname']) && !empty($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
+			   						<li>Moteur de template : <?php isset($conf['template']) ? print $conf['template'] : print 'php'; ?></li>
 			   						<li>Environnement : <?php isset($conf['environnement']) ? print $conf['environnement']: print ''; ?></li>
 			   						<li>Langue : <?php isset($conf['language']) ? print $conf['language'] : print ''; ?></li>
-			   						<li>Route : </li>
+			   						<li>Route : <?php isset($conf['routingType']) ? print $conf['routingType'] : print ''; ?></li>
 			   					</ul>
 			   				</div>
 			   			</li>
@@ -456,7 +456,14 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   							<p>File : <?php print $errorArray[$i]['file']; ?> | Ligne : <?php print $errorArray[$i]['line']; ?></p>
 			   						</div>		
 			   					<?php endfor ?>
-			   				</div>
+			   				
+			   			</li>
+			   		</ul>
+			   	</li>
+			   	<li><a href="#">Créer vos entitées</a>
+					<ul id="toolbar-load-entities" class="tiitz-toolbar-info">
+			   			<li>
+			   				
 			   			</li>
 			   		</ul>
 			   	</li>

@@ -5,7 +5,7 @@
 require_once 'validatorController.class.php';
 
 class MainController extends TzController {
-	private $extention;
+	private $extension;
 
 	public function checkAction() {
 		
@@ -18,9 +18,9 @@ class MainController extends TzController {
 			$_POST["pages"] = Validator::CleanPage($_POST["pages"]);
 			// check if there error array is empty or no	
 			$error = Validator::getError();
-			
-			if(empty($error)) {
 
+			if(empty($error)) {
+				$this -> templateEngine();
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
 				// redirect /web/index.php which will redirect to /src/config/routing.yml
@@ -32,6 +32,16 @@ class MainController extends TzController {
 			require_once("../app/components/gui/views/_index.php");
 		}
 
+	}
+
+	private function templateEngine() {
+		if ($_POST['tpl'] == 'smarty') {
+			$this->extension = 'tpl';
+		} elseif ($_POST['tpl'] == 'twig') {
+			$this->extension = 'html.twig';
+		} else {
+			$this->extension = $_POST['tpl'];
+		}
 	}
 
 	private function configGenerator()
@@ -50,7 +60,7 @@ class MainController extends TzController {
 		$fm->add_fileContent("\n\n# database configuration\ndatabase:\n    user:\t\t".$_POST["user"]."\n    password:\t\t".$_POST["pwd"]."\n    dbname:\t\t".$_POST["name"]."\n    host:\t\t".$_POST["adress"]."\n    engine:\t\tmysql");
 		// add others parameters
 		$fm->add_fileContent("\n\n# language (tool development)\nlanguage:    fr\n\n# environnement (dev | prod)\nenvironnement:    dev\n\n# Permit to check if a project is already started\nexistingproject:    true");
-	
+		
 	}	
 
 	private function pagesGenerator()
@@ -65,26 +75,18 @@ class MainController extends TzController {
 		$fm->set_currentItem(ROOT."/src/views");
 		
 		// layout template
-		if ($_POST["tpl"] == 'twig') {
-			$fm->moveDir(ROOT."/app/components/template/views/layout.html.twig", ROOT."/src/views/layout.html.twig");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/main.html.twig", ROOT."/src/views/templates/main.html.twig");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.html.twig");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.html.twig");
-		} elseif ($_POST["tpl"] == 'smarty') {
-			$fm->moveDir(ROOT."/app/components/template/views/templates/main.php", ROOT."/src/views/templates/main.tpl");
-			$fm->moveDir(ROOT."/app/components/template/views/layout.php", ROOT."/src/views/layout.tpl");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.tpl");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.tpl");
-		} else {
-			$fm->moveDir(ROOT."/app/components/template/views/templates/main.php", ROOT."/src/views/templates/main.php");
-			$fm->moveDir(ROOT."/app/components/template/views/layout.php", ROOT."/src/views/layout.php");
-			$fm->moveDir(ROOT."/app/components/template/views/templates/footer.php", ROOT."/src/views/templates/footer.".$_POST["tpl"]);
-			$fm->moveDir(ROOT."/app/components/template/views/templates/header.php", ROOT."/src/views/templates/header.".$_POST["tpl"]);
-		}
-		
-		// create default controller and landing page
+		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
+				
+		// create default controller and his content
 		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
-		$fm->add_fileContent("<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t echo 'Hello World';\n\t}\n}\n ?>");
+		
+		$code = "<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t ";
+		$code .= '$this->tzRender->run(\'layout\');';
+		$code .= "\n\t}\n}\n ?>";
+
+		$fm->add_fileContent($code);
+
+		// create content of routing file with default path
 		$fm->set_currentItem(ROOT."/src/config/routing.yml");
 		$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tdefaults:\t{ _controller: main:show }"); 
 		

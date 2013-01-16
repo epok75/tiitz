@@ -8,6 +8,6 @@ class mainController extends tzController {
 
 	// first method call when the website is launched
 	public function mainAction () {
-		print 'Hello World';                                                         
+		$this->tzRender->run('/templates/main');                                                        
 	}
 }

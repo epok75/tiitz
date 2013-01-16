@@ -6,10 +6,10 @@ template:    twig
 
 # database configuration
 database:
-    user:		root
-    password:	root
-    dbname:		jaseauto
-    host:		localhost
+    user:		
+    password:		
+    dbname:		
+    host:		
     engine:		mysql
 
 # language (tool development)
