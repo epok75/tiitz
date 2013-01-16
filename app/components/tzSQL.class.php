@@ -15,7 +15,7 @@ class tzSQL
 	private static $host;
 	private static $instance;
 
-	public static $tzPDO;
+	private static $tzPDO;
 
 	
 
@@ -108,7 +108,7 @@ class tzSQL
 	*
 	* Where test/test2 are culumns and coucou/PLOP are values
 	*
-	*/
+	
 	public function insert($table, $arr) {
 		$count = '';
 		$arrlength  = count($arr);
@@ -283,5 +283,6 @@ class tzSQL
 			tzErrorExtend::catchError($e, false);
 		}
     }
+    */
 }
 

@@ -8,5 +8,5 @@ install:
 
 
 entityGenerator:
-    pattern:    /configTiitz/generator
+    pattern:    /configTiitz/entityGenerator
     defaults:   {_controller: generator:generateEntity}

@@ -86,3 +86,178 @@ type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/com
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-15 21:49:57
 type=>8	message=>Undefined offset: 0	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>120	date=>2013-01-15 21:49:59
 type=>8	message=>Undefined offset: 0	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>120	date=>2013-01-15 21:50:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 08:04:45
+type=>8	message=>Undefined variable: tzsql	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:30:31
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:30:31
+type=>4	message=>syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:33:45
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:34:16
+type=>8	message=>Undefined variable: test	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:39:37
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:39:37
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:39:49
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:20
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:21
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:31
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:31
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:31
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:32
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:43:51
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:48:25
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:48:57
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:49:04
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:49:41
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:49:42
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:49:42
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:50:28
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:50:48
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 08:50:49
+type=>4	message=>syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>7	date=>2013-01-16 09:00:38
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:01:00
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:01:01
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:01:01
+type=>1	message=>Call to a member function prepare() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:11:51
+type=>1	message=>Call to a member function prepare() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:11:52
+type=>1	message=>Call to a member function prepare() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:11:52
+type=>1	message=>Call to a member function prepare() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:12:55
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:13:05
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:14:24
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:14:25
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:15:03
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:15:03
+type=>1	message=>Class name must be a valid object or a string	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>8	date=>2013-01-16 09:15:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:17:34
+type=>8	message=>Undefined variable: list	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>13	date=>2013-01-16 09:17:37
+type=>1	message=>Call to a member function fetchAll() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>13	date=>2013-01-16 09:17:37
+type=>8	message=>Undefined variable: list	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>14	date=>2013-01-16 09:17:45
+type=>1	message=>Call to a member function prepare() on a non-object	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>14	date=>2013-01-16 09:17:45
+type=>1	message=>Call to undefined method PDO::execute()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/controllers/generatorController.php	line=>10	date=>2013-01-16 09:18:26
+type=>8	message=>Undefined property: GeneratorController::$tzSQL	file=>/Applications/MAMP/htdocs/tiitz/app/components/tiitz.class.php	line=>17	date=>2013-01-16 09:27:56
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:45:22
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:45:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:22
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:45:28
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:45:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:45:28
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:43
+type=>8	message=>Undefined index: tablename	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:51
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>3	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:47:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:48:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:48:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:48:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:48:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:48:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 09:59:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:00:01
+type=>2	message=>fopen(/Applications/MAMP/htdocs/tiitz/src/entities/awdawdEntity.class.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>19	date=>2013-01-16 10:01:08
+type=>2	message=>fwrite() expects parameter 1 to be resource, boolean given	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>265	date=>2013-01-16 10:01:08
+type=>8	message=>Undefined index: testprimKey	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>8	date=>2013-01-16 10:01:08
+type=>2	message=>fopen(/Applications/MAMP/htdocs/tiitz/src/entities/testEntity.class.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>19	date=>2013-01-16 10:01:08
+type=>2	message=>fwrite() expects parameter 1 to be resource, boolean given	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>265	date=>2013-01-16 10:01:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:01:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:01:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:01:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:01:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:01:08
+type=>8	message=>Undefined index: testprimKey	file=>/Applications/MAMP/htdocs/tiitz/app/components/gui/includes/entityGenerator.php	line=>8	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:12:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:17:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:17:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:17:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:17:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:17:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:19:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:19:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:19:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:19:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:19:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:23:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:23:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:23:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:23:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:23:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:24:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:24:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:24:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:24:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:24:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:25:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:25:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:25:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:25:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:25:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
