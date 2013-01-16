@@ -261,3 +261,4 @@ type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/com
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>1045	message=>SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 13:44:25
