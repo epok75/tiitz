@@ -2,7 +2,7 @@
 routingType:	yml
 
 # Template Engine
-template:    twig
+template:    
 
 # database configuration
 database:
