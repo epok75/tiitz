@@ -6,7 +6,7 @@ foreach ($_POST['tablename'] as $tablename) {
 	$table = $tablename;
 	$class = $tablename."Entity";
 
-	$key = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
+	$primkey = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
 
 	$sql = "SHOW COLUMNS FROM ".$table;
 	$colums = tzSQL::getPDO()->prepare( $sql );
@@ -190,7 +190,7 @@ foreach ($_POST['tablename'] as $tablename) {
 
 			foreach ($" . "formatResult as $" . "key => $" . "data) {
 
-				$" . "tmpInstance = new ".$class."($" . "this->tzSQL);
+				$" . "tmpInstance = new ".$class."(tzSQL::getInstance());
 
 				foreach ($" . "data as $" . "k => $" . "value) {
 
@@ -252,14 +252,14 @@ foreach ($_POST['tablename'] as $tablename) {
 
 				";
 
-	if($key){
-		$c=
+	if($primkey){
+		$c.=
 		"
 
 		/********************** Find(id) ***********************/
 		public function find($". "id){
 
-			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$key." = $" . "id';
+			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = $" . "id';
 			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 			$" . "result->execute();
 			$" . "formatResult = $" . "result->fetch(PDO::FETCH_ASSOC);
