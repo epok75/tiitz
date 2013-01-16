@@ -28,11 +28,6 @@ foreach ($_POST['tablename'] as $tablename) {
 
 	class $class {
 				";
-	if($key){
-		$c .="
-		private $$key;
-		";
-	}
 
 
 	foreach ( $columsResult as $key => $value ) {

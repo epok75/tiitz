@@ -5,6 +5,8 @@
 
 	class testEntity {
 				
+		private $id;
+		
 		private $q2e;
 		
 		private $awd;
@@ -30,6 +32,7 @@
 			return $this->awd;
 		}
 
+		
 		/********************** SETTER ***********************/
 
 		public function setId($val){

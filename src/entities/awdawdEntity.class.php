@@ -32,6 +32,7 @@
 			return $this->pass;
 		}
 
+		
 		/********************** SETTER ***********************/
 
 		public function setId($val){
