@@ -3,3 +3,4 @@ blog_lol:
     defaults:	{ _controller: blog:show }
     requirements:
         test:	\d+
+        ajax:	true

@@ -34,6 +34,15 @@ class tzRoute {
 				if ($req["_method"] == "get" || $req["_method"] == "GET")
 					$valid['get'] = (!empty($_GET)) ? true : false;
 			}
+
+			if (array_key_exists("ajax", $req)) {
+				if ($req["ajax"] == true) {
+					if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
+						$valid['ajax'] = true;
+					else
+						false;
+				}
+			}
 		}
 
 		foreach ($match as $value) {
