@@ -7,6 +7,13 @@ install:
     defaults:   {_controller: main:check}
 
 
+#entityGeneratorPOST:
+#    pattern:    /configTiitz/entityGenerator
+#    defaults:   {_controller: generator:posted}
+#    requirements:
+#    	_method: POST
+
 entityGenerator:
     pattern:    /configTiitz/entityGenerator
     defaults:   {_controller: generator:generateEntity}
+

@@ -23,4 +23,8 @@ class GeneratorController extends tzController{
 			require_once(ROOT.'/app/components/gui/includes/entityGenerator.php');
 		}
 	}
+
+	public function postedAction() {
+		echo 'LOL';
+	}
 }

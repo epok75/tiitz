@@ -28,23 +28,28 @@ class tzRoute {
 				}
 			}
 
-			// Test if data were send by post or get method
-			if (array_key_exists("_method", $req)) {
-				if ($req["_method"] == "post" || $req["_method"] == "POST")
-					$valid['post'] = (!empty($_POST)) ? true : false;
+			
 
-				if ($req["_method"] == "get" || $req["_method"] == "GET")
-					$valid['get'] = (!empty($_GET)) ? true : false;
-			}
+			
+		}
 
-			// Test if the page was called by Ajax request
-			if (array_key_exists("ajax", $req)) {
-				if ($req["ajax"] == true) {
-					if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
-						$valid['ajax'] = true;
-					else
-						false;
-				}
+		// Test if data were send by post or get method
+
+		if (array_key_exists("_method", $req)) {
+			if ($req["_method"] == "post" || $req["_method"] == "POST")
+				$valid['post'] = (!empty($_POST)) ? true : false;
+
+			if ($req["_method"] == "get" || $req["_method"] == "GET")
+				$valid['get'] = (!empty($_GET)) ? true : false;
+		}
+
+		// Test if the page was called by Ajax request
+		if (array_key_exists("ajax", $req)) {
+			if ($req["ajax"] == true) {
+				if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
+					$valid['ajax'] = true;
+				else
+					$valid['ajax'] = false;
 			}
 		}
 
@@ -107,6 +112,7 @@ class tzRoute {
 			}
 
 			$r = true;
+			//var_dump($arraySubRoutes[$key]);
 			if (!empty($arraySubRoutes[$key]['requirements']))
 				$r = self::checkRequirement($arraySubRoutes[$key]['requirements'], $arraySubRoutes[$key]['params']);
 
