@@ -256,7 +256,6 @@ footer#tiitz-toolbar ul#toolbar-log-error {
 }
 .odd, .even {
 	padding: 5px;
-	
 	text-align: left;
 	vertical-align: top;
 }
