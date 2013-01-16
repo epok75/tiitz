@@ -7,174 +7,159 @@
  */
 class tzValidator {
     
-    const BAD_EMAIL         = "l'adresse email n'est pas valide";
-    const BAD_IP            = "l'adresse ip n'est pas valide";
-    const BAD_INT           = "le nombre n'est pas valide";
-    const BAD_FLOAT         = "le chiffre flottant n'est pas valide";
-    const BAD_STRING        = "le texte n'est pas valide";
-    const BAD_LENGTH        = "le texte ne contient pas la longueur indiquee";
-    const BAD_LENGTH_PATTERN = "la comparaison de taille est mal saisie";
-    const BAD_URL           = "l'url saisie n'est pas valide";
-    const BAD_PATTERN       = "le pattern saisi ne correspond pas au pattern demande";
-    const BAD_TYPE_PATTERN  = "ce type n'existe pas ou ne peut pas être verifie";
+    const BAD_EMAIL             = "ERR_EMAIL";
+    const BAD_IP                = "ERR_IP";
+    const BAD_INT               = "ERR_INT";
+    const BAD_FLOAT             = "ERR_FLOAT";
+    const BAD_STRING            = "ERR_STRING";
+    const BAD_LENGTH            = "ERR_LENGTH";
+    const BAD_LENGTH_PATTERN    = "ERR_LENGTH_PATTERN";
+    const BAD_URL               = "ERR_URL";
+    const BAD_PATTERN           = "ERR_PATTERN";
+    const BAD_TYPE_PATTERN      = "ERR_TYPE_PATTERN";
+    const BAD_FLAG              = "ERR_FLAG";
     
-    const BAD_FLAG = "";
     private static $errors = array();
-    
-    private static function addError($elem, $err)
-    {
-        array_push(self::$errors, $elem.": ".$err);
+
+    private static function addError($elem, $err){
+        self::$errors[$elem]= $err;
     }
     
-    public static  function getErrors()
-    {
+    public static  function getErrors(){
         return(self::$errors);
     }
     
-    public static function checkType($elem, $type)
-    {
-        if($type == "EMAIL")
-        {
-            if(self::checkMail($elem) != "")
+    public static function checkTypes($elem, $type){
+        
+        if($type == "EMAIL"){
+            if(self::isMail($elem) != TRUE){
                 self::addError($elem, self::BAD_EMAIL);
-            return(self::checkMail($elem));
+            }
+            return(FALSE);
         }
-        if($type == "IP")
-        {
-            if(self::checkIp($elem) != "")
+        if($type == "IP"){
+            if(self::isIp($elem) != TRUE){
                 self::addError($elem, self::BAD_IP);
-            return(self::checkIP($elem));
+            }
+            return(FALSE);
         }
-        if($type == "STRING")
-        {
-            if(self::checkString($elem) != "")
+        if($type == "STRING"){
+            if(self::isString($elem) != TRUE){
                 self::addError($elem, self::BAD_STRING);
-            return(self::checkString($elem));
+            }
+            return(FALSE);
         }
-        if($type == "URL")
-        {
-            if(self::checkUrl($elem) != "")
+        if($type == "URL"){
+            if(self::isUrl($elem) != TRUE){
                 self::addError($elem, self::BAD_URL);
-            return(self::checkUrl($elem));
+            }
+            return(FALSE);
         }
-        if($type == "INT")
-        {
-            if(self::checkInt($elem) != "")
+        if($type == "INT"){
+            if(self::isInt($elem) != TRUE){
                 self::addError($elem, self::BAD_INT);
-            return(self::checkInt($elem));
+            }
+            return(FALSE);
         }
-        if($type == "FLOAT")
-        {
-            if(self::checkFloat($elem) != "")
+        if($type == "FLOAT"){
+            if(self::isFloat($elem) != TRUE){
                 self::addError($elem, self::BAD_FLOAT);
-            return(self::checkFloat($elem));
+            }
+            return(FALSE);
         }
         self::addError($elem, self::BAD_TYPE_PATTERN);
-        return(self::BAD_TYPE_PATTERN);
+        return(FALSE);
     }
     
     
     /* Check the length of a string for the checkMulti function*/
-    public static function checkLength($elem, $constraint)
-    {
+    public static function checkLength($elem, $constraint){
         $nbChar = "";
         $toCompare = str_split(str_replace(" ", "",$constraint));
-        if(($toCompare[0] == "<" && $toCompare[1] == "=") || ($toCompare[0] == ">" && $toCompare[1] == "=") || ($toCompare[0] == "=" && $toCompare[1] == "=") || ($toCompare[0] == "!" && $toCompare[1] == "="))
-        {
-            foreach($toCompare as $k=>$v)
-            {
-                if($k != 0 && $k != 1)
-                {
-                    if(ctype_digit($v))
+        if(($toCompare[0] == "<" && $toCompare[1] == "=") || ($toCompare[0] == ">" && $toCompare[1] == "=") || ($toCompare[0] == "=" && $toCompare[1] == "=") || ($toCompare[0] == "!" && $toCompare[1] == "=")){
+            foreach($toCompare as $k=>$v){
+                if($k != 0 && $k != 1){
+                    if(ctype_digit($v)){
                         $nbChar .= $v;
-                    else
-                    {
+                    }
+                    else{
                         self::addError($elem, self::BAD_LENGTH_PATTERN);
-                        return(self::BAD_LENGTH_PATTERN);
+                        return(FALSE);
                     }
                 }
             }
-            if($toCompare[0] == "<" && $toCompare[1] == "=")
-            {
-                if(strlen($elem) <= $nbChar)
+            if($toCompare[0] == "<" && $toCompare[1] == "="){
+                if(strlen($elem) <= $nbChar){
                     return("");
-                else
-                {
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }
             }
-            if($toCompare[0] == ">" && $toCompare[1] == "=")
-            {
-                if(strlen($elem) >= $nbChar)
+            if($toCompare[0] == ">" && $toCompare[1] == "="){
+                if(strlen($elem) >= $nbChar){
                     return("");
-                else
-                {
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }
             }
-            if($toCompare[0] == "!" && $toCompare[1] == "=")
-            {
-                if(strlen($elem) != $nbChar)
+            if($toCompare[0] == "!" && $toCompare[1] == "="){
+                if(strlen($elem) != $nbChar){
                     return("");
-                else
-                {
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }
             }
-            if($toCompare[0] == "=" && $toCompare[1] == "=")
-            {
-                if(strlen($elem) == $nbChar)
+            if($toCompare[0] == "=" && $toCompare[1] == "="){
+                if(strlen($elem) == $nbChar){
                     return("");
-                else
-                {
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }   
             }
             self::addError($elem, self::BAD_LENGTH_PATTERN);
-            return(self::BAD_LENGTH_PATTERN);
+            return(FALSE);
         }
-        if($toCompare[0] == "<" || $toCompare[0] == ">")
-        {
-            foreach($toCompare as $k=>$v)
-            {
-                if($k != 0)
-                {
-                    if(ctype_digit($v))
+        if($toCompare[0] == "<" || $toCompare[0] == ">"){
+            foreach($toCompare as $k=>$v){
+                if($k != 0){
+                    if(ctype_digit($v)){
                         $nbChar .= $v;
-                    else
-                    {
+                    }
+                    else{
                         self::addError($elem, self::BAD_LENGTH_PATTERN);
-                        return(self::BAD_LENGTH_PATTERN);
+                        return(FALSE);
                     }
                 }
             }
-            if($toCompare[0] == "<")
-            {
-                if(strlen($elem) < $nbChar)
+            if($toCompare[0] == "<"){
+                if(strlen($elem) < $nbChar){
                     return("");
-                else
-                {
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }
             }
-            if($toCompare[0] == ">" && $nbChar)
-            {
-                if(strlen($elem) > $toCompare[1])
-                    return("");
-                else
-                {
+            if($toCompare[0] == ">" && $nbChar){
+                if(strlen($elem) > $toCompare[1]){
+                    return(TRUE);
+                }
+                else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(self::BAD_LENGTH);
+                    return(FALSE);
                 }
             }
         }
         self::addError($elem, self::BAD_LENGTH_PATTERN);
-        return(self::BAD_LENGTH_PATTERN);
+        return(FALSE);
     }
     
     /*  
@@ -182,52 +167,59 @@ class tzValidator {
      */
     
     /*VALIDATES VALUE AS EMAIL ADDRESS: returns the message linked to the BAD_EMAIL CONST if email is not valid, else returns an empty string*/
-    public static function checkMail($mail){
-        if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
-            return(self::BAD_EMAIL);
-        return("");
+    public static function isMail($mail){
+        if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AS URL: returns the message linked to the BAD_URL CONST if url is not valid, else returns an empty string*/
-    public static function checkUrl($url){
-        if(!filter_var($url, FILTER_VALIDATE_URL))
-            return(self::BAD_URL);
-        return("");
+    public static function isUrl($url){
+        if(!filter_var($url, FILTER_VALIDATE_URL)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AS IP ADDRESS: returns the message linked to the BAD_IP CONST if number is not an integer, else returns an empty string*/
-    public static function checkIp($ip){
-        if(!filter_var($ip, FILTER_VALIDATE_IP))
-            return(self::BAD_IP);
-        return("");
+    public static function isIp($ip){
+        if(!filter_var($ip, FILTER_VALIDATE_IP)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AS STRING: returns the message linked to the BAD_STRING CONST if str is not valid, else returns an empty string*/
-    public static function checkString($str){
-        if(!is_string($str))
-            return(self::BAD_STRING);
-        return("");
+    public static function isString($str){
+        if(!is_string($str)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AS INTEGER: returns the message linked to the BAD_INT CONST if number is not an integer, else returns an empty string*/
-    public static function checkInt($number){
-        if(!filter_var($number, FILTER_VALIDATE_INT))
-            return(self::BAD_INT);
-        return("");
+    public static function isInt($number){
+        if(!filter_var($number, FILTER_VALIDATE_INT)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AS FLOAT: returns the message linked to the BAD_FLOAT CONST if numberFloat is not a float, else returns an empty string*/
-    public static function checkFloat($numberFloat){
-        if(!filter_var($numberFloat, FILTER_VALIDATE_FLOAT))
-            return(self::BAD_FLOAT);
-        return("");
+    public static function isFloat($numberFloat){
+        if(!filter_var($numberFloat, FILTER_VALIDATE_FLOAT)){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /*VALIDATES VALUE AGAINST PATTERN: returns the message BAD_PATTERN CONST if toCheck does not match pattern, else returns an empty string*/
-    public static function checkStringExp($toCheck, $pattern){
-        if(!filter_var($toCheck, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>$pattern))))
-            return(self::BAD_PATTERN);
-        return("");
+    public static function isStringExp($toCheck, $pattern){
+        if(!filter_var($toCheck, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>$pattern)))){
+            return(FALSE);
+        }
+        return(TRUE);
     }
     
     /* 
@@ -258,13 +250,20 @@ class tzValidator {
      * PARSER FOR MULTI CONSTRAINTS CHECK 
      */
     
-    public static function checkMulti($str, $req = null){
-        if($req != null)
-        {
-            if(array_key_exists("LENGTH", $req))
-                self::checkLength($str, $req["LENGTH"]);
-            if(array_key_exists("TYPE", $req))
-                self::checkType($str, $req["TYPE"]);
+    public static function checkMulti($elems){
+        if($elems != null){
+            foreach ($elems as $req){
+                var_dump($req);
+                if(array_key_exists("ELEM", $req)){
+                    
+                    if(array_key_exists("LENGTH", $req)){
+                        self::checkLength($req["ELEM"], $req["LENGTH"]);
+                    }
+                    if(array_key_exists("TYPE", $req)){
+                        self::checkTypes($req["ELEM"], $req["TYPE"]);
+                    }
+                }
+            }
         }
     }
 }
