@@ -460,7 +460,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			</li>
 			   		</ul>
 			   	</li>
-			   	<li><a href="#">Créer vos entitées</a>
+			   	<li><a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Créer vos entitées</a>
 					<ul id="toolbar-load-entities" class="tiitz-toolbar-info">
 			   			<li>
 			   				
