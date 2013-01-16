@@ -6,11 +6,11 @@ template:    twig
 
 # database configuration
 database:
-    user:		root
-    password:	root
-    dbname:		jaseauto
-    host:		localhost
-    engine:		mysql
+    user:
+    password:
+    dbname:
+    host:
+    engine:
 
 # language (tool development)
 language:    fr
@@ -19,4 +19,4 @@ language:    fr
 environnement:    dev
 
 # Permit to check if a project is already started
-existingproject:    true
+existingproject:    false
