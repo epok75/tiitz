@@ -5,8 +5,6 @@ class tzRoute {
 	private static $arrayRoute;
 
 	private static function checkRequirement(array $req, array $params) { // Check if requirements of the route are OK
-		var_dump($req);
-		var_dump($params);
 
 		$valid = array();	// Array use to test if all requirements return true
 		$match = array();	// Array use to test if all regexp return true
