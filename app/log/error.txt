@@ -261,3 +261,22 @@ type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/com
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/tiitz/app/components/tzRouter.class.php	line=>143	date=>2013-01-16 10:26:05
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 13:45:45
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:10
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:12
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:24
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:25
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:25
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:25
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:25
+type=>1045	message=>SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 14:00:25
+type=>1	message=>Call to undefined method tzPlugin::getPlugin()	file=>C:\wamp\www\tiitz\app\kernel.php	line=>78	date=>2013-01-16 14:02:01
+type=>2	message=>Missing argument 2 for tzPlugin::getPlugin(), called in C:\wamp\www\tiitz\app\kernel.php on line 78 and defined	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>6	date=>2013-01-16 14:32:48
+type=>1	message=>Call to private myPlugin::__construct() from context 'tzPlugin'	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>15	date=>2013-01-16 14:38:57
+type=>1	message=>Call to private myPlugin::__construct() from context 'tzPlugin'	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>15	date=>2013-01-16 14:39:14
+type=>1	message=>Call to private myPlugin::__construct() from context 'tzPlugin'	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>15	date=>2013-01-16 14:39:14
+type=>1	message=>Call to private myPlugin::__construct() from context 'tzPlugin'	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>15	date=>2013-01-16 14:39:15
+type=>2	message=>in_array() expects parameter 2 to be array, string given	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>20	date=>2013-01-16 15:09:19
+type=>1	message=>Class 'myPluginClass' not found	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>22	date=>2013-01-16 15:21:14
+type=>1	message=>Call to private myPlugin::__construct() from context 'tzPlugin'	file=>C:\wamp\www\tiitz\app\components\tzPlugin.class.php	line=>22	date=>2013-01-16 15:21:28
+type=>1049	message=>SQLSTATE[HY000] [1049] Unknown database 'toto'	file=>C:\wamp\www\tiitz\app\components\tzSQL.class.php	line=>29	date=>2013-01-16 15:46:00
