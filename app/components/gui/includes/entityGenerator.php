@@ -190,7 +190,7 @@ foreach ($_POST['tablename'] as $tablename) {
 
 			foreach ($" . "formatResult as $" . "key => $" . "data) {
 
-				$" . "tmpInstance = new ".$class."(tzSQL::getInstance());
+				$" . "tmpInstance = new ".$class."();
 
 				foreach ($" . "data as $" . "k => $" . "value) {
 
