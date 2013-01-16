@@ -6,11 +6,11 @@ template:    twig
 
 # database configuration
 database:
-    user:
-    password:
-    dbname:
-    host:
-    engine:
+    user:		
+    password:		
+    dbname:		
+    host:		
+    engine:		mysql
 
 # language (tool development)
 language:    fr

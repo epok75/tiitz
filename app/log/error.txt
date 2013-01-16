@@ -304,3 +304,28 @@ type=>none	message=>No Route Found	file=>C:\wamp\www\tiitz\app\components\tzRout
 type=>none	message=>No Route Found	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>154	date=>2013-01-16 15:01:12
 type=>none	message=>No Route Found	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>154	date=>2013-01-16 15:01:12
 type=>none	message=>No Route Found	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>154	date=>2013-01-16 15:01:12
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 17:35:04
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 17:39:14
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:21:18
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:22:00
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:24:38
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:25:21
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:32:12
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:35:03
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:37:08
+type=>64	message=>Cannot redeclare class mainController	file=>C:\wamp\www\tiitz\src\controllers\mainController.php	line=>14	date=>2013-01-16 18:40:09
+type=>2	message=>copy(C:\wamp\www\tiitz/src/views/templates/main.html.twig) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>490	date=>2013-01-16 18:46:12
+type=>2	message=>copy(C:\wamp\www\tiitz/src/views/templates/footer.html.twig) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>490	date=>2013-01-16 18:46:12
+type=>2	message=>copy(C:\wamp\www\tiitz/src/views/templates/header.html.twig) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>490	date=>2013-01-16 18:46:12
+type=>2	message=>touch() [<a href='function.touch'>function.touch</a>]: Unable to create file C:\wamp\www\tiitz/src/config/routing.php/lolzor.twig because No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>406	date=>2013-01-16 18:46:12
+type=>2	message=>touch() [<a href='function.touch'>function.touch</a>]: Unable to create file C:\wamp\www\tiitz/src/config/routing.php/lolzorController.php because No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>406	date=>2013-01-16 18:46:12
+type=>2	message=>touch() [<a href='function.touch'>function.touch</a>]: Unable to create file C:\wamp\www\tiitz/src/config/routing.php/lolzor2.twig because No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>406	date=>2013-01-16 18:46:12
+type=>2	message=>touch() [<a href='function.touch'>function.touch</a>]: Unable to create file C:\wamp\www\tiitz/src/config/routing.php/lolzor2Controller.php because No such file or directory	file=>C:\wamp\www\tiitz\app\components\tzFileManager.class.php	line=>406	date=>2013-01-16 18:46:12
+type=>none	message=>Routing file missing	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>86	date=>2013-01-16 18:55:52
+type=>8	message=>Array to string conversion	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>93	date=>2013-01-16 18:55:52
+type=>8	message=>Array to string conversion	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>95	date=>2013-01-16 18:55:52
+type=>2	message=>Invalid argument supplied for foreach()	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>97	date=>2013-01-16 18:55:52
+type=>4096	message=>Argument 1 passed to tzRoute::checkRequirement() must be an array, string given, called in C:\wamp\www\tiitz\app\components\tzRouter.class.php on line 111 and defined	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>7	date=>2013-01-16 18:55:52
+type=>4096	message=>Argument 2 passed to tzRoute::checkRequirement() must be an array, string given, called in C:\wamp\www\tiitz\app\components\tzRouter.class.php on line 111 and defined	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>7	date=>2013-01-16 18:55:52
+type=>2	message=>Invalid argument supplied for foreach()	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>13	date=>2013-01-16 18:55:52
+type=>none	message=>No Route Found	file=>C:\wamp\www\tiitz\app\components\tzRouter.class.php	line=>154	date=>2013-01-16 18:55:52
