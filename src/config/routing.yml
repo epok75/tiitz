@@ -1,4 +1,5 @@
-
 main_show:
-	pattern:	 / 
-	defaults:	{ _controller: main:show }
+	pattern:	/{page}/
+	controller:	main:show
+	requirements:
+        page:	int

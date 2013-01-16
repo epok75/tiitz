@@ -1,5 +1,5 @@
 # Routing
-routingType:	yml
+routingType:	php
 
 # Template Engine
 template:    twig

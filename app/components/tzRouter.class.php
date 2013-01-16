@@ -13,7 +13,7 @@ class tzRoute {
 		foreach ($params as $k => $v) {
 			if (array_key_exists($params[$k]["name"], $req)) {
 				if ($req[$params[$k]["name"]] == "int") {
-					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
+					$valid['int'] = (intval($params[$k]["value"])) ? true : false;
 				}
 				elseif ($req[$params[$k]["name"]] == "string") {
 					$valid['string'] = (is_string($params[$k]["value"])) ? true : false;
@@ -26,15 +26,10 @@ class tzRoute {
 						$match[$params[$k]["name"]] = false;
 					}
 				}
-			}
-
-			
-
-			
+			}	
 		}
 
 		// Test if data were send by post or get method
-
 		if (array_key_exists("_method", $req)) {
 			if ($req["_method"] == "post" || $req["_method"] == "POST")
 				$valid['post'] = (!empty($_POST)) ? true : false;
@@ -78,20 +73,26 @@ class tzRoute {
 		return $arrayReturn;
 	}
 
-	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode) { // Fonction comparant les routes
+	private static function parseRoutes(array $arrayRoutes, array $actualRoute, $mode, array $conf) { // Fonction comparant les routes
 		if($mode == "gui")
 			$type='config';
+		elseif(!empty($conf["routingType"]) && $conf["routingType"] == "php")
+			$type = 'site_php';
 		else
-			$type = 'site';
+			$type = 'site_yaml';
 
 		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
 		
-		#echo ROOT.$arrayRoutes[$type]['ressource'];
 		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource'])) {
 			tzErrorExtend::catchError(array('Routing file missing', __FILE__,__LINE__, true));
 		}
-		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
-		
+		if($type == "config" || $type == "site_yaml")
+			$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
+		elseif($type == "site_php") {
+			require_once ROOT.$arrayRoutes[$type]['ressource'];
+			$arraySubRoutes = $tzRoute;
+		}
+
 		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
 
 		foreach ($arraySubRoutes as $key => $params) {
@@ -112,7 +113,6 @@ class tzRoute {
 			}
 
 			$r = true;
-			//var_dump($arraySubRoutes[$key]);
 			if (!empty($arraySubRoutes[$key]['requirements']))
 				$r = self::checkRequirement($arraySubRoutes[$key]['requirements'], $arraySubRoutes[$key]['params']);
 
@@ -122,7 +122,7 @@ class tzRoute {
 		return false;
 	}
 
-	public static function getRoute($mode = "defaults") { // Fonction retournant la route correspondant a PATH_INFO
+	public static function getRoute(array $conf, $mode = "defaults") { // Fonction retournant la route correspondant a PATH_INFO
 		if(empty($_SERVER['PATH_INFO']) || $_SERVER['PATH_INFO'] == '/')
 			$urlParams = array();
 		else
@@ -134,15 +134,15 @@ class tzRoute {
 			$mode = 'gui';
 		}
 
-		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
+		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode, $conf);
 
 		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
 		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
-        #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
+        echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
 
 		if($selectedRoute){
-			$arrayController = explode(':', $selectedRoute['defaults']['_controller']);
+			$arrayController = explode(':', $selectedRoute['controller']);
 			if(count($arrayController) !== 2){
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
@@ -154,7 +154,6 @@ class tzRoute {
                                 self::$arrayRoute['className'] = $arrayController[0].'Controller';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
 			}
-			
 		}
 		else {
 			tzErrorExtend::catchError(array('No Route Found', __FILE__,__LINE__, true));

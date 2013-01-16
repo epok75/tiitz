@@ -42,10 +42,10 @@ else
 
 
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true) 
-	$route = tzRoute::getRoute();
+	$route = tzRoute::getRoute($conf);
 else
-	$route = tzRoute::getRoute("gui");
-
+	$route = tzRoute::getRoute($conf, "gui");
+var_dump($route);
 	
 
 if (is_file(ROOT.$route["path"])) {
