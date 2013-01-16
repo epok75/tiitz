@@ -252,6 +252,25 @@ foreach ($_POST['tablename'] as $tablename) {
 
 				";
 
+	if($key){
+		$c=
+		"
+
+		/********************** Find(id) ***********************/
+		public function find($". "id){
+
+			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$key." = $" . "id';
+			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "result->execute();
+			$" . "formatResult = $" . "result->fetch(PDO::FETCH_ASSOC);
+			if(!empty($" . "formatResult)){
+				return $" . "formatResult;
+			}
+
+		}
+		";
+	}
+
 	$c.="
 
 	}
