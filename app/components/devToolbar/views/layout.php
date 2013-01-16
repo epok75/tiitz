@@ -249,6 +249,26 @@ footer#tiitz-toolbar ul#toolbar-config > li > div, footer#tiitz-toolbar ul#toolb
 /* tiitz error log */
 footer#tiitz-toolbar ul#toolbar-log-error {
 	width: 700px;
+	height: 500px;
+	padding: 0px;
+	bottom: 44px;
+	overflow: auto;
+}
+.odd, .even {
+	padding: 5px;
+	
+	text-align: left;
+	vertical-align: top;
+}
+footer#tiitz-toolbar ul#toolbar-log-error .odd {
+	background-color: #F9F9F9;
+	border-top: 1px solid #DDD;
+}
+footer#tiitz-toolbar ul#toolbar-log-error .even {
+	border-top: 1px solid #DDD;
+}
+.odd:hover, .even:hover {
+	background-color: whiteSmoke;
 }
 /* design block */
 footer#tiitz-toolbar .tiitz-toolbar-info {
@@ -271,7 +291,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 	  		<ul class="nav">
 				<li>	
 					<a class="brand" href="#">
-						<img src="./tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print Tiitz::getTiitzVersion(); ?></span>
+						<img src="<?php print WEB_PATH; ?>tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print Tiitz::getTiitzVersion(); ?></span>
 					</a>
 					<ul id="toolbar-tiitz-info" class="tiitz-toolbar-info">
 						<li>
@@ -280,7 +300,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://plus.google.com/communities/102794938632806435828">
-							   					<img src="./tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
+							   					<img src="<?php print WEB_PATH; ?>tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
 							   				</a>	
 							   			</div>
 							   			<div id="toolbar-content">
@@ -289,7 +309,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   				</div>
 							   				<div id="toolbar-text">
 							   					<p>
-							   						Documentation, Actualités, Get Started, Tutoriaux, Pluggins, Interviews etc.
+							   						Documentation, Actualit&eacute;s, Get Started, Tutoriaux, Pluggins, Interviews etc.
 							   					</p>
 							   				</div>
 							   			</div>
@@ -298,16 +318,16 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://plus.google.com/communities/102794938632806435828">
-							   					<img src="./tiitz/img/toolbar-google-community.png" alt="google+" />
+							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-google-community.png" alt="google+" />
 							   				</a>
 							   			</div>
 							   			<div id="toolbar-content">
 							   				<div id="toolbar-header">
-							   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Google Communauté</a></h2>
+							   					<h2><a href="https://plus.google.com/communities/102794938632806435828">Google Communaut&eacute;</a></h2>
 							   				</div>
 							   				<div id="toolbar-text">
 							   					<p>
-							   						Toutes l'actualités de la communauté de Tiitz (News, Bugs, Tutoriaux etc.)
+							   						Toutes l'actualit&eacute;s de la communaut&eacute; de Tiitz (News, Bugs, Tutoriaux etc.)
 							   					</p>
 							   				</div>
 							   			</div>
@@ -316,7 +336,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://groups.google.com/forum/?fromgroups=#!forum/tiitz-framework">
-							   					<img src="./tiitz/img/toolbar-google-groups.jpeg" alt="google groups" />
+							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-google-groups.jpeg" alt="google groups" />
 							   				</a>
 							   			</div>
 							   			<div id="toolbar-content">
@@ -335,7 +355,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://github.com/epok75/tiitz">
-							   					<img src="./tiitz/img/toolbar-github.jpeg" alt="Github" />
+							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-github.jpeg" alt="Github" />
 							   				</a>
 							   			</div>
 							   			<div id="toolbar-content">
@@ -344,7 +364,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 							   				</div>
 							   				<div id="toolbar-text">
 							   					<p>
-							   						Consultez, téléchargez les sources officielles du framework Tiitz.
+							   						Consultez, t&eacute;l&eacute;chargez les sources officielles du framework Tiitz.
 							   					</p>
 							   				</div>
 							   			</div>
@@ -410,7 +430,7 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   						</li>	
 			   						<br class="clear" />		   						
 			   					</ul>
-			   					<i>* Supprimer depuis la version 5.4 de php</i>
+			   					<i>* Supprim&eacute; depuis la version 5.4 de php</i>
 			   				</div>
 			   			</li>
 			   		</ul>
@@ -421,11 +441,11 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			<li>
 			   				<div>
 			   					<ul>
-			   						<li>Base de données : <?php isset($conf['database']['dbname']) && !empty($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
-			   						<li>Moteur de template : <?php isset($conf['template']) ? print $conf['template'] : print 'php'; ?></li>
-			   						<li>Environnement : <?php isset($conf['environnement']) ? print $conf['environnement']: print ''; ?></li>
-			   						<li>Langue : <?php isset($conf['language']) ? print $conf['language'] : print ''; ?></li>
-			   						<li>Route : <?php isset($conf['routingType']) ? print $conf['routingType'] : print ''; ?></li>
+			   						<li><strong>Base de donn&eacute;es </strong>: <?php isset($conf['database']['dbname']) && !empty($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
+			   						<li><strong>Moteur de template </strong>: <?php isset($conf['template']) ? print $conf['template'] : print 'php'; ?></li>
+			   						<li><strong>Environnement </strong>: <?php isset($conf['environnement']) ? print $conf['environnement']: print ''; ?></li>
+			   						<li><strong>Langue </strong>: <?php isset($conf['language']) ? print $conf['language'] : print ''; ?></li>
+			   						<li><strong>Route </strong>: <?php isset($conf['routingType']) ? print $conf['routingType'] : print ''; ?></li>
 			   					</ul>
 			   				</div>
 			   			</li>
@@ -437,9 +457,9 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			<li>
 			   				<div>
 			   					<ul>
-			   						<li>Controller : <?php isset($route['className']) ? print $route['className']:''; ?></li>
-			   						<li>Method : <?php isset($route['action']) ? print $route['action']:''; ?></li>
-			   						<li>Path : <?php isset($route['path']) ? print $route['path']:''; ?></li>
+			   						<li><strong>Controller </strong>: <?php isset($route['className']) ? print $route['className']:''; ?></li>
+			   						<li><strong>Method </strong>: <?php isset($route['action']) ? print $route['action']:''; ?></li>
+			   						<li><strong>Path </strong>: <?php isset($route['path']) ? print $route['path']:''; ?></li>
 			   					</ul>
 			   				</div>
 			   			</li>
@@ -451,16 +471,16 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			<li>
 			   					<?php for ($i=0; $i < count($errorArray); $i++) : ?> 
 			   						<div <?php ($i%2 == 0) ? print "class='odd'" : print "class='even'" ?>>
-			   							<p>Date : <?php print $errorArray[$i]['date']; ?> | Numéro erreur : <?php print $errorArray[$i]['type']; ?></p>
-			   							<p>Message : <?php print $errorArray[$i]['message']; ?></p>
-			   							<p>File : <?php print $errorArray[$i]['file']; ?> | Ligne : <?php print $errorArray[$i]['line']; ?></p>
+			   							<p><strong>Date </strong>: <?php print $errorArray[$i]['date']; ?> | <strong>Num&eacute;ro erreur </strong>: <?php print $errorArray[$i]['type']; ?></p>
+			   							<p><strong>Message </strong>: <?php print $errorArray[$i]['message']; ?></p>
+			   							<p><strong>File </strong>: <?php print $errorArray[$i]['file']; ?> | <strong>Ligne </strong>: <?php print $errorArray[$i]['line']; ?></p>
 			   						</div>		
 			   					<?php endfor ?>
 			   				
 			   			</li>
 			   		</ul>
 			   	</li>
-			   	<li><a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Créer vos entitées</a>
+			   	<li><a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
 					<ul id="toolbar-load-entities" class="tiitz-toolbar-info">
 			   			<li>
 			   				
