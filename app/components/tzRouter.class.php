@@ -5,11 +5,14 @@ class tzRoute {
 	private static $arrayRoute;
 
 	private static function checkRequirement(array $req, array $params) { // Check if requirements of the route are OK
+		var_dump($req);
+		var_dump($params);
 
-		$valid = array();
-		$match = array();
+		$valid = array();	// Array use to test if all requirements return true
+		$match = array();	// Array use to test if all regexp return true
+
+		// if a requirement have the name of a URL-variable, we check if the requirement is valid
 		foreach ($params as $k => $v) {
-
 			if (array_key_exists($params[$k]["name"], $req)) {
 				if ($req[$params[$k]["name"]] == "int") {
 					$valid['int'] = (is_int($params[$k]["value"])) ? true : false;
@@ -27,6 +30,7 @@ class tzRoute {
 				}
 			}
 
+			// Test if data were send by post or get method
 			if (array_key_exists("_method", $req)) {
 				if ($req["_method"] == "post" || $req["_method"] == "POST")
 					$valid['post'] = (!empty($_POST)) ? true : false;
@@ -35,6 +39,7 @@ class tzRoute {
 					$valid['get'] = (!empty($_GET)) ? true : false;
 			}
 
+			// Test if the page was called by Ajax request
 			if (array_key_exists("ajax", $req)) {
 				if ($req["ajax"] == true) {
 					if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
@@ -45,10 +50,13 @@ class tzRoute {
 			}
 		}
 
+		// Checking if regexp matchs
 		foreach ($match as $value) {
 			if ($value === false)
 				$valid["regexp"] = false;
 		}
+
+		// Check if requirements are valid
 		foreach ($valid as $value) {
 			if ($value === false)
 				return false;
@@ -73,16 +81,12 @@ class tzRoute {
 		else
 			$type = 'site';
 
-		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
 		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource']))
 			die('Routing file missing');
 		$arraySubRoutes = Spyc::YAMLLoad(ROOT.$arrayRoutes[$type]['ressource']);
 
-		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
-
 		foreach ($arraySubRoutes as $key => $params) {
 			$arraySubRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arraySubRoutes[$key]['pattern']));
-			//var_dump($arraySubRoutes[$key]['pattern']);
 			$arraySubRoutes[$key]['type'] = $type;
 			$arraySubRoutes[$key]['params'] = array();
 
@@ -97,7 +101,6 @@ class tzRoute {
 				}
 
 			}
-			#echo "ROUTE : ";var_dump($arraySubRoutes[$key]);echo "--------------<br />";
 
 			$r = true;
 			if (!empty($arraySubRoutes[$key]['requirements']))
@@ -115,14 +118,12 @@ class tzRoute {
 		else
 			$urlParams = self::deleteEmptyValues(explode('/', $_SERVER['PATH_INFO']));
 
-		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
-
 		$yaml = Spyc::YAMLLoad(ROOT.'/app/config/routing.yml');
-
-		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
-
 		$selectedRoute = self::parseRoutes($yaml, $urlParams, $mode);
 
+		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
+		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
         #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
 
 		if($selectedRoute){
