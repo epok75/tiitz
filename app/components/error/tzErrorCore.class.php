@@ -41,9 +41,15 @@ abstract class tzErrorCore {
 	 */
 	protected static function errorTpl(array $error) {
 
-		$store = '<div style="color: #B94A48;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding:0px;">
+		if ($error['type'] == 1 || $error['type'] == 64) {
+			$store = '<div class="tiitz-error-popup" style="color: #B94A48;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding:0px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;">';
+		} else {
+			$store = '<div class="tiitz-error-popup" style="color: #C09853;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding:0px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;">';
+		}
+
+		$store .= '	<a class="close" data-dismiss="alert" href="#">&times;</a>
 					<ul style="list-style-type:none;margin: 0px;padding:5px;">
-					<h4 style="margin:5px 0px;border-bottom:1px solid #B94A48">';
+					<h4 style="margin:5px 0px;font-size:16px">';
 		(isset($error['type']) && ($error['type'] == 1 || $error['type'] == 64)) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
 		$store .= '</h4>';
 		// loop through error array
@@ -56,9 +62,9 @@ abstract class tzErrorCore {
 		}
 		
 		$store .= '</ul></div>';
-		echo '<pre>';
+		
 		print_r($store);
-		echo '</pre>';
+		self::highlight_linesfile($error['file'], $error['line'], $return = false);
 	}
 
 	/**
@@ -71,14 +77,15 @@ abstract class tzErrorCore {
 		$i = 1;
 		foreach (self::$currentError as $key => $value) {
 			if ($i < self::$lenghtArray) {
-				if (self::$currentError['message']) {
+			/*	if (self::$currentError['message']) {
 					$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
 				} else {
 					$line .= $key .'=>'.$value."\t";
 				}
-				
+				*/
+				$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
 			} else {
-				$line .= $key .'=>'.$value;
+				$line .= $key .'=>'.str_replace("\n"," ",$value);
 			}
 			$i++;	
 		}
@@ -121,6 +128,44 @@ abstract class tzErrorCore {
 	      	}
     	}
 	}
+
+
+	public static function highlight_linesfile($filename, $lineError, $return = false) { 
+		
+	    if(file_exists($filename) && is_file($filename)) { 
+
+	        $output = '<pre><code><span style="color: '.ini_get('highlight.html').';">'; 
+	        
+	        $code = substr(highlight_file($filename, true), 36, -15); 
+	        $start_line = 1; 
+	        $lines = explode('<br />', $code); 
+	        
+	        $chr_lines = count($lines); 
+	        $chr_lines = strlen($chr_lines); 
+	        
+	        foreach($lines as $line) 
+	        {   
+	        	$nline = str_pad($start_line, $chr_lines, ' ', STR_PAD_LEFT); 
+		        if($lineError == $start_line) {
+		        	$output .= '<span style="color: #f1f1f1; background-color: red;" class="php_highlight_line">'.$nline. ': '.$line."</span>\n"; 
+		        }  else {
+		        	$output .= '<span style="color: grey;" class="php_highlight_line">'.$nline. ':</span> '.$line."\n"; 
+		        }  
+		        $start_line ++; 
+		    } 
+	        
+	        $output .= '</span></code></pre>'; 
+	        
+	        if($return === true) {
+	        	return $return; 
+	        }
+	        else {
+	        	print $output;
+	        } 
+	    } 
+	} 
+
+
 
 	/**
 	 * getter

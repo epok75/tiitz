@@ -1,4 +1,5 @@
 <footer id="tiitz-toolbar">
+	<a class="close" data-dismiss="alert" href="#">&times;</a>
 <style scoped>
 p {
 	margin: 0px;
@@ -283,6 +284,36 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 .toolbar-clear {
 	clear: both;
 }
+/* alert error */
+.close {
+	line-height: 20px;
+	text-decoration: none;
+}
+.close:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+.close {
+	float: right;
+	position: relative;
+	top: 5px;
+	right: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 20px;
+	color: black;
+	text-shadow: 0 1px 0 white;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	z-index: 1000;
+}
+.tiitz-error-popup {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
 </style>
 
 	<div class="navbar">
@@ -479,7 +510,9 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   			</li>
 			   		</ul>
 			   	</li>
-			   	<li><a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
+			   	<li class="divider-vertical"></li>
+			   	<li>
+			   		<a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
 					<ul id="toolbar-load-entities" class="tiitz-toolbar-info">
 			   			<li>
 			   				
@@ -489,4 +522,27 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			</ul>
 		</div>
 	</div>
+<script>
+	function checkAndLoadjQuery() {
+		if(window.jQuery)
+		{
+			var script = document.createElement('script');
+		  	script.type = "text/javascript";
+		   	script.src = "<?php print WEB_PATH;?>tiitz/js/bootstrap.js";
+		   	document.getElementsByTagName('head')[0].appendChild(script);
+	   }
+	}
+	window.onload = function () {
+		checkAndLoadjQuery();
+	}
+	
+   	if(!window.jQuery)
+	{
+	   var script = document.createElement('script');
+	   script.type = "text/javascript";
+	   script.src = "<?php print WEB_PATH;?>tiitz/js/jquery-1.9.0.min.js";
+	   document.getElementsByTagName('head')[0].appendChild(script);
+	}	  
+</script>
 </footer>
+

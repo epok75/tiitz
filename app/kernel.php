@@ -6,12 +6,15 @@ require_once(ROOT.'/app/components/spyc/Spyc.php');
 $comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 $conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
 
-
 // Include the components contains in components.yml
 foreach ($comp as $k => $v) {
 	require_once(ROOT.$v);
 }
 
+// Manage Error
+$error = new tzErrorExtend(0);
+
+// Path server
 $pageURL = 'http';
 
 if ( isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on"){
@@ -31,22 +34,16 @@ $pageURL = str_replace('index.php', '', $pageURL);
 define('WEB_PATH', $pageURL);
 
 
-// Manage Error
-$error = new tzErrorExtend(0);
-
+Include 'test';
 if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
 else
 	$tzRender = tzRender::getInstance("");
 
-
-
 if (!empty($conf["existingproject"]) && $conf["existingproject"] === true) 
 	$route = tzRoute::getRoute();
 else
 	$route = tzRoute::getRoute("gui");
-
-	
 
 if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
@@ -59,8 +56,10 @@ if (is_file(ROOT.$route["path"])) {
 	}
 	$controller->$route["action"]();
 }
-else
+else {
 	echo "Page 404";
+}
+
 
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
