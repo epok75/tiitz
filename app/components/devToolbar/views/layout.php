@@ -1,3 +1,22 @@
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    	<h3 id="myModalLabel">Tiitz error</h3>
+  	</div>
+  	<div class="modal-body">
+	<?php $arrayError 	= tzErrorCore::getTemplateError(); ?>
+	<?php $arrayCode 	= tzErrorCore::getTemplateCodePhp(); ?>
+	<?php 
+		for ($i=0; $i < count($arrayError); $i++) { 
+			print $arrayError[$i];
+			print $arrayCode[$i];
+		}
+	 ?>
+	</div>
+	<div class="modal-footer">
+    	<button class="btn" data-dismiss="modal" aria-hidden="true">Fermer</button>
+  	</div>
+</div>	
 <footer id="tiitz-toolbar">
 	<a class="close" data-dismiss="alert" href="#">&times;</a>
 <style scoped>
@@ -314,6 +333,17 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
+.accordion-heading .accordion-toggle {
+	display: block;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.modal {
+	width: 1080px !important;
+	margin: 0px;
+	left :10%;
+	top:0px;
+}
 </style>
 
 	<div class="navbar">
@@ -506,19 +536,24 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 			   							<p><strong>File </strong>: <?php print $errorArray[$i]['file']; ?> | <strong>Ligne </strong>: <?php print $errorArray[$i]['line']; ?></p>
 			   						</div>		
 			   					<?php endfor ?>
-			   				
 			   			</li>
 			   		</ul>
 			   	</li>
 			   	<li class="divider-vertical"></li>
 			   	<li>
 			   		<a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
-					<ul id="toolbar-load-entities" class="tiitz-toolbar-info">
-			   			<li>
-			   				
-			   			</li>
-			   		</ul>
-			   	</li>
+				</li>
+				<li class="divider-vertical"></li>
+			   	<li>
+			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
+			   			<button class="btn btn-danger" type="button">1 nouvelle erreur</button>
+			   		<?php elseif (tzErrorCore::getNumberOfCurrentError() > 1) : ?>
+			   			<div><a href="#myModal" role="button" class="btn btn-danger" data-toggle="modal" style="color:#f1f1f1 !important;"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</a></div>
+	 					<!-- Modal -->
+
+			   		
+			   		<?php endif; ?>	
+				</li>
 			</ul>
 		</div>
 	</div>

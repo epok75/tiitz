@@ -34,7 +34,6 @@ $pageURL = str_replace('index.php', '', $pageURL);
 define('WEB_PATH', $pageURL);
 
 
-Include 'test';
 if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
 else

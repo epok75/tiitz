@@ -9,7 +9,7 @@
     <link href="tiitz/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
     <link rel="stylesheet" type="text/css" href="tiitz/css/style-gui.css" type='text/css' />
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>					 
 <body>
 
