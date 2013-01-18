@@ -70,7 +70,7 @@ foreach ($_POST['tablename'] as $tablename) {
 
 		public function set" . ucfirst( $col ) . "($" . "val){
 			$" . "this->" . $col . " =  $" . "val;
-			}
+		}
 
 				";
 	}
@@ -92,7 +92,7 @@ foreach ($_POST['tablename'] as $tablename) {
 				return $". "result;
 			}
 			else{
-				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll AVANT
+				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll/Find AVANT
 				//Ex: $" . "test = $" . "xxx->getEntity('user')->findOneBy('id','1')->delete();
 			}
 		}
@@ -125,7 +125,13 @@ foreach ($_POST['tablename'] as $tablename) {
 			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 			$" . "result->execute();
 
-			return $". "result;
+			if(!empty($" . "this->id)){
+				return $". "result;
+			}
+			else{
+				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll/Find AVANT
+				//Ex: $" . "test = $" . "xxx->getEntity('user')->findOneBy('id','1')->delete();
+			}
 		}";
 
 	$count = 0;
@@ -231,22 +237,21 @@ foreach ($_POST['tablename'] as $tablename) {
 			}
 
 			$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
-			$". "result = $" . "this->tzSQL->tzExecute($" . "sql, 'obj');
+			$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "data->execute();
+			$" . "result =  $" . "data->fetch(PDO::FETCH_OBJ);
 
 			if(!empty($" . "result)){
-					";
+				";
 
-	foreach ( $columsResult as $key => $value ) {
+			foreach ( $columsResult as $key => $value ) {
 
-		$col = $value[0];
+				$col = $value[0];
 
-		$c.="	$" . "this->" . $col . " = $" . "result->" . $col.";
-					";
-	}
-
+				$c.="$" . "this->" . $col . " = $" . "result->" . $col.";
+				";
+			}
 	$c.="
-				return $". "result;
-
 			}
 		}
 
@@ -259,14 +264,27 @@ foreach ($_POST['tablename'] as $tablename) {
 		/********************** Find(id) ***********************/
 		public function find($". "id){
 
-			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = $" . "id';
+			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = ' . $" . "id;
 			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 			$" . "result->execute();
-			$" . "formatResult = $" . "result->fetch(PDO::FETCH_ASSOC);
+			$" . "formatResult = $" . "result->fetch(PDO::FETCH_OBJ);
 			if(!empty($" . "formatResult)){
-				return $" . "formatResult;
-			}
+			";
 
+		foreach ( $columsResult as $key => $value ) {
+
+			$col = $value[0];
+
+			$c.="	$" . "this->" . $col . " = $" . "formatResult->" . $col.";
+			";
+		}
+
+
+		$c.="
+			}
+			else
+				return false;
+			//pas de resultat trouve
 		}
 		";
 	}
