@@ -567,8 +567,17 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 		   	document.getElementsByTagName('head')[0].appendChild(script);
 	   }
 	}
+	function checkAndLoadBootstrapCss() {
+			var link = document.createElement('link');
+		  	link.type = "text/css";
+		  	link.rel = "stylesheet";
+		   	link.href = "<?php print WEB_PATH;?>tiitz/css/bootstrap.css";
+		   	document.getElementsByTagName('head')[0].appendChild(link);
+	}
+
 	window.onload = function () {
 		checkAndLoadjQuery();
+		checkAndLoadBootstrapCss()
 	}
 	
    	if(!window.jQuery)
