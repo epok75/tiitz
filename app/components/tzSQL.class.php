@@ -95,6 +95,23 @@ class tzSQL
 		return self::$host;
 	}
 
+	public static function getEntity($entity){
+		$entityClass = $entity."Entity";
+
+		if(file_exists(ROOT . '/src/entities/' . $entityClass . '.class.php')){
+
+			require_once ROOT . '/src/entities/' . $entityClass . '.class.php';
+
+			$entityInstance = new $entityClass;
+			
+			return $entityInstance;
+		}
+		else
+			return false;
+			//erreur entite non trouvee
+		
+	}
+
 
 	/*
 	* insert function
