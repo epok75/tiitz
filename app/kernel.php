@@ -42,7 +42,7 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 	$route = tzRoute::getRoute();
 else
 	$route = tzRoute::getRoute("gui");
-
+include 'te';
 if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
 	if(!empty($conf['database']['user']) && !empty($conf["existingproject"]) && $conf["existingproject"] === true) {

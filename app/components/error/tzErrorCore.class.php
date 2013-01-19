@@ -107,9 +107,9 @@ abstract class tzErrorCore {
 			$output .= '<div id="collapse'.self::$increment.'" class="accordion-body collapse">';
 	        foreach($lines as $line) 
 	        {   
-	        	$output .= '<p style="margin:auto;';
+	        	$output .= "<p style='margin:auto;'";
 	        	if ($start_line%2 == 0) {
-	        		$output .= "background-color:#f1f1f1;\"";
+	        		$output .= "background-color:#f1f1f1;'";
 	        	}
 	        	$output .= ">";
 	        	$nline = str_pad($start_line, $chr_lines, ' ', STR_PAD_LEFT); 
