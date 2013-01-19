@@ -59,8 +59,8 @@ class tzErrorExtend  extends tzErrorCore {
 	
 	/**
 	 * method static use to catch error inside your code
-	 * @param  Object $e   [description]
-	 * @param  boolean $die [description]
+	 * @param  Object/array $e   either a try catch object or an array of error
+	 * @param  boolean $die use if to control the end of the script
 	 * @return void
 	 */
 	public static function catchError($e, $die = false) {

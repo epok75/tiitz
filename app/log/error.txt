@@ -710,3 +710,5 @@ type=>2	message=>include(te): failed to open stream: No such file or directory	f
 type=>2	message=>include(): Failed opening 'te' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>45	date=>2013-01-19 22:47:03
 type=>2	message=>include(te): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>45	date=>2013-01-19 22:47:22
 type=>1	message=>Using $this when not in object context	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>43	date=>2013-01-19 22:47:22
+type=>2	message=>include(te): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>45	date=>2013-01-19 22:49:28
+type=>2	message=>include(): Failed opening 'te' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>45	date=>2013-01-19 22:49:28
