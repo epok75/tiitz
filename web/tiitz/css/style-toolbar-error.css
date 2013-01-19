@@ -1,0 +1,324 @@
+p {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.2;
+}
+footer#tiitz-toolbar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+	width: 100%;
+}
+footer#tiitz-toolbar .navbar {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+}
+footer#tiitz-toolbar .navbar-inner {
+	min-height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #FAFAFA;
+	background-image: -moz-linear-gradient(top,white,#F2F2F2);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(white),to(#F2F2F2));
+	background-image: -webkit-linear-gradient(top,white,#F2F2F2);
+	background-image: -o-linear-gradient(top,white,#F2F2F2);
+	background-image: linear-gradient(to bottom,white,#F2F2F2);
+	background-repeat: repeat-x;
+	border: 1px solid #D4D4D4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+footer#tiitz-toolbar .navbar-inner::before, .navbar-inner::after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+footer#tiitz-toolbar .navbar-inner::after {
+	clear: both;
+}
+footer#tiitz-toolbar .navbar .brand {
+	display: block;
+	float: left;
+	min-width: 100px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 200;
+	color: #777;
+	text-shadow: 0 1px 0 white;
+}
+footer#tiitz-toolbar .brand > img#tiitz-logo {
+	width: 50px;
+	height: 30px;
+	margin-right: 10px;
+}
+footer#tiitz-toolbar .brand > #tiitz-version {
+	font-size: 16px;
+	position: relative;
+}
+footer#tiitz-toolbar .brand {
+	padding : 5px 5px 5px 10px !important;
+}
+footer#tiitz-toolbar a {
+	color: #08C;
+	text-decoration: none;
+}
+footer#tiitz-toolbar .navbar{
+	margin-bottom: 0px;
+}
+footer#tiitz-toolbar .navbar .nav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+}
+footer#tiitz-toolbar .nav {
+	margin-left: 0;
+	list-style: none;
+}
+footer#tiitz-toolbar ul {
+	padding: 0;
+	margin: 0 0 10px 25px;
+}
+footer#tiitz-toolbar .navbar .nav > li {
+	float: left;
+}
+footer#tiitz-toolbar .navbar .divider-vertical {
+	height: 40px;
+	margin: 0 9px;
+	border-right: 1px solid white;
+	border-left: 1px solid #F2F2F2;
+}
+footer#tiitz-toolbar li {
+	line-height: 20px;
+}
+footer#tiitz-toolbar .nav {
+	list-style: none;
+}
+footer#tiitz-toolbar .navbar .nav > .active > a, 
+footer#tiitz-toolbar .navbar .nav > .active > a:hover, 
+footer#tiitz-toolbar .navbar .nav > .active > a:focus {
+	color: #555;
+	text-decoration: none;
+	background-color: #E5E5E5;
+	-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+footer#tiitz-toolbar .navbar .nav > li > a {
+	float: none;
+	padding: 10px 15px 10px;
+	color: #777;
+	text-decoration: none;
+	text-shadow: 0 1px 0 white;
+}
+footer#tiitz-toolbar .nav > li > a {
+	display: block;
+}
+/**
+ * Tiitz more info
+ */
+footer#tiitz-toolbar ul.tiitz-toolbar-info {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+footer#tiitz-toolbar ul.nav > li:hover ul.tiitz-toolbar-info {
+	display: block;
+	border : 0px solid #000;
+}
+footer#tiitz-toolbar ul.nav > li:hover > a {
+	color: #555;
+	text-decoration: none;
+	background-color: #E5E5E5;
+	-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0,0,0,0.125);
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+ul#toolbar-php-version > li > div, 
+ul#toolbar-file-controller > li > div,
+ul#toolbar-tiitz-info > li > div {
+	position: absolute;
+	bottom: 40px;
+	min-width: 300px;
+	min-height: 200px;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+/* tiitz Site Aide */
+footer#tiitz-toolbar div#toolbar-tiitz-version {
+	width: 310px;
+	left: -20px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version ul li {
+	width: 100%;
+	border-bottom: 1px solid #4C4C4C;
+	padding: 5px 0px;
+	background-color: #ffffff;
+	margin-right: 4px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version ul li:last-child {
+	border-bottom: transparent;
+}
+footer#tiitz-toolbar div#toolbar-header h2  {
+	font-size: 13px;
+	padding: 0px;
+	padding-bottom: 5px;
+	margin: 0px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar div#toolbar-header h2 a {
+	color: #000;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar div#toolbar-header h2 a:hover {
+	color: #B80300;
+}
+footer#tiitz-toolbar div#toolbar-text p {
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}	
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo {
+	float: left; 
+	width : 50px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-photo img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+footer#tiitz-toolbar div#toolbar-tiitz-version div#toolbar-content {
+	float: left;
+	width: 250px;
+}
+/* tiitz info systeme performance */
+footer#tiitz-toolbar ul#toolbar-php-version h2 {
+	background-color: #000;
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 16px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	color: #f1f1f1;
+	padding: 10px 5px;
+	text-transform: uppercase;
+}
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail > li {
+	width: 100%;
+}
+footer#tiitz-toolbar ul#toolbar-php-version ul#toolbar-php-version-detail h3 {
+	font-family: "MillerDisplay",Georgia,serif;
+	font-size: 15px;
+	padding: 0px;
+	margin: 0px;
+	line-height: 1;
+	margin: 10px 0px;
+}
+/* tiitz info controller/action */
+footer#tiitz-toolbar ul#toolbar-file-controller > li > div  {
+	min-width: 200px;
+	min-height: 70px;
+}
+/* tiitz info configuration */
+footer#tiitz-toolbar ul#toolbar-config > li > div, footer#tiitz-toolbar ul#toolbar-log-error {
+	position: absolute;
+	min-width: 200px;
+	min-height: 70px;
+	bottom: 40px;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #000;
+}
+/* tiitz error log */
+footer#tiitz-toolbar ul#toolbar-log-error {
+	width: 700px;
+	height: 500px;
+	padding: 0px;
+	bottom: 44px;
+	overflow: auto;
+}
+.odd, .even {
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+footer#tiitz-toolbar ul#toolbar-log-error .odd {
+	background-color: #F9F9F9;
+	border-top: 1px solid #DDD;
+}
+footer#tiitz-toolbar ul#toolbar-log-error .even {
+	border-top: 1px solid #DDD;
+}
+.odd:hover, .even:hover {
+	background-color: whiteSmoke;
+}
+/* design block */
+footer#tiitz-toolbar .tiitz-toolbar-info {
+	background-color: #ffffff;
+	border : 1px solid #000;
+	padding: 5px;
+}
+footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-toolbar-info ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.toolbar-clear {
+	clear: both;
+}
+/* alert error */
+.close {
+	line-height: 20px;
+	text-decoration: none;
+}
+.close:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+.close {
+	float: right;
+	position: relative;
+	top: 5px;
+	right: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 20px;
+	color: black;
+	text-shadow: 0 1px 0 white;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	z-index: 1000;
+}
+.tiitz-error-popup {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+.accordion-heading .accordion-toggle {
+	display: block;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.modal {
+	width: 1080px !important;
+	margin: 0px;
+	left :10%;
+	top:0px;
+}

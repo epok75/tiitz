@@ -13,13 +13,13 @@ abstract class tzErrorCore {
 	protected static $lenghtArray 		= 5;
 	// Array of all the error in the log file
 	protected $allErrorFromLog			= array();
-	// increment for php code 
+	// increment use in highlight_linesfile()
 	private static $increment			= 0;
-	// count current error
+	// count current number of error
 	private static $counterCurrentError	= 0;
-	// template and display html
-	private static $templateError = array();
-	private static $templateCodePhp = array();
+	// store error in html template
+	private static $templateError 		= array();
+	private static $templateCodePhp 	= array();
 
 	private function __construct () {
 		
@@ -30,9 +30,7 @@ abstract class tzErrorCore {
 	 * @return void 
 	 */
 	protected static function displaySaveError() {
-
-
-		// call counter of actual error
+		// call number to increment number of current error
 		self::numberCurrentError();
 		// length of $currentError
 		self::$lenghtArray = count(self::$currentError);
@@ -60,13 +58,13 @@ abstract class tzErrorCore {
 	protected static function errorTpl(array $error) {
 
 		if ($error['type'] == 1 || $error['type'] == 64) {
-			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;width:1080px !important;margin:auto !important;">';
+			$store = '<div class="tiitz-error-popup" style="width:100%;color: #000;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;font-size:14px;">';
 		} else {
-			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;width:1080px !important;margin:auto !important;">';
+			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;width:1080px !important">
+					<a class="close" data-dismiss="alert" href="#">&times;</a>';
 		}
 
-		$store .= '	<a class="close" data-dismiss="alert" href="#">&times;</a>
-					<ul style="list-style-type:none;margin: 0px;padding:5px;width:1080px !important;margin:auto !important;">
+		$store .= '	<ul style="list-style-type:none;margin: 0px;padding:5px;margin:auto !important;">
 					<h4 style="margin:5px 0px;font-size:16px">';
 		(isset($error['type']) && ($error['type'] == 1 || $error['type'] == 64)) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
 		$store .= '</h4>';
@@ -81,11 +79,14 @@ abstract class tzErrorCore {
 		
 		$store .= '</ul></div>';
 		array_push(self::$templateError, $store);
+		if ($error['type'] == 1) {
+			print $store;
+		}
 		//print_r($store);
-		self::highlight_linesfile($error['file'], $error['line'], $return = false);
+		self::highlight_linesfile($error['file'], $error['line'],$error['type'], $return = false);
 	}
 
-	public static function highlight_linesfile($filename, $lineError, $return = false) { 
+	public static function highlight_linesfile($filename, $lineError, $errorType, $return = false) { 
 		
 	    if(file_exists($filename) && is_file($filename)) { 
 
@@ -97,16 +98,18 @@ abstract class tzErrorCore {
 	       
 	        $chr_lines = count($lines); 
 	        $chr_lines = strlen($chr_lines); 
+	        if ($errorType != 1) {
+	        	$output .= '<div style="padding: 0px !important; margin: 0px !important;">
+					      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'.self::$increment.'">Visualiser le code</a>
+					    	</div>';
+	        }
 	        
-	        $output .= '<div style="padding: 0px !important; margin: 0px !important;">
-					      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'.self::$increment.'">Visualiser le code</a>
-					    </div>';
 			$output .= '<div id="collapse'.self::$increment.'" class="accordion-body collapse">';
 	        foreach($lines as $line) 
 	        {   
-	        	$output .= '<p';
+	        	$output .= '<p style="margin:auto;';
 	        	if ($start_line%2 == 0) {
-	        		$output .= " style='background-color:#f1f1f1;'";
+	        		$output .= "background-color:#f1f1f1;\"";
 	        	}
 	        	$output .= ">";
 	        	$nline = str_pad($start_line, $chr_lines, ' ', STR_PAD_LEFT); 
@@ -128,8 +131,9 @@ abstract class tzErrorCore {
 	        }
 	        else {
 	        	array_push(self::$templateCodePhp, $output);
-	        	//self::$templateCodePhp = $output;
-	        	//print $output;
+	        	if ($errorType == 1) {
+	        		print $output;
+	        	}
 	        } 
 	    } 
 	} 
@@ -144,12 +148,6 @@ abstract class tzErrorCore {
 		$i = 1;
 		foreach (self::$currentError as $key => $value) {
 			if ($i < self::$lenghtArray) {
-			/*	if (self::$currentError['message']) {
-					$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
-				} else {
-					$line .= $key .'=>'.$value."\t";
-				}
-				*/
 				$line .= $key .'=>'.str_replace("\n"," ",$value)."\t";
 			} else {
 				$line .= $key .'=>'.str_replace("\n"," ",$value);
@@ -171,12 +169,9 @@ abstract class tzErrorCore {
 		
 		if ($handle) {
 			while (false !== ($line = fgets($handle))) {
-				// We need to remove \m from the array
-				
+				// We need to remove \n from the array
 				$line 		= str_replace("\n","|",$line);
-				
 				$newEntry 	= explode("\t", $line);
-				
 				$i = 1;
 				
 				foreach ($newEntry as $key => $value) {
@@ -195,7 +190,6 @@ abstract class tzErrorCore {
 	      	}
     	}
 	}
-
 
 	/**
 	 * getter
