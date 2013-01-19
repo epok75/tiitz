@@ -212,10 +212,12 @@
 			   			</li>
 			   		</ul>
 			   	</li>
+			   	<?php if(!empty($conf['database']['dbname'])) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
 			   		<a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
 				</li>
+				<?php endif; ?>
 				<li class="divider-vertical"></li>
 			   	<li>
 			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
