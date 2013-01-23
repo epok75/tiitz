@@ -2,7 +2,7 @@
 // Core Manager error
 abstract class tzErrorCore {
 	
-	private static $file 				= "error.txt";
+	private static $file 				= "error.log";
 	private static $path 				= "/app/log/";
 	// true : Display error / false : no display
 	protected static $displayError 		= true;

@@ -96,7 +96,7 @@ class MainController extends TzController {
 			$pages = $_POST['pages'];
 			foreach ($pages as $page) {
 				$page = str_replace( "\r", "", $page);
-				$page = strtolower($page);
+				$page = $page;
 				// create touting.yml
 				$fm->set_currentItem(ROOT."/src/config/routing.yml");
 				$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
