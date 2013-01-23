@@ -2,5 +2,4 @@
 /nbproject/*
 /.settings
 app/.DS_Store
-app/log/error.log
 
