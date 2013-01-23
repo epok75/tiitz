@@ -38,11 +38,11 @@ class MainController extends TzController {
 
 	private function templateEngine() {
 		if ($_POST['tpl'] == 'smarty') {
-			$this->extension = 'tpl';
+			$this->routingExtension = 'tpl';
 		} elseif ($_POST['tpl'] == 'twig') {
-			$this->extension = 'html.twig';
+			$this->routingExtension = 'html.twig';
 		} else {
-			$this->extension = $_POST['tpl'];
+			$this->routingExtension = $_POST['tpl'];
 		}
 	}
 
