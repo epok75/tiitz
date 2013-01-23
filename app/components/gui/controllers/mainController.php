@@ -70,7 +70,7 @@ class MainController extends TzController {
 	{
 		// File manager class
 		$fm = new tzFileManager(ROOT);
-		// create files
+		// create routing file
 		$fm->set_currentItem(ROOT."/src/controllers");
 		$fm->xtouch("mainController.php");
 		$fm->set_currentItem(ROOT."/src/config/");
