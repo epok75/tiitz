@@ -1,17 +1,24 @@
 <?php
 	$tzRoute = array(
 
-		"main_show" => array(
-						"pattern" => '/{page}/',
-						"controller" => "main:show",
+		"show_user" => array(
+						"pattern" => '/{user_name}/{id}/{link}/',
+						"controller" => "home:show",
 						"requirements" => array(
-											"page" => "int"
+											"user_name" => "string",
+											"id" => "int",
+											"link" => "\d+",
+											"_method" => "POST"
 												)
 							),
 
-		"blog_show" => array(
-						"pattern" => "/blog/",
-						"controller" => "blog:show",
+		"home_show" => array(
+						"pattern" => "/{page}/",
+						"controller" => "home:show",
+						"requirements" => array(
+											"page" => "int",
+											"ajax" => "true"
+												)
 							),
 	
 				);

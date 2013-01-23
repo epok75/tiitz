@@ -1,5 +1,31 @@
-main_show:
-	pattern:	/{page}/
-	controller:	main:show
+show_user:
+	pattern:		/{user_name}/{id}/{link}/
+	controller:		home:show
 	requirements:
-        page:	int
+        user_name:		string
+        id:				int
+        link:			\d+
+        _method:		POST
+
+home_show:
+    pattern:		/{page}/
+    controller:		home:show
+    requirements:
+        page:		int
+        ajax:		true
+
+#Check si c'est un int	
+#    identifier:		int 
+#
+#Check si c'est une string
+#    identifier:		string
+#
+#Test la regexp sur la valeur de l'identifier, la on test que c'est un entier
+#    identifier:			\+d
+
+#Check si des données ont été envoyés par post ou get
+#    _method:		POST
+#    _method		GET
+
+#Check si la page a été appelé par de l'Ajax (set a false par default)
+#    ajax:		true
