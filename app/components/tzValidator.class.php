@@ -34,38 +34,44 @@ class tzValidator {
         if($type == "EMAIL"){
             if(self::isMail($elem) != TRUE){
                 self::addError($elem, self::BAD_EMAIL);
+                return false;
             }
-            return(FALSE);
+            return(true);
         }
         if($type == "IP"){
             if(self::isIp($elem) != TRUE){
                 self::addError($elem, self::BAD_IP);
+                return false;
             }
-            return(FALSE);
+            return(TRUE);
         }
         if($type == "STRING"){
             if(self::isString($elem) != TRUE){
                 self::addError($elem, self::BAD_STRING);
+                return false;
             }
-            return(FALSE);
+            return(TRUE);
         }
         if($type == "URL"){
             if(self::isUrl($elem) != TRUE){
                 self::addError($elem, self::BAD_URL);
+                return false;
             }
-            return(FALSE);
+            return(TRUE);
         }
         if($type == "INT"){
             if(self::isInt($elem) != TRUE){
                 self::addError($elem, self::BAD_INT);
+                return false;
             }
-            return(FALSE);
+            return(TRUE);
         }
         if($type == "FLOAT"){
             if(self::isFloat($elem) != TRUE){
                 self::addError($elem, self::BAD_FLOAT);
+                return false;
             }
-            return(FALSE);
+            return(TRUE);
         }
         self::addError($elem, self::BAD_TYPE_PATTERN);
         return(FALSE);
@@ -84,7 +90,7 @@ class tzValidator {
                     }
                     else{
                         self::addError($elem, self::BAD_LENGTH_PATTERN);
-                        return(FALSE);
+                        return(TRUE);
                     }
                 }
             }
@@ -94,7 +100,7 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }
             }
             if($toCompare[0] == ">" && $toCompare[1] == "="){
@@ -103,7 +109,7 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }
             }
             if($toCompare[0] == "!" && $toCompare[1] == "="){
@@ -112,7 +118,7 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }
             }
             if($toCompare[0] == "=" && $toCompare[1] == "="){
@@ -121,11 +127,11 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }   
             }
             self::addError($elem, self::BAD_LENGTH_PATTERN);
-            return(FALSE);
+            return(TRUE);
         }
         if($toCompare[0] == "<" || $toCompare[0] == ">"){
             foreach($toCompare as $k=>$v){
@@ -135,7 +141,7 @@ class tzValidator {
                     }
                     else{
                         self::addError($elem, self::BAD_LENGTH_PATTERN);
-                        return(FALSE);
+                        return(TRUE);
                     }
                 }
             }
@@ -145,7 +151,7 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }
             }
             if($toCompare[0] == ">" && $nbChar){
@@ -154,12 +160,12 @@ class tzValidator {
                 }
                 else{
                     self::addError($elem, self::BAD_LENGTH);
-                    return(FALSE);
+                    return(TRUE);
                 }
             }
         }
         self::addError($elem, self::BAD_LENGTH_PATTERN);
-        return(FALSE);
+        return(TRUE);
     }
     
     /*  
@@ -169,7 +175,7 @@ class tzValidator {
     /*VALIDATES VALUE AS EMAIL ADDRESS: returns the message linked to the BAD_EMAIL CONST if email is not valid, else returns an empty string*/
     public static function isMail($mail){
         if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -177,7 +183,7 @@ class tzValidator {
     /*VALIDATES VALUE AS URL: returns the message linked to the BAD_URL CONST if url is not valid, else returns an empty string*/
     public static function isUrl($url){
         if(!filter_var($url, FILTER_VALIDATE_URL)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -185,7 +191,7 @@ class tzValidator {
     /*VALIDATES VALUE AS IP ADDRESS: returns the message linked to the BAD_IP CONST if number is not an integer, else returns an empty string*/
     public static function isIp($ip){
         if(!filter_var($ip, FILTER_VALIDATE_IP)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -193,7 +199,7 @@ class tzValidator {
     /*VALIDATES VALUE AS STRING: returns the message linked to the BAD_STRING CONST if str is not valid, else returns an empty string*/
     public static function isString($str){
         if(!is_string($str)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -201,7 +207,7 @@ class tzValidator {
     /*VALIDATES VALUE AS INTEGER: returns the message linked to the BAD_INT CONST if number is not an integer, else returns an empty string*/
     public static function isInt($number){
         if(!filter_var($number, FILTER_VALIDATE_INT)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -209,7 +215,7 @@ class tzValidator {
     /*VALIDATES VALUE AS FLOAT: returns the message linked to the BAD_FLOAT CONST if numberFloat is not a float, else returns an empty string*/
     public static function isFloat($numberFloat){
         if(!filter_var($numberFloat, FILTER_VALIDATE_FLOAT)){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
@@ -217,7 +223,7 @@ class tzValidator {
     /*VALIDATES VALUE AGAINST PATTERN: returns the message BAD_PATTERN CONST if toCheck does not match pattern, else returns an empty string*/
     public static function isStringExp($toCheck, $pattern){
         if(!filter_var($toCheck, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>$pattern)))){
-            return(FALSE);
+            return(TRUE);
         }
         return(TRUE);
     }
