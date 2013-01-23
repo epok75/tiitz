@@ -139,7 +139,7 @@ class tzRoute {
 		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
 		#echo 'URL PARAM :';var_dump($urlParams);echo '---------<br />';
 		#echo 'YAML SRC :';var_dump($yaml);echo '---------<br />';
-        echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
+        #echo "SELECTED ROUTE : ";var_dump($selectedRoute);echo "--------------<br />";
 
 		if($selectedRoute){
 			$arrayController = explode(':', $selectedRoute['controller']);
@@ -158,7 +158,7 @@ class tzRoute {
 		else {
 			tzErrorExtend::catchError(array('No Route Found', __FILE__,__LINE__, true));
 		}
-
+		#var_dump(self::$arrayRoute);
 		return self::$arrayRoute;
 	}
 }

@@ -1,10 +1,10 @@
 config:
     pattern:    /
-    defaults:   {_controller: main:check}
+    controller: main:check
 
 install:
     pattern:    /configTiitz/install
-    defaults:   {_controller: main:check}
+    controller: main:check
 
 
 #entityGeneratorPOST:
@@ -15,5 +15,5 @@ install:
 
 entityGenerator:
     pattern:    /configTiitz/entityGenerator
-    defaults:   {_controller: generator:generateEntity}
+    controller: generator:generateEntity
 
