@@ -6,11 +6,6 @@ class Validator
 {
 	private static $error = array();
 
-	function __construct()
-	{
-		# code...
-	}
-
 	public static function checkInput (array $value) {
 		var_dump($value);
 	}
@@ -40,9 +35,9 @@ class Validator
 	public static function checkDb (array $post) {
 		
 		// check if a least one input isn't empty
-		if(!empty($post['user']) || !empty($post['pwd']) || !empty($post['adress']) || !empty($post['name'])) {
+		if(!empty($post['user']) || !empty($post['adress']) || !empty($post['name'])) {
 			// check that all input are fill up
-			if(!empty($post['user']) && !empty($post['pwd']) && !empty($post['adress']) && !empty($post['name']))
+			if(!empty($post['user']) && !empty($post['adress']) && !empty($post['name']))
 			{
 				// check database connection
 				tzSQL::getInstance($post['adress'],$post['user'], $post['pwd'], $post['name']);
