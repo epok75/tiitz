@@ -81,7 +81,7 @@ abstract class tzErrorCore {
 		
 		$store .= '</ul></div>';
 		array_push(self::$templateError, $store);
-		if ($error['type'] == 1) {
+		if ($error['type'] == 1 || $error['type'] == 4) {
 			print $store;
 		}
 		//print_r($store);
@@ -133,7 +133,7 @@ abstract class tzErrorCore {
 	        }
 	        else {
 	        	array_push(self::$templateCodePhp, $output);
-	        	if ($errorType == 1) {
+	        	if ($errorType == 1 || $errorType == 4) {
 	        		print $output;
 	        	}
 	        } 
