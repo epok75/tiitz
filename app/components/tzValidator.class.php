@@ -253,7 +253,6 @@ class tzValidator {
     public static function checkMulti($elems){
         if($elems != null){
             foreach ($elems as $req){
-                var_dump($req);
                 if(array_key_exists("ELEM", $req)){
                     
                     if(array_key_exists("LENGTH", $req)){
