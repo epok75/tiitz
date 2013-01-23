@@ -291,6 +291,61 @@ foreach ($_POST['tablename'] as $tablename) {
 
 	$c.="
 
+		/************* FindManyBy(column, value) ***************/
+		public function findManyBy($" . "param,$" . "value){
+
+
+			switch ($" . "param){
+				";
+
+
+	foreach ( $columsResult as $key => $value ) {
+
+		$col = $value[0];
+
+		$c.= "
+				case $" . "param == '".$col."':
+					$"."param = '".$col."';
+					break;
+					";
+	}
+
+
+	$c.="
+				default:
+					die('colonne introuvable');
+					//a changer par le systeme de gestion d'erreur
+			}
+
+			$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
+			$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+			$" . "data->execute();
+			$" . "formatResult = $" . "data->fetchAll(PDO::FETCH_ASSOC);
+			$" . "entitiesArray = array();
+
+			if(!empty($" . "formatResult)){
+
+				foreach ($" . "formatResult as $" . "key => $" . "data) {
+
+					$" . "tmpInstance = new ".$class."();
+
+					foreach ($" . "data as $" . "k => $" . "value) {
+
+						$" . "method = 'set'.ucfirst($" . "k);
+						$" . "tmpInstance->$" . "method($" . "value);
+					}
+					array_push($" . "entitiesArray, $" . "tmpInstance);
+				}
+
+				return $" . "entitiesArray;
+
+			}
+		}
+
+				";
+
+	$c.="
+
 	}
 
 ?>
