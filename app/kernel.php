@@ -52,7 +52,16 @@ if (is_file(ROOT.$route["path"])) {
 	else {
 		$controller = new $route["className"]($tzRender);
 	}
-	$controller->$route["action"]();
+
+	if(!empty($route['params'])){
+		$params = array();
+		foreach ($route['params'] as $value) {
+			$params[$value['name']] = $value['value'];
+		}
+		$controller->$route["action"]($params);
+	} else {
+		$controller->$route["action"]();
+	}
 }
 else {
 	echo "Page 404";
