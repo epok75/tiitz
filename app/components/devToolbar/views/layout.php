@@ -183,12 +183,12 @@
 			   			</li>
 			   		</ul>
 			   	</li>
+			   	<?php if (count($errorArray) > 0 ) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
-			   		<?php if (count($errorArray) > 0 ) : ?>
-			   			<button href="#myLogError" role="button" class="btn btn-warning" type="button" data-toggle="modal" style="color:#f1f1f1 !important;">Fichiers de logs (<?php print count($errorArray) ?>)</button>
-			   		<?php endif; ?>	
-				</li>
+			   		<button href="#myLogError" role="button" class="btn btn-warning" type="button" data-toggle="modal" style="color:#f1f1f1 !important;">Fichiers de logs (<?php print count($errorArray) ?>)</button>
+			 	</li>
+			 	<?php endif; ?>	
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
