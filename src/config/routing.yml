@@ -1,0 +1,4 @@
+
+main_show:
+	pattern:	 / 
+	defaults:	{ _controller: main:show }
