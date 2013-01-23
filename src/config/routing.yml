@@ -1,0 +1,4 @@
+
+main_show:
+	pattern:	 / 
+	controller: main:show

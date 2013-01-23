@@ -207,6 +207,7 @@
 		</div>
 	</div>
 <script>
+	// check if jquery is load and insert bootstrap.js
 	function checkAndLoadjQuery() {
 		if(window.jQuery)
 		{
@@ -229,6 +230,9 @@
 		  	linkToolbar.rel = "stylesheet";
 		   	linkToolbar.href = "<?php print WEB_PATH;?>tiitz/css/style-toolbar-error.css";
 		   	document.getElementsByTagName('head')[0].appendChild(linkToolbar);
+		   	// change footer visibilty
+		   	var tiitz_toolbar = document.getElementById('tiitz-toolbar');
+		   	tiitz_toolbar.style.display = "block";
 	}
 
 	window.onload = function () {
