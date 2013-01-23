@@ -76,7 +76,7 @@ class MainController extends TzController {
 		$fm->xtouch("routing.".$this -> routingExtension);
 		
 		// layout template
-		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
+		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->routingExtension, ROOT."/src/views/layout.".$this->routingExtension);
 				
 		// create default controller and his content
 		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
