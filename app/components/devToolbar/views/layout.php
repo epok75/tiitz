@@ -1,22 +1,7 @@
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-header">
-    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-    	<h3 id="myModalLabel">Tiitz error</h3>
-  	</div>
-  	<div class="modal-body">
-	<?php $arrayError 	= tzErrorCore::getTemplateError(); ?>
-	<?php $arrayCode 	= tzErrorCore::getTemplateCodePhp(); ?>
-	<?php 
-		for ($i=0; $i < count($arrayError); $i++) { 
-			print $arrayError[$i];
-			print $arrayCode[$i];
-		}
-	 ?>
-	</div>
-	<div class="modal-footer">
-    	<button class="btn" data-dismiss="modal" aria-hidden="true">Fermer</button>
-  	</div>
-</div>	
+<?php
+	include 'templateLog.php';
+	include 'templateCurrentError.php';
+?>
 <footer id="tiitz-toolbar">
 	<a class="close" data-dismiss="alert" href="#">&times;</a>
 	<div class="navbar">
@@ -199,19 +184,11 @@
 			   		</ul>
 			   	</li>
 			   	<li class="divider-vertical"></li>
-			   	<li><a href="#">Logs Erreurs</a>
-					<ul id="toolbar-log-error" class="tiitz-toolbar-info">
-			   			<li>
-	   					<?php for ($i=0; $i < count($errorArray); $i++) : ?> 
-	   						<div <?php ($i%2 == 0) ? print "class='odd'" : print "class='even'" ?>>
-	   							<p><strong>Date </strong>: <?php print $errorArray[$i]['date']; ?> | <strong>Num&eacute;ro erreur </strong>: <?php print $errorArray[$i]['type']; ?></p>
-	   							<p><strong>Message </strong>: <?php print $errorArray[$i]['message']; ?></p>
-	   							<p><strong>File </strong>: <?php print $errorArray[$i]['file']; ?> | <strong>Ligne </strong>: <?php print $errorArray[$i]['line']; ?></p>
-	   						</div>		
-	   					<?php endfor ?>
-			   			</li>
-			   		</ul>
-			   	</li>
+			   	<li>
+			   		<?php if (count($errorArray) > 0 ) : ?>
+			   			<button href="#myLogError" role="button" class="btn btn-warning" type="button" data-toggle="modal" style="color:#f1f1f1 !important;">Fichiers de logs (<?php print count($errorArray) ?>)</button>
+			   		<?php endif; ?>	
+				</li>
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
@@ -221,7 +198,7 @@
 				<li class="divider-vertical"></li>
 			   	<li>
 			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
-			   			<button class="btn btn-danger" type="button">1 nouvelle erreur</button>
+			   			<button href="#myModal" role="button" class="btn btn-danger" type="button" data-toggle="modal" style="color:#f1f1f1 !important;" >1 nouvelle erreur</button>
 			   		<?php elseif (tzErrorCore::getNumberOfCurrentError() > 1) : ?>
 			   			<div><a href="#myModal" role="button" class="btn btn-danger" data-toggle="modal" style="color:#f1f1f1 !important;"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</a></div>
 			   		<?php endif; ?>	

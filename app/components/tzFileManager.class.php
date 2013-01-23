@@ -470,6 +470,43 @@ class tzFileManager
 		}	
 	}
 	
+	public function xcopy($newfile)
+	{
+		if (file_exists($this->currentPath))
+		{
+			$return = copy($this->currentPath, $newfile);
+			if ($return == false)
+			{
+				$this->error = "Erreur lors de la copie du dossier";
+				return (false);
+			}
+			else
+				return ($return);
+		}
+		else
+		{
+			$this->error = "L'element courrant est invalides";
+			return (false);
+		}
+	}
+	
+	public function xcopydir($dir_paste)
+	{
+		if (is_dir($this->currentPath))
+		{
+            if ($dh = opendir($this->currentPath))
+			{     
+                while (($file = readdir($dh)) !== false)
+				{
+                    if (!is_dir($dir_paste)) mkdir ($dir_paste, 0777);
+						if(is_dir($this->currentPath.$file) && $file != '..'  && $file != '.')
+							copy_dir ($this->currentPath.$file.'/' , $dir_paste.$file.'/' );
+						elseif($file != '..'  && $file != '.') copy ( $this->currentPath.$file , $dir_paste.$file );
+                }
+				closedir($dh);
+            }
+		}                
+	}
 	private function up_error($code)
 	{
 		switch ($code)
