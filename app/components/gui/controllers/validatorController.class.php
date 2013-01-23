@@ -57,8 +57,9 @@ class Validator
 			} else {
 				// check and store which input are not fill up in error array
 				foreach ($post as $key => $value) {
+					self::$error[$key."_value"] = $value;
 					if(empty($value)) {
-						self::$error[$key] = 'Vous devez remplir une valeur';
+						self::$error[$key] = 'Vous devez remplir ce champ si vous voulez utiliser une BDD.';
 					}
 				}
 				return false;
@@ -77,7 +78,6 @@ class Validator
 	public static function getError(){
 		return self::$error;
 	}
-
 	
 }
 ?>

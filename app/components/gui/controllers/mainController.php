@@ -5,7 +5,8 @@
 require_once 'validatorController.class.php';
 
 class MainController extends TzController {
-	private $extension;
+
+	private $routingExtension;
 
 	public function checkAction() {
 		
@@ -20,7 +21,8 @@ class MainController extends TzController {
 			$error = Validator::getError();
 
 			if(empty($error)) {
-				$this -> templateEngine();
+				$this -> routingExtension = $_POST['routesLang'];
+
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
 				// redirect /web/index.php which will redirect to /src/config/routing.yml
@@ -71,35 +73,35 @@ class MainController extends TzController {
 		$fm->set_currentItem(ROOT."/src/controllers");
 		$fm->xtouch("mainController.php");
 		$fm->set_currentItem(ROOT."/src/config/");
-		$fm->xtouch("routing.yml");
-		$fm->set_currentItem(ROOT."/src/views");
+		$fm->xtouch("routing.".$this -> routingExtension);
 		
 		// layout template
 		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
 				
 		// create default controller and his content
 		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
-		
-		$code = "<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t ";
-		$code .= '$this->tzRender->run(\'layout\');';
-		$code .= "\n\t}\n}\n ?>";
 
-		$fm->add_fileContent($code);
+		$fm->add_fileContent("<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t echo 'Hello World';\n\t}\n}\n ?>");
+		$fm->set_currentItem(ROOT."/src/config/routing.".$this -> routingExtension);
+		if ($this -> routingExtension === "yml")
+			$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tcontroller: main:show");
+		if ($this -> routingExtension === "php")
+			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"main_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "main:show" ),'."\n");
 
-		// create content of routing file with default path
-		$fm->set_currentItem(ROOT."/src/config/routing.yml");
-		$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tdefaults:\t{ _controller: main:show }"); 
-		
 		// add pages if user has tried to create one or more
 		if (isset($_POST["pages"]) && !empty($_POST["pages"])) {
 			
 			$pages = $_POST['pages'];
 			foreach ($pages as $page) {
 				$page = str_replace( "\r", "", $page);
-				$page = $page;
-				// create touting.yml
-				$fm->set_currentItem(ROOT."/src/config/routing.yml");
-				$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tdefaults:\t{ _controller: ".$page.":show }");
+
+				$page = strtolower($page);
+				// create routing.yml
+				$fm->set_currentItem(ROOT."/src/config/routing.".$this -> routingExtension);
+				if ($this -> routingExtension === "yml")
+					$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tcontroller: ".$page.":show ");
+				if ($this -> routingExtension === "php")
+					$fm->add_fileContent("\n\t\t".'"'.$page.'_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "'.$page.':show" ),'."\n");
 				$fm->set_currentItem(ROOT."/src/views/templates");
 				$fm->xtouch($page.'.'.$_POST['tpl']);
 				$fm->set_currentItem(ROOT."/src/controllers");
@@ -107,7 +109,11 @@ class MainController extends TzController {
 				$fm->xtouch($page."Controller.php");
 				$fm->set_currentItem(ROOT."/src/controllers/".$page."Controller.php");
 				$fm->add_fileContent("<?php \n\nclass ".$page."Controller extends TzController {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
-
+			}
+			if ($this -> routingExtension === "php")
+			{
+				$fm->set_currentItem(ROOT."/src/config/routing.".$this -> routingExtension);
+				$fm->add_fileContent(");");
 			}
 		} 
 	}	
