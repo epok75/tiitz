@@ -71,28 +71,25 @@ class MainController extends TzController {
 		// File manager class
 		$fm = new tzFileManager(ROOT);
 		// create routing file
-		$fm->set_currentItem(ROOT."/src/controllers");
-		$fm->xtouch("mainController.php");
 		$fm->set_currentItem(ROOT."/src/config/");
 		$fm->xtouch("routing.".$this -> routingExtension);
-		
-		// layout template
-		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
-				
-		// create default controller and his content
-		$fm->set_currentItem(ROOT."/src/controllers/mainController.php");
-
-		$code = "<?php \n\nclass mainController extends TzController {\n\t public function showAction () {\n\t\t ";
-		$code .= '$this->tzRender->run(\'layout\');';
-		$code .= "\n\t}\n}\n ?>";
-		$fm->add_fileContent($code);
-
 		$fm->set_currentItem(ROOT."/src/config/routing.".$this -> routingExtension);
 		if ($this -> routingExtension === "yml")
-			$fm->add_fileContent("\nmain_show:\n\tpattern:\t / \n\tcontroller: main:show");
+			$fm->add_fileContent("\ndefault_show:\n\tpattern:\t / \n\tcontroller: default:show");
 		if ($this -> routingExtension === "php")
-			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"main_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "main:show" ),'."\n");
+			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"default_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "default:show" ),'."\n");
 
+		// layout template
+		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
+		$fm->moveDir(ROOT."/app/components/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
+		// default controller
+		if ($this->extension == "html.twig") {
+			$fm->moveDir(ROOT."/app/components/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
+		} else {
+			$fm->moveDir(ROOT."/app/components/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
+		}
+		
+		
 		// add pages if user has tried to create one or more
 		if (isset($_POST["pages"]) && !empty($_POST["pages"])) {
 			
@@ -107,14 +104,13 @@ class MainController extends TzController {
 				if ($this -> routingExtension === "php")
 					$fm->add_fileContent("\n\t\t".'"'.$page.'_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "'.$page.':show" ),'."\n");
 				// create template file
-				// $fm->set_currentItem(ROOT."/src/views/templates");
-				// $fm->xtouch($page.'.'.$_POST['tpl']);
+				$fm->set_currentItem(ROOT."/src/views/templates");
+				$fm->xtouch($page.'.'.$this->extension);
 				// create additional controllers
 				$fm->set_currentItem(ROOT."/src/controllers");
 				$fm->xtouch($page."Controller.php");
 				$fm->set_currentItem(ROOT."/src/controllers/".$page."Controller.php");
 				$fm->add_fileContent("<?php \n\nclass ".$page."Controller extends TzController {\n\t public function showAction () {\n\t\t echo 'Vous êtes sur la page : ".$page."';\n\t}\n}\n ?>");
-			
 			}
 			
 			// We need to close the php array
@@ -123,8 +119,6 @@ class MainController extends TzController {
 				$fm->set_currentItem(ROOT."/src/config/routing.".$this -> routingExtension);
 				$fm->add_fileContent(");");
 			}
-			
-			
 		} 
 	}	
 

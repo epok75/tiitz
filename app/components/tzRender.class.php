@@ -14,6 +14,7 @@ class tzRender {
 	private $cache 	= false;
 	// array that store object of either smarty or twig
 	private $renderedPage = array();
+	private static $page;
 	
 	private function __construct($tpl){
 		
@@ -113,5 +114,12 @@ class tzRender {
 	}
 	public function getPath() {
 		return self::$path;
+	}
+	public static function getPage() {
+		return self::$page;
+	}
+	// setter
+	public function setPage($page) {
+		self::$page = $page;
 	}
 } 

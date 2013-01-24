@@ -7,7 +7,7 @@
 class defaultController extends tzController {
 
 	// first method call when the website is launched
-	public function mainAction () {
+	public function showAction () {
 		$this->tzRender->run('/templates/default');                                                        
 	}
 }
