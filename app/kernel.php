@@ -48,7 +48,6 @@ if (!empty($conf["existingproject"]) && $conf["existingproject"] === true)
 	$route = tzRoute::getRoute($conf);
 else
 	$route = tzRoute::getRoute($conf, "gui");
-	
 
 if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
@@ -68,7 +67,7 @@ if (is_file(ROOT.$route["path"])) {
 	$tiitzData['conf'] = $conf;
 	$tiitzData['tzRender'] = $tzRender;
 
-	// We create the controller instance and call the requested action
+	// We create the controller instance and call the requested actions
 	$controller = new $route["className"]($tiitzData);
 	$controller->$route["action"]();
 }

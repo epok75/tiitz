@@ -2,13 +2,13 @@
 
 class tzController {
 
-	public $tzRender;  
+	public $tiitzData;  
     public $tzPlugin;
     public $tzValidator;
     private static $tiitzVersion = '0.1';
     
-    public function __construct(tzRender $tzRender) {
-        $this->tzRender = $tzRender;
+    public function __construct(array $tzData) {
+        $this->tiitzData = $tzData;
         //$this->tzValidator = new tzValidator;
     }
 
@@ -16,8 +16,14 @@ class tzController {
         return self::$tiitzVersion;
     }
 
-    protected static function callController() {
-    	
+    // Made by Tiitz team for Mister Gael Coat, special dedicasse !
+    protected static function callController(string $controller, string $action) {
+    	if (is_file(ROOT.$this->$tiitzData['route']['dirPath'].$controller.'.php'))	 {
+    		require_once ROOT.$this>$tiitzData['route']['dirPath'].$controller.'.php';
+    		
+            $newController = new $controller($this->tiitzData);
+            $newController->$action();
+    	}
     }
 
 }

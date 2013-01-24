@@ -146,10 +146,13 @@ class tzRoute {
 			if(count($arrayController) !== 2){
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
-				if($selectedRoute['type'] == 'config')
-					self::$arrayRoute['path'] = '/app/components/gui/controllers/'.$arrayController[0].'Controller.php';
-				else
-					self::$arrayRoute['path'] = '/src/controllers/'.$arrayController[0].'Controller.php';
+				if($selectedRoute['type'] == 'config') {
+					self::$arrayRoute['dirPath'] = '/app/components/gui/controllers/';
+					self::$arrayRoute['path'] = self::$arrayRoute['dirPath'].$arrayController[0].'Controller.php';
+				} else {
+					self::$arrayRoute['dirPath'] = '/src/controllers/';
+					self::$arrayRoute['path'] = self::$arrayRoute['dirPath'].$arrayController[0].'Controller.php';
+				}
 				self::$arrayRoute['action'] = $arrayController[1].'Action';
                                 self::$arrayRoute['className'] = $arrayController[0].'Controller';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
