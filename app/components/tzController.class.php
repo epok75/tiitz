@@ -1,6 +1,5 @@
 <?php
 
-
 class tzController {
 
 	public $tzRender;  
@@ -15,6 +14,10 @@ class tzController {
 
     public static function getTiitzVersion() {
         return self::$tiitzVersion;
+    }
+
+    protected static function callController() {
+    	
     }
 
 }

@@ -1,6 +1,9 @@
 <?php
 define("ROOT", realpath(__DIR__."/../")); // base of the web site
 
+// Array containing Main data use in Tiitz Kernel and Tiitz Controllers
+$tiitzData = array();
+
 // Include YAML parsing tool
 require_once(ROOT.'/app/components/spyc/Spyc.php');
 $comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
@@ -49,22 +52,25 @@ else
 
 if (is_file(ROOT.$route["path"])) {
 	require_once ROOT.$route["path"];
+
 	if(!empty($conf['database']['user']) && !empty($conf["existingproject"]) && $conf["existingproject"] === true) {
 		tzSQL::getInstance($conf['database']['host'],$conf['database']['user'],$conf['database']['password'],$conf['database']['dbname']);
-		$controller = new $route["className"]($tzRender);
 	}
-	else {
-		$controller = new $route["className"]($tzRender);
-	}
+
 	if(!empty($route['params'])){
-		$params = array();
 		foreach ($route['params'] as $value) {
-			$params[$value['name']] = $value['value'];
+			$tiitzData['params'][$value['name']] = $value['value'];
 		}
-		$controller->$route["action"]($params);
-	} else {
-		$controller->$route["action"]();
 	}
+
+	// We fill $tiitzData with tiitz infos
+	$tiitzData['route'] = $route;
+	$tiitzData['conf'] = $conf;
+	$tiitzData['tzRender'] = $tzRender;
+
+	// We create the controller instance and call the requested action
+	$controller = new $route["className"]($tiitzData);
+	$controller->$route["action"]();
 }
 else
 	echo "Page 404";
