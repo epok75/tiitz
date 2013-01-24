@@ -1,3 +1,173 @@
 type=>4	message=>syntax error, unexpected '}'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/src/controllers/mainController.php	line=>6	date=>2013-01-23 19:42:22
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 15:58:44
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 16:00:39
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:43:50
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:44:18
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:44:54
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:05
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:07
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:07
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:07
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:55
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:57
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:45:57
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:08
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:08
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:09
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:09
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:44
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:45
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:46
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:46
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:46
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:46:46
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:47:02
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:47:02
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:47:02
+type=>8	message=>Use of undefined constant WEB_PTH - assumed 'WEB_PTH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 22:47:21
+type=>8	message=>Constant WEB_PATH already defined	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>31	date=>2013-01-24 22:50:37
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>14	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>23	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>41	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>59	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>78	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>218	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>227	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>233	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Use of undefined constant WEB_PATH - assumed 'WEB_PATH'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/devToolbar/views/layout.php	line=>249	date=>2013-01-24 23:17:55
+type=>8	message=>Undefined property: TiiTz::$getUrl	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>5	date=>2013-01-24 23:21:57
+type=>8	message=>Undefined property: TiiTz::$getUrl	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>5	date=>2013-01-24 23:21:57
+type=>8	message=>Undefined property: TiiTz::$getUrl	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>5	date=>2013-01-24 23:21:57
+type=>8	message=>Undefined variable: web_path	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>4	date=>2013-01-24 23:22:30
+type=>8	message=>Constant WEB_PATH already defined	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>5	date=>2013-01-24 23:23:23
+type=>8	message=>Constant WEB_PATH already defined	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/web/index.php	line=>5	date=>2013-01-24 23:23:43

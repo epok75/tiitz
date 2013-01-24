@@ -8,8 +8,6 @@ class tzErrorExtend  extends tzErrorCore {
 	 * @param integer $errorReport manage visibility of php error
 	 */
 	public function __construct($errorReport = 0) {
-		// display error to avoid error 500 with e_parse
-		ini_set('display_errors','On');
 		// error_repport : default to none
 		$this -> errorReport = $errorReport;
 		$this -> errorReporting();
