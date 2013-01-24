@@ -9,7 +9,7 @@
 	  		<ul class="nav">
 				<li>	
 					<a class="brand" href="#">
-						<img src="<?php print WEB_PATH; ?>tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print Tiitz::getTiitzVersion(); ?></span>
+						<img src="<?php print WEB_PATH; ?>tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
 					</a>
 					<ul id="toolbar-tiitz-info" class="tiitz-toolbar-info">
 						<li>
