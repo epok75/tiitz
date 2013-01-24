@@ -1,3 +1,5 @@
+<div class="tiitz">
+
 <?php
 	include 'templateLog.php';
 	include 'templateCurrentError.php';
@@ -249,4 +251,5 @@
 	}	  
 </script>
 </footer>
+</div>
 

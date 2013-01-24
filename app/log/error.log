@@ -1,1 +1,3 @@
 type=>4	message=>syntax error, unexpected '}'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/src/controllers/mainController.php	line=>6	date=>2013-01-23 19:42:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 15:58:44
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-24 16:00:39
