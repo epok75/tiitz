@@ -214,13 +214,16 @@
 <script>
 	// check if jquery is load and insert bootstrap.js
 	function checkAndLoadjQuery() {
-		if(window.jQuery)
-		{
-			var script = document.createElement('script');
-		  	script.type = "text/javascript";
-		   	script.src = "<?php print WEB_PATH;?>tiitz/js/bootstrap.js";
-		   	document.getElementsByTagName('head')[0].appendChild(script);
-		}
+		
+		var script = document.createElement('script');
+	  	script.type = "text/javascript";
+	   	script.src = "<?php print WEB_PATH;?>tiitz/js/bootstrap.js";
+	   	document.getElementsByTagName('head')[0].appendChild(script);
+	   	var scriptUI = document.createElement('script');
+	  	scriptUI.type = "text/javascript";
+	   	scriptUI.src = "http://code.jquery.com/ui/1.10.0/jquery-ui.js";
+	   	document.getElementsByTagName('head')[0].appendChild(scriptUI);
+		
 	}
 	function loadCSS() {
 			// bootstrap 
@@ -241,7 +244,7 @@
 	}
 
 	window.onload = function () {
-		checkAndLoadjQuery();
+	
 		loadCSS();
 		
 		$( "#dialog" ).dialog(
@@ -276,7 +279,9 @@
 	   script.type = "text/javascript";
 	   script.src = "<?php print WEB_PATH;?>tiitz/js/jquery-1.9.0.min.js";
 	   document.getElementsByTagName('head')[0].appendChild(script);
-	}	  
+	   
+	}	
+	checkAndLoadjQuery(); 
 </script>
 </footer>
 </div>

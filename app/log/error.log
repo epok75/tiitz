@@ -492,3 +492,38 @@ type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Pr
 type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:30
 type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:50:27
 type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:50:27
+type=>2	message=>include(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:53:15
+type=>2	message=>include(): Failed opening 'test.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:53:15
+type=>2	message=>include(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-28 00:05:53
+type=>2	message=>include(): Failed opening 'test.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-28 00:05:53
+type=>2	message=>include(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-28 00:05:54
+type=>2	message=>include(): Failed opening 'test.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-28 00:05:54
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:05:54
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:09:04
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:11:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:11:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:12:55
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:13:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:13:30
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:13:39
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:13:40
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:16:06
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:33
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:37
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:23:37
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:52
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:56
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>159	date=>2013-01-28 00:24:56

@@ -104,7 +104,7 @@ abstract class tzErrorCore {
 		// when a fatal error occur, the toobar can't be display
 	    // so we print directly the message error send by php
 		if (in_array($error['type'], self::$fatalErrorCode)) {
-	     	print $store;
+	     	 print $store;
 	    }
 		self::highlight_linesfile($error['file'], $error['line'],$error['type'], $return = false);
 	}
@@ -121,11 +121,6 @@ abstract class tzErrorCore {
 	       
 	        $chr_lines = count($lines); 
 	        $chr_lines = strlen($chr_lines); 
-	        if ($errorType != 1) {
-	        	$output .= '<div style="padding: 0px !important; margin: 0px !important;">
-					      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'.self::$increment.'">Visualiser le code</a>
-					    	</div>';
-	        }
 	        
 			$output .= '<div id="collapse'.self::$increment.'" class="accordion-body collapse">';
 	        foreach($lines as $line) 
