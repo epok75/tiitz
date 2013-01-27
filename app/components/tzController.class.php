@@ -17,10 +17,11 @@ class tzController {
     }
 
     // Made by Tiitz team for Mister Gael Coat, special dedicasse !
-    protected static function callController($controller, $action) {
+    protected function callController($controller, $action) {
         $controller.= "Controller";
         $action.= "Action";
-        if (is_file(ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php'))   {
+
+        if (is_file(ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php')) {
             require_once ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php';
             
             $newController = new $controller($this->tiitzData);
