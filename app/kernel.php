@@ -19,7 +19,7 @@ foreach ($comp as $k => $v) {
 
 // Manage Error
 $error = new tzErrorExtend(0);
-include 'test.php';
+require 'test.php';
 if (!empty($conf["template"]))
 	$tzRender = tzRender::getInstance($conf["template"]);
 else
