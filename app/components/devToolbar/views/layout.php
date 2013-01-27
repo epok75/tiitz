@@ -188,7 +188,7 @@
 			   	<?php if (count($errorArray) > 0 ) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
-			   		<button href="#myLogError" role="button" class="btn btn-warning" type="button" data-toggle="modal" style="color:#f1f1f1 !important;">Fichiers de logs (<?php print count($errorArray) ?>)</button>
+			   		<button id="opener-log" class="btn">Fichiers de logs (<?php print count($errorArray) ?>)</button>
 			 	</li>
 			 	<?php endif; ?>	
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
@@ -200,11 +200,14 @@
 				<li class="divider-vertical"></li>
 			   	<li>
 			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
-			   			<button href="#myModal" role="button" class="btn btn-danger" type="button" data-toggle="modal" style="color:#f1f1f1 !important;" >1 nouvelle erreur</button>
+			   			<button id="opener-error" class="btn">1 nouvelle erreur</button>
+			   			
 			   		<?php elseif (tzErrorCore::getNumberOfCurrentError() > 1) : ?>
-			   			<div><a href="#myModal" role="button" class="btn btn-danger" data-toggle="modal" style="color:#f1f1f1 !important;"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</a></div>
-			   		<?php endif; ?>	
-				</li>
+			   			<button id="opener-error" class="btn"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</button>
+			   			
+			   		<?php endif; ?>
+			   	</li>
+				
 			</ul>
 		</div>
 	</div>
@@ -217,7 +220,7 @@
 		  	script.type = "text/javascript";
 		   	script.src = "<?php print WEB_PATH;?>tiitz/js/bootstrap.js";
 		   	document.getElementsByTagName('head')[0].appendChild(script);
-	   }
+		}
 	}
 	function loadCSS() {
 			// bootstrap 
@@ -240,6 +243,31 @@
 	window.onload = function () {
 		checkAndLoadjQuery();
 		loadCSS();
+		
+		$( "#dialog" ).dialog(
+			{ 
+				autoOpen: false, 
+			  	width : 960,
+			  	height: 700, 
+			  	title: "Tittz Error"		
+			}
+		);
+		$( "#opener-log" ).click(function() {
+			$( "#myLogError" ).dialog( "open" );
+		});
+
+		$( "#myLogError" ).dialog(
+			{ 
+				autoOpen: false, 
+			  	width : 960, 
+			  	height: 700,
+			  	title: "Log error"		
+			}
+		);
+
+		$( "#opener-error" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+		});
 	}
 	
    	if(!window.jQuery)

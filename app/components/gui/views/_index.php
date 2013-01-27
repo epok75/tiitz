@@ -5,13 +5,13 @@
 	<title>TiiTz Framework</title>
 	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-	
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>					 
 <body>
 <div class="tiitz">	
-	<div class="container" style="background-color : #eee;margin: 20px auto;padding:10px;width:460px;">
+	<div class="container" style="background-color : #eee;margin: 20px auto 80px;padding:10px;width:460px;">
 		<div class="row">
 			<div class="span6">
 			  	<h3 style="margin: auto;text-align: center;">Tiitz Framework</h3>

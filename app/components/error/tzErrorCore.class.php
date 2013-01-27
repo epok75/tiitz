@@ -62,8 +62,8 @@ abstract class tzErrorCore {
 		if ($error['type'] == 1 || $error['type'] == 64) {
 			$store = '<div class="tiitz-error-popup" style="width:100%;color: #000;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;font-size:14px;">';
 		} else {
-			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;">
-					<a class="close" data-dismiss="alert" href="#">&times;</a>';
+			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;">';
+					//<a class="close" data-dismiss="alert" href="#">&times;</a>
 		}
 
 		$store .= '	<ul style="list-style-type:none;margin: 0px;padding:5px;margin:auto !important;">
