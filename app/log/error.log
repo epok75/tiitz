@@ -474,3 +474,21 @@ type=>2	message=>require(test.php): failed to open stream: No such file or direc
 type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:34:46
 type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:36:09
 type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:36:09
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:44:38
+type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:44:38
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:44:39
+type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:44:39
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:48:05
+type=>8	message=>Undefined variable: errorType	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>106	date=>2013-01-27 16:48:05
+type=>8	message=>Undefined variable: errorType	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>106	date=>2013-01-27 16:48:05
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:49:27
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:27
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:27
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:49:29
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:29
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:29
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:49:30
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:30
+type=>8	message=>Undefined variable: output	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/error/tzErrorCore.class.php	line=>107	date=>2013-01-27 16:49:30
+type=>2	message=>require(test.php): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:50:27
+type=>64	message=>require(): Failed opening required 'test.php' (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>22	date=>2013-01-27 16:50:27
