@@ -25,7 +25,7 @@ class GeneratorController extends tzController{
 				require_once(ROOT.'/app/components/gui/includes/entityGenerator.php');
 			}
 		} else {
-			print 'gérer cette erreur';
+			Header("Location: /");
 		}
 		
 	}
