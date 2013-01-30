@@ -36,10 +36,12 @@ class tzSQL
 		}
 	}
 
-	//get PDO
 	public static function getPDO() {
-		return self::$tzPDO;
-	}
+		if(is_null(self::$tzPDO))
+			tzErrorExtend::catchError(array('PDO is null, maybe you have not mysql connection ?', __FILE__,__LINE__, true));
+		else
+			return self::$tzPDO;
+ 	}
 
 
 	/**
