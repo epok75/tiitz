@@ -1,8 +1,10 @@
+<div class="tiitz">
+
 <?php
 	include 'templateLog.php';
 	include 'templateCurrentError.php';
 ?>
-<footer id="tiitz-toolbar">
+<footer id="tiitz-toolbar" style="display:none;">
 	<a class="close" data-dismiss="alert" href="#">&times;</a>
 	<div class="navbar">
 	  	<div class="navbar-inner">
@@ -186,7 +188,7 @@
 			   	<?php if (count($errorArray) > 0 ) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
-			   		<button href="#myLogError" role="button" class="btn btn-warning" type="button" data-toggle="modal" style="color:#f1f1f1 !important;">Fichiers de logs (<?php print count($errorArray) ?>)</button>
+			   		<button id="opener-log" class="btn">Fichiers de logs (<?php print count($errorArray) ?>)</button>
 			 	</li>
 			 	<?php endif; ?>	
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
@@ -198,24 +200,26 @@
 				<li class="divider-vertical"></li>
 			   	<li>
 			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
-			   			<button href="#myModal" role="button" class="btn btn-danger" type="button" data-toggle="modal" style="color:#f1f1f1 !important;" >1 nouvelle erreur</button>
+			   			<button id="opener-error" class="btn">1 nouvelle erreur</button>
+			   			
 			   		<?php elseif (tzErrorCore::getNumberOfCurrentError() > 1) : ?>
-			   			<div><a href="#myModal" role="button" class="btn btn-danger" data-toggle="modal" style="color:#f1f1f1 !important;"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</a></div>
-			   		<?php endif; ?>	
-				</li>
+			   			<button id="opener-error" class="btn"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</button>
+			   			
+			   		<?php endif; ?>
+			   	</li>
+				
 			</ul>
 		</div>
 	</div>
 <script>
 	// check if jquery is load and insert bootstrap.js
-	function checkAndLoadjQuery() {
-		if(window.jQuery)
-		{
-			var script = document.createElement('script');
-		  	script.type = "text/javascript";
-		   	script.src = "<?php print WEB_PATH;?>tiitz/js/bootstrap.js";
-		   	document.getElementsByTagName('head')[0].appendChild(script);
-	   }
+	function checkAndLoadjQueryUI() {
+		
+		var scriptUI = document.createElement('script');
+	  	scriptUI.type = "text/javascript";
+	   	scriptUI.src = "http://code.jquery.com/ui/1.10.0/jquery-ui.js";
+	   	document.getElementsByTagName('head')[0].appendChild(scriptUI);
+		
 	}
 	function loadCSS() {
 			// bootstrap 
@@ -234,11 +238,6 @@
 		   	var tiitz_toolbar = document.getElementById('tiitz-toolbar');
 		   	tiitz_toolbar.style.display = "block";
 	}
-
-	window.onload = function () {
-		checkAndLoadjQuery();
-		loadCSS();
-	}
 	
    	if(!window.jQuery)
 	{
@@ -246,7 +245,40 @@
 	   script.type = "text/javascript";
 	   script.src = "<?php print WEB_PATH;?>tiitz/js/jquery-1.9.0.min.js";
 	   document.getElementsByTagName('head')[0].appendChild(script);
-	}	  
+	   
+	}	
+	checkAndLoadjQueryUI(); 
+
+	window.onload = function () {
+	
+		loadCSS();
+		
+		$( "#dialog" ).dialog(
+			{ 
+				autoOpen: false, 
+			  	width : 960,
+			  	height: 700, 
+			  	title: "Tittz Error"		
+			}
+		);
+		$( "#opener-log" ).click(function() {
+			$( "#myLogError" ).dialog( "open" );
+		});
+
+		$( "#myLogError" ).dialog(
+			{ 
+				autoOpen: false, 
+			  	width : 960, 
+			  	height: 700,
+			  	title: "Log error"		
+			}
+		);
+
+		$( "#opener-error" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+		});
+	}
 </script>
 </footer>
+</div>
 

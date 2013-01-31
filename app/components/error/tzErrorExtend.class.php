@@ -8,8 +8,6 @@ class tzErrorExtend  extends tzErrorCore {
 	 * @param integer $errorReport manage visibility of php error
 	 */
 	public function __construct($errorReport = 0) {
-		// display error to avoid error 500 with e_parse
-		ini_set('display_errors','On');
 		// error_repport : default to none
 		$this -> errorReport = $errorReport;
 		$this -> errorReporting();
@@ -136,9 +134,14 @@ class tzErrorExtend  extends tzErrorCore {
 		return $this->errorReport;
 	}
 
-	// setter
-	public function setErrorRepport($errorRepport) {
-		$this -> errorRepport = $errorRepport;
+	public function getPageNotFound() {
+		$page = ROOT.$this->pageNotFound;
+		return $page;
+	}
+	
+	// page not found
+	public function setPageNotFound($page) {
+		$this->pageNotFound = $page;
 	}
 	
 }

@@ -1,4 +1,21 @@
 <?php
+
+/**
+ * Reminder error
+ * $errorlevels = array(
+ *       2047 => 'E_ALL',
+ *       1024 => 'E_USER_NOTICE',
+ *       512 => 'E_USER_WARNING',
+ *       256 => 'E_USER_ERROR',
+ *       128 => 'E_COMPILE_WARNING',
+ *       64 => 'E_COMPILE_ERROR',
+ *       32 => 'E_CORE_WARNING',
+ *       16 => 'E_CORE_ERROR',
+ *       8 => 'E_NOTICE',
+ *       4 => 'E_PARSE',
+ *       2 => 'E_WARNING',
+ *       1 => 'E_ERROR');
+ */
 // Core Manager error
 abstract class tzErrorCore {
 	
@@ -22,6 +39,10 @@ abstract class tzErrorCore {
 	private static $templateCodePhp 	= array();
 	// number of error that can be return to be displayed in the toolbar
 	private static $numberOfErrorToolbar;
+	// code of fatal error from php
+	private static $fatalErrorCode = array(1,4,16,64,256,4096);
+	// page not found
+	protected $pageNotFound = '/app/components/error/views/error.html';
 
 	private function __construct () {
 		
@@ -62,13 +83,13 @@ abstract class tzErrorCore {
 		if ($error['type'] == 1 || $error['type'] == 64) {
 			$store = '<div class="tiitz-error-popup" style="width:100%;color: #000;background-color: #F2DEDE;border-color: #EED3D7;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;font-size:14px;">';
 		} else {
-			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;">
-					<a class="close" data-dismiss="alert" href="#">&times;</a>';
+			$store = '<div class="tiitz-error-popup" style="color: #000;background-color: #FCF8E3;border : 1px solid #FBEED5;margin: 0px; padding-left:8px;padding-right:8px;font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;margin:auto !important;">';
+					//<a class="close" data-dismiss="alert" href="#">&times;</a>
 		}
 
 		$store .= '	<ul style="list-style-type:none;margin: 0px;padding:5px;margin:auto !important;">
 					<h4 style="margin:5px 0px;font-size:16px">';
-		(isset($error['type']) && ($error['type'] == 1 || $error['type'] == 64)) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
+		(isset($error['type']) && in_array($error['type'], self::$fatalErrorCode)) ? $store .= "Erreur Fatale" : $store .= "Erreur durant l'execution du script";
 		$store .= '</h4>';
 		// loop through error array
 		foreach ($error as $key => $value) {
@@ -81,10 +102,11 @@ abstract class tzErrorCore {
 		
 		$store .= '</ul></div>';
 		array_push(self::$templateError, $store);
-		if ($error['type'] == 1 || $error['type'] == 4) {
-			print $store;
-		}
-		//print_r($store);
+		// when a fatal error occur, the toobar can't be display
+	    // so we print directly the message error send by php
+		if (in_array($error['type'], self::$fatalErrorCode)) {
+	     	 print $store;
+	    }
 		self::highlight_linesfile($error['file'], $error['line'],$error['type'], $return = false);
 	}
 
@@ -100,11 +122,6 @@ abstract class tzErrorCore {
 	       
 	        $chr_lines = count($lines); 
 	        $chr_lines = strlen($chr_lines); 
-	        if ($errorType != 1) {
-	        	$output .= '<div style="padding: 0px !important; margin: 0px !important;">
-					      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse'.self::$increment.'">Visualiser le code</a>
-					    	</div>';
-	        }
 	        
 			$output .= '<div id="collapse'.self::$increment.'" class="accordion-body collapse">';
 	        foreach($lines as $line) 
@@ -133,7 +150,9 @@ abstract class tzErrorCore {
 	        }
 	        else {
 	        	array_push(self::$templateCodePhp, $output);
-	        	if ($errorType == 1 || $errorType == 4) {
+	        	// when a fatal error occur, the toobar can't be display
+	        	// so we print directly the message error send by php
+	        	if (in_array($errorType, self::$fatalErrorCode)) {
 	        		print $output;
 	        	}
 	        } 
@@ -251,8 +270,7 @@ abstract class tzErrorCore {
 		return self::$templateCodePhp;
 	}
 	// setter
-	public function setDisplayError($isDisplay) {
+	protected function setDisplayError($isDisplay) {
 		self::$displayError = $isDisplay;
 	}
-	
 }
