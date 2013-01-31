@@ -1,7 +1,0 @@
-
-default_show:
-	pattern:	 / 
-	controller: default:show
-default_show:
-	pattern:	 / 
-	controller: default:show

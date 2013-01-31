@@ -1,4 +1,4 @@
-<div id="myLogError">
+<div id="myLogError" style="display:none;">
 	<div class="modal-body">
 		<?php for ($i=0; $i < count($errorArray); $i++) : ?> 
   		<div <?php ($i%2 == 0) ? print "class='odd'" : print "class='even'" ?>>

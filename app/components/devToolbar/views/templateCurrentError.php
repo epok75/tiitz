@@ -1,4 +1,4 @@
-<div id="dialog">
+<div id="dialog" style="display:none;">
 	<div class="modal-body">
 		<?php $arrayError 	= tzErrorCore::getTemplateError(); ?>
 		<?php $arrayCode 	= tzErrorCore::getTemplateCodePhp(); ?>
