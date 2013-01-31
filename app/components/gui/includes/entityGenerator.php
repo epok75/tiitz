@@ -93,6 +93,7 @@ foreach ($_POST['tablename'] as $tablename) {
 			}
 			else{
 				tzErrorExtend::catchError(array('Fail delete', __FILE__,__LINE__, true));
+				return false;
 			}
 		}
 				";
@@ -129,6 +130,7 @@ foreach ($_POST['tablename'] as $tablename) {
 			}
 			else{
 				tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+				return false;
 			}
 		}";
 
@@ -178,8 +180,10 @@ foreach ($_POST['tablename'] as $tablename) {
 
 			if($ " . "result)
 				return $". "result;
-			else
+			else{
 				tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
+				return false;
+			}
 		}
 				";
 
@@ -209,8 +213,10 @@ foreach ($_POST['tablename'] as $tablename) {
 
 			if(!empty($ " . "entitiesArray))
 				return $" . "entitiesArray;
-			else
+			else{
 				tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
+				return false;
+			}						
 
 		}
 
@@ -257,8 +263,10 @@ foreach ($_POST['tablename'] as $tablename) {
 			}
 	$c.="
 			}
-			else
+			else{
 				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+				return false;
+			}
 		}
 
 				";
@@ -288,8 +296,10 @@ foreach ($_POST['tablename'] as $tablename) {
 
 		$c.="
 			}
-			else
+			else{
 				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+				return false;
+			}
 		}
 		";
 	}
@@ -344,8 +354,10 @@ foreach ($_POST['tablename'] as $tablename) {
 
 				if($ " . "entitiesArray)
 					return $" . "entitiesArray;
-				else
+				else{
 					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					return false;
+				}
 
 			}
 		}
