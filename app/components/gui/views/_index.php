@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link href='<?php print WEB_PATH;?>tiitz/css/style-gui.css' rel='stylesheet' type='text/css' />
 </head>					 
 <body>
 <div class="tiitz">	
