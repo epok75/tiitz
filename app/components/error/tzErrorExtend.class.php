@@ -134,9 +134,14 @@ class tzErrorExtend  extends tzErrorCore {
 		return $this->errorReport;
 	}
 
-	// setter
-	public function setErrorRepport($errorRepport) {
-		$this -> errorRepport = $errorRepport;
+	public function getPageNotFound() {
+		$page = ROOT.$this->pageNotFound;
+		return $page;
+	}
+	
+	// page not found
+	public function setPageNotFound($page) {
+		$this->pageNotFound = $page;
 	}
 	
 }

@@ -48,5 +48,7 @@ if (is_file(ROOT.$route["path"])) {
 		$controller->$route["action"]();
 	}
 }
-else
-	echo "Page 404";
+else {
+	require_once $error->getPageNotFound();
+}
+	

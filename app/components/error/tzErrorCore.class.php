@@ -41,7 +41,8 @@ abstract class tzErrorCore {
 	private static $numberOfErrorToolbar;
 	// code of fatal error from php
 	private static $fatalErrorCode = array(1,4,16,64,256,4096);
-
+	// page not found
+	protected $pageNotFound = '/app/components/error/views/error.html';
 
 	private function __construct () {
 		
@@ -269,8 +270,7 @@ abstract class tzErrorCore {
 		return self::$templateCodePhp;
 	}
 	// setter
-	public function setDisplayError($isDisplay) {
+	protected function setDisplayError($isDisplay) {
 		self::$displayError = $isDisplay;
 	}
-	
 }
