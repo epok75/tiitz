@@ -42,8 +42,12 @@
 
 							echo '<table class="table table-hover">
 									<thead>
-									<tr>
-										<th><input type="checkbox" checked="checked" name="tablename[]" value="'.$value[0].'">'.$value[0].'</th></tr></thead>';
+										<tr>
+											<th>
+												<input type="checkbox" checked="checked" name="tablename[]" value="'.$value[0].'"> '.$value[0].'
+											</th>
+										</tr>
+									</thead>';
 
 							echo "
 									<tbody>";
