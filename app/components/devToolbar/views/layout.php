@@ -11,7 +11,7 @@
 	  		<ul class="nav">
 				<li>	
 					<a class="brand" href="#">
-						<img src="<?php print WEB_PATH; ?>tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
+						<img src="<?php print WEB_PATH; ?>/tiitz/img/logo-tiitz-mini.png" id="tiitz-logo" /> <span id="tiitz-version">0.1</span>
 					</a>
 					<ul id="toolbar-tiitz-info" class="tiitz-toolbar-info">
 						<li>
@@ -226,13 +226,13 @@
 			var link = document.createElement('link');
 		  	link.type = "text/css";
 		  	link.rel = "stylesheet";
-		   	link.href = "<?php print WEB_PATH;?>tiitz/css/bootstrap.css";
+		   	link.href = "<?php print WEB_PATH;?>/tiitz/css/bootstrap.css";
 		   	document.getElementsByTagName('head')[0].appendChild(link);
 		   	// style toolbar - error
 		   	var linkToolbar = document.createElement('link');
 		  	linkToolbar.type = "text/css";
 		  	linkToolbar.rel = "stylesheet";
-		   	linkToolbar.href = "<?php print WEB_PATH;?>tiitz/css/style-toolbar-error.css";
+		   	linkToolbar.href = "<?php print WEB_PATH;?>/tiitz/css/style-toolbar-error.css";
 		   	document.getElementsByTagName('head')[0].appendChild(linkToolbar);
 		   	// change footer visibilty
 		   	var tiitz_toolbar = document.getElementById('tiitz-toolbar');
@@ -243,7 +243,7 @@
 	{
 	   var script = document.createElement('script');
 	   script.type = "text/javascript";
-	   script.src = "<?php print WEB_PATH;?>tiitz/js/jquery-1.9.0.min.js";
+	   script.src = "<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js";
 	   document.getElementsByTagName('head')[0].appendChild(script);
 	   
 	}	
