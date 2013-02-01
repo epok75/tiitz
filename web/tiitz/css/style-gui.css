@@ -1,7 +1,4 @@
-body
-{
-	background:#EADDC4;
-}
+
 .content
 {
 	text-align:center;
@@ -67,4 +64,7 @@ fieldset
 	margin-top:80px;
 	margin-left:auto;
 	margin-right:auto;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
