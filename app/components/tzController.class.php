@@ -23,10 +23,19 @@ class tzController {
 
         if (is_file(ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php')) {
             require_once ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php';
-            
-            $newController = new $controller($this->tiitzData);
-            $newController->$action();
+
+            if (class_exists($controller))
+                $newController = new $controller($this->tiitzData);
+            else
+                tzErrorExtend::catchError(array("No Class $controller Found", __FILE__,__LINE__));
+
+            if (method_exists($newController, $action))
+                $newController->$action();
+            else
+                tzErrorExtend::catchError(array("No action $action Found", __FILE__,__LINE__));
         }
+        else
+            tzErrorExtend::catchError(array('No Controller Found', __FILE__,__LINE__));
     }
 
 }
