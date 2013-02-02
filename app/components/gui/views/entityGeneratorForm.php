@@ -38,7 +38,7 @@
 								echo "<div class='row-fluid'>";
 							}
 
-							echo '<div class="span4" style="height:150px; margin:10 0 10 0; overflow-y:auto;">';
+							echo '<div class="span4" style="height:200px; margin:20px 0 20px 0; overflow-y:auto;">';
 
 							echo '<table class="table table-hover">
 									<thead>
