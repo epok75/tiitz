@@ -11,10 +11,11 @@ class Validator
 	}
 
 	public static function testDbConnect ($user, $pwd, $adress, $name) {
+
 		try {
 		    $tzPDO = new PDO('mysql:host='.$adress.';dbname='.$name, $user, $pwd);
 		    $tzPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-		   return true;
+		   	return true;
 		}
 		catch(PDOException $e){
 			self::$error['connectDb'] = 'Erreur durant la connexion à la base de données. Vérifier vos identifiants.';
@@ -28,7 +29,7 @@ class Validator
 
 		if(!in_array($post, $conform)) {
 			self::$error['tpl'] = 'Erreur dans le choix du moteur de template';
-			return false;
+			//return false;
 		}
 		return true;
 	}
@@ -39,7 +40,7 @@ class Validator
 
 		if(!in_array($post, $conform)) {
 			self::$error['route'] = 'Erreur dans le choix du langage pour les routes';
-			return false;
+			//return false;
 		}
 		return true;
 	}
@@ -51,14 +52,6 @@ class Validator
 			// check that all input are fill up
 			if(!empty($post['user']) && !empty($post['adress']) && !empty($post['name']))
 			{
-				// check database connection
-				tzSQL::getInstance($post['adress'],$post['user'], $post['pwd'], $post['name']);
-				$pdo = tzSQL::getPDO();
-
-				if(is_null($pdo)) {
-					self::$error['connectDb'] = 'La connexion a échoué, vérifier vos identifiant';
-					return false;
-				}
 				return true;
 
 			} else {

@@ -10,19 +10,26 @@ class MainController extends TzController {
 	private $extension;
 
 	public function checkAction() {
-		
+	
 		if (isset($_POST["firstConfig"]))
 		{
 			// relauch test
-			Validator::testDbConnect($_POST['user'], $_POST['pwd'],$_POST['adress'], $_POST['name']);
 			Validator::checkTpl($_POST['tpl']);
 			Validator::checkRoute($_POST['routesLang']);
-			Validator::checkDb(array('user' => $_POST['user'], 'pwd' => $_POST['pwd'],'adress' => $_POST['adress'], 'name' => $_POST['name']));
+			$res = Validator::checkDb(array('user' => $_POST['user'], 'pwd' => $_POST['pwd'],'adress' => $_POST['adress'], 'name' => $_POST['name']));
+
+			if ($res == true) {
+				// test db connection
+				Validator::testDbConnect($_POST['user'], $_POST['pwd'],$_POST['adress'], $_POST['name']);
+			}
+		
+
 			$_POST["pages"] = Validator::CleanPage($_POST["pages"]);
 			// check if there error array is empty or no	
 			$error = Validator::getError();
-
+			
 			if(empty($error)) {
+				
 				$this -> routingExtension = $_POST['routesLang'];
 				$this -> templateEngine();
 				$this -> configGenerator();
