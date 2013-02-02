@@ -20,7 +20,7 @@
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://plus.google.com/communities/102794938632806435828">
-							   					<img src="<?php print WEB_PATH; ?>tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
+							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-tiitz.png" alt="Tiitz Official Website" />
 							   				</a>	
 							   			</div>
 							   			<div id="toolbar-content">
@@ -194,7 +194,7 @@
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
 			   	<li class="divider-vertical"></li>
 			   	<li>
-			   		<a href="<?php print WEB_PATH; ?>configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
+			   		<a href="<?php print WEB_PATH; ?>/configTiitz/entityGenerator">Cr&eacute;er vos entit&eacute;es</a>
 				</li>
 				<?php endif; ?>
 				<li class="divider-vertical"></li>
