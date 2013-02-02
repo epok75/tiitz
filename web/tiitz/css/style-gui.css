@@ -59,7 +59,7 @@ header
 fieldset
 {
 	width:800px;
-	border:solid 1px #CCC;
+	border: 1px solid #CCC;
 	background: #FFF;
 	margin-top:80px;
 	margin-left:auto;
@@ -67,4 +67,8 @@ fieldset
 }
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tiitz-error {
+	font-size: 13px;
+	color: red;
 }
