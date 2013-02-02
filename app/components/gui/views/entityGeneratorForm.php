@@ -38,7 +38,7 @@
 								echo "<div class='row-fluid'>";
 							}
 
-							echo '<div class="span3" style="height:150px; margin:10 0 10 0; overflow-y:auto;">';
+							echo '<div class="span4" style="height:150px; margin:10 0 10 0; overflow-y:auto;">';
 
 							echo '<table class="table table-hover">
 									<thead>
@@ -72,12 +72,12 @@
 
 							$i++;
 
-							if($i == 4){
+							if($i == 3){
 								echo "</div>";
 								$i=0;
 							}
 						}
-						if((count($tables) % 4) != 0){
+						if((count($tables) % 3) != 0){
 							echo "</div>";
 						}
 					?>
