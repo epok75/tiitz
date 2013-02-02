@@ -28,7 +28,7 @@ class MainController extends TzController {
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
 				// redirect /web/index.php which will redirect to /src/config/routing.yml
-				header('location:'.WEB_PATH.'index.php');
+				header('location:'.WEB_PATH.'/index.php');
 			} else {
 				require_once("../app/components/gui/views/_index.php");
 			}
