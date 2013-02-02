@@ -92,8 +92,8 @@ foreach ($_POST['tablename'] as $tablename) {
 				return $". "result;
 			}
 			else{
-				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll/Find AVANT
-				//Ex: $" . "test = $" . "xxx->getEntity('user')->findOneBy('id','1')->delete();
+				tzErrorExtend::catchError(array('Fail delete', __FILE__,__LINE__, true));
+				return false;
 			}
 		}
 				";
@@ -129,8 +129,8 @@ foreach ($_POST['tablename'] as $tablename) {
 				return $". "result;
 			}
 			else{
-				//ERREUR RIEN A SUPPRIMER, utiliser FindOneBy/FindAll/Find AVANT
-				//Ex: $" . "test = $" . "xxx->getEntity('user')->findOneBy('id','1')->delete();
+				tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+				return false;
 			}
 		}";
 
@@ -178,7 +178,12 @@ foreach ($_POST['tablename'] as $tablename) {
 			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 			$" . "result->execute();
 
-			return $". "result;
+			if($ " . "result)
+				return $". "result;
+			else{
+				tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
+				return false;
+			}
 		}
 				";
 
@@ -206,7 +211,12 @@ foreach ($_POST['tablename'] as $tablename) {
 				array_push($" . "entitiesArray, $" . "tmpInstance);
 			}
 
-			return $" . "entitiesArray;
+			if(!empty($ " . "entitiesArray))
+				return $" . "entitiesArray;
+			else{
+				tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
+				return false;
+			}						
 
 		}
 
@@ -253,6 +263,10 @@ foreach ($_POST['tablename'] as $tablename) {
 			}
 	$c.="
 			}
+			else{
+				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+				return false;
+			}
 		}
 
 				";
@@ -282,9 +296,10 @@ foreach ($_POST['tablename'] as $tablename) {
 
 		$c.="
 			}
-			else
+			else{
+				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
 				return false;
-			//pas de resultat trouve
+			}
 		}
 		";
 	}
@@ -337,7 +352,12 @@ foreach ($_POST['tablename'] as $tablename) {
 					array_push($" . "entitiesArray, $" . "tmpInstance);
 				}
 
-				return $" . "entitiesArray;
+				if($ " . "entitiesArray)
+					return $" . "entitiesArray;
+				else{
+					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					return false;
+				}
 
 			}
 		}
