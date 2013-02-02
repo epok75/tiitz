@@ -32,7 +32,14 @@ class TiiTz {
 		}
 
 		$pageURL = str_replace('index.php', '', $pageURL);
-		$this->url = $pageURL;
+		if(!empty($_SERVER['PATH_INFO']) && $_SERVER['PATH_INFO'] !== '/') {
+			$pageURL = str_replace($_SERVER['PATH_INFO'], '', $pageURL);
+			$pageURL .= '/';
+		}
+		while($pageURL[strlen($pageURL)-1] == '/')
+		{
+			$pageURL = substr_replace($pageURL ,"",-1);
+		}
 		define('WEB_PATH', $pageURL);
  	}
 

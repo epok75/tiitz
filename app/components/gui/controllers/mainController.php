@@ -14,6 +14,7 @@ class MainController extends TzController {
 		if (isset($_POST["firstConfig"]))
 		{
 			// relauch test
+			Validator::testDbConnect($_POST['user'], $_POST['pwd'],$_POST['adress'], $_POST['name']);
 			Validator::checkTpl($_POST['tpl']);
 			Validator::checkRoute($_POST['routesLang']);
 			Validator::checkDb(array('user' => $_POST['user'], 'pwd' => $_POST['pwd'],'adress' => $_POST['adress'], 'name' => $_POST['name']));

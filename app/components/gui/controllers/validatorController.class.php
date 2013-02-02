@@ -10,6 +10,18 @@ class Validator
 		var_dump($value);
 	}
 
+	public static function testDbConnect ($user, $pwd, $adress, $name) {
+		try {
+		    $tzPDO = new PDO('mysql:host='.$adress.';dbname='.$name, $user, $pwd);
+		    $tzPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+		   return true;
+		}
+		catch(PDOException $e){
+			self::$error['connectDb'] = 'Erreur durant la connexion à la base de données. Vérifier vos identifiants.';
+			return false;
+		}
+	}
+
 	public static function checkTpl ($post) {
 		// Accepted value
 		$conform = array('php', 'twig', 'smarty');

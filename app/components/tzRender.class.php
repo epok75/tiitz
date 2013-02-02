@@ -66,7 +66,8 @@ class tzRender {
 	public function run($file , array $prop = null) {
 		// check if the file exist
 		$this->fileExists($file);
-
+		$prop['WEB_PATH'] = WEB_PATH;
+		$prop['SESSION'] = $_SESSION;
 		//return the template depending of the engine chosen by the user
 		if($this->tpl === 'twig') {
 			// display twig template

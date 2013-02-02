@@ -54,12 +54,13 @@
 
 
 				<div class="">
+					
+					<h4>Base de données</h4>
 					<?php if(isset($error['connectDb'])) : ?>
 						<div class="error-tiitz">
 							<p><?php print $error['connectDb']; ?></p>
 						</div>
 					<?php endif; ?>
-					<h4>Base de données</h4>
 					<div>
 						<label for="user">Utilisateur : </label>
 
