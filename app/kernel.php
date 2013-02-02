@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Global configuration for the framework
 require_once("../app/components/tiitz.class.php");
 $tiitz = new TiiTz();
