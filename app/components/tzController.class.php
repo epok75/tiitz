@@ -3,12 +3,14 @@
 class tzController {
 
 	public $tiitzData;  
+    public $tzRender;
     public $tzPlugin;
     public $tzValidator;
     private static $tiitzVersion = '0.1';
     
     public function __construct(array $tzData) {
         $this->tiitzData = $tzData;
+        $this->tzRender = $tzData["tzRender"];
         //$this->tzValidator = new tzValidator;
     }
 
