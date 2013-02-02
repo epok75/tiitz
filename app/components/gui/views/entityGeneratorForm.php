@@ -29,7 +29,7 @@
 		        	Vous pourrez ainsi accéder ces entités dans votre projet et faire appel aux fonctions liées à cette entité, pour plus de précisions sur les entités référez vous à la documentation.
 		        </p>
 		        <br>
-		        <form action="<?php echo WEB_PATH; ?>configTiitz/entityGenerator" method="POST" name="formgeneration">
+		        <form action="<?php echo WEB_PATH; ?>/configTiitz/entityGenerator" method="POST" name="formgeneration">
 					<?php
 						$i = 0;
 						foreach ($tables as $key => $value) {
