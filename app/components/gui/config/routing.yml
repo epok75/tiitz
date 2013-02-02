@@ -17,3 +17,6 @@ entityGenerator:
     pattern:    /configTiitz/entityGenerator
     controller: generator:generateEntity
 
+entityResumeInfo:
+	pattern:	/configTiitz/entityGenerator
+	controller: generator:entitiesResum

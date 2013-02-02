@@ -1,344 +1,207 @@
 <?php
 
-foreach ($_POST['tablename'] as $tablename) {
+function createEntity($tables){
 
-	// fill parameters from form
-	$table = $tablename;
-	$class = $tablename."Entity";
+	$results = array();
 
-	$primkey = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
+	foreach ($tables as $tablename) {
 
-	$sql = "SHOW COLUMNS FROM ".$table;
-	$colums = tzSQL::getPDO()->prepare( $sql );
-	$colums->execute();
-	$columsResult = $colums->fetchAll();
+		// fill parameters from form
+		$table = $tablename;
+		$class = $tablename."Entity";
 
-	$filename = ROOT . "/src/entities/" . $class . ".class.php";
+		$primkey = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
 
+		$sql = "SHOW COLUMNS FROM ".$table;
+		$colums = tzSQL::getPDO()->prepare( $sql );
+		$colums->execute();
+		$columsResult = $colums->fetchAll();
 
-	// open file in insert mode
-	$file = fopen( $filename, "w+" );
-	$filedate = date( "d.m.Y" );
-
-
-	$c = "
-<?php
-
-			
-
-	class $class {
-				";
+		$filename = ROOT . "/src/entities/" . $class . ".class.php";
 
 
-	foreach ( $columsResult as $key => $value ) {
-		$col=$value[0];
-
-		$c.= "
-		private $$col;
-		";
-	}
+		// open file in insert mode
+		$file = fopen( $filename, "w+" );
+		$filedate = date( "d.m.Y" );
 
 
-	$c.="
+		$c = "
+	<?php
+
+				
+
+		class $class {
+					";
 
 
-		/********************** GETTER ***********************/
-		";
+		foreach ( $columsResult as $key => $value ) {
+			$col=$value[0];
 
-	foreach ( $columsResult as $key => $value ) {
-		$col=$value[0];
+			$c.= "
+			private $$col;
+			";
+		}
 
-		$mname = "get" . ucfirst( $col ) . "()";
-		$mthis = "$" . "this->" . $col;
+
 		$c.="
 
-		public function $mname{
-			return $mthis;
+
+			/********************** GETTER ***********************/
+			";
+
+		foreach ( $columsResult as $key => $value ) {
+			$col=$value[0];
+
+			$mname = "get" . ucfirst( $col ) . "()";
+			$mthis = "$" . "this->" . $col;
+			$c.="
+
+			public function $mname{
+				return $mthis;
+			}
+
+			";
 		}
 
-		";
-	}
+		$c.= "
+			/********************** SETTER ***********************/";
 
-	$c.= "
-		/********************** SETTER ***********************/";
+		foreach ( $columsResult as $key => $value ) {
+			$col=$value[0];
 
-	foreach ( $columsResult as $key => $value ) {
-		$col=$value[0];
+			$c.=
+				"
 
-		$c.=
-			"
+			public function set" . ucfirst( $col ) . "($" . "val){
+				$" . "this->" . $col . " =  $" . "val;
+			}
 
-		public function set" . ucfirst( $col ) . "($" . "val){
-			$" . "this->" . $col . " =  $" . "val;
+					";
 		}
 
-				";
-	}
+		$c.="
 
-	$c.="
+			/********************** Delete ***********************/
 
-		/********************** Delete ***********************/
+			public function Delete(){
 
-		public function Delete(){
+				if(!empty($" . "this->id)){
+					$" . "id = $" . "this->id;
 
-			if(!empty($" . "this->id)){
-				$" . "id = $" . "this->id;
+					$" . "sql" . " = \"DELETE FROM $table WHERE id = \".intval($" . "id).\";\";
 
-				$" . "sql" . " = \"DELETE FROM $table WHERE id = \".intval($" . "id).\";\";
+					$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+					$" . "result->execute();
+
+					return $". "result;
+				}
+				else{
+					tzErrorExtend::catchError(array('Fail delete', __FILE__,__LINE__, true));
+					return false;
+				}
+			}
+					";
+
+		$count = 0;
+
+		$sql = "UPDATE `".$table."` SET ";
+		foreach ( $columsResult as $key => $value ) {
+			$col = $value[0];
+
+			if ( $count < ( count( $columsResult ) -1 ) )
+				$sql .= "`".$col."` = \"'.$" . "this->$col.'\", ";
+			else
+				$sql .= "`".$col."` = \"'.$" . "this->$col.'\" ";
+
+			$count++;
+		}
+
+		$sql .= "WHERE id = '.intval($" . "this->id)";
+
+		$c.="
+
+			/********************** Update ***********************/
+
+			public function Update(){
+
+				$" . "sql = '".$sql.";
 
 				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
-				return $". "result;
-			}
-			else{
-				tzErrorExtend::catchError(array('Fail delete', __FILE__,__LINE__, true));
-				return false;
-			}
-		}
-				";
-
-	$count = 0;
-
-	$sql = "UPDATE `".$table."` SET ";
-	foreach ( $columsResult as $key => $value ) {
-		$col = $value[0];
-
-		if ( $count < ( count( $columsResult ) -1 ) )
-			$sql .= "`".$col."` = \"'.$" . "this->$col.'\", ";
-		else
-			$sql .= "`".$col."` = \"'.$" . "this->$col.'\" ";
-
-		$count++;
-	}
-
-	$sql .= "WHERE id = '.intval($" . "this->id)";
-
-	$c.="
-
-		/********************** Update ***********************/
-
-		public function Update(){
-
-			$" . "sql = '".$sql.";
-
-			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "result->execute();
-
-			if(!empty($" . "this->id)){
-				return $". "result;
-			}
-			else{
-				tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
-				return false;
-			}
-		}";
-
-	$count = 0;
-
-	$sql = "INSERT INTO ".$table." (";
-
-	foreach ( $columsResult as $key => $value ) {
-		$col=$value[0];
-
-		if ( $count < ( count( $columsResult ) - 1 ) )
-			$sql .= "`".$col."`,";
-		else
-			$sql .= "`".$col."`)";
-
-		$count++;
-	}
-
-	//remise du compteur a 0
-	$count = 0;
-
-	$sql .= " VALUES (";
-
-	foreach ( $columsResult as $key => $value ) {
-		$col=$value[0];
-
-		if ( $count < ( count( $columsResult ) - 1 ) )
-			$sql .= "\"'.$" . "this->$col.'\",";
-		else
-			$sql .= "\"'.$" . "this->$col.'\")";
-
-		$count++;
-	}
-
-	$c.="
-
-		/********************** Insert ***********************/
-
-		public function Insert(){
-
-			$" . "this->id = '';
-
-			$" . "sql = '".$sql."';
-
-			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "result->execute();
-
-			if($ " . "result)
-				return $". "result;
-			else{
-				tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
-				return false;
-			}
-		}
-				";
-
-
-	$c.="
-
-		/********************** FindAll ***********************/
-		public function findAll(){
-
-			$" . "sql = 'SELECT * FROM ".$table."';
-			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "result->execute();
-			$" . "formatResult = $" . "result->fetchAll(PDO::FETCH_ASSOC);
-			$" . "entitiesArray = array();
-
-			foreach ($" . "formatResult as $" . "key => $" . "data) {
-
-				$" . "tmpInstance = new ".$class."();
-
-				foreach ($" . "data as $" . "k => $" . "value) {
-
-					$" . "method = 'set'.ucfirst($" . "k);
-					$" . "tmpInstance->$" . "method($" . "value);
+				if(!empty($" . "this->id)){
+					return $". "result;
 				}
-				array_push($" . "entitiesArray, $" . "tmpInstance);
-			}
+				else{
+					tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+					return false;
+				}
+			}";
 
-			if(!empty($ " . "entitiesArray))
-				return $" . "entitiesArray;
-			else{
-				tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
-				return false;
-			}						
+		$count = 0;
 
-		}
-
-		/************* FindOneBy(column, value) ***************/
-		public function findOneBy($" . "param,$" . "value){
-
-
-			switch ($" . "param){
-				";
-
-
-	foreach ( $columsResult as $key => $value ) {
-
-		$col = $value[0];
-
-		$c.= "
-				case $" . "param == '".$col."':
-					$"."param = '".$col."';
-					break;
-					";
-	}
-
-
-	$c.="
-				default:
-					die('colonne introuvable');
-					//a changer par le systeme de gestion d'erreur
-			}
-
-			$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
-			$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "data->execute();
-			$" . "result =  $" . "data->fetch(PDO::FETCH_OBJ);
-
-			if(!empty($" . "result)){
-				";
-
-			foreach ( $columsResult as $key => $value ) {
-
-				$col = $value[0];
-
-				$c.="$" . "this->" . $col . " = $" . "result->" . $col.";
-				";
-			}
-	$c.="
-			}
-			else{
-				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
-				return false;
-			}
-		}
-
-				";
-
-	if($primkey){
-		$c.=
-		"
-
-		/********************** Find(id) ***********************/
-		public function find($". "id){
-
-			$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = ' . $" . "id;
-			$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "result->execute();
-			$" . "formatResult = $" . "result->fetch(PDO::FETCH_OBJ);
-			if(!empty($" . "formatResult)){
-			";
+		$sql = "INSERT INTO ".$table." (";
 
 		foreach ( $columsResult as $key => $value ) {
+			$col=$value[0];
 
-			$col = $value[0];
+			if ( $count < ( count( $columsResult ) - 1 ) )
+				$sql .= "`".$col."`,";
+			else
+				$sql .= "`".$col."`)";
 
-			$c.="	$" . "this->" . $col . " = $" . "formatResult->" . $col.";
-			";
+			$count++;
 		}
+
+		//remise du compteur a 0
+		$count = 0;
+
+		$sql .= " VALUES (";
+
+		foreach ( $columsResult as $key => $value ) {
+			$col=$value[0];
+
+			if ( $count < ( count( $columsResult ) - 1 ) )
+				$sql .= "\"'.$" . "this->$col.'\",";
+			else
+				$sql .= "\"'.$" . "this->$col.'\")";
+
+			$count++;
+		}
+
+		$c.="
+
+			/********************** Insert ***********************/
+
+			public function Insert(){
+
+				$" . "this->id = '';
+
+				$" . "sql = '".$sql."';
+
+				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result->execute();
+
+				if($ " . "result)
+					return $". "result;
+				else{
+					tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
+					return false;
+				}
+			}
+					";
 
 
 		$c.="
-			}
-			else{
-				tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
-				return false;
-			}
-		}
-		";
-	}
 
-	$c.="
+			/********************** FindAll ***********************/
+			public function findAll(){
 
-		/************* FindManyBy(column, value) ***************/
-		public function findManyBy($" . "param,$" . "value){
-
-
-			switch ($" . "param){
-				";
-
-
-	foreach ( $columsResult as $key => $value ) {
-
-		$col = $value[0];
-
-		$c.= "
-				case $" . "param == '".$col."':
-					$"."param = '".$col."';
-					break;
-					";
-	}
-
-
-	$c.="
-				default:
-					die('colonne introuvable');
-					//a changer par le systeme de gestion d'erreur
-			}
-
-			$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
-			$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
-			$" . "data->execute();
-			$" . "formatResult = $" . "data->fetchAll(PDO::FETCH_ASSOC);
-			$" . "entitiesArray = array();
-
-			if(!empty($" . "formatResult)){
+				$" . "sql = 'SELECT * FROM ".$table."';
+				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result->execute();
+				$" . "formatResult = $" . "result->fetchAll(PDO::FETCH_ASSOC);
+				$" . "entitiesArray = array();
 
 				foreach ($" . "formatResult as $" . "key => $" . "data) {
 
@@ -352,26 +215,173 @@ foreach ($_POST['tablename'] as $tablename) {
 					array_push($" . "entitiesArray, $" . "tmpInstance);
 				}
 
-				if($ " . "entitiesArray)
+				if(!empty($ " . "entitiesArray))
 					return $" . "entitiesArray;
+				else{
+					tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
+					return false;
+				}						
+
+			}
+
+			/************* FindOneBy(column, value) ***************/
+			public function findOneBy($" . "param,$" . "value){
+
+
+				switch ($" . "param){
+					";
+
+
+		foreach ( $columsResult as $key => $value ) {
+
+			$col = $value[0];
+
+			$c.= "
+					case $" . "param == '".$col."':
+						$"."param = '".$col."';
+						break;
+						";
+		}
+
+
+		$c.="
+					default:
+						die('colonne introuvable');
+						//a changer par le systeme de gestion d'erreur
+				}
+
+				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
+				$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "data->execute();
+				$" . "result =  $" . "data->fetch(PDO::FETCH_OBJ);
+
+				if(!empty($" . "result)){
+					";
+
+				foreach ( $columsResult as $key => $value ) {
+
+					$col = $value[0];
+
+					$c.="$" . "this->" . $col . " = $" . "result->" . $col.";
+					";
+				}
+		$c.="
+				}
 				else{
 					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
 					return false;
 				}
-
 			}
+
+					";
+
+		if($primkey){
+			$c.=
+			"
+
+			/********************** Find(id) ***********************/
+			public function find($". "id){
+
+				$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = ' . $" . "id;
+				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result->execute();
+				$" . "formatResult = $" . "result->fetch(PDO::FETCH_OBJ);
+				if(!empty($" . "formatResult)){
+				";
+
+			foreach ( $columsResult as $key => $value ) {
+
+				$col = $value[0];
+
+				$c.="	$" . "this->" . $col . " = $" . "formatResult->" . $col.";
+				";
+			}
+
+
+			$c.="
+				}
+				else{
+					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					return false;
+				}
+			}
+			";
 		}
 
-				";
+		$c.="
 
-	$c.="
+			/************* FindManyBy(column, value) ***************/
+			public function findManyBy($" . "param,$" . "value){
 
+
+				switch ($" . "param){
+					";
+
+
+		foreach ( $columsResult as $key => $value ) {
+
+			$col = $value[0];
+
+			$c.= "
+					case $" . "param == '".$col."':
+						$"."param = '".$col."';
+						break;
+						";
+		}
+
+
+		$c.="
+					default:
+						die('colonne introuvable');
+						//a changer par le systeme de gestion d'erreur
+				}
+
+				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
+				$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "data->execute();
+				$" . "formatResult = $" . "data->fetchAll(PDO::FETCH_ASSOC);
+				$" . "entitiesArray = array();
+
+				if(!empty($" . "formatResult)){
+
+					foreach ($" . "formatResult as $" . "key => $" . "data) {
+
+						$" . "tmpInstance = new ".$class."();
+
+						foreach ($" . "data as $" . "k => $" . "value) {
+
+							$" . "method = 'set'.ucfirst($" . "k);
+							$" . "tmpInstance->$" . "method($" . "value);
+						}
+						array_push($" . "entitiesArray, $" . "tmpInstance);
+					}
+
+					if($ " . "entitiesArray)
+						return $" . "entitiesArray;
+					else{
+						tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+						return false;
+					}
+
+				}
+			}
+
+					";
+
+		$c.="
+
+		}
+
+	?>
+					";
+
+		if(fwrite( $file, $c ))
+		{
+			$results[$class] = true;
+		}
+		else{
+			$results[$class] = false;
+		}
 	}
-
-?>
-				";
-
-	fwrite( $file, $c );
-
-	echo "La classe \"$class\" a bien ete generee<br>";
+	return $results;
 }

@@ -23,9 +23,13 @@ class GeneratorController extends tzController{
 			}
 			else{
 				require_once(ROOT.'/app/components/gui/includes/entityGenerator.php');
+
+				$results = createEntity($_POST['tablename']);
+
+				require_once(ROOT.'/app/components/gui/views/entityGeneratorResults.php');
 			}
 		} else {
-			Header("Location: /");
+			Header("Location:". WEB_PATH);
 		}
 		
 	}
