@@ -31,7 +31,7 @@
 				</div>
 				<?php if(isset($error['tpl'])) : ?>
 					<div class="error-tiitz">
-						<p><?php print $error['tpl']; ?></p>
+						<p class="tiitz-error"><?php print $error['tpl']; ?></p>
 					</div>
 				<?php endif; ?>
 				
@@ -47,7 +47,7 @@
 					</div>
 					<?php if(isset($error['route'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['route']; ?></p>
+							<p class="tiitz-error"><?php print $error['route']; ?></p>
 						</div>
 					<?php endif; ?>
 				</div>	
@@ -58,18 +58,16 @@
 					<h4>Base de données</h4>
 					<?php if(isset($error['connectDb'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['connectDb']; ?></p>
+							<p class="tiitz-error"><?php print $error['connectDb']; ?></p>
 						</div>
 					<?php endif; ?>
 					<div>
 						<label for="user">Utilisateur : </label>
-
 						<input type="text" name="user" <?php if(isset($error['user_value'])) print "value='".$error['user_value']."'"; ?> id="user" placeholder="root" class="input-block-level" />
-
 					</div>
 					<?php if(isset($error['user'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['user']; ?></p>
+							<p class="tiitz-error"><?php print $error['user']; ?></p>
 						</div>
 					<?php endif; ?>
 					<div>
@@ -78,29 +76,25 @@
 					</div>
 					<?php if(isset($error['pwd'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['pwd']; ?></p>
+							<p class="tiitz-error"><?php print $error['pwd']; ?></p>
 						</div>
 					<?php endif; ?>
 					<div>
 						<label for="adress">Hôte : </label>
-
 						<input type="text" name="adress" <?php if(isset($error['adress_value'])) print "value='".$error['adress_value']."'"; ?> id="adress" placeholder="127.0.0.1" class="input-block-level"/>
-
 					</div>
 					<?php if(isset($error['adress'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['adress']; ?></p>
+							<p class="tiitz-error"><?php print $error['adress']; ?></p>
 						</div>
 					<?php endif; ?>
 					<div>		
 						<label for="name">Nom : </label>
-
 						<input type="text" name="name" <?php if(isset($error['name_value'])) print "value='".$error['name_value']."'"; ?> id="name" placeholder="tiitzBDD" class="input-block-level" />
-
 					</div>
 					<?php if(isset($error['name'])) : ?>
 						<div class="error-tiitz">
-							<p><?php print $error['name']; ?></p>
+							<p class="tiitz-error"><?php print $error['name']; ?></p>
 						</div>
 					<?php endif; ?>
 				</div>
