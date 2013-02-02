@@ -28,7 +28,7 @@ class MainController extends TzController {
 				$this -> configGenerator();
 				$this -> pagesGenerator(); 
 				// redirect /web/index.php which will redirect to /src/config/routing.yml
-				header('location:'.WEB_PATH.'/index.php');
+				header('location:'.WEB_PATH.'index.php');
 			} else {
 				require_once("../app/components/gui/views/_index.php");
 			}
@@ -81,13 +81,15 @@ class MainController extends TzController {
 			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"default_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "default:show" ),'."\n");
 
 		// layout template
-		$fm->moveDir(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
-		$fm->moveDir(ROOT."/app/components/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
+		$fm->fCopy(ROOT."/app/components/template/controllers/pageNotFoundController.php", ROOT."/src/controllers/pageNotFoundController.php");
+		$fm->fCopy(ROOT."/app/components/template/views/pageNotFound.".$this->extension, ROOT."/src/views/templates/pageNotFound.".$this->extension);
+		$fm->fCopy(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
+		$fm->fCopy(ROOT."/app/components/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
 		// default controller
 		if ($this->extension == "html.twig") {
-			$fm->moveDir(ROOT."/app/components/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
+			$fm->fCopy(ROOT."/app/components/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
 		} else {
-			$fm->moveDir(ROOT."/app/components/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
+			$fm->fCopy(ROOT."/app/components/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
 		}
 		
 		

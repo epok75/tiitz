@@ -414,30 +414,6 @@ class tzFileManager
 		}
 	}
 	
-	public function download()
-	{
-		if (file_exists($this->currentPath))
-		{
-		    if (FALSE !== ($handler = $this->xfopen('r')))
-		    {
-		        header('Content-Description: File Transfer');
-		        header('Content-Type: application/octet-stream');
-		        header('Content-Disposition: attachment; filename='.basename($this->currentPath));
-		        header('Content-Transfer-Encoding: chunked');
-		        header('Expires: 0');
-		        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-		        header('Pragma: public');
-		        while(false !== ($chunk = $this->xfread($handler,4096)))
-		        {
-		            echo $chunk;
-		        }
-		    }
-		    exit;
-		}
-		$this->error = "Le fichier n'existe pas.";
-		return FALSE;
-	}
-	
 	public function list_all($path = "", $i = "1")
 	{
 		if (is_dir($this->currentPath))
@@ -507,25 +483,10 @@ class tzFileManager
             }
 		}                
 	}
-	private function up_error($code)
-	{
-		switch ($code)
-		{
-			case UPLOAD_ERR_OK : return true;
-			case UPLOAD_ERR_INI_SIZE : $this->error = 'Votre fichier `'.$this->currentPath.'` dépasse la taille maximale d\'upload autorisée par PHP( '.get_cfg_var('upload_max_filesize').' )';return FALSE;
-			case UPLOAD_ERR_FORM_SIZE : $this->error = 'Votre fichier dépasse la taille maximale demandée par le Webmestre';return FALSE;
-			case UPLOAD_ERR_PARTIAL : $this->error = 'Le fichier n\'a été que partiellement téléchargé. !!!';return FALSE;
-			case UPLOAD_ERR_NO_FILE : $this->error = 'Aucun fichier téléchargé !!!';return FALSE;
-			case UPLOAD_ERR_NO_TMP_DIR : $this->error = 'Un dossier temporaire est manquant.';return FALSE;
-			case UPLOAD_ERR_CANT_WRITE : $this->error = 'Échec de l\'écriture du fichier sur le disque.';return FALSE;
-			case UPLOAD_ERR_EXTENSION : $this->error = 'Une extension PHP a arrété l\'envoi de fichier. PHP ne propose aucun moyen de déterminer quelle extension est en cause. L\'examen du phpinfo() peut aider.';return FALSE;
-			default : $this->error = 'L\'upload a rencontré une erreur inconnue !!!';return FALSE;
-		}
-	}
 
-	public function moveDir($origin, $destinataire) {
+	public function fCopy($origin, $destinataire) {
 			if (!copy($origin, $destinataire)) {
-    			echo "La copie  du fichier a échoué...\n";
+    			$this->error = "La copie  du fichier a échoué...\n";
 			}
 
 		
