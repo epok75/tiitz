@@ -182,7 +182,7 @@ function createEntity($tables){
 				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
-				if($ " . "result)
+				if($" . "result)
 					return $". "result;
 				else{
 					tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
@@ -215,7 +215,7 @@ function createEntity($tables){
 					array_push($" . "entitiesArray, $" . "tmpInstance);
 				}
 
-				if(!empty($ " . "entitiesArray))
+				if(!empty($" . "entitiesArray))
 					return $" . "entitiesArray;
 				else{
 					tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
@@ -356,7 +356,7 @@ function createEntity($tables){
 						array_push($" . "entitiesArray, $" . "tmpInstance);
 					}
 
-					if($ " . "entitiesArray)
+					if($" . "entitiesArray)
 						return $" . "entitiesArray;
 					else{
 						tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
