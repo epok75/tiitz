@@ -66,8 +66,14 @@
 	if (class_exists($route["className"])) {
         $controller = new $route["className"]($tiitzData);
 
-        if (method_exists($controller, $route["action"]))
-            $controller->$route["action"]();
+        if (method_exists($controller, $route["action"])) {
+        	if(!empty($route['params'])){
+        		$controller->$route["action"]($tiitzData['params']);
+        	} else {
+        		$controller->$route["action"]();
+        	}
+        }
+            
         else
             tzErrorExtend::catchError(array("No action ".$route["action"]." Found", __FILE__,__LINE__));
     }
