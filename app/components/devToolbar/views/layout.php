@@ -217,7 +217,7 @@
 		
 		var scriptUI = document.createElement('script');
 	  	scriptUI.type = "text/javascript";
-	   	scriptUI.src = "http://code.jquery.com/ui/1.10.0/jquery-ui.js";
+	   	scriptUI.src = "<?php print WEB_PATH;?>/tiitz/js/jquery-ui-1.10.0.custom.js";
 	   	document.getElementsByTagName('head')[0].appendChild(scriptUI);
 		
 	}

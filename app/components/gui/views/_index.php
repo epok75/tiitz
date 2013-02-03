@@ -4,10 +4,8 @@
 	<meta charset="utf-8">
 	<title>TiiTz Framework</title>
 	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<script type="text/javascript" src="<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link href='<?php print WEB_PATH;?>/tiitz/css/style-gui.css' rel='stylesheet' type='text/css' />
 </head>					 
 <body>
