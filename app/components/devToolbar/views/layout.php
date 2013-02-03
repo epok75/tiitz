@@ -200,10 +200,10 @@
 				<li class="divider-vertical"></li>
 			   	<li>
 			   		<?php if (tzErrorCore::getNumberOfCurrentError() == 1) : ?>
-			   			<button id="opener-error" class="btn">1 nouvelle erreur</button>
+			   			<button id="opener-error" class="btn btn-danger">1 nouvelle erreur</button>
 			   			
 			   		<?php elseif (tzErrorCore::getNumberOfCurrentError() > 1) : ?>
-			   			<button id="opener-error" class="btn"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</button>
+			   			<button id="opener-error" class="btn btn-danger"><?php print tzErrorCore::getNumberOfCurrentError(); ?> nouvelles erreurs</button>
 			   			
 			   		<?php endif; ?>
 			   	</li>

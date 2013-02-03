@@ -1,4 +1,4 @@
-p {
+footer#tiitz-toolbar p {
 	margin: 0px;
 	padding: 0px;
 	line-height: 1.2;
@@ -252,7 +252,7 @@ footer#tiitz-toolbar ul#toolbar-log-error {
 	bottom: 40px;
 	overflow: auto;
 }
-.odd, .even {
+footer#tiitz-toolbar .odd,footer#tiitz-toolbar  .even {
 	padding: 5px;
 	text-align: left;
 	vertical-align: top;
@@ -264,7 +264,7 @@ footer#tiitz-toolbar ul#toolbar-log-error .odd {
 footer#tiitz-toolbar ul#toolbar-log-error .even {
 	border-top: 1px solid #DDD;
 }
-.odd:hover, .even:hover {
+footer#tiitz-toolbar .odd:hover,footer#tiitz-toolbar  .even:hover {
 	background-color: whiteSmoke;
 }
 /* design block */
@@ -278,22 +278,22 @@ footer#tiitz-toolbar .tiitz-toolbar-info ul li, footer#tiitz-toolbar .tiitz-tool
 	padding: 0px;
 	margin: 0px;
 }
-.toolbar-clear {
+footer#tiitz-toolbar .toolbar-clear {
 	clear: both;
 }
 /* alert error */
-.close {
+footer#tiitz-toolbar .close {
 	line-height: 20px;
 	text-decoration: none;
 }
-.close:hover {
+footer#tiitz-toolbar .close:hover {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
 	opacity: 0.4;
 	filter: alpha(opacity=40);
 }
-.close {
+footer#tiitz-toolbar .close {
 	float: right;
 	position: relative;
 	top: 5px;
