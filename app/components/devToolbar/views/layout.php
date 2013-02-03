@@ -253,11 +253,15 @@
 	
 		loadCSS();
 		
+		$(".close").click(function(){
+			$("#tiitz-toolbar").hide();
+		});
+
 		$( "#dialog" ).dialog(
 			{ 
 				autoOpen: false, 
 			  	width : 960,
-			  	height: 700, 
+			  	height: 500, 
 			  	title: "Tittz Error"		
 			}
 		);
@@ -269,7 +273,7 @@
 			{ 
 				autoOpen: false, 
 			  	width : 960, 
-			  	height: 700,
+			  	height: 500,
 			  	title: "Log error"		
 			}
 		);
@@ -277,6 +281,8 @@
 		$( "#opener-error" ).click(function() {
 			$( "#dialog" ).dialog( "open" );
 		});
+
+		
 	}
 </script>
 </footer>
