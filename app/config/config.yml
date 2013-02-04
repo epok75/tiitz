@@ -2,7 +2,7 @@
 routingType:	yml
 
 # Template Engine
-template:    smarty
+template:    twig
 
 # database configuration
 database:
