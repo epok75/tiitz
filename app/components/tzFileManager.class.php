@@ -301,7 +301,7 @@ class tzFileManager
 	
 	public function fDelete ()
 	{
-		$handle = $this->xfopen("r+");
+		$handle = fopen($this->currentPath, 'r+');
 		if ($handle != false)
 		{
 			$return = unlink($handle);
