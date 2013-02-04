@@ -75,7 +75,7 @@
 							   		<li>
 							   			<div id="toolbar-photo">
 							   				<a href="https://github.com/epok75/tiitz">
-							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-github.jpeg" alt="Github" />
+							   					<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-github.jpg" alt="Github" />
 							   				</a>
 							   			</div>
 							   			<div id="toolbar-content">

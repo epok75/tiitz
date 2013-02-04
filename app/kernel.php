@@ -21,7 +21,7 @@
 
 	// Manage Error
 	$error = new tzErrorExtend(0);
-
+	
 	if (!empty($conf["template"]))
 		$tzRender = tzRender::getInstance($conf["template"]);
 	else
