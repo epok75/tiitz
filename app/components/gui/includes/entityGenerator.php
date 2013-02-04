@@ -273,6 +273,7 @@ function createEntity($tables){
 					";
 				}
 		$c.="
+					return true;
 				}
 				else{
 					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
@@ -306,6 +307,7 @@ function createEntity($tables){
 
 
 			$c.="
+					return true;
 				}
 				else{
 					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
