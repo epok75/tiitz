@@ -301,21 +301,12 @@ class tzFileManager
 	
 	public function fDelete ()
 	{
-		$handle = fopen($this->currentPath, 'r+');
-		if ($handle != false)
+			
+		$return = unlink($this->currentPath);
+	
+		if ($return == false)
 		{
-			$return = unlink($handle);
-			if ($return == false)
-			{
-				$this->error = "La suppression du fichier a &eacute;chou&eacute;";
-				return FALSE;
-			}
-			else
-				return ($return);
-		}
-		else
-		{
-			$this->error = "La ressource fournie n'est pas valide.";
+			$this->error = "La suppression du fichier a &eacute;chou&eacute;";
 			return FALSE;
 		}
 	}
