@@ -89,6 +89,8 @@ class MainController extends TzController {
 
 		// layout template
 		$fm->set_currentItem(WEB_PATH."/src/views/templates/pageNotFound.html.twig");
+		$fm->get_currentItem();
+		die();
 		$fm->fDelete();
 		$fm->fCopy(ROOT."/app/components/template/views/pageNotFound.".$this->extension, ROOT."/src/views/templates/pageNotFound.".$this->extension);
 		$fm->fCopy(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
