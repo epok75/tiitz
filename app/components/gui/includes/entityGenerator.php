@@ -86,9 +86,8 @@ function createEntity($tables){
 			public function Delete(){
 
 				if(!empty($" . "this->".$primkey.")){
-					$" . "id = $" . "this->".$primkey.";
 
-					$" . "sql" . " = \"DELETE FROM $table WHERE ". $primkey ." = \".intval($" . "id).\";\";
+					$" . "sql" . " = \"DELETE FROM $table WHERE ". $primkey ." = \".intval($" . "this->" . $primkey .").\";\";
 
 					$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 					$" . "result->execute();
@@ -129,7 +128,7 @@ function createEntity($tables){
 				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
-				if(!empty($" .$primkey. ")){
+				if(!empty($". "this->" .$primkey. ")){
 					if($" . "result)
 						return true;
 					else{
@@ -188,6 +187,8 @@ function createEntity($tables){
 				$" . "result->execute();
 
 				if($" . "result){
+					$" . "lastid = tzSQL::get" . "PDO()->lastInsertId();
+					$" . "this->".$primkey." = $" . "lastid;
 					return true;
 				}
 				else{
