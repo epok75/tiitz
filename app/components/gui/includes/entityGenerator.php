@@ -85,10 +85,10 @@ function createEntity($tables){
 
 			public function Delete(){
 
-				if(!empty($" . "this->id)){
-					$" . "id = $" . "this->id;
+				if(!empty($" . "this->".$primkey.")){
+					$" . "id = $" . "this->".$primkey.";
 
-					$" . "sql" . " = \"DELETE FROM $table WHERE id = \".intval($" . "id).\";\";
+					$" . "sql" . " = \"DELETE FROM $table WHERE ". $primkey ." = \".intval($" . "id).\";\";
 
 					$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 					$" . "result->execute();
@@ -116,7 +116,7 @@ function createEntity($tables){
 			$count++;
 		}
 
-		$sql .= "WHERE id = '.intval($" . "this->id)";
+		$sql .= "WHERE ".$primkey." = '.intval($" . "this->".$primkey.")";
 
 		$c.="
 
@@ -129,11 +129,16 @@ function createEntity($tables){
 				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
-				if(!empty($" . "this->id)){
-					return $". "result;
+				if(!empty($" .$primkey. ")){
+					if($" . "result)
+						return true;
+					else{
+						tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+						return false;
+					}
 				}
 				else{
-					tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+					tzErrorExtend::catchError(array('Fail update: primkey is null', __FILE__,__LINE__, true));
 					return false;
 				}
 			}";
@@ -175,15 +180,16 @@ function createEntity($tables){
 
 			public function Insert(){
 
-				$" . "this->id = '';
+				$" . "this->".$primkey." = '';
 
 				$" . "sql = '".$sql."';
 
 				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
-				if($" . "result)
-					return $". "result;
+				if($" . "result){
+					return true;
+				}
 				else{
 					tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
 					return false;
@@ -246,8 +252,8 @@ function createEntity($tables){
 
 		$c.="
 					default:
-						die('colonne introuvable');
-						//a changer par le systeme de gestion d'erreur
+						tzErrorExtend::catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
+						return false;
 				}
 
 				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
@@ -332,8 +338,8 @@ function createEntity($tables){
 
 		$c.="
 					default:
-						die('colonne introuvable');
-						//a changer par le systeme de gestion d'erreur
+						tzErrorExtend::catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
+						return false;
 				}
 
 				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';

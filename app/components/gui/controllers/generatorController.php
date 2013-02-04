@@ -26,15 +26,16 @@ class GeneratorController extends tzController{
 
 				$results = createEntity($_POST['tablename']);
 
-				require_once(ROOT.'/app/components/gui/views/entityGeneratorResults.php');
+				if(!empty($results))
+					require_once(ROOT.'/app/components/gui/views/entityGeneratorResults.php');
+				else{
+					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					return false;
+				}
 			}
 		} else {
 			Header("Location:". WEB_PATH);
 		}
 		
-	}
-
-	public function postedAction() {
-		echo 'LOL';
 	}
 }
