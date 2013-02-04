@@ -299,6 +299,27 @@ class tzFileManager
 		}
 	}
 	
+	public function fDelete ()
+	{
+		$handle = $this->xfopen($this->currentPath);
+		if ($handle != false)
+		{
+			$return = unlink($handle);
+			if ($return == false)
+			{
+				$this->error = "La suppression du fichier a &eacute;chou&eacute;";
+				return FALSE;
+			}
+			else
+				return ($return);
+		}
+		else
+		{
+			$this->error = "La ressource fournie n'est pas valide.";
+			return FALSE;
+		}
+	}
+	
 	public function delete_all($empty = FALSE)
 	{
 	    if(substr($this->currentPath,-1) == "/")

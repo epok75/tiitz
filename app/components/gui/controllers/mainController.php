@@ -88,7 +88,8 @@ class MainController extends TzController {
 			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"default_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "default:show" ),'."\n");
 
 		// layout template
-		$fm->fCopy(ROOT."/app/components/template/controllers/pageNotFoundController.php", ROOT."/src/controllers/pageNotFoundController.php");
+		$fm->set_currentItem(ROOT."/src/controllers/pageNotFound.html.twig");
+		$fm->fDelete();
 		$fm->fCopy(ROOT."/app/components/template/views/pageNotFound.".$this->extension, ROOT."/src/views/templates/pageNotFound.".$this->extension);
 		$fm->fCopy(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
 		$fm->fCopy(ROOT."/app/components/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
