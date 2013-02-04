@@ -5,6 +5,6 @@
 Class pageNotFoundController extends tzController {
 
 	public function showAction () {
-		$this->tiitzData['tzRender']->run('/templates/pageNotFound');
+		$this->tiitzData['tzRender']->run('./templates/pageNotFound');
 	}
 }

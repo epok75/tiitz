@@ -64,9 +64,7 @@ class tzRender {
 	}
 
 	public function run($file , array $prop = null) {
-		// check if the file exist
-		if ($this->tpl === "smarty")
-			$file = ROOT."/src/views/".$file;
+			
 		$this->fileExists($file);
 		$prop['WEB_PATH'] = WEB_PATH;
 		$prop['SESSION'] = $_SESSION;
