@@ -8,7 +8,7 @@ class defaultController extends tzController {
 
 	// first method call when the website is launched
 	public function showAction () {
-		$this->tiitzData['tzRender']->setPage('Default');
-		$this->tiitzData['tzRender']->run('layout');                                                        
+		$this->tzRender->setPage('Default');
+		$this->tzRender->run('layout');                                                        
 	}
 }
