@@ -12,6 +12,9 @@ class tzRender {
 	private $tpl 	= 'php';
 	private $ext 	= 'php';
 	private $cache 	= false;
+	// prop & file when using PHP
+	private $prop;
+	private $file;
 	// array that store object of either smarty or twig
 	private $renderedPage = array();
 	private static $page;
@@ -85,8 +88,13 @@ class tzRender {
 			// display smarty template
 			$this->renderedPage ->display($file.'.tpl');
 		} else {
+			$this->prop = $prop;
+			$this->file = $file;
+			foreach ($this->prop as $tzTMPName => $tzTMPValue) {
+				$$tzTMPName = $tzTMPValue;
+			}
 			// if there is no template engine chosen, just make a require
-			return require self::$path.$file.'.php';
+			return require self::$path.$this->file.'.php';
 		}
 	}
 	
