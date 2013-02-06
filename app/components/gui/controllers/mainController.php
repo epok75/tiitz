@@ -139,10 +139,9 @@ class MainController extends TzController {
 
 		// We set the app controller and copy it
 		if ($extension == "html.twig")
-			$fm->set_currentItem(ROOT."/app/template/controllers/twigDefaultController.php");
+			$fm->fCopy(ROOT."/app/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
 		else
-			$fm->set_currentItem(ROOT."/app/template/controllers/phpDefaultController.php");
-		$fm->xcopy(ROOT."/src/controllers/");
+			$fm->fCopy(ROOT."/app/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
 
 		// We set the src layout and delete it
 		$fm->set_currentItem(ROOT."/src/views/layout.".$extension);
