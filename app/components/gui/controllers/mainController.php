@@ -138,7 +138,7 @@ class MainController extends TzController {
 		$fm->fDelete();
 
 		// We set the app controller and copy it
-		if ($extension == "html.twig")
+		if ($this->extension == "html.twig")
 			$fm->fCopy(ROOT."/app/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
 		else
 			$fm->fCopy(ROOT."/app/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
