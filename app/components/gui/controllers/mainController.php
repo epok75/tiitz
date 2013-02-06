@@ -88,8 +88,8 @@ class MainController extends TzController {
 			$fm->replace_fileContent('<?php'."\n\t".'$tzRoute = array('."\n\n\t\t".'"default_show" => array('."\n\t\t\t".'"pattern" => "/",'."\n\t\t\t".'"controller" => "default:show" ),'."\n");
 
 		// layout template
-		$fm->fCopy(ROOT."/app/components/template/views/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
-		$fm->fCopy(ROOT."/app/components/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
+		$fm->fCopy(ROOT."/app/components/template/views/defaultView/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
+		$fm->fCopy(ROOT."/app/components/template/views/defaultView/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
 		// default controller
 		if ($this->extension == "html.twig") {
 			$fm->fCopy(ROOT."/app/components/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");

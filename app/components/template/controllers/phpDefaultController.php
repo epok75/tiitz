@@ -9,6 +9,6 @@ class defaultController extends tzController {
 	// first method call when the website is launched
 	public function showAction () {
 		$this->tzRender->setPage('Default');
-		$this->tzRender->run('layout');                                                        
+		$this->tzRender->run('layout', , array("web_path" => WEB_PATH));                                          
 	}
 }
