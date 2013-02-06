@@ -132,7 +132,16 @@ class MainController extends TzController {
 
 	public function endInstallationAction() {
 
-		$this->templateEngine();
+		$ext = $this->conf["template"];
+
+		if ($ext == 'smarty') {
+			$this->extension = 'tpl';
+		} elseif ($ext == 'twig') {
+			$this->extension = 'html.twig';
+		} else {
+			$this->extension = $ext;
+		}
+
 		$fm = new tzFileManager(ROOT);
 
 		// We set the default controller and delete it

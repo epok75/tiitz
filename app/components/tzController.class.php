@@ -4,12 +4,16 @@ class tzController {
 
 	public $tiitzData;  
     public $tzRender;
+    public $conf;
+    public $route;
     public $tzPlugin;
     public $tzValidator;
     private static $tiitzVersion = '0.1';
     
     public function __construct(array $tzData) {
         $this->tiitzData = $tzData;
+        $this->conf = $tzData["conf"];
+        $this->route = $tzData["route"];
         $this->tzRender = $tzData["tzRender"];
         //$this->tzValidator = new tzValidator;
     }
