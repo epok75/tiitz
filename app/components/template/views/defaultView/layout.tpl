@@ -153,48 +153,66 @@
 	</head>
 <body>
 
-<?php 
-/**
- * C'est ici que vous pouvez inclure les differents tpl
- * qui sont appele dans vos fichier de routing
- *
- *if(tzRender::getPage() == 'Default') {
- *	include_once  ROOT.'/src/views/templates/default.php'; 
- *} elseif (tzRender::getPage() == 'Article') {
- *	include_once  ROOT.'/src/views/templates/article.php'; 
- *}
- */
-
-if(tzRender::getPage() == 'Default') {
- 	include_once  ROOT.'/src/views/templates/default.php'; 
-}
-
-?>
+	<div id="nav-top">
+		<div class="container">
+			<a id="documentation_link" href="http://tiitz.com/" title="Tiitz">
+				<img width="55px" src="{$prop['WEB_PATH']}/tiitz/img/04_blanc.png" />
+			</a>
+		</div>
+	</div>
+	<header id="success">
+		<div class="container">
+			<h1>Bravo !</h1>
+			<p class="lead">Votre projet est cr&eacute;&eacute;, vous pouvez d&eacute;sormais commencer &agrave; d&eacute;velopper avec TiiTz !</p>
+	</header>
+	<div class="container">
+		<section id="first_step">
+			<header>
+				<h1>Commencez &agrave; travailler</h1>
+			</header>
+			<p>
+				Vore projet est pr&ecirc;t et vous pouvez commencer &agrave; travailler.
+				<ul>
+					<li>Vous pouvez acc&eacute;der &agrave; vos routes via le fichier "/src/config/routing"</li>
+					<li>Vos controllers se trouvent dans le dossier "src/controllers/", ils seront charg&eacute;s de traiter vos donn&eacute;es et d'appeler la vue</li>
+					<li>Les vues se trouvent dans le dossier "/src/views"</li>
+				</ul>
+			</p>
+		</section>
+		<section>
+			<header>
+				<h1>Initialiser la page par défaut</h1>
+			</header>
+			<p>Pour commencer &agrave; d&eacute;velopper votre site vous devez initialiser votre vue par défaut,
+			 vous aurez alors une page d'accueil vierge de tout contenu avec une structure HTML5. Pour ce faire cliquez sur le bouton suivant :</p>
+			 <a href="{$prop['WEB_PATH']}/configTiitz/endInstallation" class="btn">Initialiser</a>
+		</section>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<p>
 				Designed and built by
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/arnaudraulet/" target="_blank">
 					Epok
 				</a>,
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/benjamindebernardi/" target="_blank">
 					GeneSoR
 				</a>,
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/germany.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/germany.png" />
 				<a href="http://www.linkedin.com/pub/cl%C3%A9ment-seiller/65/36a/a56" target="_blank">
 					Seiller
 				</a>,
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/romainreynaud" target="_blank">
 					Radyum
 				</a>,
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/pub/cyril-teixeira/58/827/89a" target="_blank">
 					Ekito
 				</a>,
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/pub/guillaume-tellier/48/208/b57" target="_blank">
 					Zra
 				</a>,
@@ -203,7 +221,7 @@ if(tzRender::getPage() == 'Default') {
 			<br />
 			<br />
 			<p>
-				<img src="{ $prop['WEB_PATH'] }/tiitz/img/logoSup.png" width="90px" />
+				<img src="{$prop['WEB_PATH']}/tiitz/img/logoSup.png" width="90px" />
 			</p>
 		</div>
 	</footer>

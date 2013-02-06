@@ -1,7 +1,7 @@
 	<div id="nav-top">
 		<div class="container">
 			<a id="documentation_link" href="http://tiitz.com/" title="Tiitz">
-				<img width="55px" src="{ $prop['WEB_PATH'] }/tiitz/img/04_blanc.png" />
+				<img width="55px" src="{$prop['WEB_PATH']}/tiitz/img/04_blanc.png" />
 			</a>
 		</div>
 	</div>
@@ -30,6 +30,6 @@
 			</header>
 			<p>Pour commencer &agrave; d&eacute;velopper votre site vous devez initialiser votre vue par défaut,
 			 vous aurez alors une page d'accueil vierge de tout contenu avec une structure HTML5. Pour ce faire cliquez sur le bouton suivant :</p>
-			 <a href="{ $prop['WEB_PATH'] }/configTiitz/endInstallation" class="btn">Initialiser</a>
+			 <a href="{$prop['WEB_PATH']}/configTiitz/endInstallation" class="btn">Initialiser</a>
 		</section>
 	</div>
