@@ -128,6 +128,37 @@ class MainController extends TzController {
 				$fm->add_fileContent(");");
 			}
 		} 
+	}
+
+	public function endingInstallationAction() {
+		$fm = new tzFileManager(ROOT);
+
+		// We set the default controller and delete it
+		$fm->set_currentItem(ROOT."/src/controllers/defaultController.php");
+		$fm->fDelete();
+
+		// We set the app controller and copy it
+		if ($extension == "html.twig")
+			$fm->set_currentItem(ROOT."/app/template/controllers/twigDefaultController.php");
+		else
+			$fm->set_currentItem(ROOT."/app/template/controllers/phpDefaultController.php");
+		$fm->xcopy(ROOT."/src/controllers/");
+
+		// We set the src layout and delete it
+		$fm->set_currentItem(ROOT."/src/views/layout.".$extension);
+		$fm->fDelete();
+
+		// We set the app layout and copy it
+		$fm->set_currentItem(ROOT."/app/template/views/layout.".$extension);
+		$fm->xcopy(ROOT."/src/views/");
+
+		// We set the src defaultTemplate and delete it
+		$fm->set_currentItem(ROOT."/src/views/templates/default.".$extension);
+		$fm->fDelete();
+
+		// We set the defaultTemplate and copy it
+		$fm->set_currentItem(ROOT."/app/template/views/templates/default.".$extension);
+		$fm->xcopy(ROOT."/src/views/templates/");
 	}	
 
 }

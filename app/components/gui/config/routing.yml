@@ -6,6 +6,10 @@ install:
     pattern:    /configTiitz/install
     controller: main:check
 
+endingInstall:
+    pattern:	/configTiitz/endingInstall
+    controller:	main:endInstallation
+
 
 #entityGeneratorPOST:
 #    pattern:    /configTiitz/entityGenerator
