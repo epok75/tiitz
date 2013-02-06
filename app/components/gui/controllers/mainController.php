@@ -150,23 +150,23 @@ class MainController extends TzController {
 
 		// We set the app controller and copy it
 		if ($this->extension == "html.twig")
-			$fm->fCopy(ROOT."/app/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
+			$fm->fCopy(ROOT."/app/components/template/controllers/twigDefaultController.php", ROOT."/src/controllers/defaultController.php");
 		else
-			$fm->fCopy(ROOT."/app/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
+			$fm->fCopy(ROOT."/app/components/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
 
 		// We set the src layout and delete it
 		$fm->set_currentItem(ROOT."/src/views/layout.".$this->extension);
 		$fm->fDelete();
 
 		// We set the app layout and copy it
-		$fm->fCopy(ROOT."/app/template/views/clearView/layout.".$this->extension, ROOT."/src/views/");
+		$fm->fCopy(ROOT."/app/components/template/views/clearView/layout.".$this->extension, ROOT."/src/views/layout.".$this->extension);
 
 		// We set the src defaultTemplate and delete it
 		$fm->set_currentItem(ROOT."/src/views/templates/default.".$this->extension);
 		$fm->fDelete();
 
 		// We set the defaultTemplate and copy it
-		$fm->fCopy(ROOT."/app/template/views/clearView/templates/default.".$this->extension, ROOT."/src/views/templates/");
+		$fm->fCopy(ROOT."/app/components/template/views/clearView/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
 
 		Header("Location:". WEB_PATH);
 	}	
