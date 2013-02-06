@@ -7,7 +7,7 @@ install:
     controller: main:check
 
 endingInstall:
-    pattern:	/configTiitz/endingInstall
+    pattern:	/configTiitz/endInstallation
     controller:	main:endInstallation
 
 
