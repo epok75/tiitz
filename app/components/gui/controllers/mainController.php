@@ -148,16 +148,14 @@ class MainController extends TzController {
 		$fm->fDelete();
 
 		// We set the app layout and copy it
-		$fm->set_currentItem(ROOT."/app/template/views/layout.".$this->extension);
-		$fm->xcopy(ROOT."/src/views/");
+		$fm->fCopy(ROOT."/app/template/views/layout.".$this->extension, ROOT."/src/views/");
 
 		// We set the src defaultTemplate and delete it
 		$fm->set_currentItem(ROOT."/src/views/templates/default.".$this->extension);
 		$fm->fDelete();
 
 		// We set the defaultTemplate and copy it
-		$fm->set_currentItem(ROOT."/app/template/views/templates/default.".$this->extension);
-		$fm->xcopy(ROOT."/src/views/templates/");
+		$fm->fCopy(ROOT."/app/template/views/templates/default.".$this->extension, ROOT."/src/views/templates/");
 
 		Header("Location:". WEB_PATH);
 	}	
