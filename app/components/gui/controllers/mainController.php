@@ -130,7 +130,7 @@ class MainController extends TzController {
 		} 
 	}
 
-	public function endingInstallationAction() {
+	public function endInstallationAction() {
 		$fm = new tzFileManager(ROOT);
 
 		// We set the default controller and delete it
@@ -144,19 +144,19 @@ class MainController extends TzController {
 			$fm->fCopy(ROOT."/app/template/controllers/phpDefaultController.php", ROOT."/src/controllers/defaultController.php");
 
 		// We set the src layout and delete it
-		$fm->set_currentItem(ROOT."/src/views/layout.".$extension);
+		$fm->set_currentItem(ROOT."/src/views/layout.".$this->extension);
 		$fm->fDelete();
 
 		// We set the app layout and copy it
-		$fm->set_currentItem(ROOT."/app/template/views/layout.".$extension);
+		$fm->set_currentItem(ROOT."/app/template/views/layout.".$this->extension);
 		$fm->xcopy(ROOT."/src/views/");
 
 		// We set the src defaultTemplate and delete it
-		$fm->set_currentItem(ROOT."/src/views/templates/default.".$extension);
+		$fm->set_currentItem(ROOT."/src/views/templates/default.".$this->extension);
 		$fm->fDelete();
 
 		// We set the defaultTemplate and copy it
-		$fm->set_currentItem(ROOT."/app/template/views/templates/default.".$extension);
+		$fm->set_currentItem(ROOT."/app/template/views/templates/default.".$this->extension);
 		$fm->xcopy(ROOT."/src/views/templates/");
 	}	
 
