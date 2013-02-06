@@ -174,27 +174,27 @@ if(tzRender::getPage() == 'Default') {
 		<div class="container">
 			<p>
 				Designed and built by
-				<img src="{ $WEB_PATH }/tiitz/img/france.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/arnaudraulet/" target="_blank">
 					Epok
 				</a>,
-				<img src="{ $WEB_PATH }/tiitz/img/france.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/benjamindebernardi/" target="_blank">
 					GeneSoR
 				</a>,
-				<img src="{ $WEB_PATH }/tiitz/img/germany.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/germany.png" />
 				<a href="http://www.linkedin.com/pub/cl%C3%A9ment-seiller/65/36a/a56" target="_blank">
 					Seiller
 				</a>,
-				<img src="{ $WEB_PATH }/tiitz/img/france.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/in/romainreynaud" target="_blank">
 					Radyum
 				</a>,
-				<img src="{ $WEB_PATH }/tiitz/img/france.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/pub/cyril-teixeira/58/827/89a" target="_blank">
 					Ekito
 				</a>,
-				<img src="{ $WEB_PATH }/tiitz/img/france.png" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/france.png" />
 				<a href="http://fr.linkedin.com/pub/guillaume-tellier/48/208/b57" target="_blank">
 					Zra
 				</a>,
@@ -203,7 +203,7 @@ if(tzRender::getPage() == 'Default') {
 			<br />
 			<br />
 			<p>
-				<img src="{ $WEB_PATH }/tiitz/img/logoSup.png" width="90px" />
+				<img src="{ $prop['WEB_PATH'] }/tiitz/img/logoSup.png" width="90px" />
 			</p>
 		</div>
 	</footer>
