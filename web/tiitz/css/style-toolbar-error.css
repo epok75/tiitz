@@ -252,16 +252,16 @@ footer#tiitz-toolbar ul#toolbar-log-error {
 	bottom: 40px;
 	overflow: auto;
 }
-footer#tiitz-toolbar .odd,footer#tiitz-toolbar  .even {
+#myLogError .odd,#myLogError .even {
 	padding: 5px;
 	text-align: left;
 	vertical-align: top;
 }
-footer#tiitz-toolbar ul#toolbar-log-error .odd {
+footer#tiitz-toolbar ul#toolbar-log-error .odd,  #myLogError .odd {
 	background-color: #F9F9F9;
 	border-top: 1px solid #DDD;
 }
-footer#tiitz-toolbar ul#toolbar-log-error .even {
+footer#tiitz-toolbar ul#toolbar-log-error .even, #myLogError .even {
 	border-top: 1px solid #DDD;
 }
 footer#tiitz-toolbar .odd:hover,footer#tiitz-toolbar  .even:hover {
