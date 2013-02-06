@@ -235,8 +235,7 @@
 		   	linkToolbar.href = "<?php print WEB_PATH;?>/tiitz/css/style-toolbar-error.css";
 		   	document.getElementsByTagName('head')[0].appendChild(linkToolbar);
 		   	// change footer visibilty
-		   	var tiitz_toolbar = document.getElementById('tiitz-toolbar');
-		   	tiitz_toolbar.style.display = "block";
+		   	$("#tiitz-toolbar").fadeIn(800);
 	}
 	
    	if(!window.jQuery)
