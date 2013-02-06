@@ -158,6 +158,8 @@ class MainController extends TzController {
 		// We set the defaultTemplate and copy it
 		$fm->set_currentItem(ROOT."/app/template/views/templates/default.".$this->extension);
 		$fm->xcopy(ROOT."/src/views/templates/");
+
+		Header("Location:". WEB_PATH);
 	}	
 
 }
