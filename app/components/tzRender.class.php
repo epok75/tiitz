@@ -83,7 +83,7 @@ class tzRender {
 		} elseif ($this->tpl === 'smarty') {
 			// check if there are arguments pass to the method to avoid bug
 			if ($prop !== null) {
-				$this->renderedPage ->assign($prop);	
+				$this->renderedPage ->assign("prop", $prop);	
 			}
 			// display smarty template
 			$this->renderedPage ->display($file.'.tpl');
