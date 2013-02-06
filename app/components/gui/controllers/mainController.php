@@ -131,6 +131,8 @@ class MainController extends TzController {
 	}
 
 	public function endInstallationAction() {
+
+		$this->templateEngine();
 		$fm = new tzFileManager(ROOT);
 
 		// We set the default controller and delete it
