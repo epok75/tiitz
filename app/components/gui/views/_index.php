@@ -4,9 +4,12 @@
 	<meta charset="utf-8">
 	<title>TiiTz Framework</title>
 	
-	<script type="text/javascript" src="<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link href='<?php print WEB_PATH;?>/tiitz/css/bootstrap.css' rel='stylesheet' type='text/css' />
 	<link href='<?php print WEB_PATH;?>/tiitz/css/style-gui.css' rel='stylesheet' type='text/css' />
+
+	<script type="text/javascript" src="<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>					 
 <body>
 <div class="tiitz">	

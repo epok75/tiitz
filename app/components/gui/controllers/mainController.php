@@ -37,10 +37,10 @@ class MainController extends TzController {
 				// redirect /web/index.php which will redirect to /src/config/routing.yml
 				header('location:'.WEB_PATH.'/index.php');
 			} else {
-				require_once("../app/components/gui/views/_index.php");
+				require_once("../app/components/Gui/views/_index.php");
 			}
 		} else {
-			require_once("../app/components/gui/views/_index.php");
+			require_once("../app/components/Gui/views/_index.php");
 		}
 
 	}
@@ -58,7 +58,7 @@ class MainController extends TzController {
 	private function configGenerator()
 	{
 		// File manager class
-		$fm = new tzFileManager(ROOT);
+		$fm = new TzFileManager(ROOT);
 
 		// location of the file config.yml
 		$fm->set_currentItem(ROOT."/app/config/config.yml");
@@ -77,7 +77,7 @@ class MainController extends TzController {
 	private function pagesGenerator()
 	{
 		// File manager class
-		$fm = new tzFileManager(ROOT);
+		$fm = new TzFileManager(ROOT);
 		// create routing file
 		$fm->set_currentItem(ROOT."/src/config/");
 		$fm->xtouch("routing.".$this -> routingExtension);
@@ -142,7 +142,7 @@ class MainController extends TzController {
 			$this->extension = $ext;
 		}
 
-		$fm = new tzFileManager(ROOT);
+		$fm = new TzFileManager(ROOT);
 
 		// We set the default controller and delete it
 		$fm->set_currentItem(ROOT."/src/controllers/defaultController.php");

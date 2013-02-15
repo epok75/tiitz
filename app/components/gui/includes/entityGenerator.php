@@ -13,7 +13,7 @@ function createEntity($tables){
 		$primkey = empty($_POST[$tablename.'primKey']) ? false : $_POST[$tablename.'primKey'] ;
 
 		$sql = "SHOW COLUMNS FROM ".$table;
-		$colums = tzSQL::getPDO()->prepare( $sql );
+		$colums = TzSQL::getPDO()->prepare( $sql );
 		$colums->execute();
 		$columsResult = $colums->fetchAll();
 
@@ -89,7 +89,7 @@ function createEntity($tables){
 
 					$" . "sql" . " = \"DELETE FROM $table WHERE ". $primkey ." = \".intval($" . "this->" . $primkey .").\";\";
 
-					$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+					$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
 					$" . "result->execute();
 
 					return $". "result;
@@ -125,7 +125,7 @@ function createEntity($tables){
 
 				$" . "sql = '".$sql.";
 
-				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
 				if(!empty($". "this->" .$primkey. ")){
@@ -183,11 +183,11 @@ function createEntity($tables){
 
 				$" . "sql = '".$sql."';
 
-				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 
 				if($" . "result){
-					$" . "lastid = tzSQL::get" . "PDO()->lastInsertId();
+					$" . "lastid = TzSQL::get" . "PDO()->lastInsertId();
 					$" . "this->".$primkey." = $" . "lastid;
 					return true;
 				}
@@ -205,7 +205,7 @@ function createEntity($tables){
 			public function findAll(){
 
 				$" . "sql = 'SELECT * FROM ".$table."';
-				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 				$" . "formatResult = $" . "result->fetchAll(PDO::FETCH_ASSOC);
 				$" . "entitiesArray = array();
@@ -258,7 +258,7 @@ function createEntity($tables){
 				}
 
 				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
-				$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "data = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "data->execute();
 				$" . "result =  $" . "data->fetch(PDO::FETCH_OBJ);
 
@@ -291,7 +291,7 @@ function createEntity($tables){
 			public function find($". "id){
 
 				$" . "sql = 'SELECT * FROM ".$table." WHERE ".$primkey." = ' . $" . "id;
-				$" . "result = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "result->execute();
 				$" . "formatResult = $" . "result->fetch(PDO::FETCH_OBJ);
 				if(!empty($" . "formatResult)){
@@ -346,7 +346,7 @@ function createEntity($tables){
 				}
 
 				$" . "sql =  'SELECT * FROM $table WHERE '.$"."param.' = \"'.$" . "value.'\"';
-				$" . "data = tzSQL::get" . "PDO()->prepare($" . "sql);
+				$" . "data = TzSQL::get" . "PDO()->prepare($" . "sql);
 				$" . "data->execute();
 				$" . "formatResult = $" . "data->fetchAll(PDO::FETCH_ASSOC);
 				$" . "entitiesArray = array();

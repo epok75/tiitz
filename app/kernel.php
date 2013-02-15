@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	// Global configuration for the framework
-	require_once("../app/components/tiitz.class.php");
+	require_once("../app/components/Tiitz/Tiitz.php");
 	$tiitz = new TiiTz();
 	define("ROOT", realpath(__DIR__."/../")); // base of the web site
 
@@ -13,32 +13,33 @@
 	$comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 	$conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
 
-
 	// Include the components contains in components.yml
 	foreach ($comp as $k => $v) {
 		require_once(ROOT.$v);
 	}
+	// Error manager
+	DebugTool::initDebugTools('app','0.2', array("save"=>true,
+												"display"=>true,
+												"logPath"=>"")
+												);
 
-	// Manage Error
-	$error = new tzErrorExtend(0);
-	
 	if (!empty($conf["template"]))
-		$tzRender = tzRender::getInstance($conf["template"]);
+		$tzRender = TzRender::getInstance($conf["template"]);
 	else
-		$tzRender = tzRender::getInstance("");
+		$tzRender = TzRender::getInstance("");
 
 	if (!empty($conf["existingproject"]) && $conf["existingproject"] === true) 
-		$route = tzRoute::getRoute($conf);
+		$route = TzRouter::getRoute($conf);
 	else
-		$route = tzRoute::getRoute($conf, "gui");
+		$route = TzRouter::getRoute($conf, "gui");
 
 	// We fill $tiitzData with tiitz infos
-	$tiitzData['route'] = $route;
-	$tiitzData['conf'] = $conf;
-	$tiitzData['tzRender'] = $tzRender;
+	$tiitzData['route'] 	= $route;
+	$tiitzData['conf'] 		= $conf;
+	$tiitzData['tzRender'] 	= $tzRender;
 
 	if(!empty($conf['database']['user']) && !empty($conf["existingproject"]) && $conf["existingproject"] === true) {
-		tzSQL::getInstance($conf['database']['host'],$conf['database']['user'],$conf['database']['password'],$conf['database']['dbname']);
+		TzSQL::getInstance($conf['database']['host'],$conf['database']['user'],$conf['database']['password'],$conf['database']['dbname']);
 	}
 
 	if (is_file(ROOT.$route["path"])) {
