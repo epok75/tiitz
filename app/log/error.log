@@ -46,3 +46,6 @@ type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_C
 type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>75	date=>2013-02-04 13:44:30
 type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/tzRouter.class.php	line=>162	date=>2013-02-04 13:45:31
 type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>75	date=>2013-02-04 13:45:31
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:17
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:19
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:47
