@@ -13,5 +13,8 @@
         <?php $i++; ?>
       <?php endforeach ?>	
     <?php endforeach ?>
+    <?php if ($i == 0) : ?>
+      <p>Le fichier de log est vide</p>
+    <?php endif; ?> 
 	</div>
 </div>

@@ -5,6 +5,7 @@ class Toolbar {
 	private $phpIni 	= array();
 	private $conf 		= array();
 	private $route		= array();
+	private $TimeLoadingPage;
 	private $phpVersion;
 	private $frameworkVersion;
 
@@ -35,8 +36,14 @@ class Toolbar {
 	public function getPathToToolbar() {
 		return __DIR__.$this->path;
 	}
+	public function getTimeLoadingPage() {
+		return $this->TimeLoadingPage;
+	}
 	// setter
 	public function setFrameworkVersion ($version) {
 		$this->frameworkVersion = $version;
+	}
+	public function setTimeLoadingPage ($duration) {
+		$this->TimeLoadingPage = $duration;
 	}
 }

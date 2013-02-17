@@ -7,6 +7,12 @@
 		<div class="tiitz-inner">
 			<ul class="tiitz-nav">
 				<li>
+					<a href="<?php print WEB_PATH; ?>" class="tiitz-home">
+						<img src="<?php print WEB_PATH; ?>/tiitz/img/home.png" alt="" width="35" height="35" />
+					</a>
+				</li>
+				<li class="tiitz-divider"></li>
+				<li>
 					<a class="tiitz-brand tiitz-toolbar-nav" href="#">
 						<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-tiitz.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print DebugTool::$toolbar->getFrameworkVersion(); ?></span>
 					</a>
@@ -153,7 +159,7 @@
 			   		</ul>	
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-			   	<li><a href="#" class="tiitz-toolbar-nav">Configuration</a>
+			   	<li><a href="#" class="tiitz-toolbar-nav"><strong>Configuration</strong></a>
 					<ul id="toolbar-config" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -182,20 +188,25 @@
 			   			</li>
 			   		</ul>
 			   	</li>
+			   	<li class="tiitz-divider"></li>
+			   	<li>
+			   		<a href="#">
+			   			<strong>Time Loading Page : </strong><?php print DebugTool::$toolbar->getTimeLoadingPage(); ?>
+			   		</a>
+			   	</li>
+			   	<li class="tiitz-divider"></li>
 			   	<?php if(!empty($conf['database']['dbname'])) : ?>
-			   	<li class="divider-vertical"></li>
 			   	<li>
 			   		<a href="./configTiitz/entityGenerator" class="tiitz-toolbar-nav">Cr&eacute;er vos entit&eacute;es</a>
 				</li>
+				<li class="tiitz-divider"></li>
 				<?php endif; ?>
-				<li class="divider-vertical"></li>
-			   	<li class="tiitz-divider"></li>
-			   	<li>
+				<li>
 			   		<a href="#" id="opener-log" >Fichier de logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
 			   																  print ' (0)'; ?></a>
 			 	</li>
-			 	<li class="divider-vertical"></li>
-			   	<li>
+			   	<li class="tiitz-divider"></li>
+			 	<li>
 			   		<?php if (DebugTool::$errorExtend->getNumberOfcurrentError() == 1) : ?>
 			   			<a href="#" id="opener-error" class="tiitz-danger">1 error</a>
 			   			
@@ -230,7 +241,7 @@
 	{
 	   var script = document.createElement('script');
 	   script.type = "text/javascript";
-	   script.src = "<?php print WEB_PATH;?>/js/jquery-1.9.0.js";
+	   script.src = "<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js";
 	   document.getElementsByTagName('head')[0].appendChild(script);
 	}
 

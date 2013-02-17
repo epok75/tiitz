@@ -9,7 +9,7 @@
 	$tiitzData = array();
 
 	// Include YAML parsing tool
-	require_once(ROOT.'/app/components/spyc/Spyc.php');
+	require_once(ROOT.'/app/components/Spyc/Spyc.php');
 	$comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 	$conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
 
@@ -18,10 +18,10 @@
 		require_once(ROOT.$v);
 	}
 	// Error manager
-	DebugTool::initDebugTools('app','0.2', array("save"=>true,
-												"display"=>true,
-												"logPath"=>"")
-												);
+	DebugTool::initDebugTools('0.3', array("save"	=>true,
+											  "display"	=>true,
+											  "logPath"	=>"../app/log/")
+											  );
 
 	if (!empty($conf["template"]))
 		$tzRender = TzRender::getInstance($conf["template"]);
@@ -53,9 +53,9 @@
 	}
 	else {
 		// Define 404 route
-		$route['dirPath'] = "/src/controllers/";
-		$route['path'] = "/src/controllers/pageNotFoundController.php";
-		$route['action'] = "showAction";
+		$route['dirPath'] 	= "/src/controllers/";
+		$route['path'] 		= "/src/controllers/pageNotFoundController.php";
+		$route['action'] 	= "showAction";
 		$route['className'] = "pageNotFoundController";
 
 		if (is_file(ROOT.$route["path"])) {

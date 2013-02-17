@@ -14,14 +14,11 @@ class DebugTool {
 		self::$toolbar 		= new Toolbar($frameworkVersion);
 		self::$error 		= new ErrorManager();
 		self::$errorExtend 	= new ErrorManagerExtend($params);
-
 	}
 
-	public static function initDebugTools ($webPath, $frameworkVersion, $params) {
+	public static function initDebugTools ($frameworkVersion, $params) {
 		self::$instance = new DebugTool($frameworkVersion, $params);
-		define('TOOLBAR_WEB_PATH', $webPath);
 	}
-
 	public function getInstanceToolbar () {
 		return $this->instance;
 	}
