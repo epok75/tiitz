@@ -6,6 +6,10 @@ install:
     pattern:    /configTiitz/install
     controller: main:check
 
+edit:
+    pattern:    /configTiitz/edit
+    controller: main:checkEdit
+
 endingInstall:
     pattern:	/configTiitz/endInstallation
     controller:	main:endInstallation

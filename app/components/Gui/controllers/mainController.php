@@ -169,6 +169,49 @@ class MainController extends TzController {
 		$fm->fCopy(ROOT."/app/components/template/views/clearView/templates/default.".$this->extension, ROOT."/src/views/templates/default.".$this->extension);
 
 		Header("Location:". WEB_PATH);
-	}	
+	}
+
+	private function configUpdate()
+	{
+		$fm = new tzFileManager(ROOT);
+
+		$fm->set_currentItem(ROOT."/app/config/config.yml");
+
+		$conf = explode($fm->get_fileContent(), "\n");
+		var_dump($conf);
+		die();
+	}
+
+	public function checkEditAction() {
+        var_dump($this->tzRender);
+		if (isset($_POST["firstConfig"]))
+		{
+			// relauch test
+			$res = Validator::checkDb(array('user' => $_POST['user'], 'pwd' => $_POST['pwd'],'adress' => $_POST['adress'], 'name' => $_POST['name']));
+			if ($res == true) {
+				// test db connection
+				Validator::testDbConnect($_POST['user'], $_POST['pwd'],$_POST['adress'], $_POST['name']);
+			}
+
+			$_POST["pages"] = Validator::CleanPage($_POST["pages"]);
+			// check if there error array is empty or no
+			$error = Validator::getError();
+
+			if(empty($error)) {
+				$this -> configUpdate();
+				$this -> pagesGenerator();
+				// redirect /web/index.php which will redirect to /src/config/routing.yml
+				header('location:'.WEB_PATH.'/ndex.php');
+				} else {
+				require_once("../app/components/gui/views/_indexEdit.php");
+			}
+		} 
+		else {
+			require_once("../app/components/gui/views/_indexEdit.php");
+		}
+
+	}
+
+
 
 }
