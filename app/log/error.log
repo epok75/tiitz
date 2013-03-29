@@ -49,3 +49,357 @@ type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MA
 type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:17
 type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:19
 type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-02-17 15:48:47
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:33:36
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:37:10
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:37:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:37:21
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:38:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:38:16
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:39:59
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:39:59
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:00
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:00
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:01
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:02
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:02
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:40:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:12
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:12
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:47
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:47
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:49
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:41:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:42:00
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:42:00
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:42:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:42:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:43:13
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:43:15
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:44:31
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:44:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:45:20
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:45:27
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:45:29
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:48:47
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:49:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:57:30
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:57:33
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:57:39
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:57:48
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:59:02
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:59:02
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:59:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 22:59:17
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-03-29 22:59:56
+type=>2	message=>Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php:96)	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/gui/controllers/generatorController.php	line=>37	date=>2013-03-29 22:59:56
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-03-29 23:00:01
+type=>2	message=>Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php:96)	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/gui/controllers/generatorController.php	line=>37	date=>2013-03-29 23:00:01
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/SQLEntities/TzSQL.php	line=>41	date=>2013-03-29 23:02:30
+type=>2	message=>Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php:96)	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/gui/controllers/generatorController.php	line=>37	date=>2013-03-29 23:02:30
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:02:35
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:02:50
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:03:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:04:32
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:04:33
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:05:13
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:05:17
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:06:42
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:06:46
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:42
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:42
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:42
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:42
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:42
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:42
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:42
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:42
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:42
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:43
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:43
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:43
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:43
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:43
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:43
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:43
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:43
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:44
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:44
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:44
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:44
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:44
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:44
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:44
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:44
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:44
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:50
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:50
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:50
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:50
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:50
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:50
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:50
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:50
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:50
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:51
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:51
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:51
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:51
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:51
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:51
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:51
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:51
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:54
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:54
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:54
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:54
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:54
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:54
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:19:54
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:19:54
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:19:54
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:05
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:05
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:05
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:05
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:05
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:05
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:05
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:05
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:11
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:11
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:11
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:11
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:14
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:14
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:14
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:14
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:14
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:14
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:14
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:14
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:21
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:21
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:21
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:21
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:21
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:21
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:21
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:21
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:21
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:24
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:24
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:24
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:24
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:24
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:25
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:25
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:25
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:25
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:25
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:25
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:28
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:28
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:28
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:20:28
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:20:28
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:20:28
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:09
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:09
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:09
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:09
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:23:09
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:23:09
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:11
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:11
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:11
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:23:11
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:23:11
+type=>none	message=>Routing file missing	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>87	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:24
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>99	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'type'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>100	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'params'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:24
+type=>8	message=>Array to string conversion	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>101	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:24
+type=>2	message=>Invalid argument supplied for foreach()	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>103	date=>2013-03-29 23:23:24
+type=>2	message=>Illegal string offset 'pattern'	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>119	date=>2013-03-29 23:23:24
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:23:24
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:23:58
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:24:03
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:24:08
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:24:23
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-29 23:24:28

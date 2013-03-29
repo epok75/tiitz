@@ -3,4 +3,6 @@
 /.settings
 /.project
 app/.DS_Store
+/.idea
+.idea/*
 

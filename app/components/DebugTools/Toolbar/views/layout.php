@@ -12,7 +12,7 @@
 					</a>
 				</li>
 				<li class="tiitz-divider"></li>
-				<li>
+				<li class="tiitz-active">
 					<a class="tiitz-brand tiitz-toolbar-nav" href="#">
 						<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-tiitz.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print DebugTool::$toolbar->getFrameworkVersion(); ?></span>
 					</a>
@@ -99,7 +99,7 @@
 					</ul>	
 				</li>
 				<li class="tiitz-divider"></li>
-				<li><a href="#" class="tiitz-toolbar-nav"><strong>PHP : </strong><?php print DebugTool::$toolbar->getPhpVersion(); ?></a>
+				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><strong>PHP : </strong><?php print DebugTool::$toolbar->getPhpVersion(); ?></a>
 				   	<ul id="toolbar-php-version" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -147,7 +147,7 @@
 			   									<li><strong>memory_limit : </strong><?php print DebugTool::$toolbar->getPhpIni()['memory_limit']; ?></li>
 			   									<li><strong>max_execution_time : </strong><?php print DebugTool::$toolbar->getPhpIni()['max_execution_time']; ?></li>
 			   									<li><strong>session.gc_maxlifetime : </strong>  <?php print DebugTool::$toolbar->getPhpIni()['session.gc_maxlifetime']; ?></li>
-			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIni()['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False';; ?></li>
+			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIni()['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
 			   								</ul>
 			   							</div>
 			   						</li>	
@@ -159,7 +159,7 @@
 			   		</ul>	
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-			   	<li><a href="#" class="tiitz-toolbar-nav"><strong>Configuration</strong></a>
+			   	<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><strong>Configuration</strong></a>
 					<ul id="toolbar-config" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -175,7 +175,7 @@
 			   		</ul>
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-				<li><a href="#" class="tiitz-toolbar-nav"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
+				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
 					<ul id="toolbar-file-controller" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
