@@ -18,10 +18,8 @@
 		require_once(ROOT.$v);
 	}
 	// Error manager
-    var_dump($conf_dev);
 	DebugTool::initDebugTools('0.3', $conf_dev);
 
-    include 'tst';
 	if (!empty($conf["template"]))
 		$tzRender = TzRender::getInstance($conf["template"]);
 	else
@@ -75,7 +73,7 @@
         }
             
         else
-            tzErrorExtend::catchError(array("No action ".$route["action"]." Found", __FILE__,__LINE__));
+            DebugTool::$error->catchError(array("No action ".$route["action"]." Found", __FILE__,__LINE__));
     }
     else
-        tzErrorExtend::catchError(array("No Class ".$route["className"]." Found", __FILE__,__LINE__));
+        DebugTool::$error->catchError(array("No Class ".$route["className"]." Found", __FILE__,__LINE__));

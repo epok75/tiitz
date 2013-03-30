@@ -473,3 +473,17 @@ type=>2	message=>include(tst): failed to open stream: No such file or directory	
 type=>2	message=>include(): Failed opening 'tst' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php:/usr/local/pear/share/pear')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>27	date=>2013-03-31 00:23:26
 type=>2	message=>include(tst): failed to open stream: No such file or directory	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>24	date=>2013-03-31 00:35:26
 type=>2	message=>include(): Failed opening 'tst' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php:/usr/local/pear/share/pear')	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>24	date=>2013-03-31 00:35:26
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:48:41
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:48:41
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:50:44
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:50:44
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:50:51
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:50:51
+type=>8	message=>Undefined variable: error	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Gui/includes/entityGenerator.php	line=>98	date=>2013-03-31 00:51:19
+type=>8	message=>Trying to get property of non-object	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Gui/includes/entityGenerator.php	line=>98	date=>2013-03-31 00:51:19
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:52:22
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:52:22
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:52:31
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:52:31
+type=>none	message=>No Route Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/components/Router/TzRouter.php	line=>162	date=>2013-03-31 00:52:32
+type=>none	message=>No Class pageNotFoundController Found	file=>/Applications/MAMP/htdocs/2.Projet_En_Cours/tiitz/app/kernel.php	line=>79	date=>2013-03-31 00:52:32
