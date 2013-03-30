@@ -1,7 +1,0 @@
-config:
-    pattern:    /toolbar
-    controller: Default:index
-
-test:
-    pattern:    /toolbar/test
-    controller: test:index
