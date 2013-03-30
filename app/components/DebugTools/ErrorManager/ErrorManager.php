@@ -9,11 +9,13 @@ class ErrorManager extends ErrorManagerExtend {
 	 * launch php function for managing error
 	 * @param integer $errorReport manage visibility of php error
 	 */
-	public function __construct() {
+	public function __construct($params) {
 		// manage fatal error
 		register_shutdown_function(array($this, 'callRegisteredShutdown'));
 		// manage warning and other error not fatal
 		set_error_handler(array($this, 'exception_handler'));
+        // Manage error_reporting
+        $this->errorVisibility($params["visibility"]);
 	}
 
 	/**

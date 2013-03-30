@@ -12,16 +12,14 @@
 	require_once(ROOT.'/app/components/Spyc/Spyc.php');
 	$comp = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 	$conf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
-
+    $conf_dev = Spyc::YAMLLoad(ROOT.'/app/config/config_dev.yml');
 	// Include the components contains in components.yml
 	foreach ($comp as $k => $v) {
 		require_once(ROOT.$v);
 	}
 	// Error manager
-	DebugTool::initDebugTools('0.3', array("save"	=>true,
-											  "display"	=>true,
-											  "logPath"	=>"../app/log/")
-											  );
+    var_dump($conf_dev);
+	DebugTool::initDebugTools('0.3', $conf_dev);
 
     include 'tst';
 	if (!empty($conf["template"]))

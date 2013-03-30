@@ -12,9 +12,9 @@ class ErrorManagerExtend {
 	private $templateHTMLError 		= array();
 
 	public function __construct (array $params) {
-		$this->logPath 		= $params['logPath'];
-		$this->saveInLog 	= $params['save'];
-		$this->displayError = $params['display'];
+        $this->logPath 		= $params['error']['path'];
+		$this->saveInLog 	= $params['error']['save'];
+		$this->displayError = $params['toolbar']['display'];
 	}
 
 	/**
