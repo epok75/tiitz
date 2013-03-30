@@ -24,3 +24,8 @@ entityGenerator:
 entityResumeInfo:
 	pattern:	/configTiitz/entityGenerator
 	controller: generator:entitiesResum
+
+toolbar:
+	pattern:    /configTiitz/toolbar
+	controller: Toolbar:index
+

@@ -1,6 +1,6 @@
 <?php
 	require ('tplError.php');
-	require ('tplLog.php');
+	// require ('tplLog.php');
 ?>
 <div class="tiitz-toolbar">
 	<div class="tiitz-navbar">
@@ -202,7 +202,7 @@
 				<li class="tiitz-divider"></li>
 				<?php endif; ?>
 				<li>
-			   		<a href="#" id="opener-log" >Fichier de logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
+			   		<a href="#" id="opener-log" >logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
 			   																  print ' (0)'; ?></a>
 			 	</li>
 			   	<li class="tiitz-divider"></li>
@@ -253,80 +253,7 @@
 
 	LoadjQueryUI();
  		
-	window.onload = function () {
-		$( "#currentError" ).dialog(
-			{ 
-				autoOpen: false, 
-			  	width : 860,
-			  	height: 400, 
-			  	title: "Tittz Error"		
-			}
-		);
-		$( "#myLogError" ).dialog(
-			{ 
-				autoOpen: false, 
-			  	width : 860, 
-			  	height: 400,
-			  	title: "Log error"		
-			}
-		);
 
-		$( "#opener-error" ).click(function() {
-			if ($("a.tiitz-toolbar-nav").hasClass('tiitz-active')) {
-				$("a.tiitz-toolbar-nav").removeClass('tiitz-active');
-				$("a.tiitz-toolbar-nav").each(function(inc) {
-					$(this).next().hide();
-				})
-			};
-			if ($("#myLogError").is(":visible")) {
-				$( "#myLogError" ).dialog( "close" );
-				$( "#opener-log" ).removeClass('tiitz-active');
-			}
-			if ($("#currentError").is(":visible")) {
-				$( "#currentError" ).dialog( "close" );
-			} else {
-				$( "#currentError" ).dialog( "open" );
-			}
-		});
-		$( "#opener-log" ).click(function() {
-			if ($("a.tiitz-toolbar-nav").hasClass('tiitz-active')) {
-				$("a.tiitz-toolbar-nav").removeClass('tiitz-active');
-				$("a.tiitz-toolbar-nav").each(function(inc) {
-					$(this).next().hide();
-				})
-			};
-			if ($("#currentError").is(":visible")) {
-				$( "#currentError" ).dialog( "close" );
-			}
-			if ($("#myLogError").is(":visible")) {
-				$( "#myLogError" ).dialog( "close" );
-				$( "#opener-log" ).removeClass('tiitz-active');
-			} else {
-				$( "#myLogError" ).dialog( "open" );
-				$( "#opener-log" ).addClass('tiitz-active');
-			}
-		});
-		// menu link
-		$( ".tiitz-nav > li > a.tiitz-toolbar-nav" ).click(function() {
-			if ($("#myLogError").is(":visible")) {
-				$("#myLogError").dialog( "close" );
-				$("#opener-log").removeClass('tiitz-active');
-			}
-			if ($("#currentError").is(":visible")) {
-				$("#currentError").dialog( "close" );
-			}
-			if ($(this).hasClass('tiitz-active')) {
-				$(this).removeClass('tiitz-active');
-				$(this).next().hide();
-			} else {
-				$(".tiitz-nav > li > a").removeClass('tiitz-active');
-				$(".tiitz-nav > li > a").next().hide();
-				$( this ).addClass('tiitz-active');
-				$(this).next().show();
-			}
-		});
-		
-	}
 </script>
 </body>
 </html>

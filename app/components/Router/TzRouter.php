@@ -93,7 +93,7 @@ class TzRouter {
 			$arraySubRoutes = $tzRoute;
 		}
 
-		echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
+		#echo "ROUTE : ";var_dump($arraySubRoutes);echo "--------------<br />";
 
 		foreach ($arraySubRoutes as $key => $params) {
 			$arraySubRoutes[$key]['pattern'] = self::deleteEmptyValues(explode('/', $arraySubRoutes[$key]['pattern']));

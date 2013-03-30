@@ -1,7 +1,7 @@
 <?php
   $i = 0;
 ?>
-<div id="myLogError" style="display:none;font-size: 13px!important;">
+<div id="myLogError" style="display:block;font-size: 13px!important;">
 	<div class="modal-body">
 		<?php foreach (DebugTool::$errorExtend->getArrayOfError() AS $key => $value): ?>
       <?php foreach ($value as $errorLog) : ?>

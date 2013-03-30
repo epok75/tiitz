@@ -1,4 +1,8 @@
 <?php
+/**
+ * Class Toolbar
+ * All usefull informations needed to display
+ */
 class Toolbar {
 	
 	private $path 		= '/views/layout.php';

@@ -23,6 +23,7 @@
 											  "logPath"	=>"../app/log/")
 											  );
 
+    include 'tst';
 	if (!empty($conf["template"]))
 		$tzRender = TzRender::getInstance($conf["template"]);
 	else
