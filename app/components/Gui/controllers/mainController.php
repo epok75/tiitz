@@ -124,6 +124,7 @@ class MainController extends TzController {
 					$fm->add_fileContent("\n".$page."_show:\n\tpattern:\t/".$page."\n\tcontroller: ".$page.":show ");
 				if ($this -> routingExtension === "php")
 				{
+					//Reopening php array if it was closed
 					if (!isset($firstEdit))
 					{
 						$handle = fopen(ROOT."/src/config/routing.php", 'r+');
