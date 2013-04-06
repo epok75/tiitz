@@ -7,11 +7,6 @@ class TzAuth {
     
     private $salt = 'awdOsmA||//DOEWPopjk%[awd[@0}}{adwdakl';
 
-    private function encryptPwd($pwd){
-        $pwd = sha1(md5($pwd.$this->salt));
-        return $pwd;
-    }
-
     public function login(array $values) {
 
         $query = 'SELECT * FROM users WHERE ';
@@ -97,5 +92,11 @@ class TzAuth {
 
     public function getSalt() {
         return $this->salt;
+    }
+
+    
+    public function encryptPwd($pwd){
+        $pwd = sha1(md5($pwd.$this->salt));
+        return $pwd;
     }
 }
