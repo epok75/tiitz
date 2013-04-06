@@ -15,11 +15,33 @@
 <div class="tiitz">
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span2">
+            <div class="span3 well">
                 <!--Sidebar content-->
+                <ul class="nav nav-list">
+                    <li class="nav-header">Configurations Tiitz</li>
+                    <li class="<?php if(isset($active) && ($active == 'config-prod')){ print 'active'; } ?>"><a href="#">config.yml</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'config-dev')){ print 'active'; } ?>"><a href="#">config_dev.yml</a></li>
+                    <li class="nav-header">Fichiers</li>
+                    <li class="<?php if(isset($active) && ($active == 'logs')){ print 'active'; } ?>"><a href="#">logs</a></li>
+                    <li class="nav-header">phpinfo</li>
+                    <li class="<?php if(isset($active) && ($active == 'general')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/general">INFO_GENERAL</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'config')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/configuration">INFO_CONFIGURATION</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'module')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/module">INFO_MODULES</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'env')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/environnement">INFO_ENVIRONMENT</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'variable')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/variable">INFO_VARIABLES</a></li>
+                    <li class="nav-header">Liens</li>
+                    <li class="<?php if(isset($active) && ($active == 'generateur')){ print 'active'; } ?>"><a href="#">Générateur entités</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'config-tiitz')){ print 'active'; } ?>"><a href="#">Configuration Titz</a></li>
+                    <li class="nav-header">Divers</li>
+                    <li class="<?php if(isset($active) && ($active == 'route')){ print 'active'; } ?>"><a href="#">Routes</a></li>
+                </ul>
             </div>
-            <div class="span10">
+            <div class="span9">
                 <!--Body content-->
+
+                <div>
+                    <?php include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-phpinfo.php'; ?>
+                </div>
             </div>
         </div>
     </div>

@@ -25,7 +25,27 @@ entityResumeInfo:
 	pattern:	/configTiitz/entityGenerator
 	controller: generator:entitiesResum
 
+#toolbar routes
 toolbar:
 	pattern:    /configTiitz/toolbar
 	controller: Toolbar:index
 
+toolbarPHPInfoConfiguration:
+	pattern:    /configTiitz/toolbar/phpinfo/configuration
+	controller: Toolbar:phpinfoConfiguration
+
+toolbarPHPInfoGeneral:
+	pattern:    /configTiitz/toolbar/phpinfo/general
+	controller: Toolbar:phpinfoGeneral
+
+toolbarPHPInfoEnv:
+	pattern:    /configTiitz/toolbar/phpinfo/environnement
+	controller: Toolbar:phpinfoEnv
+
+toolbarPHPInfoVariable:
+	pattern:    /configTiitz/toolbar/phpinfo/variable
+	controller: Toolbar:phpinfoVariable
+
+toolbarPHPInfoModule:
+	pattern:    /configTiitz/toolbar/phpinfo/module
+	controller: Toolbar:phpinfoModule
