@@ -46,11 +46,9 @@ class TzAuth {
         $this->emptyUserSession();
     }
 
-
     public function isUserLoggedIn(){
         return(!empty($_SESSION['User']));
     }
-
 
     public function addSession(string $fieldName, mixed $value){
         $_SESSION['Data'][$fieldName] = $value;
@@ -97,6 +95,7 @@ class TzAuth {
         }
     }
 
-    
-
+    public function getSalt() {
+        return $this->salt;
+    }
 }
