@@ -1,7 +1,0 @@
-
-default_show:
-	pattern:	 / 
-	controller: default:show
-home_show:
-	pattern:	/home
-	controller: home:show 

@@ -6,6 +6,7 @@
 	
 	<script type="text/javascript" src="<?php print WEB_PATH;?>/tiitz/js/jquery-1.9.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href='<?php print WEB_PATH;?>/tiitz/css/bootstrap.css' rel='stylesheet' type='text/css' />
 	<link href='<?php print WEB_PATH;?>/tiitz/css/style-gui.css' rel='stylesheet' type='text/css' />
 </head>					 
 <body>
@@ -81,6 +82,6 @@
 		</div>
 	</div>
 </div>
-	<script type="text/javascript" src="tiitz/js/gui.js"></script>
+	<script type="text/javascript" src="<?php print WEB_PATH;?>/tiitz/js/gui.js"></script>
 </body>
 </html>
