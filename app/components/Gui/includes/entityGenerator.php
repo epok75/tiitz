@@ -95,7 +95,7 @@ function createEntity($tables){
 					return $". "result;
 				}
 				else{
-					tzErrorExtend::catchError(array('Fail delete', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('Fail delete', __FILE__,__LINE__, true));
 					return false;
 				}
 			}
@@ -132,12 +132,12 @@ function createEntity($tables){
 					if($" . "result)
 						return true;
 					else{
-						tzErrorExtend::catchError(array('Fail update', __FILE__,__LINE__, true));
+						DebugTool::\$error->catchError(array('Fail update', __FILE__,__LINE__, true));
 						return false;
 					}
 				}
 				else{
-					tzErrorExtend::catchError(array('Fail update: primkey is null', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('Fail update: primkey is null', __FILE__,__LINE__, true));
 					return false;
 				}
 			}";
@@ -192,7 +192,7 @@ function createEntity($tables){
 					return true;
 				}
 				else{
-					tzErrorExtend::catchError(array('Fail insert', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('Fail insert', __FILE__,__LINE__, true));
 					return false;
 				}
 			}
@@ -225,7 +225,7 @@ function createEntity($tables){
 				if(!empty($" . "entitiesArray))
 					return $" . "entitiesArray;
 				else{
-					tzErrorExtend::catchError(array('No results', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('No results', __FILE__,__LINE__, true));
 					return false;
 				}						
 
@@ -253,7 +253,7 @@ function createEntity($tables){
 
 		$c.="
 					default:
-						tzErrorExtend::catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
+						DebugTool::\$error->catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
 						return false;
 				}
 
@@ -276,7 +276,7 @@ function createEntity($tables){
 					return true;
 				}
 				else{
-					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('Result is null', __FILE__,__LINE__, true));
 					return false;
 				}
 			}
@@ -310,7 +310,7 @@ function createEntity($tables){
 					return true;
 				}
 				else{
-					tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+					DebugTool::\$error->catchError(array('Result is null', __FILE__,__LINE__, true));
 					return false;
 				}
 			}
@@ -341,7 +341,7 @@ function createEntity($tables){
 
 		$c.="
 					default:
-						tzErrorExtend::catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
+						DebugTool::\$error->catchError(array('Colonne introuvable: est-elle presente dans la base de donnée ?', __FILE__,__LINE__, true));
 						return false;
 				}
 
@@ -368,7 +368,7 @@ function createEntity($tables){
 					if($" . "entitiesArray)
 						return $" . "entitiesArray;
 					else{
-						tzErrorExtend::catchError(array('Result is null', __FILE__,__LINE__, true));
+						DebugTool::\$error->catchError(array('Result is null', __FILE__,__LINE__, true));
 						return false;
 					}
 

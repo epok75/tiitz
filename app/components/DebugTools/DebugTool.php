@@ -12,7 +12,7 @@ class DebugTool {
 
 	private function __construct ($frameworkVersion, $params) {
 		self::$toolbar 		= new Toolbar($frameworkVersion);
-		self::$error 		= new ErrorManager();
+		self::$error 		= new ErrorManager($params['error']);
 		self::$errorExtend 	= new ErrorManagerExtend($params);
 	}
 
