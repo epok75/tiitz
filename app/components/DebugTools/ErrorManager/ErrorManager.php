@@ -4,10 +4,11 @@ require_once ROOT.'/app/components/DebugTools/ErrorManager/class/ErrorManagerExt
 class ErrorManager extends ErrorManagerExtend {
 	
 	private $error = array();
+    private $statusError = true;
 
 	/**
 	 * launch php function for managing error
-	 * @param integer $errorReport manage visibility of php error
+	 * @param array $errorReport manage visibility of php error
 	 */
 	public function __construct($params) {
 		// manage fatal error
@@ -43,14 +44,16 @@ class ErrorManager extends ErrorManagerExtend {
 	 * @return void
 	 */
 	public function exception_handler($errno, $errstr, $errfile, $errline) {
-		// construct an array of error
-		$error = array(	'type' 		=> $errno, 
-						'message' 	=> $errstr, 
-						'file' 		=> $errfile, 
-						'line' 		=> $errline,
-						'date' 		=> date("Y-m-d H:i:s")
-						);
-		array_push($this->error, $error);
+        if($this->statusError) {
+            // construct an array of error
+            $error = array(	'type' 		=> $errno,
+                            'message' 	=> $errstr,
+                            'file' 		=> $errfile,
+                            'line' 		=> $errline,
+                            'date' 		=> date("Y-m-d H:i:s")
+                            );
+            array_push($this->error, $error);
+        }
 	}
 	
 	/**
@@ -113,5 +116,9 @@ class ErrorManager extends ErrorManagerExtend {
             default:
                 error_reporting(E_ALL);
         }
+    }
+
+    public function stopError($status){
+        $this->statusError = $status;
     }
 }

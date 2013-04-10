@@ -36,7 +36,7 @@
                     <li class="<?php if(isset($active) && ($active == 'route')){ print 'active'; } ?>"><a href="#">Routes</a></li>
                 </ul>
             </div>
-            <div class="span9">
+            <div class="span9" style="margin-bottom: 50px">
                 <!--Body content-->
 
                 <div>

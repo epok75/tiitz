@@ -28,6 +28,7 @@ class Toolbar {
      * @return array|mixed
      */
     public function phpinfo_array($type = -1, $return=false){
+        DebugTool::$error->stopError(false);
         ob_start();
         phpinfo($type);
 
@@ -60,7 +61,7 @@ class Toolbar {
             foreach($askapache as $m)
                 $pi[$n][$m[1]]=(!isset($m[3])||$m[2]==$m[3])?$m[2]:array_slice($m,2);
         }
-
+        DebugTool::$error->stopError(true);
         return ($return === false) ? print_r($pi) : $pi;
     }
 
