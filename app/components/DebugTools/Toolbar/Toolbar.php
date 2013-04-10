@@ -74,6 +74,9 @@ class Toolbar {
 	public function getPhpIni () {
 		return $this->phpIni;
 	}
+	public function getPhpIniByIndex ($index) {
+		return $this->phpIni[$index];
+	}
 	public function getRoute() {
 		return $this->route;
 	}

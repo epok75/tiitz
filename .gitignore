@@ -5,4 +5,5 @@
 app/.DS_Store
 /.idea
 .idea/*
-
+.DS_Store
+app/components/.DS_Store

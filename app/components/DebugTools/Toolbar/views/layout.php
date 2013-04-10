@@ -7,7 +7,7 @@
 		<div class="tiitz-inner">
 			<ul class="tiitz-nav">
 				<li>
-					<a href="<?php print WEB_PATH; ?>" class="tiitz-home">
+					<a href="<?php print WEB_PATH; ?>/configTiitz/toolbar" class="tiitz-home">
 						<img src="<?php print WEB_PATH; ?>/tiitz/img/home.png" alt="" width="35" height="35" />
 					</a>
 				</li>
@@ -109,7 +109,7 @@
 			   							<div>
 			   								<h3>Sécurités</h3>
 			   								<ul>
-			   									<li><strong>allow_url_fopen : </strong> <?php (DebugTool::$toolbar->getPhpIni()['allow_url_fopen'] == 1) ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
+			   									<li><strong>allow_url_fopen : </strong> <?php (DebugTool::$toolbar->getPhpIniByIndex('allow_url_fopen') == 1) ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
 			   									<li>
 			   										<strong>register_globals : </strong>
 			   										<?php  ini_get('register_globals') ? print ini_get('register_globals') : print 'Supprimé<sup>*</sup>'; ?>
@@ -132,11 +132,11 @@
 			   							<div>
 			   								<h3>Upload</h3>
 			   								<ul>
-			   									<li><strong>file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIni()['file_uploads']; ?></li>
-			   									<li><strong>max_file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIni()['max_file_uploads']; ?></li>
-			   									<li><strong>upload_max_filesize : </strong><?php print DebugTool::$toolbar->getPhpIni()['upload_max_filesize']; ?></li>
-			   									<li><strong>upload_tmp_dir : </strong><?php print DebugTool::$toolbar->getPhpIni()['upload_tmp_dir']; ?></li>
-			   									<li><strong>post_max_size : </strong><?php print DebugTool::$toolbar->getPhpIni()['post_max_size']; ?></li>
+			   									<li><strong>file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('file_uploads'); ?></li>
+			   									<li><strong>max_file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('max_file_uploads'); ?></li>
+			   									<li><strong>upload_max_filesize : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('upload_max_filesize'); ?></li>
+			   									<li><strong>upload_tmp_dir : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('upload_tmp_dir'); ?></li>
+			   									<li><strong>post_max_size : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('post_max_size'); ?></li>
 			   								</ul>
 			   							</div>
 			   						</li>
@@ -144,10 +144,10 @@
 			   							<div>
 			   								<h3>Performances / Divers</h3>
 			   								<ul>
-			   									<li><strong>memory_limit : </strong><?php print DebugTool::$toolbar->getPhpIni()['memory_limit']; ?></li>
-			   									<li><strong>max_execution_time : </strong><?php print DebugTool::$toolbar->getPhpIni()['max_execution_time']; ?></li>
-			   									<li><strong>session.gc_maxlifetime : </strong>  <?php print DebugTool::$toolbar->getPhpIni()['session.gc_maxlifetime']; ?></li>
-			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIni()['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
+			   									<li><strong>memory_limit : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('memory_limit'); ?></li>
+			   									<li><strong>max_execution_time : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('max_execution_time'); ?></li>
+			   									<li><strong>session.gc_maxlifetime : </strong>  <?php print DebugTool::$toolbar->getPhpIniByIndex('session.gc_maxlifetime'); ?></li>
+			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIniByIndex('short_open_tag') == 1 ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
 			   								</ul>
 			   							</div>
 			   						</li>	
