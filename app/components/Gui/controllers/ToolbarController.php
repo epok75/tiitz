@@ -3,6 +3,7 @@
 class ToolbarController {
 
     public function indexAction() {
+        define('PATH_TOOLBAR', 'home');
         $active = 'home';
         require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
     }
@@ -43,6 +44,13 @@ class ToolbarController {
         define('PATH_TOOLBAR', 'phpinfo-module');
         $module = DebugTool::$toolbar->phpinfo_array(8, 1);
         $active = 'module';
+        require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
+    }
+
+    public function logAction() {
+        define('PATH_TOOLBAR', 'log');
+        $logs = DebugTool::$errorExtend->getArrayOfError();
+        $active = 'logs';
         require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
     }
 }

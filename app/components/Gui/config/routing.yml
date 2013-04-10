@@ -18,7 +18,7 @@ endingInstall:
 #    	_method: POST
 
 entityGenerator:
-    pattern:    /configTiitz/entityGenerator
+    pattern:    /configTiitz/toolbar/entityGenerator
     controller: generator:generateEntity
 
 entityResumeInfo:
@@ -49,3 +49,7 @@ toolbarPHPInfoVariable:
 toolbarPHPInfoModule:
 	pattern:    /configTiitz/toolbar/phpinfo/module
 	controller: Toolbar:phpinfoModule
+
+toolbarLog:
+	pattern:    /configTiitz/toolbar/log
+	controller: Toolbar:log	
