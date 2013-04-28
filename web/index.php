@@ -1,6 +1,7 @@
 <?php
 $start = microtime(true);
-require_once("../app/kernel.php");
+require_once("../app/tzKernel.php");
+tzKernel::execute();
 
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {

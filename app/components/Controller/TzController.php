@@ -10,11 +10,10 @@ class TzController {
     public $tzValidator;
     private static $tiitzVersion = '0.3';
     
-    public function __construct(array $tzData) {
-        $this->tiitzData    = $tzData;
-        $this->conf         = $tzData["conf"];
-        $this->route        = $tzData["route"];
-        $this->tzRender     = $tzData["tzRender"];
+    public function __construct() {
+        $this->conf         = tzKernel::$tzConf;
+        $this->route        = tzKernel::$tzRoute;
+        $this->tzRender     = tzKernel::$tzRender;
     }
 
     // Made by Tiitz team for Mister Gael Coat, special dedicasse !
@@ -22,8 +21,8 @@ class TzController {
         $Controller .= "Controller";
         $Action     .= "Action";
 
-        if (is_file(ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php')) {
-            require_once ROOT.$this->tiitzData['route']['dirPath'].$controller.'.php';
+        if (is_file(ROOT.tzKernel::$tzRoute['dirPath'].$controller.'.php')) {
+            require_once ROOT.tzKernel::$tzRoute['dirPath'].$controller.'.php';
 
             if (class_exists($controller)) {
                 $newController = new $controller($this->tiitzData);
