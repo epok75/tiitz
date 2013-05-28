@@ -24,4 +24,3 @@
 	    <?php endforeach; ?>
     </tbody>
 </table>
-<?php print '<pre>'; var_dump($logs);print '</pre>'; ?>
