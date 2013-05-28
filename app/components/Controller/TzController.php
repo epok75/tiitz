@@ -8,6 +8,7 @@ class TzController {
     public $route;
     public $tzPlugin;
     public $tzValidator;
+    public $Auth;
     private static $tiitzVersion = '0.3';
     
     public function __construct(array $tzData) {
@@ -15,6 +16,7 @@ class TzController {
         $this->conf         = $tzData["conf"];
         $this->route        = $tzData["route"];
         $this->tzRender     = $tzData["tzRender"];
+        $this->Auth         = new TzAuth;
     }
 
     // Made by Tiitz team for Mister Gael Coat, special dedicasse !

@@ -191,7 +191,7 @@
 			   	<li class="tiitz-divider"></li>
 			   	<li>
 			   		<a href="#">
-			   			<strong>Time Loading Page : </strong><?php print DebugTool::$toolbar->getTimeLoadingPage(); ?>
+			   			<?php print DebugTool::$toolbar->getTimeLoadingPage(); ?><strong>sec</strong>
 			   		</a>
 			   	</li>
 			   	<li class="tiitz-divider"></li>
