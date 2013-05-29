@@ -102,7 +102,7 @@ class tzKernel
 
 	private static function getDatabase() {
 
-		if(!empty(self::$tzConf['database']['user']) && $existingProject === true) {
+		if(!empty(self::$tzConf['database']['user']) && self::$tzConf["existingproject"] === true) {
 			TzSQL::getInstance(self::$tzConf['database']['host'], 
 								self::$tzConf['database']['user'], 
 								self::$tzConf['database']['password'], 
@@ -146,9 +146,9 @@ class tzKernel
 	        	}
 	        }
 	        else
-	            DebugTool::$error->catchError(array("No action ".$route["action"]." Found", __FILE__,__LINE__));
+	            DebugTool::$error->catchError(array("No action ".self::$tzRoute["action"]." Found", __FILE__,__LINE__));
 	    }
 	    else
-	        DebugTool::$error->catchError(array("No Class ".$route["className"]." Found", __FILE__,__LINE__));
+	        DebugTool::$error->catchError(array("No Class ".self::$tzRoute["className"]." Found", __FILE__,__LINE__));
 	}
 }
