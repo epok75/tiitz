@@ -1,4 +1,4 @@
-<div id="currentError" style="display:none;">
+<div id="currentError" style="display:block;">
 	<div class="modal-body">
 		<?php 
 			foreach (DebugTool::$errorExtend->getTemplateHTMLError() as $value) {

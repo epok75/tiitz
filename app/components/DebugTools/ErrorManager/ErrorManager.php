@@ -1,17 +1,22 @@
 <?php
-class ErrorManager {
+require_once ROOT.'/app/components/DebugTools/ErrorManager/class/ErrorManagerExtend.php';
+
+class ErrorManager extends ErrorManagerExtend {
 	
 	private $error = array();
+    private $statusError = true;
 
 	/**
 	 * launch php function for managing error
-	 * @param integer $errorReport manage visibility of php error
+	 * @param array $errorReport manage visibility of php error
 	 */
-	public function __construct() {
+	public function __construct($params) {
 		// manage fatal error
 		register_shutdown_function(array($this, 'callRegisteredShutdown'));
 		// manage warning and other error not fatal
 		set_error_handler(array($this, 'exception_handler'));
+        // Manage error_reporting
+        $this->errorVisibility($params["visibility"]);
 	}
 
 	/**
@@ -21,12 +26,13 @@ class ErrorManager {
 	public function callRegisteredShutdown() {
 		// get last error
 		$error = error_get_last();
-		
-		if($error != null){
+        if($error != null){
 			// add date to the array error
 			$error['date'] = date("Y-m-d H:i:s");
 			array_push($this->error, $error);
 		}
+        $this->initExtendError($error);
+
 	}
 
 	/**
@@ -38,14 +44,16 @@ class ErrorManager {
 	 * @return void
 	 */
 	public function exception_handler($errno, $errstr, $errfile, $errline) {
-		// construct an array of error
-		$error = array(	'type' 		=> $errno, 
-						'message' 	=> $errstr, 
-						'file' 		=> $errfile, 
-						'line' 		=> $errline,
-						'date' 		=> date("Y-m-d H:i:s")
-						);
-		array_push($this->error, $error);
+        if($this->statusError) {
+            // construct an array of error
+            $error = array(	'type' 		=> $errno,
+                            'message' 	=> $errstr,
+                            'file' 		=> $errfile,
+                            'line' 		=> $errline,
+                            'date' 		=> date("Y-m-d H:i:s")
+                            );
+            array_push($this->error, $error);
+        }
 	}
 	
 	/**
@@ -96,4 +104,21 @@ class ErrorManager {
 	public function getError() {
 		return $this->error;
 	}
+
+    public function errorVisibility($type) {
+        switch($type) {
+            case 0: error_reporting(0); break;
+            case 1: error_reporting(E_ERROR | E_WARNING | E_PARSE); break;
+            case 2: error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE); break;
+            case 3: error_reporting(E_ALL ^ (E_NOTICE | E_WARNING)); break;
+            case 4: error_reporting(E_ALL ^ E_NOTICE); break;
+            case 5: error_reporting(E_ALL); break;
+            default:
+                error_reporting(E_ALL);
+        }
+    }
+
+    public function stopError($status){
+        $this->statusError = $status;
+    }
 }

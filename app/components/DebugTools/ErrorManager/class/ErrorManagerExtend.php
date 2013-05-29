@@ -1,8 +1,5 @@
 <?php
-use DebugTool\DebugTool;
-/**
- * 
- */
+
 class ErrorManagerExtend {
 
 	private $logFile 				= "error.log";
@@ -15,9 +12,9 @@ class ErrorManagerExtend {
 	private $templateHTMLError 		= array();
 
 	public function __construct (array $params) {
-		$this->logPath 		= $params['logPath'];
-		$this->saveInLog 	= $params['save'];
-		$this->displayError = $params['display'];
+        $this->logPath 		= $params['error']['path'];
+		$this->saveInLog 	= $params['error']['save'];
+		$this->displayError = $params['toolbar']['display'];
 	}
 
 	/**
@@ -26,6 +23,7 @@ class ErrorManagerExtend {
 	 * @return void         
 	 */
 	public function initExtendError (array $error) {
+
 		if ($this->saveInLog) {
 			$this->save($error);
 		}
@@ -34,13 +32,19 @@ class ErrorManagerExtend {
 				$this->errorTpl($singleError);
 			}
 		}
+
+        // Manage case if error is fatal
+        if (in_array($error['type'], $this->phpFatalErrorsCode)) {
+            $this->save($error);
+            $this->errorTpl($error);
+        }
 	}
 
-	/**
-	 * Save the error in the log file
-	 * @return void
-	 */
-	public function save(array $params){
+    /**
+     * Save the error in the log file
+     * @param array $params
+     */
+    public function save(array $params){
 		$line = '';
 		$i = 1;
 		foreach ($params as $array) {
@@ -96,9 +100,13 @@ class ErrorManagerExtend {
 		$this->phpCodeTpl($store, $error['file'], $error['line'],$error['type']);
 	}
 
-	public function phpCodeTpl($output, $filename, $lineError, $errorType) { 
-		
+	public function phpCodeTpl($output, $filename, $lineError, $errorType) {
+
 	    if(file_exists($filename) && is_file($filename)) { 
+
+            // display only 10 lines before and after the error.
+            $beginErrorDisplay  = ($lineError > 10) ? ($lineError - 10) : $lineError;
+            $endErrorDisplay    = $lineError + 10;
 
 	        $output .= '<pre  class="accordion" id="accordion2" style="margin: 0px auto;padding: 0px 8px;"><code><span style="color: '.ini_get('highlight.html').';font-size: 12px;">'; 
 	        
@@ -111,19 +119,21 @@ class ErrorManagerExtend {
 	        
 			$output .= '<div id="collapse" class="accordion-body collapse">';
 	        foreach($lines as $line) 
-	        {   
-	        	$output .= "<p style='margin:auto;'";
-	        	if ($start_line%2 == 0) {
-	        		$output .= "background-color:#f1f1f1;'";
-	        	}
-	        	$output .= ">";
-	        	$nline = str_pad($start_line, $chr_lines, ' ', STR_PAD_LEFT); 
-		        if($lineError == $start_line) {
-		        	$output .= '<span style="color: #f1f1f1; background-color: red;" class="php_highlight_line">'.$nline. ': '.$line."</span>\n"; 
-		        }  else {
-		        	$output .= '<span style="color: grey;" class="php_highlight_line">'.$nline. ':</span> '.$line."\n"; 
-		        } 
-		        $output .= "</p>"; 
+	        {
+                if($start_line >= $beginErrorDisplay && $start_line < $endErrorDisplay) {
+                    $output .= "<p style='margin:auto;'";
+                    if ($start_line%2 == 0) {
+                        $output .= "background-color:#f1f1f1;'";
+                    }
+                    $output .= ">";
+                    $nline = str_pad($start_line, $chr_lines, ' ', STR_PAD_LEFT);
+                    if($lineError == $start_line) {
+                        $output .= '<span style="color: #f1f1f1; background-color: red;" class="php_highlight_line">'.$nline. ': '.$line."</span>\n";
+                    }  else {
+                        $output .= '<span style="color: grey;" class="php_highlight_line">'.$nline. ':</span> '.$line."\n";
+                    }
+                    $output .= "</p>";
+                }
 		        $start_line ++; 
 		    } 
 	        $output	.= '</div>';

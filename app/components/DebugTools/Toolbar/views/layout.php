@@ -1,18 +1,18 @@
 <?php
 	require ('tplError.php');
-	require ('tplLog.php');
+	// require ('tplLog.php');
 ?>
 <div class="tiitz-toolbar">
 	<div class="tiitz-navbar">
 		<div class="tiitz-inner">
 			<ul class="tiitz-nav">
 				<li>
-					<a href="<?php print WEB_PATH; ?>" class="tiitz-home">
+					<a href="<?php print WEB_PATH; ?>/configTiitz/toolbar" class="tiitz-home">
 						<img src="<?php print WEB_PATH; ?>/tiitz/img/home.png" alt="" width="35" height="35" />
 					</a>
 				</li>
 				<li class="tiitz-divider"></li>
-				<li>
+				<li class="tiitz-active">
 					<a class="tiitz-brand tiitz-toolbar-nav" href="#">
 						<img src="<?php print WEB_PATH; ?>/tiitz/img/toolbar-tiitz.png" id="tiitz-logo" /> <span id="tiitz-version"><?php print DebugTool::$toolbar->getFrameworkVersion(); ?></span>
 					</a>
@@ -99,7 +99,7 @@
 					</ul>	
 				</li>
 				<li class="tiitz-divider"></li>
-				<li><a href="#" class="tiitz-toolbar-nav"><strong>PHP : </strong><?php print DebugTool::$toolbar->getPhpVersion(); ?></a>
+				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><strong>PHP : </strong><?php print DebugTool::$toolbar->getPhpVersion(); ?></a>
 				   	<ul id="toolbar-php-version" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -109,7 +109,7 @@
 			   							<div>
 			   								<h3>Sécurités</h3>
 			   								<ul>
-			   									<li><strong>allow_url_fopen : </strong> <?php (DebugTool::$toolbar->getPhpIni()['allow_url_fopen'] == 1) ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
+			   									<li><strong>allow_url_fopen : </strong> <?php (DebugTool::$toolbar->getPhpIniByIndex('allow_url_fopen') == 1) ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
 			   									<li>
 			   										<strong>register_globals : </strong>
 			   										<?php  ini_get('register_globals') ? print ini_get('register_globals') : print 'Supprimé<sup>*</sup>'; ?>
@@ -132,11 +132,11 @@
 			   							<div>
 			   								<h3>Upload</h3>
 			   								<ul>
-			   									<li><strong>file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIni()['file_uploads']; ?></li>
-			   									<li><strong>max_file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIni()['max_file_uploads']; ?></li>
-			   									<li><strong>upload_max_filesize : </strong><?php print DebugTool::$toolbar->getPhpIni()['upload_max_filesize']; ?></li>
-			   									<li><strong>upload_tmp_dir : </strong><?php print DebugTool::$toolbar->getPhpIni()['upload_tmp_dir']; ?></li>
-			   									<li><strong>post_max_size : </strong><?php print DebugTool::$toolbar->getPhpIni()['post_max_size']; ?></li>
+			   									<li><strong>file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('file_uploads'); ?></li>
+			   									<li><strong>max_file_uploads : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('max_file_uploads'); ?></li>
+			   									<li><strong>upload_max_filesize : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('upload_max_filesize'); ?></li>
+			   									<li><strong>upload_tmp_dir : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('upload_tmp_dir'); ?></li>
+			   									<li><strong>post_max_size : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('post_max_size'); ?></li>
 			   								</ul>
 			   							</div>
 			   						</li>
@@ -144,10 +144,10 @@
 			   							<div>
 			   								<h3>Performances / Divers</h3>
 			   								<ul>
-			   									<li><strong>memory_limit : </strong><?php print DebugTool::$toolbar->getPhpIni()['memory_limit']; ?></li>
-			   									<li><strong>max_execution_time : </strong><?php print DebugTool::$toolbar->getPhpIni()['max_execution_time']; ?></li>
-			   									<li><strong>session.gc_maxlifetime : </strong>  <?php print DebugTool::$toolbar->getPhpIni()['session.gc_maxlifetime']; ?></li>
-			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIni()['short_open_tag'] == 1 ? print '<span style="color:red;">True</span>' : print 'False';; ?></li>
+			   									<li><strong>memory_limit : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('memory_limit'); ?></li>
+			   									<li><strong>max_execution_time : </strong><?php print DebugTool::$toolbar->getPhpIniByIndex('max_execution_time'); ?></li>
+			   									<li><strong>session.gc_maxlifetime : </strong>  <?php print DebugTool::$toolbar->getPhpIniByIndex('session.gc_maxlifetime'); ?></li>
+			   									<li><strong>short_open_tag : </strong><?php DebugTool::$toolbar->getPhpIniByIndex('short_open_tag') == 1 ? print '<span style="color:red;">True</span>' : print 'False'; ?></li>
 			   								</ul>
 			   							</div>
 			   						</li>	
@@ -159,7 +159,7 @@
 			   		</ul>	
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-			   	<li><a href="#" class="tiitz-toolbar-nav"><strong>Configuration</strong></a>
+			   	<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><strong>Configuration</strong></a>
 					<ul id="toolbar-config" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -175,7 +175,7 @@
 			   		</ul>
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-				<li><a href="#" class="tiitz-toolbar-nav"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
+				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
 					<ul id="toolbar-file-controller" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
@@ -191,7 +191,7 @@
 			   	<li class="tiitz-divider"></li>
 			   	<li>
 			   		<a href="#">
-			   			<strong>Time Loading Page : </strong><?php print DebugTool::$toolbar->getTimeLoadingPage(); ?>
+			   			<?php print DebugTool::$toolbar->getTimeLoadingPage(); ?><strong>sec</strong>
 			   		</a>
 			   	</li>
 			   	<li class="tiitz-divider"></li>
@@ -202,7 +202,7 @@
 				<li class="tiitz-divider"></li>
 				<?php endif; ?>
 				<li>
-			   		<a href="#" id="opener-log" >Fichier de logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
+			   		<a href="#" id="opener-log" >logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
 			   																  print ' (0)'; ?></a>
 			 	</li>
 			   	<li class="tiitz-divider"></li>
@@ -253,80 +253,7 @@
 
 	LoadjQueryUI();
  		
-	window.onload = function () {
-		$( "#currentError" ).dialog(
-			{ 
-				autoOpen: false, 
-			  	width : 860,
-			  	height: 400, 
-			  	title: "Tittz Error"		
-			}
-		);
-		$( "#myLogError" ).dialog(
-			{ 
-				autoOpen: false, 
-			  	width : 860, 
-			  	height: 400,
-			  	title: "Log error"		
-			}
-		);
 
-		$( "#opener-error" ).click(function() {
-			if ($("a.tiitz-toolbar-nav").hasClass('tiitz-active')) {
-				$("a.tiitz-toolbar-nav").removeClass('tiitz-active');
-				$("a.tiitz-toolbar-nav").each(function(inc) {
-					$(this).next().hide();
-				})
-			};
-			if ($("#myLogError").is(":visible")) {
-				$( "#myLogError" ).dialog( "close" );
-				$( "#opener-log" ).removeClass('tiitz-active');
-			}
-			if ($("#currentError").is(":visible")) {
-				$( "#currentError" ).dialog( "close" );
-			} else {
-				$( "#currentError" ).dialog( "open" );
-			}
-		});
-		$( "#opener-log" ).click(function() {
-			if ($("a.tiitz-toolbar-nav").hasClass('tiitz-active')) {
-				$("a.tiitz-toolbar-nav").removeClass('tiitz-active');
-				$("a.tiitz-toolbar-nav").each(function(inc) {
-					$(this).next().hide();
-				})
-			};
-			if ($("#currentError").is(":visible")) {
-				$( "#currentError" ).dialog( "close" );
-			}
-			if ($("#myLogError").is(":visible")) {
-				$( "#myLogError" ).dialog( "close" );
-				$( "#opener-log" ).removeClass('tiitz-active');
-			} else {
-				$( "#myLogError" ).dialog( "open" );
-				$( "#opener-log" ).addClass('tiitz-active');
-			}
-		});
-		// menu link
-		$( ".tiitz-nav > li > a.tiitz-toolbar-nav" ).click(function() {
-			if ($("#myLogError").is(":visible")) {
-				$("#myLogError").dialog( "close" );
-				$("#opener-log").removeClass('tiitz-active');
-			}
-			if ($("#currentError").is(":visible")) {
-				$("#currentError").dialog( "close" );
-			}
-			if ($(this).hasClass('tiitz-active')) {
-				$(this).removeClass('tiitz-active');
-				$(this).next().hide();
-			} else {
-				$(".tiitz-nav > li > a").removeClass('tiitz-active');
-				$(".tiitz-nav > li > a").next().hide();
-				$( this ).addClass('tiitz-active');
-				$(this).next().show();
-			}
-		});
-		
-	}
 </script>
 </body>
 </html>
