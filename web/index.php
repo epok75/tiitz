@@ -4,7 +4,7 @@ require_once("../app/tzKernel.php");
 tzKernel::execute();
 
 // toolbar for development environment
-if($conf['environnement'] == 'dev') {
+if(tzkernel::$tzConf['environnement'] == 'dev') {
 	// Calcul time loading page
 	DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
 	// process of managing error
