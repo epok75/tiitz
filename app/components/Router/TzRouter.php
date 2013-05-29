@@ -158,9 +158,9 @@ class TzRouter {
 				self::$arrayRoute['params'] = $selectedRoute['params'];
 			}
 		}
-		else {
+		/*else {
 			DebugTool::$error->catchError(array('No Route Found', __FILE__,__LINE__, true));
-		}
+		}*/
 		#var_dump(self::$arrayRoute);
 		return self::$arrayRoute;
 	}
