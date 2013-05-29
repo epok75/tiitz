@@ -1,13 +1,14 @@
 <?php
 $start = microtime(true);
-require_once("../app/kernel.php");
+require_once("../app/tzKernel.php");
+tzKernel::execute();
 
 // toolbar for development environment
 if($conf['environnement'] == 'dev') {
+	// Calcul time loading page
+	DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
 	// process of managing error
 	DebugTool::$errorExtend->initExtendError(DebugTool::$error->getError());
-    // Calcul time loading page
-    DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
-    // load Toolbar and display it
+	// load Toolbar and display it
 	require_once DebugTool::$toolbar->getPathToToolbar();
 }
