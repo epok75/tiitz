@@ -11,6 +11,8 @@ class tzKernel
 	// The configuration set by the users of the framework
 	public static $tzConf;
 
+	public static $tzDevConf;
+
 	// The render object containing all the informations to print the view
 	public static $tzRender;
 
@@ -70,6 +72,7 @@ class tzKernel
 	private static function getConfiguration() {
 
 		self::$tzConf = Spyc::YAMLLoad(ROOT.'/app/config/config.yml');
+		self::$tzDevConf = Spyc::YAMLLoad(ROOT.'/app/config/config_dev.yml');
 	}
 
 	private static function getRender() {
@@ -91,10 +94,7 @@ class tzKernel
 	private static function initTools() {
 
 		// Error manager
-		DebugTool::initDebugTools('0.3', array("save"	=>true,
-								  "display"	=>true,
-								  "logPath"	=>"../app/log/")
-								  );
+		DebugTool::initDebugTools('0.3', self::$tzDevConf);
 
 		if (!empty(self::$tzConf["existingproject"]) && self::$tzConf["existingproject"] === true)
 			self::$existingProject = true;
@@ -103,10 +103,10 @@ class tzKernel
 	private static function getDatabase() {
 
 		if(!empty(self::$tzConf['database']['user']) && $existingProject === true) {
-		TzSQL::getInstance(self::$tzConf['database']['host'], 
-							self::$tzConf['database']['user'], 
-							self::$tzConf['database']['password'], 
-							self::$tzConf['database']['dbname']);
+			TzSQL::getInstance(self::$tzConf['database']['host'], 
+								self::$tzConf['database']['user'], 
+								self::$tzConf['database']['password'], 
+								self::$tzConf['database']['dbname']);
 		}
 	}
 
@@ -146,9 +146,9 @@ class tzKernel
 	        	}
 	        }
 	        else
-	            tzErrorExtend::catchError(array("No action ".self::$tzRoute["action"]." Found", __FILE__,__LINE__));
+	            DebugTool::$error->catchError(array("No action ".$route["action"]." Found", __FILE__,__LINE__));
 	    }
 	    else
-	        tzErrorExtend::catchError(array("No Class ".self::$tzRoute["className"]." Found", __FILE__,__LINE__));
+	        DebugTool::$error->catchError(array("No Class ".$route["className"]." Found", __FILE__,__LINE__));
 	}
 }
