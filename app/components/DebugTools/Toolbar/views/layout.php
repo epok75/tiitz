@@ -164,25 +164,25 @@
 			   			<li>
 			   				<div>
 			   					<ul>
-			   						<li><strong>Base de donn&eacute;es </strong>: <?php isset($conf['database']['dbname']) && !empty($conf['database']['dbname']) ? print $conf['database']['dbname'] : print 'none'; ?></li>
-			   						<li><strong>Moteur de template </strong>: <?php isset($conf['template']) ? print $conf['template'] : print 'php'; ?></li>
-			   						<li><strong>Environnement </strong>: <?php isset($conf['environnement']) ? print $conf['environnement']: print ''; ?></li>
-			   						<li><strong>Langue </strong>: <?php isset($conf['language']) ? print $conf['language'] : print ''; ?></li>
-			   						<li><strong>Route </strong>: <?php isset($conf['routingType']) ? print $conf['routingType'] : print ''; ?></li>
+			   						<li><strong>Base de donn&eacute;es </strong>: <?php isset(tzKernel::$tzConf['database']['dbname']) && !empty(tzKernel::$tzConf['database']['dbname']) ? print tzKernel::$tzConf['database']['dbname'] : print 'none'; ?></li>
+			   						<li><strong>Moteur de template </strong>: <?php isset(tzKernel::$tzConf['template']) ? print tzKernel::$tzConf['template'] : print 'php'; ?></li>
+			   						<li><strong>Environnement </strong>: <?php isset(tzKernel::$tzConf['environnement']) ? print tzKernel::$tzConf['environnement']: print ''; ?></li>
+			   						<li><strong>Langue </strong>: <?php isset(tzKernel::$tzConf['language']) ? print tzKernel::$tzConf['language'] : print ''; ?></li>
+			   						<li><strong>Route </strong>: <?php isset(tzKernel::$tzConf['routingType']) ? print tzKernel::$tzConf['routingType'] : print ''; ?></li>
 			   					</ul>
 			   				</div>
 			   			</li>
 			   		</ul>
 			   	</li>
 			   	<li class="tiitz-divider"></li>
-				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><?php isset($route['className']) ? print $route['className']:''; ?> : <?php isset($route['action']) ? print $route['action']:''; ?></a>
+				<li class="tiitz-active"><a href="#" class="tiitz-toolbar-nav"><?php isset(tzKernel::$tzRoute['className']) ? print tzKernel::$tzRoute['className']:''; ?> : <?php isset(tzKernel::$tzRoute['action']) ? print tzKernel::$tzRoute['action']:''; ?></a>
 					<ul id="toolbar-file-controller" class="tiitz-toolbar-info">
 			   			<li>
 			   				<div>
 			   					<ul>
-			   						<li><strong>Controller </strong>: <?php isset($route['className']) ? print $route['className']:''; ?></li>
-			   						<li><strong>Method </strong>: <?php isset($route['action']) ? print $route['action']:''; ?></li>
-			   						<li><strong>Path </strong>: <?php isset($route['path']) ? print $route['path']:''; ?></li>
+			   						<li><strong>Controller </strong>: <?php isset(tzKernel::$tzRoute['className']) ? print tzKernel::$tzRoute['className']:''; ?></li>
+			   						<li><strong>Method </strong>: <?php isset(tzKernel::$tzRoute['action']) ? print tzKernel::$tzRoute['action']:''; ?></li>
+			   						<li><strong>Path </strong>: <?php isset(tzKernel::$tzRoute['path']) ? print tzKernel::$tzRoute['path']:''; ?></li>
 			   					</ul>
 			   				</div>
 			   			</li>
