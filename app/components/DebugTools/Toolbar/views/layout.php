@@ -202,7 +202,7 @@
 				<li class="tiitz-divider"></li>
 				<?php endif; ?>
 				<li>
-			   		<a href="#" id="opener-log" >logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".count(DebugTool::$errorExtend->getArrayOfError()).")" :
+			   		<a href="#" id="opener-log" >logs <?php (count(DebugTool::$errorExtend->getArrayOfError()) > 0)? print "(".(count(DebugTool::$errorExtend->getArrayOfError()) / 2).")" :
 			   																  print ' (0)'; ?></a>
 			 	</li>
 			   	<li class="tiitz-divider"></li>

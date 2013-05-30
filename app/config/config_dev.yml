@@ -3,6 +3,6 @@ toolbar:
     display: true
 
 error:
-    visibility: 0 #read documentation to know the differents level
+    visibility: 5 #read documentation to know the differents level
     path: ../app/log/
     save: true

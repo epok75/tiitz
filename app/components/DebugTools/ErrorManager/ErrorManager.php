@@ -30,8 +30,9 @@ class ErrorManager extends ErrorManagerExtend {
 			// add date to the array error
 			$error['date'] = date("Y-m-d H:i:s");
 			array_push($this->error, $error);
+			$this->initExtendError($error);
 		}
-        $this->initExtendError($error);
+        
 
 	}
 
@@ -52,6 +53,7 @@ class ErrorManager extends ErrorManagerExtend {
                             'line' 		=> $errline,
                             'date' 		=> date("Y-m-d H:i:s")
                             );
+            DebugTool::$errorExtend->errorTpl($error);	
             array_push($this->error, $error);
         }
 	}
@@ -63,7 +65,6 @@ class ErrorManager extends ErrorManagerExtend {
 	 * @return void
 	 */
 	public function catchError($e, $die = false) {
-
 		if (is_object($e)) {
 
 			// try/catch
@@ -94,6 +95,7 @@ class ErrorManager extends ErrorManagerExtend {
 			);
 		}
 		array_push($this->error, $error);
+		DebugTool::$errorExtend->errorTpl($error);
 		if ($die === true) {
 			die();
 		}

@@ -111,7 +111,6 @@ class tzKernel
 	}
 
 	private static function route() {
-
 		if (is_file(ROOT.self::$tzRoute["path"])) {
 			require_once ROOT.self::$tzRoute["path"];
 

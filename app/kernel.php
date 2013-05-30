@@ -19,7 +19,7 @@
 	}
 	// Error manager
 	DebugTool::initDebugTools('0.3', $conf_dev);
-
+	echo $lol;
 	if (!empty($conf["template"]))
 		$tzRender = TzRender::getInstance($conf["template"]);
 	else

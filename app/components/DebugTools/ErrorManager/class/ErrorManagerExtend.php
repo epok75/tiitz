@@ -23,21 +23,20 @@ class ErrorManagerExtend {
 	 * @return void         
 	 */
 	public function initExtendError (array $error) {
-
 		if ($this->saveInLog) {
 			$this->save($error);
 		}
 		if ($this->displayError) {
-			foreach ($error as $singleError) {
-				$this->errorTpl($singleError);
-			}
+			// foreach ($error as $singleError) {
+			// 	$this->errorTpl($singleError);
+			// }
 		}
 
-        // Manage case if error is fatal
-        if (in_array($error['type'], $this->phpFatalErrorsCode)) {
-            $this->save($error);
-            $this->errorTpl($error);
-        }
+        // // Manage case if error is fatal
+        // if (in_array($error['type'], $this->phpFatalErrorsCode)) {
+        //     $this->save($error);
+        //     $this->errorTpl($error);
+        // }
 	}
 
     /**
@@ -141,12 +140,12 @@ class ErrorManagerExtend {
 	        
 	        $this->numberOfcurrentError++;
 
-        	array_push($this->templateHTMLError, $output);
+        	// array_push($this->templateHTMLError, $output);
         	// when a fatal error occur, the toobar can't be display
         	// so we print directly the message error send by php
-        	if (in_array($errorType, $this->phpFatalErrorsCode)) {
+        	// if (in_array($errorType, $this->phpFatalErrorsCode)) {
         		print $output;
-        	}
+        	// }
 		} 
 	} 
 
