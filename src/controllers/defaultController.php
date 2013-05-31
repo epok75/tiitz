@@ -14,8 +14,14 @@ class defaultController extends TzController {
 			);
 		tzAuth::login($userInfo);
 		var_dump(tzAuth::readUser());
+		//tzAuth::logout();
+		//var_dump(tzAuth::readUser());
+		$this->tzRender->run('/templates/default');                                                        
+	}
+
+	public function logoutAction(){
 		tzAuth::logout();
 		var_dump(tzAuth::readUser());
-		$this->tzRender->run('/templates/default');                                                        
+		$this->tzRender->run('/templates/default');    
 	}
 }

@@ -3,10 +3,20 @@ default:
 	pattern:	 / 
 	controller: default:show
 	requirements :
-		allow_group: members|operators
+		exclude_groups: operators
+		only_connected: true
 
 default_show:
 	pattern:	 /operator
 	controller: default:show
 	requirements :
-		allow_group: operators
+		allow_groups   : operators
+		exclude_groups : members
+
+default_login:
+	pattern:	 /login
+	controller: default:show
+
+default_logout:
+	pattern:	 /logout
+	controller: default:logout

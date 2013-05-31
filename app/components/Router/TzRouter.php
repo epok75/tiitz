@@ -156,6 +156,18 @@ class TzRouter {
 				self::$arrayRoute['action'] = $arrayController[1].'Action';
                                 self::$arrayRoute['className'] = $arrayController[0].'Controller';
 				self::$arrayRoute['params'] = $selectedRoute['params'];
+				if(!empty($selectedRoute['requirements'])){
+					if(!empty($selectedRoute['requirements']['allow_groups'])){
+						self::$arrayRoute['requirements']['allow_groups'] = $selectedRoute['requirements']['allow_groups'];
+					}
+					if(!empty($selectedRoute['requirements']['exclude_groups'])){
+						self::$arrayRoute['requirements']['exclude_groups'] = $selectedRoute['requirements']['exclude_groups'];
+					}
+					if(!empty($selectedRoute['requirements']['only_connected'])){
+						self::$arrayRoute['requirements']['only_connected'] = $selectedRoute['requirements']['only_connected'];
+					}
+
+				}
 			}
 		}
 		/*else {

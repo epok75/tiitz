@@ -7,7 +7,7 @@ template:    twig
 # database configuration
 database:
     user:		root
-    password:		root
+    password:	root
     dbname:		tzTest
     host:		localhost
     engine:		mysql
@@ -23,4 +23,4 @@ existingproject:    true
 
 #security
 salt:	EnterYourSaltHere
-redirect_non_authorized: /home/bitch
+redirect_non_authorized: /home/forbidden
