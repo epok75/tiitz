@@ -95,6 +95,10 @@ class tzKernel
 
 		// Error manager
 		DebugTool::initDebugTools('0.3', self::$tzDevConf);
+		// tzAuth
+		if(!empty(self::$tzConf['auth']['salt']) && self::$tzConf["existingproject"] === true){
+			TzAuth::init(self::$tzConf['auth']['salt']);
+		}
 
 		if (!empty(self::$tzConf["existingproject"]) && self::$tzConf["existingproject"] === true)
 			self::$existingProject = true;

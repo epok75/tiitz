@@ -1,0 +1,12 @@
+
+default:
+	pattern:	 / 
+	controller: default:show
+	requirements :
+		allow_group: members|operators
+
+default_show:
+	pattern:	 /operator
+	controller: default:show
+	requirements :
+		allow_group: operators

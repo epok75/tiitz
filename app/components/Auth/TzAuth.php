@@ -2,12 +2,13 @@
 
 
 class TzAuth {
-
-    private static $tiitzVersion = '0.3';
     
-    private $salt = 'awdOsmA||//DOEWPopjk%[awd[@0}}{adwdakl';
+    private static $salt = '';
 
-    public function login(array $values) {
+    public static function init($salt){
+        self::$salt = $salt;
+    }
+    public static function login(array $values) {
         if(is_null(TzSQL::getPDO())){
             return false;
         }
@@ -19,7 +20,7 @@ class TzAuth {
                 $query .= ' AND ';
             }
             if($field == 'password'){
-                $value = $this->encryptPwd($value);
+                $value = self::encryptPwd($value);
             }
             $query .= $field.' = "'.$value.'"';
 
@@ -30,44 +31,54 @@ class TzAuth {
         $data->execute();
         $user = $data->fetchAll(PDO::FETCH_ASSOC);
         if(!empty($user)){
-            $this->addUserSession($user[0]);
+            self::addUserSession($user[0]);
             return true;
         } else {
             return false;
         }
     }
 
-    public function logout() {
-       if(!$this->isUserLoggedIn()){
+    public static function logout() {
+       if(!self::isUserLoggedIn()){
             return "__ERROR NO USER__";
         }
-        $this->emptyUserSession();
+        self::emptyUserSession();
     }
 
-    public function isUserLoggedIn(){
+    public static function isUserLoggedIn(){
         return(!empty($_SESSION['User']));
     }
 
-    public function addSession(string $fieldName, mixed $value){
-        $_SESSION['Data'][$fieldName] = $value;
-    }
-
-    private function addUserSession(array $data){
-        foreach ($data as $field => $value) {
-            $_SESSION['User'][$field] = $value;
+    public static function addSession($data, $value = null){
+        if(is_null($value)){
+            foreach ($data as $field => $value) {
+                $_SESSION['Data'][$field] = $value;
+            } 
+        } else {
+            $_SESSION['Data'][$fieldName] = $value;
         }
     }
 
-    public function emptySessionData(){
+    private static function addUserSession($data, $value = null){
+        if(is_null($value)){
+            foreach ($data as $field => $value) {
+                $_SESSION['User'][$field] = $value;
+            } 
+        } else {
+            $_SESSION['User'][$fieldName] = $value;
+        }
+    }
+
+    public static function emptySessionData(){
         $_SESSION['Data'] = array();
     }
 
-    private function emptyUserSession(){
+    private static function emptyUserSession(){
         $_SESSION['User'] = array();
     }
 
-    public function readUser($field = null){
-        if(!$this->isUserLoggedIn()){
+    public static function readUser($field = null){
+        if(!self::isUserLoggedIn()){
             return "__ERROR NO USER__";
         }
         if(is_null($field)){
@@ -81,7 +92,7 @@ class TzAuth {
         }
     }
 
-    public function readSession($field = null){
+    public static function readSession($field = null){
         if(is_null($field)){
             return $_SESSION['Data'];
         } else {
@@ -93,13 +104,13 @@ class TzAuth {
         }
     }
 
-    public function getSalt() {
-        return $this->salt;
+    public static function getSalt() {
+        return self::$salt;
     }
 
 
-    public function encryptPwd($pwd){
-        $pwd = sha1(md5($pwd.$this->salt));
+    public static function encryptPwd($pwd){
+        $pwd = sha1(md5($pwd.self::$salt));
         return $pwd;
     }
 }
