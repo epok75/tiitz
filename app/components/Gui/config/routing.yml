@@ -57,3 +57,7 @@ toolbarPHPInfoModule:
 toolbarLog:
 	pattern:    /configTiitz/toolbar/log
 	controller: Toolbar:log	
+
+toolbarACLGenerate:
+	pattern:    /configTiitz/toolbar/acl/generate
+	controller: Toolbar:generateACL
