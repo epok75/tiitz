@@ -14,7 +14,7 @@
   /* White icons with optional class, or on hover/active states of certain elements */
 
   /* move down carets for tabs */
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica;
 }
 .tiitz article,
 .tiitz aside,
