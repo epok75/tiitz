@@ -19,8 +19,8 @@
                 <!--Sidebar content-->
                 <ul class="nav nav-list">
                     <li class="nav-header">Configurations Tiitz</li>
-                    <li class="<?php if(isset($active) && ($active == 'config-prod')){ print 'active'; } ?>"><a href="#">config.yml</a></li>
-                    <li class="<?php if(isset($active) && ($active == 'config-dev')){ print 'active'; } ?>"><a href="#">config_dev.yml</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'config-prod')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/config-prod">config.yml</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'config-dev')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/config-dev">config_dev.yml</a></li>
                     <li class="nav-header">Fichiers</li>
                     <li class="<?php if(isset($active) && ($active == 'logs')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/log">logs</a></li>
                     <li class="nav-header">phpinfo</li>
@@ -42,6 +42,10 @@
                 <div>
                     <?php if(PATH_TOOLBAR == 'log') {
                         include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-logs.php';
+                    } elseif(PATH_TOOLBAR == 'config-prod') {
+                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config.php';
+                    } elseif(PATH_TOOLBAR == 'config-dev') {
+                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config-dev.php';
                     } else {
                         include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-phpinfo.php';
                     }

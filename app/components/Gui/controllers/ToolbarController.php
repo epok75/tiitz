@@ -53,4 +53,16 @@ class ToolbarController {
         $active = 'logs';
         require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
     }
+
+    public function configAction() {
+        define('PATH_TOOLBAR', 'config-prod');
+        $active = 'config-prod';
+        require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
+    }
+
+    public function configDevAction() {
+        define('PATH_TOOLBAR', 'config-dev');
+        $active = 'config-dev';
+        require_once ROOT.'/app/components/Gui/views/toolbar-layout.php';
+    }
 }
