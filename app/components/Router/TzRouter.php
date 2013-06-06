@@ -164,4 +164,13 @@ class TzRouter {
 		#var_dump(self::$arrayRoute);
 		return self::$arrayRoute;
 	}
+
+	public static function getNotFoundRoute() {
+		// Define 404 route
+		self::$arrayRoute['dirPath'] 	= "/src/controllers/";
+		self::$arrayRoute['path'] 		= "/src/controllers/pageNotFoundController.php";
+		self::$arrayRoute['action'] 	= "showAction";
+		self::$arrayRoute['className'] = "pageNotFoundController";
+		return self::$arrayRoute;
+	}
 }

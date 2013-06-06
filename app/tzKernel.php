@@ -121,11 +121,7 @@ class tzKernel
 			}
 		}
 		else {
-			// Define 404 route
-			self::$tzRoute['dirPath'] 	= "/src/controllers/";
-			self::$tzRoute['path'] 		= "/src/controllers/pageNotFoundController.php";
-			self::$tzRoute['action'] 	= "showAction";
-			self::$tzRoute['className'] = "pageNotFoundController";
+			self::$tzRoute = TzRouter::getNotFoundRoute();
 
 			if (is_file(ROOT.self::$tzRoute["path"])) {
 				require_once ROOT.self::$tzRoute["path"];
