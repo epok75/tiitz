@@ -30,7 +30,7 @@
                     <li class="<?php if(isset($active) && ($active == 'env')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/environnement">INFO_ENVIRONMENT</a></li>
                     <li class="<?php if(isset($active) && ($active == 'variable')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/variable">INFO_VARIABLES</a></li>
                     <li class="nav-header">Liens</li>
-                    <li class="<?php if(isset($active) && ($active == 'generateur')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/entityGenerator">Générateur entités</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'generateur')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/entityGenerator">Générateur entités</a></li>
                     <li class="<?php if(isset($active) && ($active == 'config-tiitz')){ print 'active'; } ?>"><a href="#">Configuration Titz</a></li>
                     <li class="nav-header">Divers</li>
                     <li class="<?php if(isset($active) && ($active == 'route')){ print 'active'; } ?>"><a href="#">Routes</a></li>
