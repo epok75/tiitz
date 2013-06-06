@@ -22,7 +22,7 @@ endingInstall:
 #    	_method: POST
 
 entityGenerator:
-    pattern:    /configTiitz/toolbar/entityGenerator
+    pattern:    /configTiitz/entityGenerator
     controller: generator:generateEntity
 
 entityResumeInfo:
