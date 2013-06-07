@@ -1,8 +1,13 @@
 <?php
 
 /**
-* 
+** 	tzKernel is the main class of tiitz, the kernel load all the components, routes 
+**	and call the controller. All the kernel infos could be access with the following line.
+**
+**	tzKernel::tzRoute for example
+**
 */
+
 class tzKernel
 {
 	// The Tiitz object, use for global settings
@@ -11,14 +16,16 @@ class tzKernel
 	// The configuration set by the users of the framework
 	public static $tzConf;
 
+	// The configuration for dev mode
 	public static $tzDevConf;
 
 	// The render object containing all the informations to print the view
 	public static $tzRender;
 
-	// The current route
+	// The current route informations
 	public static $tzRoute;
 
+	// URL parameters
 	public static $tzParam;
 
 	public static $existingProject = false;
@@ -26,13 +33,9 @@ class tzKernel
 	public static function execute() {
 
 		self::bootstrap();
-
 		self::getRender();
-
 		self::getRoute();
-
 		self::getDatabase();
-
 		self::route();
 	}
 
@@ -102,7 +105,7 @@ class tzKernel
 
 	private static function getDatabase() {
 
-		if(!empty(self::$tzConf['database']['user']) && self::$tzConf["existingproject"] === true) {
+		if(!empty(self::$tzConf['database']['user']) && self::$existingProject === true) {
 			TzSQL::getInstance(self::$tzConf['database']['host'], 
 								self::$tzConf['database']['user'], 
 								self::$tzConf['database']['password'], 

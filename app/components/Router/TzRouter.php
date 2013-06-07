@@ -158,15 +158,11 @@ class TzRouter {
 				self::$arrayRoute['params'] = $selectedRoute['params'];
 			}
 		}
-		/*else {
-			DebugTool::$error->catchError(array('No Route Found', __FILE__,__LINE__, true));
-		}*/
-		#var_dump(self::$arrayRoute);
 		return self::$arrayRoute;
 	}
 
 	public static function getNotFoundRoute() {
-		// Define 404 route
+
 		self::$arrayRoute['dirPath'] 	= "/src/controllers/";
 		self::$arrayRoute['path'] 		= "/src/controllers/pageNotFoundController.php";
 		self::$arrayRoute['action'] 	= "showAction";
