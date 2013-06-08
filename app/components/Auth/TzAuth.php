@@ -40,9 +40,10 @@ class TzAuth {
 
     public static function logout() {
        if(!self::isUserLoggedIn()){
-            return "__ERROR NO USER__";
+            return false;
         }
         self::emptyUserSession();
+        return true;
     }
 
     public static function isUserLoggedIn(){
@@ -54,7 +55,7 @@ class TzAuth {
             foreach ($data as $field => $value) {
                 $_SESSION['Data'][$field] = $value;
             } 
-        } else {
+        } elseif(is_string($data) && !is_null($value)) {
             $_SESSION['Data'][$fieldName] = $value;
         }
     }
@@ -79,7 +80,7 @@ class TzAuth {
 
     public static function readUser($field = null){
         if(!self::isUserLoggedIn()){
-            return "__ERROR NO USER__";
+            return false;
         }
         if(is_null($field)){
             return $_SESSION['User'];
@@ -87,7 +88,7 @@ class TzAuth {
             if(isset($_SESSION['User'][$field])){
                 return $_SESSION['User'][$field];
             } else {
-                return "__ERROR MISSING FIELD__";
+                return false;
             }
         }
     }
@@ -99,7 +100,7 @@ class TzAuth {
             if(isset($_SESSION['Data'][$field])){
                 return $_SESSION['Data'][$field];
             } else {
-                return "__ERROR MISSING FIELD__";
+                return false;
             }
         }
     }
