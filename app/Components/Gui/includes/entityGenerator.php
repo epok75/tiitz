@@ -237,7 +237,7 @@ function createEntity($tables){
 		$c.="
 
 			/********************** FindAll ***********************/
-			public function findAll(){
+			public function findAll($" . "recursif = 'yes'){
 
 				$" . "sql = 'SELECT * FROM ".$table."';
 				$" . "result = TzSQL::get" . "PDO()->prepare($" . "sql);
@@ -254,11 +254,13 @@ function createEntity($tables){
 						$" . "method = 'set'.ucfirst($" . "k);
 						$" . "tmpInstance->$" . "method($" . "value);
 
-						foreach($" . "this->relations as $" . "relationId => $" . "relationLinks){
-                            if(array_key_exists($" . "k, $" . "relationLinks)){
-                                $" . "entity = tzSQL::getEntity($" . "relationId);
-                                $" . "content =  $" . "entity->findManyBy($" . "relationLinks[$" . "k],$" . "value);
-                                $" . "tmpInstance->$" . "relationId = $" . "content;
+						if($" . "recursif == null){
+                            foreach($" . "this->relations as $" . "relationId => $" . "relationLinks){
+                                if(array_key_exists($" . "k, $" . "relationLinks)){
+                                    $" . "entity = tzSQL::getEntity($" . "relationId);
+                                    $" . "content =  $" . "entity->findManyBy($" . "relationLinks[$" . "k],$" . "value, 'no');
+                                    $" . "tmpInstance->$" . "relationId = $" . "content;
+                                }
                             }
                         }
 					}
@@ -313,6 +315,16 @@ function createEntity($tables){
 
 					$c.="$" . "this->" . $col . " = $" . "result->" . $col.";
 					";
+
+                    foreach($FK as $relation){
+                        if($relation['FKCOLUMN_NAME'] == $col){
+                            $c.="
+                    $" . "entity".ucfirst($col)." = tzSQL::getEntity('".$relation['PKTABLE_NAME']."');
+                    $" . "content".ucfirst($col)." =  $" . "entity".ucfirst($col)."->findManyBy('".$relation['PKCOLUMN_NAME']."',$" . "result->" . $col.", 'no');
+                    $"."this->" . $relation['PKTABLE_NAME'] . " = $" . "content".ucfirst($col).";
+                ";
+                        }
+                    }
 				}
 		$c.="
 					return true;
@@ -345,7 +357,17 @@ function createEntity($tables){
 
 				$c.="	$" . "this->" . $col . " = $" . "formatResult->" . $col.";
 				";
-			}
+
+                foreach($FK as $relation){
+                    if($relation['FKCOLUMN_NAME'] == $col){
+                        $c.="
+                    $" . "entity".ucfirst($col)." = tzSQL::getEntity('".$relation['PKTABLE_NAME']."');
+                    $" . "content".ucfirst($col)." =  $" . "entity".ucfirst($col)."->findManyBy('".$relation['PKCOLUMN_NAME']."',$" . "formatResult->" . $col.", 'no');
+                    $"."this->" . $relation['PKTABLE_NAME'] . " = $" . "content".ucfirst($col).";
+                ";
+                    }
+                }
+            }
 
 
 			$c.="
@@ -362,7 +384,7 @@ function createEntity($tables){
 		$c.="
 
 			/************* FindManyBy(column, value) ***************/
-			public function findManyBy($" . "param,$" . "value){
+			public function findManyBy($" . "param,$" . "value,$" . "recursif = 'yes'){
 
 
 				switch ($" . "param){
@@ -403,6 +425,17 @@ function createEntity($tables){
 
 							$" . "method = 'set'.ucfirst($" . "k);
 							$" . "tmpInstance->$" . "method($" . "value);
+
+                            if($" . "recursif == 'yes'){
+                                foreach($" . "this->relations as $" . "relationId => $" . "relationLinks){
+                                    if(array_key_exists($" . "k, $" . "relationLinks)){
+                                        $" . "entity = tzSQL::getEntity($" . "relationId);
+                                        $" . "content =  $" . "entity->findManyBy($" . "relationLinks[$" . "k],$" . "value, 'no');
+                                        $" . "tmpInstance->$" . "relationId = $" . "content;
+                                    }
+                                }
+                            }
+
 						}
 						array_push($" . "entitiesArray, $" . "tmpInstance);
 					}
