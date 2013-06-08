@@ -98,6 +98,10 @@ class tzKernel
 
 		// Error manager
 		DebugTool::initDebugTools('0.3', self::$tzDevConf);
+		// tzAuth
+		if(!empty(self::$tzConf['auth']['salt']) && self::$tzConf["existingproject"] === true){
+			TzAuth::init(self::$tzConf['auth']['salt']);
+		}
 
 		if (!empty(self::$tzConf["existingproject"]) && self::$tzConf["existingproject"] === true)
 			self::$existingProject = true;
@@ -114,7 +118,11 @@ class tzKernel
 	}
 
 	private static function route() {
-		if (is_file(ROOT.self::$tzRoute["path"])) {
+		$authorization = true;
+		if(!empty(self::$tzRoute["requirements"])){
+			$authorization = TzACL::checkPermissions(self::$tzRoute["requirements"]);
+		}
+		if (is_file(ROOT.self::$tzRoute["path"]) && $authorization === true) {
 			require_once ROOT.self::$tzRoute["path"];
 
 			if(!empty(self::$tzRoute['params'])){
@@ -122,6 +130,9 @@ class tzKernel
 					self::$tzParam['params'][$param['name']] = $param['value'];
 				}
 			}
+		} elseif ($authorization === false) {
+			// Redirect non authorized route
+			header('Location: '.WEB_PATH.self::$tzConf['redirect_non_authorized']);
 		}
 		else {
 			self::$tzRoute = TzRouter::getNotFoundRoute();
