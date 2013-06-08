@@ -47,6 +47,8 @@
                         include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config.php';
                     } elseif(PATH_TOOLBAR == 'config-dev') {
                         include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config-dev.php';
+                    } elseif(PATH_TOOLBAR == 'acl') {
+                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-acl.php';
                     } else {
                         include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-phpinfo.php';
                     }
