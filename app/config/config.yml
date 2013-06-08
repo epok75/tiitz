@@ -6,10 +6,10 @@ template:    twig
 
 # database configuration
 database:
-    user:		root
-    password:	root
-    dbname:		tzTest
-    host:		localhost
+    user:
+    password:
+    dbname:
+    host:
     engine:		mysql
 
 # language (tool development)
@@ -19,8 +19,4 @@ language:    fr
 environnement:    dev
 
 # Permit to check if a project is already started
-existingproject:    true
-
-#security
-salt:	EnterYourSaltHere
-redirect_non_authorized: /home/forbidden
+existingproject:    false
