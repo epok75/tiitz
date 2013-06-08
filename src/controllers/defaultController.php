@@ -9,7 +9,7 @@ class defaultController extends TzController {
     // first method call when the website is launched
     public function showAction () {
 
-        $postsEntity = tzSQL::getEntity("posts");
+        $postsEntity = tzSQL::getEntity("comments");
 
         $posts = $postsEntity->findAll();
 
