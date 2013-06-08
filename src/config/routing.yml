@@ -1,4 +1,0 @@
-
-default_show:
-	pattern:	 / 
-	controller: default:show
