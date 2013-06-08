@@ -1,0 +1,13 @@
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION tzbase.DB_NAME does not exist	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>17	date=>2013-06-08 12:55:08
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION tzbase.DB_NAME does not exist	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>17	date=>2013-06-08 12:55:50
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>33	date=>2013-06-08 12:58:02
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>33	date=>2013-06-08 12:58:35
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>33	date=>2013-06-08 12:59:17
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PKTABLE_SCHEM' in 'having clause'	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>36	date=>2013-06-08 13:02:24
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'A.TABLE_SCHEMA' in 'having clause'	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>37	date=>2013-06-08 13:03:08
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'A.TABLE_SCHEMA' in 'having clause'	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>36	date=>2013-06-08 13:03:48
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'A.TABLE_SCHEMA' in 'having clause'	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>36	date=>2013-06-08 13:04:28
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>33	date=>2013-06-08 13:05:03
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>33	date=>2013-06-08 13:05:06
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>37	date=>2013-06-08 13:06:19
+type=>8	message=>Undefined index: dbname	file=>C:\wamp\www\tiitz\app\components\Gui\controllers\generatorController.php	line=>37	date=>2013-06-08 13:06:41
