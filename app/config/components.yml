@@ -8,4 +8,4 @@ tzFileManager:	/app/components/FileManager/TzFileManager.php
 TzPlugin:		/app/components/Plugin/TzPlugin.php
 TzAuth:			/app/components/Auth/TzAuth.php
 TzACL:			/app/components/ACL/TzACL.php
-
+swiftMailer:  /app/components/SwiftMailer/lib/swift_required.php
