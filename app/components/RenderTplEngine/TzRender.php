@@ -15,6 +15,7 @@ class TzRender {
 	// prop & file when using PHP
 	private $prop;
 	private $file;
+	private static $propStatic = array();
 	// array that store object of either smarty or twig
 	private $renderedPage = array();
 	private static $page;
@@ -52,6 +53,7 @@ class TzRender {
 				$this->ext = $this->tpl = 'php';
 				break;
 		}
+		$this->prop = TzRender::$propStatic;
 	}
 
 	// singleton
@@ -67,14 +69,19 @@ class TzRender {
 	}
 
 	// add prop
-	public static function addprops(array $NewProps) {
-		$result = array_merge(self::$prop, $NewProps);
-		self::$prop = $result;
+	public static function addProps(array $NewProps) {
+		$result = array_merge(self::$propStatic, $NewProps);
+		self::$propStatic = $result;
 	}
 
 	public function run($file , array $prop = null) {
 			
 		$this->fileExists($file);
+		if (is_null($prop)) {
+			$prop = $this->prop;
+		} else {
+			$prop = array_merge($prop,$this->prop);
+		}
 		$prop['WEB_PATH'] = WEB_PATH;
 		$prop['SESSION'] = $_SESSION;
 		//return the template depending of the engine chosen by the user
