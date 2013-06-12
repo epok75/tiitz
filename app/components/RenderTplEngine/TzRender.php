@@ -66,6 +66,12 @@ class TzRender {
 		}
 	}
 
+	// add prop
+	public static function addprops(array $NewProps) {
+		$result = array_merge(self::$prop, $NewProps);
+		self::$prop = $result;
+	}
+
 	public function run($file , array $prop = null) {
 			
 		$this->fileExists($file);

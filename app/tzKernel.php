@@ -79,7 +79,8 @@ class tzKernel
 	}
 
 	private static function getRender() {
-
+		require_once(ROOT.'/src/config/viewVars.php');
+		
 		if (!empty(self::$tzConf["template"]))
 			self::$tzRender = TzRender::getInstance(self::$tzConf["template"]);
 		else
