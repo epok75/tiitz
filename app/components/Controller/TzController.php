@@ -19,8 +19,8 @@ class TzController {
 
     // Made by Tiitz team for Mister Gael Coat, special dedicasse !
     protected function callController($controller, $action) {
-        $Controller .= "Controller";
-        $Action     .= "Action";
+        $controller .= "Controller";
+        $action     .= "Action";
 
         if (is_file(ROOT.tzKernel::$tzRoute['dirPath'].$controller.'.php')) {
             require_once ROOT.tzKernel::$tzRoute['dirPath'].$controller.'.php';
