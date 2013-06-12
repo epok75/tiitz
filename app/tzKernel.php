@@ -8,7 +8,13 @@
 **
 */
 
-class tzKernel
+namespace App;
+
+use App\Components\Tiitz\Tiitz;
+use App\Components\Spyc\Spyc;
+use App\Components\DebugTools\DebugTool;
+
+class TzKernel
 {
 	// The Tiitz object, use for global settings
 	public static $tiitz;
@@ -39,6 +45,16 @@ class tzKernel
 		self::route();
 	}
 
+/*	private static function autoLoad() {
+
+		require_once ROOT."/vendors/ClassLoader/UniversalClassLoader.php";
+
+		use Symfony\Component\ClassLoader;
+
+		$loader->useIncludePath(true);
+		var_dump($loader);
+	}*/
+
 	private static function bootstrap() {
 
 		// Start sessions
@@ -48,8 +64,7 @@ class tzKernel
 		define("ROOT", realpath(__DIR__."/../"));
 
 		// We load the tiitz class to set the global configuration used by the framework
-		require_once("../app/components/Tiitz/Tiitz.php");
-		self::$tiitz = new tiitz();
+		self::$tiitz = new Tiitz();
 
 		// Load of all the components contains in components.yml
 		self::loadComponents();

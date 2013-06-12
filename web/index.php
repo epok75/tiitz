@@ -1,10 +1,25 @@
 <?php
 $start = microtime(true);
-require_once("../app/tzKernel.php");
-tzKernel::execute();
+require_once "../vendors/ClassLoader/UniversalClassLoader.php";
+
+use Symfony\Component\ClassLoader\UniversalClassLoader;
+
+$loader = new UniversalClassLoader();
+$loader->useIncludePath(true);
+
+$loader->registerNamespaces(array(
+ 
+	"App" => __DIR__."/../",
+	"Src" => __DIR__."/../",
+
+	));
+
+var_dump($loader);
+$loader->register();
+App\TzKernel::execute();
 
 // toolbar for development environment
-if(tzkernel::$tzConf['environnement'] == 'dev') {
+if(Tzkernel::$tzConf['environnement'] == 'dev') {
 	// Calcul time loading page
 	DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
 	// process of managing error
