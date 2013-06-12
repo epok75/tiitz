@@ -3,6 +3,8 @@
  * Allow compatibility between differents template engines : one methode for all
  */
 
+namespace App\Components\RenderTplEngine;
+
 class TzRender {
 	
 	private static $instance;

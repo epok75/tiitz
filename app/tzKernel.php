@@ -13,6 +13,7 @@ namespace App;
 use App\Components\Tiitz\Tiitz;
 use App\Components\Spyc\Spyc;
 use App\Components\DebugTools\DebugTool;
+use App\Components\RenderTplEngine\TzRender;
 
 class TzKernel
 {
@@ -75,8 +76,6 @@ class TzKernel
 	}
 
 	private static function loadComponents() {
-
-		require_once(ROOT.'/app/components/Spyc/Spyc.php');
 
 		// We get the content of components.yml
 		$components = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');

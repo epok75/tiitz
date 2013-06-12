@@ -1,11 +1,9 @@
 <?php
-/*require_once __DIR__.'/ErrorManager/ErrorManager.php';
-require_once __DIR__.'/ErrorManager/class/ErrorManagerExtend.php';
-require_once __DIR__.'/Toolbar/Toolbar.php';*/
-
 namespace App\Components\DebugTools;
 
 use App\Components\DebugTools\Toolbar\Toolbar;
+use App\Components\DebugTools\ErrorManager\ErrorManager;
+use App\Components\DebugTools\ErrorManager\ErrorManagerExtend;
 
 class DebugTool {
 
