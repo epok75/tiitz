@@ -8,7 +8,7 @@ class TzAuth {
     public static function init($salt){
         self::$salt = $salt;
     }
-    public static function login(array $values) {
+    public static function login(array $values, $pwdEncrypt = false) {
         if(is_null(TzSQL::getPDO())){
             return false;
         }
@@ -20,7 +20,9 @@ class TzAuth {
                 $query .= ' AND ';
             }
             if($field == 'password'){
-                $value = self::encryptPwd($value);
+                if(!$pwdEncrypt){
+                    $value = self::encryptPwd($value);
+                }
             }
             $query .= $field.' = "'.$value.'"';
 
