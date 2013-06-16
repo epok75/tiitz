@@ -4,7 +4,7 @@
 */
 use App\Components\Controller\TzController;
 use App\Components\FileManager\TzFileManager;
-namespace App\Components\Spyc;
+use App\Components\Spyc\Spyc;
 require_once 'validatorController.class.php';
 
 class MainController extends TzController {
