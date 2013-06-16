@@ -4,7 +4,7 @@
 /.project
 /vendors/*
 .DS_Store
-composer.lock
+/composer.lock
 App/.DS_Store
 .idea/*
 .idea/.*
