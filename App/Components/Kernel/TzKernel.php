@@ -8,12 +8,13 @@
 **
 */
 
-namespace App;
+namespace App\Components\Kernel;
 
 use App\Components\Tiitz\Tiitz;
 use App\Components\Spyc\Spyc;
 use App\Components\DebugTools\DebugTool;
 use App\Components\RenderTplEngine\TzRender;
+use App\Components\Router\TzRouter;
 
 class TzKernel
 {
@@ -46,44 +47,20 @@ class TzKernel
 		self::route();
 	}
 
-/*	private static function autoLoad() {
-
-		require_once ROOT."/vendors/ClassLoader/UniversalClassLoader.php";
-
-		use Symfony\Component\ClassLoader;
-
-		$loader->useIncludePath(true);
-		var_dump($loader);
-	}*/
-
 	private static function bootstrap() {
 
 		// Start sessions
 		session_start();
 
 		// Defines of usefull constants used by the framework
-		define("ROOT", realpath(__DIR__."/../"));
+		define("ROOT", realpath(__DIR__."/../../../"));
 
 		// We load the tiitz class to set the global configuration used by the framework
 		self::$tiitz = new Tiitz();
 
-		// Load of all the components contains in components.yml
-		self::loadComponents();
-
 		self::getConfiguration();
 
 		self::initTools();
-	}
-
-	private static function loadComponents() {
-
-		// We get the content of components.yml
-		$components = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
-
-		// Include the components contains in components.yml
-		/*foreach ($components as $component) {
-			require_once(ROOT.$component);
-		}*/
 	}
 
 	private static function getConfiguration() {
@@ -145,7 +122,7 @@ class TzKernel
 			}
 		}
 
-			// We create the controller instance and call the requested actions
+		// We create the controller instance and call the requested actions
 		if (class_exists(self::$tzRoute["className"])) {
 	        $controller = new self::$tzRoute["className"]();
 	        $route = self::$tzRoute;

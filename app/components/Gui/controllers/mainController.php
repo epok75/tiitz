@@ -2,6 +2,8 @@
 /**
 * 
 */
+use App\Components\Controller\TzController;
+use App\Components\FileManager\TzFileManager;
 require_once 'validatorController.class.php';
 
 class MainController extends TzController {

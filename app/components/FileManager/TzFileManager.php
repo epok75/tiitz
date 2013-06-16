@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Components\FileManager;
+
 class TzFileManager
 {
 	private $currentPath;

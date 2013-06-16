@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Components\Router;
+
+use App\Components\Spyc\Spyc;
+
 class TzRouter {
 
 	private static $arrayRoute;
@@ -82,7 +86,7 @@ class TzRouter {
 			$type = 'site_yaml';
 
 		#var_dump(ROOT.$arrayRoutes[$type]['ressource']);
-		
+
 		if(!file_exists(ROOT.$arrayRoutes[$type]['ressource'])) {
 			DebugTool::$error->catchError(array('Routing file missing', __FILE__,__LINE__, true));
 		}

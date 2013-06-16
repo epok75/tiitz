@@ -1,5 +1,9 @@
 <?php
 
+namespace App\Components\Controller;
+
+use App\Components\Kernel\TzKernel;
+
 class TzController {
 
 	public $tiitzData;  
@@ -12,9 +16,9 @@ class TzController {
     private static $tiitzVersion = '0.3';
     
     public function __construct() {
-        $this->conf         = tzKernel::$tzConf;
-        $this->route        = tzKernel::$tzRoute;
-        $this->tzRender     = tzKernel::$tzRender;
+        $this->conf         = TzKernel::$tzConf;
+        $this->route        = TzKernel::$tzRoute;
+        $this->tzRender     = TzKernel::$tzRender;
     }
 
     // Made by Tiitz team for Mister Gael Coat, special dedicasse !
