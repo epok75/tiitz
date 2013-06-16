@@ -6,6 +6,8 @@
 
 namespace App\Components\DebugTools\Toolbar;
 
+use App\Components\DebugTools\DebugTool;
+
 class Toolbar {
 	
 	private $path 		= '/views/layout.php';

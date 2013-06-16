@@ -1,5 +1,7 @@
 <?php
 
+use App\Components\DebugTools\DebugTool;
+
 class ToolbarController {
 
     public function indexAction() {

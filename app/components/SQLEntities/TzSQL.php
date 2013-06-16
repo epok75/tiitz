@@ -1,5 +1,9 @@
 <?php 
 
+namespace App\Components\SQLEntities;
+
+use App\Components\DebugTools\DebugTool;
+
 class TzSQL
 {
 	/** 

@@ -1,5 +1,8 @@
 <?php
 
+use App\Components\Controller\TzController;
+use App\Components\SQLEntities\TzSQL;
+
 class GeneratorController extends TzController{
 
 	public function generateEntityAction() {

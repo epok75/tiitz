@@ -5,6 +5,9 @@
  *
  * @author Hodor
  */
+
+namespace App\Components\Validator;
+
 class TzValidator {
     
     const BAD_EMAIL             = "ERR_EMAIL";
