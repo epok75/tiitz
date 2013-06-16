@@ -4,6 +4,10 @@
 /.project
 .DS_Store
 app/.DS_Store
+vendors/twig
+vendors/composer
+vendors/symfony
+vendors/smarty
 .idea/*
 .idea/.*
 .project
