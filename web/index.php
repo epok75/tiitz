@@ -11,6 +11,7 @@ $loader->useIncludePath(true);
 $loader->registerNamespaces(array(
  
  	"App" => __DIR__."/..",
+ 	"Src" => __DIR__."/..",
 
 	));
 
