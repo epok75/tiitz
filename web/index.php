@@ -7,7 +7,6 @@ use Symfony\Component\ClassLoader\UniversalClassLoader;
 
 $loader = new UniversalClassLoader();
 $loader->useIncludePath(true);
-
 $loader->registerNamespaces(array(
  
  	"App" => __DIR__."/..",
@@ -17,6 +16,7 @@ $loader->registerNamespaces(array(
 
 $loader->register();
 
+// We execute the kernel and start TiiTz
 App\Components\Kernel\TzKernel::execute();
 
 // toolbar for development environment
