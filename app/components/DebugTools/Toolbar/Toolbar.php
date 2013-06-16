@@ -5,7 +5,6 @@
  */
 
 namespace App\Components\DebugTools\Toolbar;
-
 use App\Components\DebugTools\DebugTool;
 
 class Toolbar {

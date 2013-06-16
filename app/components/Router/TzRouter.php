@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Components\Router;
-
 use App\Components\Spyc\Spyc;
 use App\Components\DebugTools\DebugTool;
 

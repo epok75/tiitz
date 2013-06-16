@@ -1,6 +1,6 @@
 <?php
-namespace App\Components\DebugTools;
 
+namespace App\Components\DebugTools;
 use App\Components\DebugTools\Toolbar\Toolbar;
 use App\Components\DebugTools\ErrorManager\ErrorManager;
 use App\Components\DebugTools\ErrorManager\ErrorManagerExtend;

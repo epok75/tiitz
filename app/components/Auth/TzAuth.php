@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Components\Auth;
 
 class TzAuth {
