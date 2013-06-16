@@ -4,6 +4,9 @@
  * when no parameters are passed.
  * You can change is behavior, do what you want.
  */
+
+use App\Components\Controller\TzController;
+
 class defaultController extends TzController {
 
 	// first method call when the website is launched
