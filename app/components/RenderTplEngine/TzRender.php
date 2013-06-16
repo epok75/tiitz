@@ -4,6 +4,8 @@
  */
 
 namespace App\Components\RenderTplEngine;
+use App\Components\DebugTools\DebugTool;
+use App\Components\DebugTools\ErrorManager\ErrorManager;
 
 class TzRender {
 	
@@ -26,11 +28,11 @@ class TzRender {
 		switch ($tpl) {
 			
 			case 'twig':
-				if (file_exists(ROOT.'/vendors/Twig-1.11.1/lib/Twig/Autoloader.php')) {
-					require_once ROOT.'/vendors/Twig-1.11.1/lib/Twig/Autoloader.php';
-					Twig_Autoloader::register();
-					$loader = new Twig_Loader_Filesystem(self::$path);
-					$this->renderedPage = new Twig_Environment($loader);
+				if (file_exists(ROOT.'/vendors/twig/twig/lib/Twig/Autoloader.php')) {
+					require_once ROOT.'/vendors/twig/twig/lib/Twig/Autoloader.php';
+					\Twig_Autoloader::register();
+					$loader = new \Twig_Loader_Filesystem(self::$path);
+					$this->renderedPage = new \Twig_Environment($loader);
 					$this->tpl = 'twig';
 					$this->ext = 'html.twig';
 				} else {
@@ -39,7 +41,7 @@ class TzRender {
 				break;
 
 			case 'smarty':
-				if (file_exists(ROOT.'/vendors/Smarty-3.1.12.2/libs/Smarty.class.php')) {
+				if (file_exists(ROOT.'/vendors/smarty/smarty/libs/Smarty.class.php')) {
 					require_once ROOT.'/vendors/Smarty-3.1.12.2/libs/Smarty.class.php';
 					$this->renderedPage = new Smarty();
 					$this->renderedPage->setTemplateDir(self::$path);

@@ -81,9 +81,9 @@ class TzKernel
 		$components = Spyc::YAMLLoad(ROOT.'/app/config/components.yml');
 
 		// Include the components contains in components.yml
-		foreach ($components as $component) {
+		/*foreach ($components as $component) {
 			require_once(ROOT.$component);
-		}
+		}*/
 	}
 
 	private static function getConfiguration() {
