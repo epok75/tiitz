@@ -41,8 +41,8 @@ class TzRender {
 				break;
 
 			case 'smarty':
-				if (file_exists(ROOT.'/vendors/smarty/smarty/libs/Smarty.class.php')) {
-					require_once ROOT.'/vendors/Smarty-3.1.12.2/libs/Smarty.class.php';
+				if (file_exists(ROOT.'/vendors/smarty/smarty/distribution/libs/Smarty.class.php')) {
+					require_once ROOT.'/vendors/smarty/smarty/distribution/libs/Smarty.class.php';
 					$this->renderedPage = new \Smarty();
 					$this->renderedPage->setTemplateDir(self::$path);
 					$this->tpl = 'smarty';
