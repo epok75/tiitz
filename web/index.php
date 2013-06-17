@@ -11,6 +11,7 @@ $loader->registerNamespaces(array(
  
  	"App" => __DIR__."/..",
  	"Src" => __DIR__."/..",
+ 	"Plugins" => __DIR__."/..",
 
 	));
 
