@@ -1,5 +1,10 @@
 <?php
 
+namespace Components\ACL;
+
+use Components\DebugTools\DebugTool;
+use Components\Auth\TzAuth;
+use Components\Spyc\Spyc;
 
 class TzACL {
     private static $groupList;
