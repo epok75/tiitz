@@ -65,3 +65,7 @@ toolbarConfig:
 toolbarConfigDev:
 	pattern:    /configTiitz/toolbar/config-dev
 	controller: Toolbar:configDev
+
+toolbarACLGenerate:
+	pattern:    /configTiitz/toolbar/acl/generate
+	controller: Toolbar:generateACL

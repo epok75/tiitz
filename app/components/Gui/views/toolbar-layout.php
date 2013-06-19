@@ -31,6 +31,7 @@
                     <li class="<?php if(isset($active) && ($active == 'variable')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/phpinfo/variable">INFO_VARIABLES</a></li>
                     <li class="nav-header">Liens</li>
                     <li class="<?php if(isset($active) && ($active == 'generateur')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/entityGenerator">Générateur entités</a></li>
+                    <li class="<?php if(isset($active) && ($active == 'acl')){ print 'active'; } ?>"><a href="<?php print WEB_PATH;?>/configTiitz/toolbar/acl/generate">Mise à jour des ACL</a></li>
                     <li class="<?php if(isset($active) && ($active == 'config-tiitz')){ print 'active'; } ?>"><a href="#">Configuration Titz</a></li>
                     <li class="nav-header">Divers</li>
                     <li class="<?php if(isset($active) && ($active == 'route')){ print 'active'; } ?>"><a href="#">Routes</a></li>
@@ -46,6 +47,8 @@
                         include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-config.php';
                     } elseif(PATH_TOOLBAR == 'config-dev') {
                         include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-config-dev.php';
+                    } elseif(PATH_TOOLBAR == 'acl') {
+                        include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-acl.php';
                     } else {
                         include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-phpinfo.php';
                     }

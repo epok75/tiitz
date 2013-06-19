@@ -502,10 +502,5 @@ class TzFileManager
 			if (!copy($origin, $destinataire)) {
     			$this->error = "La copie  du fichier a échoué...\n";
 			}
-
-		
 	}
 }
-
-
-?>

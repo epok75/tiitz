@@ -69,7 +69,8 @@ class TzKernel
 	}
 
 	private static function getRender() {
-
+		require_once(ROOT.'/src/config/viewVars.php');
+		
 		if (!empty(self::$tzConf["template"]))
 			self::$tzRender = TzRender::getInstance(self::$tzConf["template"]);
 		else
@@ -88,6 +89,10 @@ class TzKernel
 
 		// Error manager
 		DebugTool::initDebugTools('0.3', self::$tzDevConf);
+		// tzAuth
+		if(!empty(self::$tzConf['auth']['salt']) && self::$tzConf["existingproject"] === true){
+			TzAuth::init(self::$tzConf['auth']['salt']);
+		}
 
 		if (!empty(self::$tzConf["existingproject"]) && self::$tzConf["existingproject"] === true)
 			self::$existingProject = true;
@@ -104,7 +109,11 @@ class TzKernel
 	}
 
 	private static function route() {
-		if (is_file(ROOT.self::$tzRoute["path"])) {
+		$authorization = true;
+		if(!empty(self::$tzRoute["requirements"])){
+			$authorization = TzACL::checkPermissions(self::$tzRoute["requirements"]);
+		}
+		if (is_file(ROOT.self::$tzRoute["path"]) && $authorization === true) {
 			require_once ROOT.self::$tzRoute["path"];
 
 			if(!empty(self::$tzRoute['params'])){
@@ -112,6 +121,9 @@ class TzKernel
 					self::$tzParam['params'][$param['name']] = $param['value'];
 				}
 			}
+		} elseif ($authorization === false) {
+			// Redirect non authorized route
+			header('Location: '.WEB_PATH.self::$tzConf['redirect_non_authorized']);
 		}
 		else {
 			self::$tzRoute = TzRouter::getNotFoundRoute();

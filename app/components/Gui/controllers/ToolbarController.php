@@ -56,6 +56,36 @@ class ToolbarController {
         require_once ROOT.'/app/Components/Gui/views/toolbar-layout.php';
     }
 
+    public function generateACLAction() {
+        define('PATH_TOOLBAR', 'acl');
+        
+        if(isset($_POST['generation_acl']))
+        {
+            $statusACL = FALSE;
+            
+            $query = "SELECT `id`, `name` FROM acl_groups";
+            $data = TzSQL::getPDO()->prepare($query);
+            $data->execute();
+            $aclGroups = $data->fetchAll(PDO::FETCH_ASSOC);
+            require_once(ROOT.'/app/Components/Spyc/Spyc.php');
+            $fm = new TzFileManager(ROOT);
+            
+            $fm->set_currentItem(ROOT."/app/cache/groups.yml");
+
+            $groups = array();
+            foreach($aclGroups as $aclGroup)
+                $groups[$aclGroup['id']] = $aclGroup['name'];
+            $fm->replace_fileContent('#GROUPS');
+            if(!empty($groups) && $fm->replace_fileContent(Spyc::YAMLDump($groups)))
+                $statusACL = TRUE;
+        }
+        
+    
+        $active = 'acl';
+        require_once ROOT.'/app/Components/Gui/views/toolbar-layout.php';
+    
+    }
+
     public function configAction() {
         define('PATH_TOOLBAR', 'config-prod');
         $active = 'config-prod';
@@ -67,4 +97,5 @@ class ToolbarController {
         $active = 'config-dev';
         require_once ROOT.'/app/Components/Gui/views/toolbar-layout.php';
     }
+
 }
