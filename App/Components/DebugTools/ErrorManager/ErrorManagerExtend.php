@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Components\DebugTools\ErrorManager;
+namespace Components\DebugTools\ErrorManager;
 
 class ErrorManagerExtend {
 

@@ -41,13 +41,13 @@
 
                 <div>
                     <?php if(PATH_TOOLBAR == 'log') {
-                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-logs.php';
+                        include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-logs.php';
                     } elseif(PATH_TOOLBAR == 'config-prod') {
-                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config.php';
+                        include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-config.php';
                     } elseif(PATH_TOOLBAR == 'config-dev') {
-                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-config-dev.php';
+                        include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-config-dev.php';
                     } else {
-                        include_once ROOT.'/app/components/Gui/views/toolbar/toolbar-phpinfo.php';
+                        include_once ROOT.'/app/Components/Gui/views/toolbar/toolbar-phpinfo.php';
                     }
                 ?>    
                 </div>

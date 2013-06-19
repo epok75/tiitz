@@ -1,5 +1,5 @@
 <?php 
-	use App\Components\DebugTools\DebugTool;
+	use Components\DebugTools\DebugTool;
  ?>
 
 <div id="currentError" style="display:block;">

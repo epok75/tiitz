@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Components\FileManager;
+namespace Components\FileManager;
 
 class TzFileManager
 {

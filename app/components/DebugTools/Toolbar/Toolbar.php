@@ -4,8 +4,8 @@
  * All usefull informations needed to display
  */
 
-namespace App\Components\DebugTools\Toolbar;
-use App\Components\DebugTools\DebugTool;
+namespace Components\DebugTools\Toolbar;
+use Components\DebugTools\DebugTool;
 
 class Toolbar {
 	

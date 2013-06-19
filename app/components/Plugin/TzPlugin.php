@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Components\Plugin;
+namespace Components\Plugin;
 
 class TzPlugin {
 

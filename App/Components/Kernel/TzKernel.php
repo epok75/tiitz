@@ -1,19 +1,19 @@
 <?php
 
 /**
-** 	tzKernel is the main class of tiitz, the kernel load all the components, routes 
+** 	TzKernel is the main class of tiitz, the kernel load all the components, routes 
 **	and call the controller. All the kernel infos could be access with the following line.
 **
-**	tzKernel::tzRoute for example
+**	TzKernel::tzRoute for example
 **
 */
 
-namespace App\Components\Kernel;
-use App\Components\Tiitz\Tiitz;
-use App\Components\Spyc\Spyc;
-use App\Components\DebugTools\DebugTool;
-use App\Components\RenderTplEngine\TzRender;
-use App\Components\Router\TzRouter;
+namespace Components\Kernel;
+use Components\Tiitz\Tiitz;
+use Components\Spyc\Spyc;
+use Components\DebugTools\DebugTool;
+use Components\RenderTplEngine\TzRender;
+use Components\Router\TzRouter;
 
 class TzKernel
 {

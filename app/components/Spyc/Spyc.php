@@ -10,7 +10,7 @@
    * @package Spyc
    */
 
-namespace App\Components\Spyc;
+namespace Components\Spyc;
 
 if (!function_exists('spyc_load')) {
   /**

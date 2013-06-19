@@ -9,23 +9,23 @@ $loader = new UniversalClassLoader();
 $loader->useIncludePath(true);
 $loader->registerNamespaces(array(
  
- 	"App" => __DIR__."/..",
- 	"Src" => __DIR__."/..",
- 	"Plugins" => __DIR__."/..",
+ 	"Components" => __DIR__."/../app",
+ 	"src" => __DIR__."/..",
+ 	"plugins" => __DIR__."/..",
 
 	));
 
 $loader->register();
 
 // We execute the kernel and start TiiTz
-App\Components\Kernel\TzKernel::execute();
+Components\Kernel\TzKernel::execute();
 
 // toolbar for development environment
-if(App\Components\Kernel\Tzkernel::$tzConf['environnement'] == 'dev') {
+if(Components\Kernel\Tzkernel::$tzConf['environnement'] == 'dev') {
 	// Calcul time loading page
-	App\Components\DebugTools\DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
+	Components\DebugTools\DebugTool::$toolbar->setTimeLoadingPage(number_format((microtime(true) - $start),4));
 	// process of managing error
-	App\Components\DebugTools\DebugTool::$errorExtend->initExtendError(App\Components\DebugTools\DebugTool::$error->getError());
+	Components\DebugTools\DebugTool::$errorExtend->initExtendError(Components\DebugTools\DebugTool::$error->getError());
 	// load Toolbar and display it
-	require_once App\Components\DebugTools\DebugTool::$toolbar->getPathToToolbar();
+	require_once Components\DebugTools\DebugTool::$toolbar->getPathToToolbar();
 }

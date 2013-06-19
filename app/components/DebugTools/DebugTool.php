@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Components\DebugTools;
-use App\Components\DebugTools\Toolbar\Toolbar;
-use App\Components\DebugTools\ErrorManager\ErrorManager;
-use App\Components\DebugTools\ErrorManager\ErrorManagerExtend;
+namespace Components\DebugTools;
+use Components\DebugTools\Toolbar\Toolbar;
+use Components\DebugTools\ErrorManager\ErrorManager;
+use Components\DebugTools\ErrorManager\ErrorManagerExtend;
 
 class DebugTool {
 

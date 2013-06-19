@@ -6,7 +6,7 @@
  * @author Hodor
  */
 
-namespace App\Components\Validator;
+namespace Components\Validator;
 
 class TzValidator {
     

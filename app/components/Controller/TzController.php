@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Components\Controller;
-use App\Components\Kernel\TzKernel;
+namespace Components\Controller;
+use Components\Kernel\TzKernel;
 
 class TzController {
 

@@ -3,9 +3,9 @@
  * Allow compatibility between differents template engines : one methode for all
  */
 
-namespace App\Components\RenderTplEngine;
-use App\Components\DebugTools\DebugTool;
-use App\Components\DebugTools\ErrorManager\ErrorManager;
+namespace Components\RenderTplEngine;
+use Components\DebugTools\DebugTool;
+use Components\DebugTools\ErrorManager\ErrorManager;
 
 class TzRender {
 	

@@ -3,7 +3,7 @@
  * Global initialisation for Tiitz framework
  */
 
-namespace App\Components\Tiitz;
+namespace Components\Tiitz;
 
 class Tiitz {
     

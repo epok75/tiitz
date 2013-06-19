@@ -1,6 +1,6 @@
 <?php
-	use App\Components\DebugTools\DebugTool;
-	use App\Components\Kernel\TzKernel;
+	use Components\DebugTools\DebugTool;
+	use Components\Kernel\TzKernel;
 	require ('tplError.php');
 	// require ('tplLog.php');
 ?>

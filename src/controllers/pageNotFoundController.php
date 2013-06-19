@@ -5,7 +5,7 @@
  * You can change is behavior, do what you want.
  */
 
-use App\Components\Controller\TzController;
+use Components\Controller\TzController;
 
 class pageNotFoundController extends TzController {
 

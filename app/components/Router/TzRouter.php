@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Components\Router;
-use App\Components\Spyc\Spyc;
-use App\Components\DebugTools\DebugTool;
+namespace Components\Router;
+use Components\Spyc\Spyc;
+use Components\DebugTools\DebugTool;
 
 class TzRouter {
 
@@ -151,7 +151,7 @@ class TzRouter {
 				self::$arrayRoute = 'Error While parsing Controller route';
 			} else {
 				if($selectedRoute['type'] == 'config') {
-					self::$arrayRoute['dirPath'] = '/app/components/Gui/controllers/';
+					self::$arrayRoute['dirPath'] = '/app/Components/Gui/controllers/';
 					self::$arrayRoute['path'] = self::$arrayRoute['dirPath'].$arrayController[0].'Controller.php';
 				} else {
 					self::$arrayRoute['dirPath'] = '/src/controllers/';
