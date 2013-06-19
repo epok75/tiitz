@@ -23,7 +23,7 @@ class TzACL {
         if(isset($requirements['only_connected']) && $requirements['only_connected'] == true && !TzAuth::isUserLoggedIn()){
             self::$authorization['connect'] = false;
         }
-        if(TzAuth::isUserLoggedIn()){
+        if(TzAuth::isUserLoggedIn() && !empty(self::$groupList)){
             $idGroup = TzAuth::readUser('acl_group_id');
             if(isset(self::$groupList[$idGroup])){
                 self::$userGroup = self::$groupList[$idGroup];
