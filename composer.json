@@ -12,6 +12,7 @@
     "require": {
         "twig/twig": "1.13.*",
         "symfony/class-loader": "2.3.0",
+        "smarty/smarty" : "3.*",
         "swiftmailer/swiftmailer" : "5.0.*"
     },
     "suggest": {
