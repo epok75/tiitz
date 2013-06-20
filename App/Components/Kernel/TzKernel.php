@@ -88,7 +88,7 @@ class TzKernel
 	private static function initTools() {
 
 		// Error manager
-		DebugTool::initDebugTools('0.3', self::$tzDevConf);
+		DebugTool::initDebugTools('0.5', self::$tzDevConf);
 		// tzAuth
 		if(!empty(self::$tzConf['auth']['salt']) && self::$tzConf["existingproject"] === true){
 			TzAuth::init(self::$tzConf['auth']['salt']);
