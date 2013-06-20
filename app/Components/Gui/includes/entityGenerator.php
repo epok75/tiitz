@@ -30,7 +30,7 @@ function createEntity($tables){
 		$c = "
 	<?php
 
-		namespace src\entities\\$class;
+		namespace src\\entities\\$class;
 
 		use Components\SQLEntities\TzSQL;
 		use Components\DebugTools\DebugTool;
