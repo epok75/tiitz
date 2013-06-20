@@ -1,6 +1,8 @@
 <?php
 
 use Components\DebugTools\DebugTool;
+use Components\FileManager\TzFileManager;
+use Components\SQLEntities\TzSQL;
 
 class ToolbarController {
 
@@ -66,7 +68,7 @@ class ToolbarController {
             $query = "SELECT `id`, `name` FROM acl_groups";
             $data = TzSQL::getPDO()->prepare($query);
             $data->execute();
-            $aclGroups = $data->fetchAll(PDO::FETCH_ASSOC);
+            $aclGroups = $data->fetchAll(\PDO::FETCH_ASSOC);
             require_once(ROOT.'/app/Components/Spyc/Spyc.php');
             $fm = new TzFileManager(ROOT);
             

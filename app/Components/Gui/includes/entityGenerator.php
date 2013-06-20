@@ -1,5 +1,7 @@
 <?php
 
+use Components\SQLEntities\TzSQL;
+
 function createEntity($tables){
 
 	$results = array();
@@ -48,7 +50,8 @@ function createEntity($tables){
 		$c = "
 	<?php
 
-				
+		use Components\SQLEntities\TzSQL;
+		use Components\DebugTools\DebugTool;
 
 		class $class {
 					";
