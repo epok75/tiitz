@@ -14,6 +14,7 @@ use Components\Spyc\Spyc;
 use Components\DebugTools\DebugTool;
 use Components\RenderTplEngine\TzRender;
 use Components\Router\TzRouter;
+use Components\SQLEntities\TzSQL;
 
 class TzKernel
 {
