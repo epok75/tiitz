@@ -33,7 +33,7 @@ class TzSQL
 		    $tzPDO->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_WARNING);
 		    self::$tzPDO = $tzPDO;
 		}
-		catch(PDOException $e){
+		catch(\PDOException $e){
 			self::$instance == null;
 			DebugTool::$error->catchError($e,true);
 		}
