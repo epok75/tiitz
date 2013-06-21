@@ -15,6 +15,11 @@
 			
 			private $right_id;
 			
+            private $relations = array('rights'=>array('right_id'=>'id'),);
+        
+            private $rights;
+            
+
 
 
 			/********************** GETTER ***********************/
@@ -164,6 +169,14 @@
 
 						$method = 'set'.ucfirst($k);
 						$tmpInstance->$method($value);
+
+						foreach($this->relations as $relationId => $relationLinks){
+                            if(array_key_exists($k, $relationLinks)){
+                                $entity = tzSQL::getEntity($relationId);
+                                $content =  $entity->findManyBy($relationLinks[$k],$value);
+                                $tmpInstance->$relationId = $content;
+                            }
+                        }
 					}
 					array_push($entitiesArray, $tmpInstance);
 				}

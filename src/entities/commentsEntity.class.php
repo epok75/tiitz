@@ -15,6 +15,13 @@
 			
 			private $post_id;
 			
+            private $relations = array('posts'=>array('post_id'=>'id'),'users'=>array('user_id'=>'id'),);
+        
+            private $posts;
+            
+            private $users;
+            
+
 
 
 			/********************** GETTER ***********************/
@@ -164,6 +171,14 @@
 
 						$method = 'set'.ucfirst($k);
 						$tmpInstance->$method($value);
+
+						foreach($this->relations as $relationId => $relationLinks){
+                            if(array_key_exists($k, $relationLinks)){
+                                $entity = tzSQL::getEntity($relationId);
+                                $content =  $entity->findManyBy($relationLinks[$k],$value);
+                                $tmpInstance->$relationId = $content;
+                            }
+                        }
 					}
 					array_push($entitiesArray, $tmpInstance);
 				}
