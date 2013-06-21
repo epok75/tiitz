@@ -27,11 +27,7 @@ function createEntity($tables){
 		$filedate = date( "d.m.Y" );
 
 
-		$c = "
-	<?php
-
-		namespace src\\entities\\$class;
-
+		$c = "<?php
 		use Components\SQLEntities\TzSQL;
 		use Components\DebugTools\DebugTool;
 
