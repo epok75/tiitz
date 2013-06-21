@@ -1,5 +1,7 @@
 <?php
 
+use Components\SQLEntities\TzSQL;
+
 function createEntity($tables){
 
 	$results = array();
@@ -45,10 +47,9 @@ function createEntity($tables){
         $FK = $getFK->fetchAll(PDO::FETCH_ASSOC);
 
 
-		$c = "
-	<?php
-
-				
+		$c = "<?php
+		use Components\SQLEntities\TzSQL;
+		use Components\DebugTools\DebugTool;
 
 		class $class {
 					";
