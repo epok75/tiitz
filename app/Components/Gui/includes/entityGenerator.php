@@ -47,11 +47,7 @@ function createEntity($tables){
         $FK = $getFK->fetchAll(PDO::FETCH_ASSOC);
 
 
-		$c = "
-	<?php
-
-		namespace src\\entities\\$class;
-
+		$c = "<?php
 		use Components\SQLEntities\TzSQL;
 		use Components\DebugTools\DebugTool;
 
