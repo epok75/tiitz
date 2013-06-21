@@ -66,7 +66,7 @@ function createEntity($tables){
             private $"."relations = array(";
 
         foreach($FK as $relation){
-            $c.= "'".$relation['PKTABLE_NAME']."'=>array('".$relation['FKCOLUMN_NAME']."'=>'".$relation['PKCOLUMN_NAME']."'),";
+            $c.= "'".$relation['PKTABLE_NAME']."'=>array('".$relation['FKCOLUMN_NAME']."'=>'".$relation['PKCOLUMN_NAME']."','recursivity'=>'no'),";
         }
         $c.= ");
         ";
@@ -254,7 +254,7 @@ function createEntity($tables){
 						$" . "method = 'set'.ucfirst($" . "k);
 						$" . "tmpInstance->$" . "method($" . "value);
 
-						if($" . "recursif == null){
+						if($" . "recursif == 'yes'){
                             foreach($" . "this->relations as $" . "relationId => $" . "relationLinks){
                                 if(array_key_exists($" . "k, $" . "relationLinks)){
                                     $" . "entity = tzSQL::getEntity($" . "relationId);
