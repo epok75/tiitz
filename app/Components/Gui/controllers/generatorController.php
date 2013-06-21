@@ -16,11 +16,12 @@ class GeneratorController extends TzController{
 
 			$columsList = array();
 			foreach ($tables as $key => $value) {
+
 				$colums = $objPDO->prepare('show columns from '.$value[0]);
 				$colums->execute();
 				$columsList[$value[0]] = $colums->fetchAll(PDO::FETCH_ASSOC);
 			}
-			#var_dump($columsList);
+
 			if(empty($_POST['generateEntity']) && empty($_POST['tablename'])) {
 				require_once ROOT.'/app/Components/Gui/views/entityGeneratorForm.php';
 			}

@@ -1,0 +1,5 @@
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>C:\wamp\www\tiitz\app\Components\SQLEntities\TzSQL.php	line=>44	date=>2013-06-20 16:52:28
+type=>none	message=>PDO is null, maybe you have not mysql connection ?	file=>C:\wamp\www\tiitz\app\Components\SQLEntities\TzSQL.php	line=>44	date=>2013-06-20 16:52:37
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myblog.acl_groups' doesn't exist	file=>C:\wamp\www\tiitz\app\Components\Gui\controllers\ToolbarController.php	line=>70	date=>2013-06-20 17:02:16
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myblog.acl_groups' doesn't exist	file=>C:\wamp\www\tiitz\app\Components\Gui\controllers\ToolbarController.php	line=>70	date=>2013-06-20 17:02:56
+type=>2	message=>PDOStatement::execute(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myblog.acl_groups' doesn't exist	file=>C:\wamp\www\tiitz\app\Components\Gui\controllers\ToolbarController.php	line=>70	date=>2013-06-21 11:27:16
