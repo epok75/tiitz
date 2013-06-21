@@ -15,6 +15,7 @@ use Components\DebugTools\DebugTool;
 use Components\RenderTplEngine\TzRender;
 use Components\Router\TzRouter;
 use Components\SQLEntities\TzSQL;
+use Components\ACL\TzACL;
 
 class TzKernel
 {

@@ -28,7 +28,7 @@ function createEntity($tables){
 
         $dbNameQuery = TzSQL::getPDO()->prepare("SELECT DATABASE() as dbname");
         $dbNameQuery->execute();
-        $dbName = $dbNameQuery->fetchAll(PDO::FETCH_ASSOC);
+        $dbName = $dbNameQuery->fetchAll(\PDO::FETCH_ASSOC);
 
         $foreignKeyQuery ="SELECT A.TABLE_SCHEMA AS FKTABLE_SCHEM, A.TABLE_NAME AS FKTABLE_NAME, A.COLUMN_NAME AS FKCOLUMN_NAME,
                                 A.REFERENCED_TABLE_SCHEMA AS PKTABLE_SCHEM, A.REFERENCED_TABLE_NAME AS PKTABLE_NAME,
@@ -44,7 +44,7 @@ function createEntity($tables){
         $getFK = TzSQL::getPDO()->prepare($foreignKeyQuery);
         $getFK->execute(array(":dbname"=>$dbName[0]['dbname'],":tbname"=>$tablename));
 
-        $FK = $getFK->fetchAll(PDO::FETCH_ASSOC);
+        $FK = $getFK->fetchAll(\PDO::FETCH_ASSOC);
 
 
 		$c = "<?php

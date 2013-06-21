@@ -1,6 +1,7 @@
 <?php
 
 namespace Components\Auth;
+use Components\SQLEntities\TzSQL;
 
 class TzAuth {
     
@@ -32,7 +33,7 @@ class TzAuth {
 
         $data = TzSQL::getPDO()->prepare($query);
         $data->execute();
-        $user = $data->fetchAll(PDO::FETCH_ASSOC);
+        $user = $data->fetchAll(\PDO::FETCH_ASSOC);
         if(!empty($user)){
             self::addUserSession($user[0]);
             return true;
