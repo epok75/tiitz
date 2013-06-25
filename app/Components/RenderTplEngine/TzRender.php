@@ -79,7 +79,11 @@ class TzRender {
 	}
 
 	public function addVar($name, $value){
-		$this->prop[$name] = $value;
+		if(is_array($name)) {
+			$this->prop = array_merge($this->prop, $name);
+		} else {
+			$this->prop[$name] = $value;
+		}
 	}
 
 	public function run($file , array $prop = null) {
