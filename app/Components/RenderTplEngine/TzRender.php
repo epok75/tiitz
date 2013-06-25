@@ -78,6 +78,10 @@ class TzRender {
 		self::$propStatic = $result;
 	}
 
+	public function addVar($name, $value){
+		$this->prop[$name] = $value;
+	}
+
 	public function run($file , array $prop = null) {
 			
 		$this->fileExists($file);
