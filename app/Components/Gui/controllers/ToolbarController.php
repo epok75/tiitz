@@ -3,6 +3,7 @@
 use Components\DebugTools\DebugTool;
 use Components\FileManager\TzFileManager;
 use Components\SQLEntities\TzSQL;
+use Components\Spyc\Spyc;
 
 class ToolbarController {
 
